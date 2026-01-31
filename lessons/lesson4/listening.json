@@ -1,0 +1,16 @@
+{
+  "id": "g7_l1_listening",
+  "title": "شنیدن و تشخیص",
+  "exercises": [
+    {
+      "id": "ls1",
+      "type": "word_recognition",
+      "audio": "audio/lesson1/listening/word1.mp3",
+      "question": "چه کلمه‌ای شنیدید؟",
+      "options": ["manager", "teacher", "student", "doctor"],
+      "correct": 0,
+      "points": 2,
+      "repeatAllowed": true
+    }
+  ]
+}

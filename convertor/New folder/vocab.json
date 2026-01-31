@@ -1,0 +1,134 @@
+[
+  {
+    "id": "wb_w_12_1_1",
+    "index": 1,
+    "word": "sense",
+    "level": "B1",
+    "phonetic": {
+      "us": "/sens/",
+      "uk": "/sens/"
+    },
+    "partOfSpeech": ["noun"],
+    "persian": {
+      "main": "حس",
+      "short": "حس"
+    },
+    "meanings": [
+      {
+        "definition": {
+          "simple": "A feeling or understanding about something."
+        },
+        "persianDefinition": "یک احساس یا درک درباره چیزی.",
+        "example": {
+          "sentence": "She has a good sense of direction.",
+          "translation": "او حس جهت‌یابی خوبی دارد."
+        },
+        "synonyms": ["feeling", "awareness"],
+        "antonyms": ["numbness", "ignorance"]
+      }
+    ],
+    "audio": {
+      "us": "audio/vocab/sense-us.mp3",
+      "uk": "audio/vocab/sense-uk.mp3"
+    }
+  },
+  {
+"id": "wb_w_12_1_34",
+"index": 34,
+"word": "lovely",
+"level": "A2",
+"phonetic": {
+"us": "/ˈlʌvli/",
+"uk": "/ˈlʌvli/"
+},
+"partOfSpeech": ["adjective"],
+"persian": {
+"main": "دلپذیر، زیبا",
+"short": "زیبا"
+},
+"meanings": [
+{
+"definition": {
+"simple": "Very pleasant or beautiful."
+},
+"persianDefinition": "بسیار خوشایند یا زیبا.",
+"example": {
+"sentence": "We had a lovely time at the park yesterday.",
+"translation": "ما دیروز وقت دلپذیری در پارک داشتیم."
+},
+"synonyms": ["beautiful", "pleasant"],
+"antonyms": ["ugly", "unpleasant"]
+}
+],
+"audio": {
+"us": "audio/vocab/lovely-us.mp3",
+"uk": "audio/vocab/lovely-uk.mp3"
+}
+},
+{
+"id": "wb_w_12_1_35",
+"index": 35,
+"word": "forgot",
+"level": "A2",
+"phonetic": {
+"us": "/fərˈɡɑːt/",
+"uk": "/fəˈɡɒt/"
+},
+"partOfSpeech": ["verb"],
+"persian": {
+"main": "فراموش کرد",
+"short": "فراموش کردن"
+},
+"meanings": [
+{
+"definition": {
+"simple": "Failed to remember something."
+},
+"persianDefinition": "ناتوانی در به یاد آوردن چیزی.",
+"example": {
+"sentence": "I forgot to bring my notebook to class today.",
+"translation": "من امروز دفترم را سر کلاس آوردن فراموش کردم."
+},
+"synonyms": ["overlooked", "neglected"],
+"antonyms": ["remembered", "recalled"]
+}
+],
+"audio": {
+"us": "audio/vocab/forgot-us.mp3",
+"uk": "audio/vocab/forgot-uk.mp3"
+}
+},
+{
+"id": "wb_w_12_1_36",
+"index": 36,
+"word": "feed",
+"level": "A2",
+"phonetic": {
+"us": "/fiːd/",
+"uk": "/fiːd/"
+},
+"partOfSpeech": ["verb"],
+"persian": {
+"main": "غذا دادن",
+"short": "خوراندن"
+},
+"meanings": [
+{
+"definition": {
+"simple": "To give food to a person or an animal."
+},
+"persianDefinition": "دادن غذا به یک شخص یا حیوان.",
+"example": {
+"sentence": "Please remember to feed the cat before you leave.",
+"translation": "لطفاً یادتان باشد قبل از رفتن به گربه غذا بدهید."
+},
+"synonyms": ["nourish", "provide food"],
+"antonyms": ["starve", "deprive"]
+}
+],
+"audio": {
+"us": "audio/vocab/feed-us.mp3",
+"uk": "audio/vocab/feed-uk.mp3"
+}
+}
+]

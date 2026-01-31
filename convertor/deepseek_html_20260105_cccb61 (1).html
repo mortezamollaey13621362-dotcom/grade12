@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مبدل داده‌های English7App - کامل</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            background: linear-gradient(90deg, #4CAF50, #2196F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-right: 5px solid #4CAF50;
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: 0.3s;
+            display: inline-block;
+            min-width: 180px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-convert {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+        }
+        
+        .btn-download {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+        }
+        
+        .btn-all {
+            background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .btn-debug {
+            background: linear-gradient(135deg, #607d8b, #455a64);
+        }
+        
+        .file-input {
+            width: 100%;
+            margin: 15px 0;
+            padding: 15px;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            text-align: center;
+            background: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .file-input:hover {
+            border-color: #4CAF50;
+            background: #f0fff0;
+        }
+        
+        .stats {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        
+        .progress {
+            height: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            width: 0%;
+            transition: width 0.5s;
+        }
+        
+        .status {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            background: #e3f2fd;
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .status.success {
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-right: 5px solid #4CAF50;
+        }
+        
+        .status.error {
+            background: #ffebee;
+            color: #c62828;
+            border-right: 5px solid #f44336;
+        }
+        
+        .status.info {
+            background: #e3f2fd;
+            color: #1565c0;
+            border-right: 5px solid #2196F3;
+        }
+        
+        .file-list {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .file-item {
+            padding: 10px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #FF9800;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .file-info {
+            flex-grow: 1;
+        }
+        
+        .file-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .counter {
+            background: #e3f2fd;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .conversion-info {
+            background: #f3e5f5;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vazirmatn/matn@1.0.0-alpha.2/vazirmatn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-sync-alt"></i> مبدل داده‌های English7App - نسخه کامل</h1>
+        
+        <!-- قدم 1: آپلود vocab.json -->
+        <div class="card">
+            <h3><i class="fas fa-file-upload"></i> قدم 1: آپلود فایل vocab.json</h3>
+            <p>فایل vocab.json رو از پوشه data/ انتخاب کن (تمامی لغات تبدیل خواهند شد):</p>
+            <input type="file" id="vocabFile" accept=".json" class="file-input">
+            <div id="fileInfo" class="stats"></div>
+            <div class="progress">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+        
+        <!-- قدم 2: تبدیل -->
+        <div class="card">
+            <h3><i class="fas fa-cogs"></i> قدم 2: تبدیل داده‌ها</h3>
+            <p><i class="fas fa-info-circle"></i> همه لغات بدون محدودیت تبدیل می‌شوند:</p>
+            
+            <div style="text-align: center;">
+                <button class="btn btn-convert" onclick="convertToFlashcards()">
+                    <i class="fas fa-layer-group"></i> بساز flashcards.json
+                </button>
+                
+                <button class="btn btn-convert" onclick="convertToReview()">
+                    <i class="fas fa-history"></i> بساز review.json
+                </button>
+                
+                <button class="btn btn-convert" onclick="convertToGames()">
+                    <i class="fas fa-gamepad"></i> بساز games.json
+                </button>
+                
+                <br><br>
+                
+                <button class="btn btn-all" onclick="convertAll()">
+                    <i class="fas fa-bolt"></i> همه رو یکجا بساز
+                </button>
+                
+                <button class="btn btn-debug" onclick="debugStructure()">
+                    <i class="fas fa-bug"></i> بررسی ساختار
+                </button>
+            </div>
+            
+            <div class="conversion-info">
+                <i class="fas fa-info-circle"></i> <strong>توجه:</strong> این نسخه تمامی لغات فایل vocab.json را بدون محدودیت تبدیل می‌کند.
+            </div>
+        </div>
+        
+        <!-- قدم 3: دانلود -->
+        <div class="card">
+            <h3><i class="fas fa-download"></i> قدم 3: دانلود فایل‌ها</h3>
+            <p>فایل‌های تولید شده:</p>
+            <div id="downloadButtons"></div>
+            
+            <div id="fileList" class="file-list" style="display: none;">
+                <h4><i class="fas fa-list"></i> فایل‌های آماده:</h4>
+                <div id="filesContainer"></div>
+            </div>
+        </div>
+        
+        <!-- وضعیت -->
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        let vocabData = [];
+        let convertedFiles = {};
+        let fileStructure = {};
+        
+        // 1. آپلود فایل vocab.json
+        document.getElementById('vocabFile').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            const progressBar = document.getElementById('progressBar');
+            
+            reader.onprogress = function(event) {
+                if (event.lengthComputable) {
+                    const percent = (event.loaded / event.total) * 100;
+                    progressBar.style.width = percent + '%';
+                }
+            };
+            
+            reader.onload = function(event) {
+                progressBar.style.width = '100%';
+                
+                try {
+                    const rawData = JSON.parse(event.target.result);
+                    vocabData = [];
+                    
+                    // بررسی و استخراج داده‌ها از ساختارهای مختلف
+                    if (Array.isArray(rawData)) {
+                        vocabData = rawData;
+                        fileStructure.type = 'array';
+                    } else if (rawData.words && Array.isArray(rawData.words)) {
+                        vocabData = rawData.words;
+                        fileStructure.type = 'words_array';
+                        fileStructure.metadata = rawData.metadata || rawData.info;
+                    } else if (rawData.vocabulary && Array.isArray(rawData.vocabulary)) {
+                        vocabData = rawData.vocabulary;
+                        fileStructure.type = 'vocabulary_array';
+                        fileStructure.metadata = rawData.metadata;
+                    } else if (rawData.cards && Array.isArray(rawData.cards)) {
+                        vocabData = rawData.cards;
+                        fileStructure.type = 'cards_array';
+                    } else if (rawData.data && Array.isArray(rawData.data)) {
+                        vocabData = rawData.data;
+                        fileStructure.type = 'data_array';
+                    } else {
+                        // بررسی آیا آبجکت حاوی آرایه‌ای از لغات است
+                        const keys = Object.keys(rawData);
+                        for (const key of keys) {
+                            if (Array.isArray(rawData[key]) && rawData[key].length > 0) {
+                                const firstItem = rawData[key][0];
+                                if (typeof firstItem === 'object' && (firstItem.word || firstItem.english || firstItem.text)) {
+                                    vocabData = rawData[key];
+                                    fileStructure.type = `dynamic_${key}_array`;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    
+                    if (vocabData.length === 0) {
+                        throw new Error('ساختار JSON نامعتبر یا خالی است');
+                    }
+                    
+                    // ذخیره اطلاعات ساختار
+                    fileStructure.totalItems = vocabData.length;
+                    fileStructure.sampleItem = vocabData[0];
+                    
+                    document.getElementById('fileInfo').innerHTML = `
+                        <i class="fas fa-check-circle"></i> فایل با موفقیت بارگذاری شد
+                        <br><i class="fas fa-chart-bar"></i> تعداد لغات: <strong>${vocabData.length} لغت</strong>
+                        <br><i class="fas fa-hdd"></i> حجم فایل: <strong>${(file.size / 1024).toFixed(1)} KB</strong>
+                        <br><i class="fas fa-file-alt"></i> نام فایل: <strong>${file.name}</strong>
+                        <br><i class="fas fa-project-diagram"></i> ساختار: <strong>${fileStructure.type}</strong>
+                    `;
+                    
+                    showStatus(`✅ فایل vocab.json بارگذاری شد (${vocabData.length} لغت - همه لغات تبدیل می‌شوند)`, 'success');
+                    
+                    // نمایش نمونه از داده‌ها
+                    console.log('ساختار فایل:', fileStructure);
+                    console.log('نمونه لغات (۵ مورد اول):', vocabData.slice(0, 5));
+                    
+                } catch (error) {
+                    showStatus(`❌ خطا در خواندن فایل JSON: ${error.message}`, 'error');
+                    console.error('خطای پارس:', error);
+                }
+                
+                setTimeout(() => {
+                    progressBar.style.width = '0%';
+                }, 1000);
+            };
+            
+            reader.onerror = function() {
+                showStatus('❌ خطا در خواندن فایل', 'error');
+            };
+            
+            showStatus('📥 در حال بارگذاری فایل...', 'info');
+            reader.readAsText(file);
+        });
+        
+        // 2. تبدیل به flashcards.json - تمام لغات
+        function convertToFlashcards() {
+            if (!vocabData.length) {
+                showStatus('❌ اول فایل vocab.json رو آپلود کن', 'error');
+                return;
+            }
+            
+            showStatus(`🔄 در حال ساخت flashcards.json از ${vocabData.length} لغت...`, 'info');
+            
+            try {
+                const flashcards = [];
+                let skippedItems = 0;
+                
+                // استفاده از ALL لغات
+                for (let i = 0; i < vocabData.length; i++) {
+                    const word = vocabData[i];
+                    if (!word) {
+                        skippedItems++;
+                        continue;
+                    }
+                    
+                    // استخراج اطلاعات با اولویت‌های مختلف
+                    const wordText = getValue(word, ['word', 'english', 'text', 'term']);
+                    if (!wordText) {
+                        skippedItems++;
+                        continue;
+                    }
+                    
+                    const persianMeaning = getValue(word, [
+                        'persian.main', 'persian.short', 'translation', 'farsi', 
+                        'meanings[0].persian', 'meanings[0].english', 'definitions[0]'
+                    ]);
+                    
+                    const phonetic = getValue(word, [
+                        'phonetic.us', 'phonetic.uk', 'pronunciation', 'phonetic'
+                    ]);
+                    
+                    const exampleData = getExampleData(word);
+                    
+                    flashcards.push({
+                        id: `fc_${String(i + 1).padStart(4, '0')}`,
+                        word: wordText,
+                        phonetic: phonetic,
+                        persianMeaning: persianMeaning || 'بدون ترجمه',
+                        example: exampleData.sentence || `This is "${wordText}" in a sentence.`,
+                        exampleTranslation: exampleData.translation || `این یک جمله برای "${wordText}" است.`,
+                        difficulty: mapDifficulty(getValue(word, ['level', 'difficulty', 'category'])),
+                        partOfSpeech: getValue(word, ['partOfSpeech', 'pos', 'type']),
+                        tags: extractTags(word),
+                        timestamp: new Date().toISOString()
+                    });
+                }
+                
+                convertedFiles.flashcards = flashcards;
+                createDownloadButton('flashcards.json', flashcards, 'flashcards');
+                
+                const successMessage = `✅ flashcards.json ساخته شد (${flashcards.length} کارت)`;
+                if (skippedItems > 0) {
+                    showStatus(`${successMessage} - ${skippedItems} آیتم رد شد`, 'success');
+                } else {
+                    showStatus(successMessage, 'success');
+                }
+                
+                console.log('نمونه فلش کارت:', flashcards[0]);
+                
+            } catch (error) {
+                showStatus(`❌ خطا در ساخت flashcards: ${error.message}`, 'error');
+                console.error('خطای کامل:', error);
+            }
+        }
+        
+        // 3. تبدیل به review.json - تمام لغات
+        function convertToReview() {
+            if (!vocabData.length) {
+                showStatus('❌ اول فایل vocab.json رو آپلود کن', 'error');
+                return;
+            }
+            
+            showStatus(`🔄 در حال ساخت review.json از ${vocabData.length} لغت...`, 'info');
+            
+            try {
+                const now = new Date();
+                const isoDate = now.toISOString();
+                const simpleDate = now.toISOString().split('T')[0];
+                
+                const reviewCards = [];
+                let skippedItems = 0;
+                
+                // استفاده از ALL لغات
+                for (let i = 0; i < vocabData.length; i++) {
+                    const word = vocabData[i];
+                    if (!word) {
+                        skippedItems++;
+                        continue;
+                    }
+                    
+                    const wordText = getValue(word, ['word', 'english', 'text', 'term']);
+                    if (!wordText) {
+                        skippedItems++;
+                        continue;
+                    }
+                    
+                    const translation = getValue(word, [
+                        'persian.main', 'persian.short', 'translation', 'farsi', 
+                        'meanings[0].persian', 'meanings[0].english', 'definitions[0]'
+                    ]);
+                    
+                    const phonetic = getValue(word, [
+                        'phonetic.us', 'phonetic.uk', 'pronunciation', 'phonetic'
+                    ]);
+                    
+                    const exampleData = getExampleData(word);
+                    const level = getValue(word, ['level', 'difficulty', 'category']);
+                    
+                    const category = getCategory(level);
+                    const difficulty = mapDifficultyPersian(level);
+                    
+                    const partOfSpeech = getValue(word, ['partOfSpeech', 'pos', 'type']);
+                    
+                    reviewCards.push({
+                        id: `review_${String(i + 1).padStart(4, '0')}`,
+                        word: wordText,
+                        phonetic: phonetic,
+                        translation: translation || 'بدون ترجمه',
+                        example: exampleData.sentence || `Example for ${wordText}`,
+                        exampleTranslation: exampleData.translation || `مثال برای ${wordText}`,
+                        category: category,
+                        difficulty: difficulty,
+                        partOfSpeech: partOfSpeech,
+                        audioUrl: getValue(word, ['audio.us', 'audio.uk', 'audio', 'sound']) || `audio/${wordText}.mp3`,
+                        imageUrl: getValue(word, ['image', 'picture', 'photo']) || `images/${wordText}.jpg`,
+                        tags: extractTags(word),
+                        stats: {
+                            views: 0,
+                            correct: 0,
+                            incorrect: 0,
+                            lastSeen: null,
+                            firstSeen: simpleDate,
+                            successRate: 0
+                        },
+                        scheduling: {
+                            box: 1,
+                            isDue: true,
+                            nextReview: getNextReviewDate(1),
+                            interval: 1,
+                            easeFactor: 2.5,
+                            reviews: 0,
+                            lapses: 0,
+                            isNew: true,
+                            isSuspended: false
+                        },
+                        metadata: {
+                            source: "vocab.json",
+                            timestamp: isoDate,
+                            originalIndex: i,
+                            wordLength: wordText.length,
+                            hasExample: !!exampleData.sentence,
+                            hasPhonetic: !!phonetic,
+                            hasImage: !!getValue(word, ['image', 'picture', 'photo'])
+                        }
+                    });
+                }
+                
+                // محاسبه آمار
+                const difficultyStats = {
+                    آسان: reviewCards.filter(c => c.difficulty === 'آسان').length,
+                    متوسط: reviewCards.filter(c => c.difficulty === 'متوسط').length,
+                    سخت: reviewCards.filter(c => c.difficulty === 'سخت').length
+                };
+                
+                const categoryStats = {};
+                reviewCards.forEach(card => {
+                    const cat = card.category;
+                    categoryStats[cat] = (categoryStats[cat] || 0) + 1;
+                });
+                
+                const reviewData = {
+                    version: "4.0",
+                    metadata: {
+                        lessonId: "full_conversion",
+                        lessonTitle: "تبدیل کامل لغات",
+                        createdAt: isoDate,
+                        lastUpdated: isoDate,
+                        author: "English7App Full Converter",
+                        description: `تبدیل کامل ${reviewCards.length} لغت از vocab.json`,
+                        totalCards: reviewCards.length,
+                        originalCount: vocabData.length,
+                        skippedItems: skippedItems,
+                        difficultyDistribution: difficultyStats,
+                        categoryDistribution: categoryStats,
+                        partOfSpeechDistribution: getPartOfSpeechStats(reviewCards),
+                        averageWordLength: calculateAverageWordLength(reviewCards),
+                        recommendedDailyCards: calculateDailyCards(reviewCards.length),
+                        estimatedStudyTime: Math.ceil(reviewCards.length * 1.2), // دقیقه
+                        tags: ["تبدیل کامل", "همه لغات", "مرور", "فارسی"],
+                        conversionInfo: {
+                            timestamp: isoDate,
+                            totalWords: vocabData.length,
+                            convertedWords: reviewCards.length,
+                            skippedWords: skippedItems,
+                            conversionRate: ((reviewCards.length / vocabData.length) * 100).toFixed(1) + '%'
+                        }
+                    },
+                    settings: {
+                        newCardsPerDay: calculateDailyCards(reviewCards.length),
+                        reviewCardsPerDay: Math.min(100, Math.floor(reviewCards.length / 10)),
+                        maxReviewsPerDay: 200,
+                        difficultySettings: {
+                            again: 1.0,
+                            hard: 1.2,
+                            good: 1.5,
+                            easy: 2.0
+                        },
+                        autoPlayAudio: true,
+                        showExample: true,
+                        showPhonetic: true,
+                        showImage: true
+                    },
+                    cards: reviewCards,
+                    progress: {
+                        total: reviewCards.length,
+                        new: reviewCards.length,
+                        learning: 0,
+                        review: 0,
+                        mastered: 0,
+                        streak: 0,
+                        lastStudied: null,
+                        totalStudyTime: 0,
+                        averageScore: 0
+                    }
+                };
+                
+                convertedFiles.review = reviewData;
+                createDownloadButton('review.json', reviewData, 'review');
+                
+                const successMessage = `✅ review.json ساخته شد (${reviewCards.length} کارت از ${vocabData.length} لغت)`;
+                if (skippedItems > 0) {
+                    showStatus(`${successMessage} - ${skippedItems} آیتم رد شد`, 'success');
+                } else {
+                    showStatus(successMessage, 'success');
+                }
+                
+                console.log('آمار تبدیل:', {
+                    کل: vocabData.length,
+                    تبدیل‌شده: reviewCards.length,
+                    رد‌شده: skippedItems,
+                    نرخ: ((reviewCards.length / vocabData.length) * 100).toFixed(1) + '%'
+                });
+                console.log('نمونه کارت مرور:', reviewCards[0]);
+                
+            } catch (error) {
+                showStatus(`❌ خطا در ساخت review: ${error.message}`, 'error');
+                console.error('خطای کامل:', error);
+            }
+        }
+        
+        // 4. تبدیل به games.json - تمام لغات
+        function convertToGames() {
+            if (!vocabData.length) {
+                showStatus('❌ اول فایل vocab.json رو آپلود کن', 'error');
+                return;
+            }
+            
+            showStatus(`🔄 در حال ساخت games.json از ${vocabData.length} لغت...`, 'info');
+            
+            try {
+                // استفاده از ALL لغات
+                const allWords = vocabData;
+                const wordCount = allWords.length;
+                
+                console.log(`ساخت بازی برای ${wordCount} لغت`);
+                
+                // 1. بازی‌های حافظه (Memory)
+                const memoryGames = [];
+                
+                // تقسیم لغات به گروه‌های 16 تایی برای بازی حافظه
+                const groups = [];
+                for (let i = 0; i < wordCount; i += 16) {
+                    const group = allWords.slice(i, i + 16);
+                    if (group.length >= 6) { // حداقل 6 لغت برای بازی
+                        groups.push(group);
+                    }
+                }
+                
+                // ساخت بازی‌های حافظه
+                groups.forEach((group, index) => {
+                    const pairs = group.map(w => {
+                        const wordText = getValue(w, ['word', 'english', 'text', 'term']);
+                        const translation = getValue(w, [
+                            'persian.main', 'persian.short', 'translation', 'farsi', 
+                            'meanings[0].persian', 'meanings[0].english', 'definitions[0]'
+                        ]);
+                        
+                        return {
+                            en: wordText || '',
+                            fa: translation || 'معنی',
+                            hint: getValue(w, ['hint', 'tip', 'clue']) || '',
+                            difficulty: mapDifficulty(getValue(w, ['level', 'difficulty']))
+                        };
+                    }).filter(p => p.en && p.fa && p.fa !== 'معنی');
+                    
+                    if (pairs.length >= 6) {
+                        memoryGames.push({
+                            id: `memory_${index + 1}`,
+                            type: "memory",
+                            title: `حافظه لغات - مجموعه ${index + 1}`,
+                            description: `${pairs.length} جفت لغت برای تمرین حافظه`,
+                            pairs: pairs,
+                            difficulty: "medium",
+                            timeLimit: 120,
+                            maxMoves: pairs.length * 2
+                        });
+                    }
+                });
+                
+                // 2. بازی‌های مرتب‌سازی (Scramble)
+                const scrambleGames = [];
+                
+                // تقسیم لغات به گروه‌های 20 تایی
+                for (let i = 0; i < wordCount; i += 20) {
+                    const group = allWords.slice(i, i + 20);
+                    const items = group.map(w => {
+                        const wordText = getValue(w, ['word', 'english', 'text', 'term']);
+                        const translation = getValue(w, [
+                            'persian.main', 'persian.short', 'translation', 'farsi'
+                        ]);
+                        
+                        return {
+                            word: (wordText || '').toLowerCase().replace(/\s/g, ''),
+                            original: wordText || '',
+                            hint: translation || 'معنی',
+                            difficulty: mapDifficulty(getValue(w, ['level', 'difficulty'])),
+                            length: wordText ? wordText.length : 0
+                        };
+                    }).filter(item => item.word && item.original && item.hint && item.hint !== 'معنی' && item.word.length >= 3);
+                    
+                    if (items.length >= 8) {
+                        scrambleGames.push({
+                            id: `scramble_${scrambleGames.length + 1}`,
+                            type: "scramble",
+                            title: `مرتب‌سازی حروف - گروه ${scrambleGames.length + 1}`,
+                            description: `${items.length} کلمه برای مرتب‌سازی`,
+                            items: items,
+                            difficulty: "medium",
+                            timeLimit: 180,
+                            maxAttempts: 3
+                        });
+                    }
+                }
+                
+                // 3. بازی تطبیق (Matching)
+                const matchingGames = [];
+                
+                // ایجاد بازی‌های تطبیق برای لغات با معانی مشابه
+                if (wordCount >= 15) {
+                    for (let i = 0; i < Math.min(3, Math.floor(wordCount / 15)); i++) {
+                        const startIdx = i * 15;
+                        const endIdx = startIdx + 15;
+                        const group = allWords.slice(startIdx, endIdx);
+                        
+                        const items = group.map(w => {
+                            const wordText = getValue(w, ['word', 'english', 'text', 'term']);
+                            const translation = getValue(w, [
+                                'persian.main', 'persian.short', 'translation', 'farsi'
+                            ]);
+                            
+                            return {
+                                question: wordText || '',
+                                answer: translation || 'معنی',
+                                options: generateWrongOptions(allWords, translation)
+                            };
+                        }).filter(item => item.question && item.answer && item.answer !== 'معنی');
+                        
+                        if (items.length >= 10) {
+                            matchingGames.push({
+                                id: `match_${i + 1}`,
+                                type: "matching",
+                                title: `تطبیق لغات - سری ${i + 1}`,
+                                description: `${items.length} سوال تطبیقی`,
+                                items: items,
+                                difficulty: "medium",
+                                timePerQuestion: 30,
+                                passScore: 70
+                            });
+                        }
+                    }
+                }
+                
+                // 4. بازی حافظه جملات
+                const sentenceGames = [];
+                const wordsWithExamples = allWords.filter(w => {
+                    const example = getValue(w, ['meanings[0].example.sentence', 'examples[0].en', 'example']);
+                    return example && example.length > 10;
+                }).slice(0, 20); // حداکثر 20 جمله
+                
+                if (wordsWithExamples.length >= 8) {
+                    const sentencePairs = wordsWithExamples.map(w => {
+                        const example = getValue(w, ['meanings[0].example.sentence', 'examples[0].en', 'example']);
+                        const translation = getValue(w, [
+                            'meanings[0].example.translation', 
+                            'examples[0].fa', 
+                            'translation'
+                        ]);
+                        
+                        return {
+                            en: example || '',
+                            fa: translation || 'ترجمه جمله',
+                            word: getValue(w, ['word', 'english', 'text', 'term']) || ''
+                        };
+                    }).filter(p => p.en && p.fa && p.fa !== 'ترجمه جمله');
+                    
+                    if (sentencePairs.length >= 8) {
+                        sentenceGames.push({
+                            id: "sentence_memory",
+                            type: "memory",
+                            title: "حافظه جمله‌ها",
+                            description: "تطبیق جملات انگلیسی و ترجمه فارسی",
+                            pairs: sentencePairs,
+                            difficulty: "hard",
+                            timeLimit: 150,
+                            maxMoves: sentencePairs.length * 2
+                        });
+                    }
+                }
+                
+                // ترکیب همه بازی‌ها
+                let allGames = [...memoryGames, ...scrambleGames, ...matchingGames, ...sentenceGames];
+                
+                // اگر بازی‌ها کم بودند، بازی‌های اضافه ایجاد کن
+                if (allGames.length < 4 && wordCount >= 20) {
+                    const basicWords = allWords.slice(0, 20);
+                    const basicPairs = basicWords.map(w => {
+                        const wordText = getValue(w, ['word', 'english', 'text', 'term']);
+                        const translation = getValue(w, ['persian.main', 'persian.short', 'translation', 'farsi']);
+                        
+                        return {
+                            en: wordText || '',
+                            fa: translation || 'معنی'
+                        };
+                    }).filter(p => p.en && p.fa && p.fa !== 'معنی').slice(0, 12);
+                    
+                    if (basicPairs.length >= 8) {
+                        allGames.push({
+                            id: "basic_memory",
+                            type: "memory",
+                            title: "حافظه لغات پایه",
+                            description: "لغات ابتدایی برای شروع",
+                            pairs: basicPairs,
+                            difficulty: "easy",
+                            timeLimit: 90,
+                            maxMoves: basicPairs.length * 2
+                        });
+                    }
+                }
+                
+                // مرتب‌سازی بازی‌ها بر اساس سختی
+                const difficultyOrder = { "easy": 1, "medium": 2, "hard": 3 };
+                allGames.sort((a, b) => difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty]);
+                
+                const gamesData = {
+                    metadata: {
+                        totalGames: allGames.length,
+                        totalWordsUsed: wordCount,
+                        created: new Date().toISOString(),
+                        gameTypes: [...new Set(allGames.map(g => g.type))],
+                        difficultyLevels: [...new Set(allGames.map(g => g.difficulty))],
+                        estimatedPlayTime: allGames.length * 5 + " دقیقه"
+                    },
+                    games: allGames
+                };
+                
+                convertedFiles.games = gamesData;
+                createDownloadButton('games.json', gamesData, 'games');
+                
+                const gameTypesCount = {
+                    memory: allGames.filter(g => g.type === 'memory').length,
+                    scramble: allGames.filter(g => g.type === 'scramble').length,
+                    matching: allGames.filter(g => g.type === 'matching').length
+                };
+                
+                showStatus(`✅ games.json ساخته شد (${allGames.length} بازی از ${wordCount} لغت)`, 'success');
+                console.log('آمار بازی‌ها:', gameTypesCount);
+                
+            } catch (error) {
+                showStatus(`❌ خطا در ساخت games: ${error.message}`, 'error');
+                console.error('خطای ساخت games:', error);
+            }
+        }
+        
+        // 5. تبدیل همه فایل‌ها
+        function convertAll() {
+            if (!vocabData.length) {
+                showStatus('❌ اول فایل vocab.json رو آپلود کن', 'error');
+                return;
+            }
+            
+            showStatus(`⚡ در حال تبدیل همه فایل‌ها از ${vocabData.length} لغت...`, 'info');
+            
+            // پاک کردن فایل‌های قبلی
+            document.getElementById('downloadButtons').innerHTML = '';
+            document.getElementById('filesContainer').innerHTML = '';
+            convertedFiles = {};
+            
+            // تبدیل ترتیبی با تاخیر
+            setTimeout(() => {
+                showStatus('🔄 مرحله ۱/۳: ساخت flashcards.json...', 'info');
+                convertToFlashcards();
+            }, 100);
+            
+            setTimeout(() => {
+                showStatus('🔄 مرحله ۲/۳: ساخت review.json...', 'info');
+                convertToReview();
+            }, 800);
+            
+            setTimeout(() => {
+                showStatus('🔄 مرحله ۳/۳: ساخت games.json...', 'info');
+                convertToGames();
+            }, 1500);
+            
+            setTimeout(() => {
+                document.getElementById('fileList').style.display = 'block';
+                updateFileList();
+                showStatus(`🎉 همه ${vocabData.length} لغت با موفقیت تبدیل شدند!`, 'success');
+                
+                // نمایش خلاصه
+                const summary = `
+                    <div class="conversion-info">
+                        <strong><i class="fas fa-chart-pie"></i> خلاصه تبدیل:</strong><br>
+                        • کل لغات ورودی: ${vocabData.length}<br>
+                        • flashcards.json: ${convertedFiles.flashcards?.items || 0} کارت<br>
+                        • review.json: ${convertedFiles.review?.items || 0} کارت<br>
+                        • games.json: ${convertedFiles.games?.items || 0} بازی<br>
+                        • کل آیتم‌های تولید شده: ${(convertedFiles.flashcards?.items || 0) + (convertedFiles.review?.items || 0) + (convertedFiles.games?.items || 0)}
+                    </div>
+                `;
+                
+                const statusDiv = document.getElementById('status');
+                statusDiv.innerHTML += summary;
+                
+            }, 2500);
+        }
+        
+        // 6. تابع بررسی ساختار
+        function debugStructure() {
+            if (!vocabData.length) {
+                showStatus('❌ اول فایل vocab.json رو آپلود کن', 'error');
+                return;
+            }
+            
+            console.log('=== بررسی کامل ساختار vocab.json ===');
+            console.log('تعداد کل آیتم‌ها:', vocabData.length);
+            console.log('نوع ساختار:', fileStructure.type);
+            
+            // بررسی ۵ آیتم اول
+            console.log('\n=== ۵ آیتم اول ===');
+            for (let i = 0; i < Math.min(5, vocabData.length); i++) {
+                console.log(`\nآیتم ${i + 1}:`, vocabData[i]);
+                console.log('کلیدها:', Object.keys(vocabData[i]));
+                
+                // بررسی کلیدهای تو در تو
+                if (vocabData[i].meanings) {
+                    console.log(`  meanings ساختار:`, vocabData[i].meanings[0]);
+                }
+                if (vocabData[i].persian) {
+                    console.log(`  persian ساختار:`, vocabData[i].persian);
+                }
+                if (vocabData[i].phonetic) {
+                    console.log(`  phonetic ساختار:`, vocabData[i].phonetic);
+                }
+            }
+            
+            // آنالیز کلیدهای مشترک
+            console.log('\n=== آنالیز کلیدهای مشترک ===');
+            const commonKeys = {};
+            vocabData.slice(0, 20).forEach((item, index) => {
+                Object.keys(item).forEach(key => {
+                    commonKeys[key] = (commonKeys[key] || 0) + 1;
+                });
+            });
+            
+            console.log('فراوانی کلیدها (از ۲۰ آیتم اول):', commonKeys);
+            
+            // نمایش در صفحه
+            showStatus('🔍 ساختار داده‌ها در کنسول مرورگر بررسی شد (F12 را بزنید)', 'info');
+            
+            // ایجاد گزارش ساختار
+            const structureReport = {
+                totalItems: vocabData.length,
+                structureType: fileStructure.type,
+                sampleItemKeys: Object.keys(vocabData[0]),
+                commonKeys: commonKeys,
+                hasMeanings: vocabData[0].meanings ? '✅' : '❌',
+                hasPersian: vocabData[0].persian ? '✅' : '❌',
+                hasPhonetic: vocabData[0].phonetic ? '✅' : '❌',
+                hasExamples: vocabData[0].examples || (vocabData[0].meanings && vocabData[0].meanings[0] && vocabData[0].meanings[0].example) ? '✅' : '❌'
+            };
+            
+            console.log('گزارش ساختار:', structureReport);
+        }
+        
+        // ========== توابع کمکی پیشرفته ==========
+        
+        // تابع برای دریافت مقدار از مسیرهای مختلف
+        function getValue(obj, paths) {
+            if (!obj) return '';
+            
+            for (const path of paths) {
+                if (path.includes('[') && path.includes(']')) {
+                    // مسیرهای آرایه‌ای مانند meanings[0].example
+                    const parts = path.split(/\.|\[|\]/).filter(p => p);
+                    let value = obj;
+                    for (const part of parts) {
+                        if (value === null || value === undefined) break;
+                        if (part.match(/^\d+$/)) {
+                            value = value[parseInt(part)];
+                        } else {
+                            value = value[part];
+                        }
+                    }
+                    if (value) return value;
+                } else {
+                    // مسیرهای ساده
+                    const parts = path.split('.');
+                    let value = obj;
+                    for (const part of parts) {
+                        if (value === null || value === undefined) break;
+                        value = value[part];
+                    }
+                    if (value) return value;
+                }
+            }
+            return '';
+        }
+        
+        // تابع استخراج مثال
+        function getExampleData(word) {
+            let sentence = '';
+            let translation = '';
+            
+            // بررسی meanings[0].example
+            if (word.meanings?.[0]?.example) {
+                sentence = word.meanings[0].example.sentence || '';
+                translation = word.meanings[0].example.translation || '';
+            }
+            
+            // بررسی examples[0]
+            if (!sentence && word.examples?.[0]) {
+                if (typeof word.examples[0] === 'string') {
+                    sentence = word.examples[0];
+                } else if (word.examples[0].en) {
+                    sentence = word.examples[0].en;
+                    translation = word.examples[0].fa || '';
+                }
+            }
+            
+            // بررسی example مستقیم
+            if (!sentence && word.example) {
+                sentence = word.example;
+            }
+            
+            return { sentence, translation };
+        }
+        
+        // تابع استخراج تگ‌ها
+        function extractTags(word) {
+            const tags = [];
+            
+            // اضافه کردن سطح
+            const level = getValue(word, ['level', 'difficulty', 'category']);
+            if (level) tags.push(level);
+            
+            // اضافه کردن part of speech
+            const pos = getValue(word, ['partOfSpeech', 'pos', 'type']);
+            if (pos) tags.push(pos);
+            
+            // اضافه کردن موضوع
+            const topic = getValue(word, ['topic', 'theme', 'subject']);
+            if (topic) tags.push(topic);
+            
+            // تگ‌های پیش‌فرض
+            tags.push('تبدیل کامل', 'همه لغات');
+            
+            return [...new Set(tags.filter(t => t))]; // حذف تکراری‌ها
+        }
+        
+        // تابع تولید گزینه‌های غلط برای بازی تطبیق
+        function generateWrongOptions(allWords, correctAnswer) {
+            const options = [correctAnswer];
+            const usedTranslations = new Set([correctAnswer]);
+            
+            // انتخاب ۳ ترجمه تصادفی دیگر
+            for (let i = 0; i < 3; i++) {
+                let randomWord;
+                let randomTranslation;
+                let attempts = 0;
+                
+                do {
+                    randomWord = allWords[Math.floor(Math.random() * allWords.length)];
+                    randomTranslation = getValue(randomWord, [
+                        'persian.main', 'persian.short', 'translation', 'farsi'
+                    ]);
+                    attempts++;
+                } while ((!randomTranslation || usedTranslations.has(randomTranslation) || randomTranslation === correctAnswer) && attempts < 10);
+                
+                if (randomTranslation && !usedTranslations.has(randomTranslation)) {
+                    options.push(randomTranslation);
+                    usedTranslations.add(randomTranslation);
+                }
+            }
+            
+            // اگر گزینه‌ها کم بودند، اضافه کن
+            while (options.length < 4) {
+                options.push(`گزینه ${options.length + 1}`);
+            }
+            
+            // مخلوط کردن گزینه‌ها
+            return shuffleArray([...options]);
+        }
+        
+        // تابع مخلوط کردن آرایه
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+        
+        // آمار part of speech
+        function getPartOfSpeechStats(cards) {
+            const stats = {};
+            cards.forEach(card => {
+                const pos = card.partOfSpeech || 'unknown';
+                stats[pos] = (stats[pos] || 0) + 1;
+            });
+            return stats;
+        }
+        
+        // میانگین طول کلمات
+        function calculateAverageWordLength(cards) {
+            const total = cards.reduce((sum, card) => sum + (card.word?.length || 0), 0);
+            return cards.length > 0 ? (total / cards.length).toFixed(1) : 0;
+        }
+        
+        // محاسبه کارت‌های روزانه
+        function calculateDailyCards(totalCards) {
+            if (totalCards <= 50) return 10;
+            if (totalCards <= 100) return 15;
+            if (totalCards <= 200) return 20;
+            if (totalCards <= 500) return 25;
+            return 30;
+        }
+        
+        // ========== توابع پایه ==========
+        
+        function mapDifficulty(level) {
+            if (!level) return 'easy';
+            level = String(level).toUpperCase();
+            if (level.includes('B') || level.includes('2') || level.includes('متوسط')) return 'medium';
+            if (level.includes('C') || level.includes('3') || level.includes('سخت') || level.includes('پیشرفته')) return 'hard';
+            return 'easy';
+        }
+        
+        function mapDifficultyPersian(level) {
+            if (!level) return 'آسان';
+            level = String(level).toUpperCase();
+            if (level.includes('B') || level.includes('2') || level.includes('MEDIUM') || level.includes('متوسط')) return 'متوسط';
+            if (level.includes('C') || level.includes('3') || level.includes('HARD') || level.includes('سخت') || level.includes('پیشرفته')) return 'سخت';
+            return 'آسان';
+        }
+        
+        function getCategory(level) {
+            if (!level) return 'پایه';
+            level = String(level).toUpperCase();
+            if (level.includes('A') || level.includes('1') || level.includes('BASIC') || level.includes('پایه')) return 'پایه';
+            if (level.includes('B') || level.includes('2') || level.includes('INTERMEDIATE') || level.includes('متوسط')) return 'متوسط';
+            if (level.includes('C') || level.includes('3') || level.includes('ADVANCED') || level.includes('پیشرفته')) return 'پیشرفته';
+            return 'پایه';
+        }
+        
+        function getNextReviewDate(box) {
+            const date = new Date();
+            date.setDate(date.getDate() + box);
+            return date.toISOString().split('T')[0];
+        }
+        
+        function createDownloadButton(filename, data, type) {
+            // پاک کردن دکمه قبلی با همین نام
+            const existingBtn = document.querySelector(`[data-filename="${filename}"]`);
+            if (existingBtn) existingBtn.remove();
+            
+            const jsonStr = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const btn = document.createElement('button');
+            btn.className = 'btn btn-download';
+            btn.setAttribute('data-filename', filename);
+            btn.innerHTML = `<i class="fas fa-download"></i> دانلود ${filename}`;
+            btn.onclick = () => {
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                setTimeout(() => URL.revokeObjectURL(url), 100);
+            };
+            
+            document.getElementById('downloadButtons').appendChild(btn);
+            
+            // ذخیره اطلاعات
+            convertedFiles[type] = {
+                filename: filename,
+                data: data,
+                size: (jsonStr.length / 1024).toFixed(1) + ' KB',
+                items: Array.isArray(data) ? data.length : 
+                       data.games ? data.games.length : 
+                       data.cards ? data.cards.length : 0,
+                timestamp: new Date().toISOString()
+            };
+            
+            updateFileList();
+        }
+        
+        function updateFileList() {
+            const container = document.getElementById('filesContainer');
+            container.innerHTML = '';
+            
+            const files = [
+                { key: 'flashcards', name: 'flashcards.json', icon: 'fa-layer-group', color: '#4CAF50' },
+                { key: 'review', name: 'review.json', icon: 'fa-history', color: '#2196F3' },
+                { key: 'games', name: 'games.json', icon: 'fa-gamepad', color: '#FF9800' }
+            ];
+            
+            files.forEach(file => {
+                if (convertedFiles[file.key]) {
+                    const info = convertedFiles[file.key];
+                    const div = document.createElement('div');
+                    div.className = 'file-item';
+                    div.innerHTML = `
+                        <div class="file-info">
+                            <i class="fas ${file.icon}" style="color: ${file.color}"></i> 
+                            <strong>${file.name}</strong>
+                            <span class="counter">${info.items} آیتم</span>
+                            <br>
+                            <small>
+                                <i class="fas fa-hdd"></i> ${info.size} | 
+                                <i class="fas fa-clock"></i> ${new Date(info.timestamp).toLocaleTimeString('fa-IR')}
+                            </small>
+                        </div>
+                        <div class="file-actions">
+                            <button onclick="previewFile('${file.key}')" style="background: ${file.color}; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    `;
+                    container.appendChild(div);
+                }
+            });
+            
+            if (container.children.length > 0) {
+                document.getElementById('fileList').style.display = 'block';
+            }
+        }
+        
+        // تابع پیش‌نمایش فایل
+        function previewFile(type) {
+            if (convertedFiles[type]) {
+                console.log(`پیش‌نمایش ${type}:`, convertedFiles[type].data);
+                alert(`پیش‌نمایش ${convertedFiles[type].filename} در کنسول مرورگر نمایش داده شد (F12)`);
+            }
+        }
+        
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = `<i class="fas fa-info-circle"></i> ${message}`;
+            statusDiv.className = `status ${type}`;
+            statusDiv.style.display = 'block';
+            
+            if (type === 'error') {
+                console.error('Status Error:', message);
+            }
+            
+            setTimeout(() => {
+                if (statusDiv.innerHTML.includes(message)) {
+                    statusDiv.style.opacity = '0.7';
+                }
+            }, 5000);
+        }
+        
+        // راهنمای اولیه
+        showStatus('📁 لطفا فایل vocab.json را آپلود کنید - همه لغات بدون محدودیت تبدیل می‌شوند', 'info');
+    </script>
+</body>
+</html>

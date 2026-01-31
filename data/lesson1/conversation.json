@@ -1,0 +1,126 @@
+[
+  {
+    "id": "conv_7_1",
+    "lessonId": 7,
+    "tabTitle": "مکالمه ۱: یک پزشک بزرگ",
+    "title": "درس هفتم: مردی بزرگ (A Great Man)",
+    "participants": [
+      {
+        "id": "p1",
+        "name": "Sara",
+        "role": "Patient",
+        "avatar": "images/sara.png",
+        "side": "right"
+      },
+      {
+        "id": "p2",
+        "name": "Nurse",
+        "role": "Nurse",
+        "avatar": "images/nurse.png",
+        "side": "left"
+      }
+    ],
+    "lines": [
+      {
+        "id": 1,
+        "speakerId": "p1",
+        "textEn": "Excuse me, who is that man in the picture?",
+        "textFa": "ببخشید، آن مردی که در عکس است کیست؟"
+      },
+      {
+        "id": 2,
+        "speakerId": "p2",
+        "textEn": "Oh, don’t you know him? Have you ever heard of Dr. Mohammad Gharib?",
+        "textFa": "اوه، او را نمی‌شناسی؟ آیا تا به حال نام دکتر محمد قریب را شنیده‌ای؟"
+      },
+      {
+        "id": 3,
+        "speakerId": "p1",
+        "textEn": "I guess I have only seen his name in my English book, but I’m not sure about it.",
+        "textFa": "فکر می‌کنم فقط اسمش را در کتاب انگلیسی‌ام دیده‌ام، اما در موردش مطمئن نیستم."
+      },
+      {
+        "id": 4,
+        "speakerId": "p2",
+        "textEn": "Dr. Gharib was a famous physician.",
+        "textFa": "دکتر قریب یک پزشک مشهور بود."
+      },
+      {
+        "id": 5,
+        "speakerId": "p1",
+        "textEn": "Oh… can you tell me a little about his life?",
+        "textFa": "اوه... می‌توانید کمی در مورد زندگی او به من بگویید؟"
+      },
+      {
+        "id": 6,
+        "speakerId": "p2",
+        "textEn": "Dr. Gharib was born in Tehran in 1288. After receiving his diploma, he went abroad to study medicine. In 1316 he became a physician and then came back to his homeland. In 1347 this center was founded by Dr. Gharib and one of his close friends.",
+        "textFa": "دکتر قریب در سال ۱۲۸۸ در تهران به دنیا آمد. پس از گرفتن دیپلم، برای تحصیل در رشته پزشکی به خارج از کشور رفت. در سال ۱۳۱۶ پزشک شد و سپس به وطنش بازگشت. این مرکز در سال ۱۳۴۷ توسط دکتر قریب و یکی از دوستان نزدیکش تأسیس شد."
+      },
+      {
+        "id": 7,
+        "speakerId": "p1",
+        "textEn": "Really? I didn’t know that.",
+        "textFa": "واقعاً؟ این را نمی‌دانستم."
+      },
+      {
+        "id": 8,
+        "speakerId": "p2",
+        "textEn": "Dr. Gharib was also a generous man. He spared no pains to cure sick children. He was very friendly and helpful to poor families. Not surprisingly, he was regarded as a dedicated physician.",
+        "textFa": "دکتر قریب مرد بخشنده‌ای هم بود. او از هیچ تلاشی برای درمان کودکان بیمار دریغ نمی‌کرد. او با خانواده‌های فقیر بسیار مهربان و کمک‌کننده بود. جای تعجب نیست که او به عنوان یک پزشک فداکار در نظر گرفته می‌شد."
+      },
+      {
+        "id": 9,
+        "speakerId": "p1",
+        "textEn": "It’s a pity! I didn’t know such a great man.",
+        "textFa": "چه حیف! من چنین مرد بزرگی را نمی‌شناختم."
+      },
+      {
+        "id": 10,
+        "speakerId": "p2",
+        "textEn": "He was known as a distinguished university professor, too. The first Persian textbook on children’s diseases was written by him. He taught medicine to thousands of students.",
+        "textFa": "او به عنوان یک استاد برجسته دانشگاه نیز شناخته می‌شد. اولین کتاب درسی فارسی در زمینه بیماری‌های کودکان توسط او نوشته شد. او پزشکی را به هزاران دانشجو آموزش داد."
+      },
+      {
+        "id": 11,
+        "speakerId": "p1",
+        "textEn": "Oh, what a great man he was!",
+        "textFa": "اوه، چه مرد بزرگی بود!"
+      },
+      {
+        "id": 12,
+        "speakerId": "p2",
+        "textEn": "By the way, it might be interesting to know that your physician was one of Dr. Gharib’s students!",
+        "textFa": "راستی، شاید برایت جالب باشد که بدانی پزشک خودت یکی از دانشجویان دکتر قریب بوده است!"
+      },
+      {
+        "id": 13,
+        "speakerId": "p1",
+        "textEn": "Really?! That’s interesting",
+        "textFa": "واقعاً؟! چه جالب."
+      }
+    ],
+    "keywords": [
+      {
+        "en": "famous physician",
+        "fa": "پزشک مشهور"
+      },
+      {
+        "en": "generous man",
+        "fa": "مرد بخشنده"
+      },
+      {
+        "en": "spared no pains",
+        "fa": "از هیچ تلاشی دریغ نکردن"
+      },
+      {
+        "en": "distinguished professor",
+        "fa": "استاد برجسته"
+      }
+    ],
+    "tip": {
+      "type": "grammar",
+      "text": "در این مکالمه برای صحبت در مورد زندگی و کارهای دکتر قریب که در گذشته اتفاق افتاده، از زمان «گذشته ساده» (Simple Past) استفاده شده است. مانند: 'He was born' یا 'He went abroad'. از این زمان برای بیان اعمالی استفاده می‌کنیم که در گذشته شروع و تمام شده‌اند."
+    }
+  }
+]

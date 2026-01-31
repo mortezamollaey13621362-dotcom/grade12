@@ -1,0 +1,448 @@
+{
+  "tabs": [
+    {
+      "id": "tab1",
+      "title": "Conversation 1: Clean Energy",
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "comprehension",
+          "title": "Listen to the conversation between Emad and his father.",
+          "audio_text": "Emad: Daddy, look at those big fans! Father: They are actually wind turbines. Emad: Wind turbines? Father: Yes, wind turbines are used to produce electricity from wind power. Emad: I know electricity can be produced from water and sunlight. How might it be generated from wind? Father: Well, a wind turbine works the opposite of a fan. Instead of using electricity to make wind, a turbine uses wind to make electricity. It is a type of clean energy. Emad: These wind turbines remind me of what I read about using wind power in Yazd's buildings. Father: You mean wind towers? Emad: Yes, they are natural air cooling systems and can be used instead of electrical air conditioners. This is another source of clean energy, isn't it? Father: Yes, it is. An excellent type of clean energy! Emad: Daddy, can we travel to Yazd this Norooz? Father: That's OK with me. Let's check it with others.",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "mcq",
+              "text": "What does Emad mistake the wind turbines for at first?",
+              "options": [
+                { "text": "Big fans.", "isCorrect": true },
+                { "text": "Wind towers.", "isCorrect": false },
+                { "text": "Air conditioners.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q2",
+              "type": "mcq",
+              "text": "What is the main purpose of wind turbines?",
+              "options": [
+                { "text": "To cool the air.", "isCorrect": false },
+                { "text": "To produce electricity.", "isCorrect": true },
+                { "text": "To decorate the landscape.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q3",
+              "type": "mcq",
+              "text": "How does a wind turbine differ from a fan?",
+              "options": [
+                { "text": "A fan makes more noise.", "isCorrect": false },
+                { "text": "A turbine uses wind to make electricity, a fan uses electricity to make wind.", "isCorrect": true },
+                { "text": "A turbine is always smaller.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q4",
+              "type": "tf",
+              "text": "Wind energy is a type of clean energy.",
+              "options": [
+                { "text": "True", "isCorrect": true },
+                { "text": "False", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q5",
+              "type": "mcq",
+              "text": "What traditional structure in Yazd uses wind power?",
+              "options": [
+                { "text": "Wind turbines.", "isCorrect": false },
+                { "text": "Wind towers.", "isCorrect": true },
+                { "text": "Solar panels.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q6",
+              "type": "mcq",
+              "text": "What is the function of wind towers?",
+              "options": [
+                { "text": "To produce electricity.", "isCorrect": false },
+                { "text": "As natural air cooling systems.", "isCorrect": true },
+                { "text": "To store water.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q7",
+              "type": "gap",
+              "text": "Complete: Instead of using electricity to make wind, a turbine uses __ to make __.",
+              "options": [
+                { "text": "wind / electricity", "isCorrect": true },
+                { "text": "sun / heat", "isCorrect": false },
+                { "text": "water / power", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q8",
+              "type": "tf",
+              "text": "Emad's father says 'no' to the trip to Yazd.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q9",
+              "type": "open_ended",
+              "text": "Name one other source of clean energy mentioned besides wind.",
+              "options": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab2",
+      "title": "Conversation 2: The Picnic",
+      "exercises": [
+        {
+          "id": "ex2",
+          "type": "comprehension",
+          "title": "Listen to the father and son talking about the picnic.",
+          "audio_text": "Father: OK. Tell me about the picnic. What did you do? Son: That was great, Dad. We played volleyball and had a barbecue. Father: Oh, come on! Did you do anything fun? Son: Yeah, it was all fun. Before we played volleyball, we had taken some photographs. Father: Great! Did you do anything in the afternoon? Son: Oh, something interesting! After we had eaten lunch, we flew our kites. That was fantastic because we had made the kites ourselves!",
+          "questions": [
+            {
+              "id": "q10",
+              "type": "mcq",
+              "text": "What two activities did the son mention first?",
+              "options": [
+                { "text": "Playing volleyball and having a barbecue.", "isCorrect": true },
+                { "text": "Taking photos and flying kites.", "isCorrect": false },
+                { "text": "Eating lunch and making kites.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q11",
+              "type": "mcq",
+              "text": "What did they do BEFORE playing volleyball?",
+              "options": [
+                { "text": "They flew kites.", "isCorrect": false },
+                { "text": "They had a barbecue.", "isCorrect": false },
+                { "text": "They took photographs.", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q12",
+              "type": "ordering",
+              "text": "Put the activities in the correct order.",
+              "options": [
+                { "text": "Took photographs.", "isCorrect": 1 },
+                { "text": "Played volleyball.", "isCorrect": 2 },
+                { "text": "Ate lunch/had barbecue.", "isCorrect": 3 },
+                { "text": "Flew kites.", "isCorrect": 4 }
+              ]
+            },
+            {
+              "id": "q13",
+              "type": "mcq",
+              "text": "Why was flying kites fantastic?",
+              "options": [
+                { "text": "The weather was perfect.", "isCorrect": false },
+                { "text": "They had made the kites themselves.", "isCorrect": true },
+                { "text": "They were very expensive.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q14",
+              "type": "tf",
+              "text": "The father was not interested in hearing about fun activities.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q15",
+              "type": "gap",
+              "text": "Complete with Past Perfect: After we __ lunch, we flew kites.",
+              "options": [
+                { "text": "had eaten", "isCorrect": true },
+                { "text": "ate", "isCorrect": false },
+                { "text": "have eaten", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q16",
+              "type": "gap",
+              "text": "Complete with Past Perfect: The kites were special because we __ them ourselves.",
+              "options": [
+                { "text": "had made", "isCorrect": true },
+                { "text": "made", "isCorrect": false },
+                { "text": "make", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab3",
+      "title": "Conversation 3: The Restaurant",
+      "exercises": [
+        {
+          "id": "ex3",
+          "type": "comprehension",
+          "title": "Listen to Amir and Rasoul talking about a restaurant.",
+          "audio_text": "Amir: Why didn't you go to the new restaurant last night? Rasoul: We didn't want to. We had already tried the food there the weekend before. Amir: Really? Did you like the food? Rasoul: That was OK. We all ordered chicken with rice. I had never tasted their special sauce anywhere else. Amir: Was it pomegranate sauce? Rasoul: No, it wasn't. I had already tasted pomegranate sauce at home. Amir: Was it expensive? Rasoul: I think it was cheaper than the food we had tried in other restaurants.",
+          "questions": [
+            {
+              "id": "q17",
+              "type": "mcq",
+              "text": "Why didn't Rasoul go to the new restaurant last night?",
+              "options": [
+                { "text": "It was too expensive.", "isCorrect": false },
+                { "text": "He had already tried it the weekend before.", "isCorrect": true },
+                { "text": "He didn't like chicken.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q18",
+              "type": "mcq",
+              "text": "What did everyone order?",
+              "options": [
+                { "text": "Pomegranate sauce.", "isCorrect": false },
+                { "text": "Chicken with rice.", "isCorrect": true },
+                { "text": "Something expensive.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q19",
+              "type": "mcq",
+              "text": "What was special about the sauce for Rasoul?",
+              "options": [
+                { "text": "It was very spicy.", "isCorrect": false },
+                { "text": "He had never tasted it anywhere else.", "isCorrect": true },
+                { "text": "It was free.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q20",
+              "type": "tf",
+              "text": "The special sauce was pomegranate sauce.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q21",
+              "type": "mcq",
+              "text": "Where had Rasoul tasted pomegranate sauce before?",
+              "options": [
+                { "text": "At another restaurant.", "isCorrect": false },
+                { "text": "At home.", "isCorrect": true },
+                { "text": "He had never tasted it.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q22",
+              "type": "mcq",
+              "text": "How was the price according to Rasoul?",
+              "options": [
+                { "text": "More expensive than other places.", "isCorrect": false },
+                { "text": "Cheaper than other places.", "isCorrect": true },
+                { "text": "The same as other places.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q23",
+              "type": "gap",
+              "text": "Complete with Past Perfect: We __ already __ the food there.",
+              "options": [
+                { "text": "had / tried", "isCorrect": true },
+                { "text": "have / tried", "isCorrect": false },
+                { "text": "did / try", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q24",
+              "type": "open_ended",
+              "text": "Use 'had already' in a sentence about a past experience.",
+              "options": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab4",
+      "title": "Conversation 4: Thursday Plans",
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "comprehension",
+          "title": "Listen to Shila and Samira's conversation.",
+          "audio_text": "Shila: What did you do on Thursday? Samira: Oh! On Thursday, Yeganeh and Kiyana came over for dinner. We really missed you. Shila: Thanks. But you wanted to go to the museum of Holy Defense, didn't you? Samira: Oh! Yes. Before we got home, we'd gone to the museum. Shila: Was it the first time you went there? Samira: No, I had already been there once. Shila: Did your friends stay till midnight? Samira: No. After we had had dinner, their mothers arrived and took them home.",
+          "questions": [
+            {
+              "id": "q25",
+              "type": "mcq",
+              "text": "Who came over for dinner on Thursday?",
+              "options": [
+                { "text": "Shila.", "isCorrect": false },
+                { "text": "Yeganeh and Kiyana.", "isCorrect": true },
+                { "text": "Their mothers.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q26",
+              "type": "mcq",
+              "text": "Which museum did they plan to visit?",
+              "options": [
+                { "text": "The National Museum.", "isCorrect": false },
+                { "text": "The Museum of Holy Defense.", "isCorrect": true },
+                { "text": "The Art Museum.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q27",
+              "type": "ordering",
+              "text": "Put Samira's Thursday activities in order.",
+              "options": [
+                { "text": "Went to the museum.", "isCorrect": 1 },
+                { "text": "Got home / Friends came over.", "isCorrect": 2 },
+                { "text": "Had dinner.", "isCorrect": 3 },
+                { "text": "Friends' mothers arrived.", "isCorrect": 4 }
+              ]
+            },
+            {
+              "id": "q28",
+              "type": "tf",
+              "text": "It was Samira's first time at the museum.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q29",
+              "type": "mcq",
+              "text": "Why didn't the friends stay until midnight?",
+              "options": [
+                { "text": "They were tired.", "isCorrect": false },
+                { "text": "Their mothers came and took them home.", "isCorrect": true },
+                { "text": "Shila asked them to leave.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q30",
+              "type": "gap",
+              "text": "Complete: Before we got home, we __ to the museum.",
+              "options": [
+                { "text": "had gone", "isCorrect": true },
+                { "text": "went", "isCorrect": false },
+                { "text": "have gone", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q31",
+              "type": "gap",
+              "text": "Complete: No, I __ already __ there once.",
+              "options": [
+                { "text": "had / been", "isCorrect": true },
+                { "text": "have / been", "isCorrect": false },
+                { "text": "was / being", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab5",
+      "title": "Conversation 5: A Strange Night",
+      "exercises": [
+        {
+          "id": "ex5",
+          "type": "comprehension",
+          "title": "Listen to the story about a strange night.",
+          "audio_text": "Last night, I left work late at around 9 p.m. When I came out of the office, most people had already gone home. The street was very dark and quiet. I hadn't experienced such a thing before. While I was walking, a car pulled over. I looked at the driver. I was sure I had seen this man before. I wondered who can it be? He waved at me and came out of the car. He asked if he could drive me home. Suddenly, I remembered...",
+          "questions": [
+            {
+              "id": "q32",
+              "type": "mcq",
+              "text": "What time did the person leave work?",
+              "options": [
+                { "text": "Early afternoon.", "isCorrect": false },
+                { "text": "Around 9 p.m.", "isCorrect": true },
+                { "text": "At midnight.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q33",
+              "type": "mcq",
+              "text": "What was the street like?",
+              "options": [
+                { "text": "Crowded and noisy.", "isCorrect": false },
+                { "text": "Dark and quiet.", "isCorrect": true },
+                { "text": "Bright and busy.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q34",
+              "type": "tf",
+              "text": "The person often experienced quiet streets after work.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q35",
+              "type": "mcq",
+              "text": "What did the driver do first?",
+              "options": [
+                { "text": "He asked for directions.", "isCorrect": false },
+                { "text": "He waved at the person.", "isCorrect": true },
+                { "text": "He got out of the car immediately.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q36",
+              "type": "mcq",
+              "text": "How did the person feel about the driver's face?",
+              "options": [
+                { "text": "It was unfamiliar.", "isCorrect": false },
+                { "text": "He was sure he had seen him before.", "isCorrect": true },
+                { "text": "He was too scared to look.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q37",
+              "type": "mcq",
+              "text": "What did the driver offer?",
+              "options": [
+                { "text": "To ask for help.", "isCorrect": false },
+                { "text": "To drive him home.", "isCorrect": true },
+                { "text": "To give him money.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q38",
+              "type": "gap",
+              "text": "Complete: When I came out, most people __ already __ home.",
+              "options": [
+                { "text": "had / gone", "isCorrect": true },
+                { "text": "have / gone", "isCorrect": false },
+                { "text": "did / go", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q39",
+              "type": "open_ended",
+              "text": "How do you think the story ends? Who was the man? (Write 1-2 sentences)",
+              "options": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

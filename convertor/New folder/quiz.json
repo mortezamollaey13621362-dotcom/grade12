@@ -1,0 +1,101 @@
+{
+  "lessonId": 1,
+  "lessonTitle": "آشنایی و سلام و احوالپرسی",
+  "timeLimit": 2,
+  "totalQuestions": 588,
+  "questions": [
+    {
+      "id": 1,
+      "index": 1,
+      "word": "sense",
+      "level": "B1",
+      "phonetic": {
+        "us": "/sens/",
+        "uk": "/sens/"
+      },
+      "partOfSpeech": [
+        "noun"
+      ],
+      "persian": {
+        "main": "حس",
+        "short": "حس"
+      },
+      "meanings": [
+        {
+          "definition": {
+            "simple": "A feeling or understanding about something."
+          },
+          "persianDefinition": "یک احساس یا درک درباره چیزی.",
+          "example": {
+            "sentence": "She has a good sense of direction.",
+            "translation": "او حس جهت‌یابی خوبی دارد."
+          },
+          "synonyms": [
+            "feeling",
+            "awareness"
+          ],
+          "antonyms": [
+            "numbness",
+            "ignorance"
+          ]
+        }
+      ],
+      "audio": {
+        "us": "audio/vocab/sense-us.mp3",
+        "uk": "audio/vocab/sense-uk.mp3"
+      }
+    },
+    {
+    "id": 588,
+      "lessonId": 1,
+      "tabTitle": "مکالمه ۲: گفتگو با معلم",
+      "title": "درس اول: آشنایی (Introduction)",
+      "participants": [
+        {
+          "id": "p1",
+          "name": "Ali",
+          "role": "Student",
+          "avatar": "images/ali.png",
+          "side": "right"
+        },
+        {
+          "id": "p3",
+          "name": "Mr. Karimi",
+          "role": "Teacher",
+          "avatar": "images/teacher.png",
+          "side": "left"
+        }
+      ],
+      "lines": [
+        {
+          "id": 1,
+          "speakerId": "p3",
+          "textEn": "Good morning, Ali.",
+          "textFa": "صبح بخیر علی."
+        },
+        {
+          "id": 2,
+          "speakerId": "p1",
+          "textEn": "Good morning, Mr. Karimi. How are you?",
+          "textFa": "صبح بخیر آقای کریمی. حال شما چطور است؟"
+        },
+        {
+          "id": 3,
+          "speakerId": "p3",
+          "textEn": "Great, thanks!",
+          "textFa": "عالی، ممنون!"
+        }
+      ],
+      "keywords": [
+        {
+          "en": "Good morning",
+          "fa": "صبح بخیر"
+        }
+      ],
+      "tip": {
+        "type": "grammar",
+        "text": "برای خطاب کردن آقایان به صورت رسمی از Mr. به همراه نام خانوادگی استفاده می‌کنیم."
+      }
+    }
+  ]
+}

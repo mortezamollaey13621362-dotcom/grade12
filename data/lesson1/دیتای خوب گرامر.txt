@@ -1,0 +1,217 @@
+{
+  "title": "Grammar Foundations: Questions, Passive Voice, Tag Questions, Collocations, and Sentence Types",
+  "description": "این درس به بررسی مهم‌ترین ساختارهای گرامری سطح متوسط (B1–B2) می‌پردازد: انواع سوال‌ها، جملات مجهول، سوالات ضمیمه، همایندها (Collocations) و انواع جمله در انگلیسی.",
+  "topics": [
+    {
+      "id": "topic-questions",
+      "title": "Types of Questions",
+      "icon": "question-mark",
+      "description": "آشنایی با سوال‌های بله/خیر و سوال‌های Wh در زبان انگلیسی",
+      "sections": [
+        {
+          "id": "q-intro",
+          "type": "intro",
+          "text": "در زبان انگلیسی سوال‌ها به دو دسته اصلی تقسیم می‌شوند: سوال‌های بله/خیر و سوال‌هایی که با کلمات پرسشی ساخته می‌شوند."
+        },
+        {
+          "id": "q-text",
+          "type": "text",
+          "title": "Yes/No Questions",
+          "value": "برای ساخت سوال بله/خیر، معمولاً جای فاعل و فعل کمکی عوض می‌شود. اگر فعل کمکی وجود نداشته باشد از do/does/did استفاده می‌کنیم."
+        },
+        {
+          "id": "q-examples",
+          "type": "examples",
+          "title": "Examples",
+          "items": [
+            { "en": "Jack is an English teacher.", "fa": "جک معلم انگلیسی است." },
+            { "en": "Is Jack an English teacher?", "fa": "آیا جک معلم انگلیسی است؟" },
+            { "en": "Do you like coffee?", "fa": "آیا قهوه دوست داری؟" }
+          ]
+        },
+        {
+          "id": "q-wh",
+          "type": "text",
+          "title": "Wh-Questions",
+          "value": "این سوال‌ها با کلمات پرسشی مانند what, where, when, why, who, how ساخته می‌شوند و معمولاً ساختاری شبیه سوال بله/خیر دارند."
+        },
+        {
+          "id": "q-warning",
+          "type": "warning",
+          "title": "نکته مهم",
+          "severity": "medium",
+          "text": "اگر جمله فعل کمکی نداشته باشد، در سوال Wh نیز باید از do/does/did استفاده شود."
+        },
+        {
+          "id": "q-practice",
+          "type": "interactive",
+          "title": "تمرین",
+          "activity_type": "fill-in-the-blank",
+          "prompt": "جمله را سوالی کن.",
+          "base_sentence": "You work here.",
+          "hint": "از do استفاده کن.",
+          "solutions": ["Do you work here?"],
+          "explanation": "چون فعل کمکی نداریم، از do استفاده می‌کنیم."
+        }
+      ]
+    },
+    {
+      "id": "topic-passive",
+      "title": "Passive Voice",
+      "icon": "exchange",
+      "description": "کاربرد و ساخت جملات مجهول",
+      "sections": [
+        {
+          "id": "p-intro",
+          "type": "intro",
+          "text": "در جملات مجهول، عمل انجام‌شده مهم‌تر از انجام‌دهنده آن است."
+        },
+        {
+          "id": "p-text",
+          "type": "text",
+          "title": "Structure",
+          "value": "ساختار کلی: be + past participle. زمان فعل be مطابق زمان جمله معلوم تغییر می‌کند."
+        },
+        {
+          "id": "p-ex",
+          "type": "examples",
+          "title": "Examples",
+          "items": [
+            { "en": "I keep the butter in the fridge.", "fa": "من کره را در یخچال نگه می‌دارم." },
+            { "en": "The butter is kept in the fridge.", "fa": "کره در یخچال نگه داشته می‌شود." },
+            { "en": "My car was stolen last night.", "fa": "ماشین من دیشب دزدیده شد." }
+          ]
+        },
+        {
+          "id": "p-warning",
+          "type": "warning",
+          "title": "محدودیت",
+          "severity": "high",
+          "text": "زمان‌های حال کامل استمراری و گذشته کامل استمراری حالت مجهول ندارند."
+        },
+        {
+          "id": "p-practice",
+          "type": "interactive",
+          "title": "تمرین تبدیل",
+          "activity_type": "transformation",
+          "prompt": "جمله را به مجهول تبدیل کن.",
+          "base_sentence": "They built the house in 2010.",
+          "hint": "فاعل را حذف کن و از was built استفاده کن.",
+          "solutions": ["The house was built in 2010."],
+          "explanation": "مفعول به جای فاعل می‌آید و فعل به حالت مجهول تغییر می‌کند."
+        }
+      ]
+    },
+    {
+      "id": "topic-tag",
+      "title": "Tag Questions",
+      "icon": "tag",
+      "description": "سوالات کوتاه برای تأیید یا اطمینان",
+      "sections": [
+        {
+          "id": "t-intro",
+          "type": "intro",
+          "text": "سوالات ضمیمه در انتهای جمله خبری می‌آیند و برای گرفتن تأیید استفاده می‌شوند."
+        },
+        {
+          "id": "t-text",
+          "type": "text",
+          "title": "Rule",
+          "value": "اگر جمله مثبت باشد، سوال منفی می‌آید و بالعکس. همیشه از ضمیر فاعلی استفاده می‌شود."
+        },
+        {
+          "id": "t-ex",
+          "type": "examples",
+          "title": "Examples",
+          "items": [
+            { "en": "He is a student, isn’t he?", "fa": "او دانش‌آموز است، نه؟" },
+            { "en": "They don’t live here, do they?", "fa": "آن‌ها اینجا زندگی نمی‌کنند، درست است؟" },
+            { "en": "Let’s go out, shall we?", "fa": "بیا بیرون برویم، موافقی؟" }
+          ]
+        },
+        {
+          "id": "t-practice",
+          "type": "interactive",
+          "title": "تمرین",
+          "activity_type": "multiple-choice",
+          "prompt": "Tag مناسب را انتخاب کن.",
+          "base_sentence": "She can drive, ___?",
+          "hint": "جمله مثبت است.",
+          "solutions": ["can’t she"],
+          "explanation": "جمله مثبت است، پس سوال منفی می‌آید."
+        }
+      ]
+    },
+    {
+      "id": "topic-collocation",
+      "title": "Collocations",
+      "icon": "link",
+      "description": "همایندهای رایج در زبان انگلیسی",
+      "sections": [
+        {
+          "id": "c-intro",
+          "type": "intro",
+          "text": "همایندها ترکیب‌هایی هستند که به‌طور طبیعی با هم استفاده می‌شوند."
+        },
+        {
+          "id": "c-text",
+          "type": "text",
+          "title": "Common Verbs",
+          "value": "افعالی مانند do, make, take همایندهای مشخصی دارند که باید به صورت ترکیبی یاد گرفته شوند."
+        },
+        {
+          "id": "c-ex",
+          "type": "examples",
+          "title": "Examples",
+          "items": [
+            { "en": "do homework", "fa": "انجام تکالیف" },
+            { "en": "make a decision", "fa": "تصمیم گرفتن" },
+            { "en": "take a break", "fa": "استراحت کردن" }
+          ]
+        },
+        {
+          "id": "c-warning",
+          "type": "warning",
+          "title": "اشتباه رایج",
+          "severity": "medium",
+          "text": "ترجمه تحت‌اللفظی باعث استفاده نادرست از collocation می‌شود."
+        },
+        {
+          "id": "c-practice",
+          "type": "interactive",
+          "title": "تمرین",
+          "activity_type": "fill-in-the-blank",
+          "prompt": "فعل مناسب را انتخاب کن.",
+          "base_sentence": "___ a decision",
+          "hint": "از افعال رایج استفاده کن.",
+          "solutions": ["make"],
+          "explanation": "تصمیم گرفتن با make می‌آید نه do."
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "title": "Final Grammar Quiz",
+    "time_limit_seconds": 300,
+    "total_points": 50,
+    "results_categories": [
+      { "range": "0-50", "title": "Needs Improvement", "message": "بهتر است درس را دوباره مرور کنی." },
+      { "range": "51-80", "title": "Good", "message": "سطح قابل قبولی داری." },
+      { "range": "81-100", "title": "Excellent", "message": "تسلط عالی بر گرامر." }
+    ],
+    "questions": [
+      {
+        "question": "The house ___ cleaned yesterday.",
+        "options": ["is", "was", "has", "had"],
+        "answer": "was",
+        "points": 10
+      },
+      {
+        "question": "She likes tea, ___?",
+        "options": ["does she", "doesn’t she", "is she", "isn’t she"],
+        "answer": "doesn’t she",
+        "points": 10
+      }
+    ]
+  }
+}

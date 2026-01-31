@@ -1,0 +1,812 @@
+{
+  "lessonId": 1,
+  "lessonTitle": "درس ۱: آشنایی با زبان انگلیسی پیشرفته",
+  "timeLimit": 25,
+  "totalQuestions": 25,
+  "questions": [
+    {
+      "id": 1,
+      "index": 1,
+      "word": "ambition",
+      "level": "B2",
+      "phonetic": {
+        "us": "/æmˈbɪʃn/",
+        "uk": "/æmˈbɪʃn/"
+      },
+      "partOfSpeech": [
+        "noun"
+      ],
+      "persian": {
+        "main": "امیدواری",
+        "short": "امید"
+      },
+      "meanings": [
+        {
+          "definition": {
+            "simple": "A strong desire to achieve something."
+          },
+          "persianDefinition": "تمایل قوی برای دستیابی به چیزی.",
+          "example": {
+            "sentence": "Her ambition is to become a doctor.",
+            "translation": "امیدواری او این است که پزشک شود."
+          },
+          "synonyms": [
+            "goal",
+            "aspiration"
+          ],
+          "antonyms": [
+            "lack of motivation",
+            "indifference"
+          ]
+        }
+      ],
+      "audio": {
+        "us": "audio/vocab/ambition-us.mp3",
+        "uk": "audio/vocab/ambition-uk.mp3"
+      },
+      "category": "Vocabulary"
+    },
+    {
+      "id": 2,
+      "index": 2,
+      "word": "dilemma",
+      "level": "C1",
+      "phonetic": {
+        "us": "/dɪˈlɛmə/",
+        "uk": "/dɪˈlɛmə/"
+      },
+      "partOfSpeech": [
+        "noun"
+      ],
+      "persian": {
+        "main": "گزینه‌ی سخت",
+        "short": "گزینه سخت"
+      },
+      "meanings": [
+        {
+          "definition": {
+            "simple": "A situation where you have to choose between two equally bad options."
+          },
+          "persianDefinition": "موقعیتی که باید بین دو گزینه نامطلوب انتخاب کنید.",
+          "example": {
+            "sentence": "He faced a dilemma: stay with his family or pursue his career.",
+            "translation": "او با یک گزینه سخت روبرو شد: با خانواده خود بماند یا به دنبال شغل خود بروید."
+          },
+          "synonyms": [
+            "predicament",
+            "conundrum"
+          ],
+          "antonyms": [
+            "easy choice",
+            "simple decision"
+          ]
+        }
+      ],
+      "audio": {
+        "us": "audio/vocab/dilemma-us.mp3",
+        "uk": "audio/vocab/dilemma-uk.mp3"
+      },
+      "category": "Vocabulary"
+    },
+    {
+      "id": 3,
+      "index": 3,
+      "word": "resilience",
+      "level": "B2",
+      "phonetic": {
+        "us": "/rɪˈzɪliəns/",
+        "uk": "/rɪˈzɪliəns/"
+      },
+      "partOfSpeech": [
+        "noun"
+      ],
+      "persian": {
+        "main": "تسلیم نشدنی بودن",
+        "short": "تسلیم نشدنی"
+      },
+      "meanings": [
+        {
+          "definition": {
+            "simple": "The ability to recover quickly from difficulties."
+          },
+          "persianDefinition": "توانایی بازگشت سریع از مشکلات.",
+          "example": {
+            "sentence": "Her resilience helped her overcome the challenges.",
+            "translation": "تسلیم نشدنی‌اش به او کمک کرد تا چالش‌ها را غلبه کند."
+          },
+          "synonyms": [
+            "strength",
+            "endurance"
+          ],
+          "antonyms": [
+            "fragility",
+            "weakness"
+          ]
+        }
+      ],
+      "audio": {
+        "us": "audio/vocab/resilience-us.mp3",
+        "uk": "audio/vocab/resilience-uk.mp3"
+      },
+      "category": "Vocabulary"
+    },
+    {
+      "id": 4,
+      "index": 4,
+      "word": "sustainable",
+      "level": "C1",
+      "phonetic": {
+        "us": "/səˈsteɪnəbəl/",
+        "uk": "/səˈsteɪnəbəl/"
+      },
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "persian": {
+        "main": "پایدار",
+        "short": "پایدار"
+      },
+      "meanings": [
+        {
+          "definition": {
+            "simple": "Able to be maintained at a certain rate or level."
+          },
+          "persianDefinition": "توانایی حفظ در سطح مشخص.",
+          "example": {
+            "sentence": "We need sustainable development for the future.",
+            "translation": "ما به توسعه پایدار برای آینده نیاز داریم."
+          },
+          "synonyms": [
+            "enduring",
+            "lasting"
+          ],
+          "antonyms": [
+            "temporary",
+            "short-lived"
+          ]
+        }
+      ],
+      "audio": {
+        "us": "audio/vocab/sustainable-us.mp3",
+        "uk": "audio/vocab/sustainable-uk.mp3"
+      },
+      "category": "Vocabulary"
+    },
+    {
+      "id": 5,
+      "index": 5,
+      "word": "consequence",
+      "level": "B1",
+      "phonetic": {
+        "us": "/ˈkɒnsɪkwəns/",
+        "uk": "/ˈkɒnsɪkwəns/"
+      },
+      "partOfSpeech": [
+        "noun"
+      ],
+      "persian": {
+        "main": "نتیجه",
+        "short": "نتیجه"
+      },
+      "meanings": [
+        {
+          "definition": {
+            "simple": "An effect or result of an action or condition."
+          },
+          "persianDefinition": "نتیجه یا اثر یک اقدام یا شرایط.",
+          "example": {
+            "sentence": "The consequence of his actions was severe.",
+            "translation": "نتیجه اقداماتش شدید بود."
+          },
+          "synonyms": [
+            "outcome",
+            "result"
+          ],
+          "antonyms": [
+            "cause",
+            "origin"
+          ]
+        }
+      ],
+      "audio": {
+        "us": "audio/vocab/consequence-us.mp3",
+        "uk": "audio/vocab/consequence-uk.mp3"
+      },
+      "category": "Vocabulary"
+    },
+    {
+      "id": 6,
+      "index": 6,
+      "type": "grammar",
+      "question": "Which sentence is grammatically correct?",
+      "options": [
+        "She don't like apples.",
+        "She doesn't like apples.",
+        "She not like apples.",
+        "She likes not apples."
+      ],
+      "correct": 1,
+      "explanation": "The correct form of the verb 'to like' in third person singular is 'She doesn't like'.",
+      "explanationFa": "فرم صحیح فعل 'to like' در شخص سوم مفرد 'She doesn't like' است.",
+      "category": "Grammar"
+    },
+    {
+      "id": 7,
+      "index": 7,
+      "type": "grammar",
+      "question": "Choose the correct past tense form of 'go'.",
+      "options": [
+        "goed",
+        "went",
+        "gone",
+        "going"
+      ],
+      "correct": 1,
+      "explanation": "The past tense of 'go' is 'went', not 'goed'.",
+      "explanationFa": "گذشته فعل 'go' 'went' است، نه 'goed'.",
+      "category": "Grammar"
+    },
+    {
+      "id": 8,
+      "index": 8,
+      "type": "grammar",
+      "question": "Which sentence uses the present perfect correctly?",
+      "options": [
+        "I have seen that movie.",
+        "I saw that movie yesterday.",
+        "I see that movie last week.",
+        "I will see that movie."
+      ],
+      "correct": 0,
+      "explanation": "Present perfect is used for actions that happened at an unspecified time before now.",
+      "explanationFa": "گذشته کامل برای افعالی که در زمان نامشخصی قبل از حال انجام شده‌اند استفاده می‌شود.",
+      "category": "Grammar"
+    },
+    {
+      "id": 9,
+      "index": 9,
+      "type": "conversation",
+      "tabTitle": "مکالمه ۱: درباره سفر",
+      "title": "مکالمه در هواپیما",
+      "participants": [
+        {
+          "id": "p1",
+          "name": "Sarah",
+          "role": "Passenger",
+          "avatar": "images/sarah.png",
+          "side": "right"
+        },
+        {
+          "id": "p2",
+          "name": "Flight Attendant",
+          "role": "Crew",
+          "avatar": "images/attendant.png",
+          "side": "left"
+        }
+      ],
+      "lines": [
+        {
+          "id": 1,
+          "speakerId": "p2",
+          "textEn": "Good morning, ma'am. How can I assist you?",
+          "textFa": "صبح بخیر خانم. چگونه می‌توانم به شما کمک کنم؟"
+        },
+        {
+          "id": 2,
+          "speakerId": "p1",
+          "textEn": "I'm looking for a window seat. Do you have any available?",
+          "textFa": "من به دنبال صندلی کنار پنجره هستم. آیا در دسترس هست؟"
+        },
+        {
+          "id": 3,
+          "speakerId": "p2",
+          "textEn": "Yes, we have one available in row 12.",
+          "textFa": "بله، یکی در ردیف ۱۲ در دسترس است."
+        }
+      ],
+      "keywords": [
+        {
+          "en": "window seat",
+          "fa": "صندلی کنار پنجره"
+        }
+      ],
+      "question": "What is the passenger looking for?",
+      "options": [
+        "An aisle seat",
+        "A window seat",
+        "A seat near the bathroom",
+        "A seat with extra legroom"
+      ],
+      "correct": 1,
+      "explanation": "The passenger specifically asked for a window seat.",
+      "explanationFa": "مسافر به طور خاص به دنبال صندلی کنار پنجره بود.",
+      "category": "Conversation"
+    },
+    {
+      "id": 10,
+      "index": 10,
+      "type": "conversation",
+      "tabTitle": "مکالمه ۲: در رستوران",
+      "title": "سفارش غذا",
+      "participants": [
+        {
+          "id": "p1",
+          "name": "John",
+          "role": "Customer",
+          "avatar": "images/john.png",
+          "side": "right"
+        },
+        {
+          "id": "p2",
+          "name": "Waiter",
+          "role": "Staff",
+          "avatar": "images/waiter.png",
+          "side": "left"
+        }
+      ],
+      "lines": [
+        {
+          "id": 1,
+          "speakerId": "p1",
+          "textEn": "Can I have the menu, please?",
+          "textFa": "لطفاً منو را بدهید."
+        },
+        {
+          "id": 2,
+          "speakerId": "p2",
+          "textEn": "Of course. Here you go.",
+          "textFa": "البته. اینجا است."
+        },
+        {
+          "id": 3,
+          "speakerId": "p1",
+          "textEn": "I'd like to order the steak.",
+          "textFa": "می‌خواهم استیک best را سفارش دهم."
+        }
+      ],
+      "keywords": [
+        {
+          "en": "order",
+          "fa": "سفارش"
+        }
+      ],
+      "question": "What does the customer want to order?",
+      "options": [
+        "Soup",
+        "Salad",
+        "Steak",
+        "Pasta"
+      ],
+      "correct": 2,
+      "explanation": "The customer specifically said, 'I'd like to order the steak.'",
+      "explanationFa": "مشتری به طور خاص گفت: 'می‌خواهم استیک را سفارش دهم.'",
+      "category": "Conversation"
+    },
+    {
+      "id": 11,
+      "index": 11,
+      "type": "listening",
+      "question": "What is the main topic of the audio?",
+      "options": [
+        "Travel plans",
+        "Weather forecast",
+        "Job interview",
+        "Restaurant menu"
+      ],
+      "correct": 0,
+      "explanation": "The audio discusses travel plans for a vacation.",
+      "explanationFa": "صدا درباره برنامه‌های سفر برای تعطیلات صحبت می‌کند.",
+      "category": "Listening"
+    },
+    {
+      "id": 12,
+      "index": 12,
+      "type": "listening",
+      "question": "How many people are going on the trip?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correct": 1,
+      "explanation": "The speaker mentions, 'My sister and I are going.'",
+      "explanationFa": "گوینده می‌گوید: 'خواهرم و من می‌رویم.'",
+      "category": "Listening"
+    },
+    {
+      "id": 13,
+      "index": 13,
+      "type": "reading",
+      "question": "What is the author's main argument?",
+      "options": [
+        "Technology is harmful to society.",
+        "Technology improves quality of life.",
+        "Technology should be regulated.",
+        "Technology is neutral."
+      ],
+      "correct": 1,
+      "explanation": "The passage states, 'Technology has significantly improved our quality of life.'",
+      "explanationFa": "متن می‌گوید: 'فناوری به طور قابل توجهی کیفیت زندگی ما را بهبود بخشیده است.'",
+      "category": "Reading"
+    },
+    {
+      "id": 14,
+      "index": 14,
+      "type": "reading",
+      "question": "What does the word 'sustainable' mean in the passage?",
+      "options": [
+        "Temporary",
+        "Enduring",
+        "Expensive",
+        "Complex"
+      ],
+      "correct": 1,
+      "explanation": "The passage defines 'sustainable' as 'able to be maintained over time.'",
+      "explanationFa": "متن تعریف 'پایدار' را به عنوان 'توانایی حفظ در طول زمان' تعریف می‌کند.",
+      "category": "Reading"
+    },
+    {
+      "id": 15,
+      "index": 15,
+      "type": "grammar",
+      "question": "Which sentence uses the passive voice correctly?",
+      "options": [
+        "The book was written by John.",
+        "John wrote the book.",
+        "The book is writing by John.",
+        "John is writing the book."
+      ],
+      "correct": 0,
+      "explanation": "Passive voice: 'The book was written by John.'",
+      "explanationFa": "صوت مجهول: 'کتاب توسط جان نوشته شد.'",
+      "category": "Grammar"
+    },
+    {
+      "id": 16,
+      "index": 16,
+      "type": "conversation",
+      "tabTitle": "مکالمه ۳: در کلاس",
+      "title": "بحث درباره پروژه",
+      "participants": [
+        {
+          "id": "p1",
+          "name": "Alex",
+          "role": "Student",
+          "avatar": "images/alex.png",
+          "side": "right"
+        },
+        {
+          "id": "p2",
+          "name": "Teacher",
+          "role": "Instructor",
+          "avatar": "images/teacher.png",
+          "side": "left"
+        }
+      ],
+      "lines": [
+        {
+          "id": 1,
+          "speakerId": "p1",
+          "textEn": "I'm having trouble with the research part.",
+          "textFa": "در بخش تحقیق مشکل دارم."
+        },
+        {
+          "id": 2,
+          "speakerId": "p2",
+          "textEn": "Let me help you. What specific problem do you have?",
+          "textFa": "بگذارید به شما کمک کنم. مشکل خاص شما چیست؟"
+        },
+        {
+          "id": 3,
+          "speakerId": "p1",
+          "textEn": "I can't find enough sources.",
+          "textFa": "من نمی‌توانم منابع کافی پیدا کنم."
+        }
+      ],
+      "keywords": [
+        {
+          "en": "research",
+          "fa": "تحقیق"
+        }
+      ],
+      "question": "What is the student's problem?",
+      "options": [
+        "He doesn't understand the topic.",
+        "He can't find enough sources.",
+        "He needs help with the presentation.",
+        "He forgot the deadline."
+      ],
+      "correct": 1,
+      "explanation": "The student says, 'I can't find enough sources.'",
+      "explanationFa": "دانش‌آموز می‌گوید: 'من نمی‌توانم منابع کافی پیدا کنم.'",
+      "category": "Conversation"
+    },
+    {
+      "id": 17,
+      "index": 17,
+      "type": "grammar",
+      "question": "Choose the correct comparative form of 'good'.",
+      "options": [
+        "gooder",
+        "better",
+        "best",
+        "more good"
+      ],
+      "correct": 1,
+      "explanation": "The comparative form of 'good' is 'better'.",
+      "explanationFa": "فرم مقایسه‌ای 'good' 'better' است.",
+      "category": "Grammar"
+    },
+    {
+      "id": 18,
+      "index": 18,
+      "type": "listening",
+      "question": "What time does the flight depart?",
+      "options": [
+        "8:00 AM",
+        "9:30 AM",
+        "10:15 AM",
+        "11:00 AM"
+      ],
+      "correct": 2,
+      "explanation": "The audio states, 'The flight departs at 10:15 AM.'",
+      "explanationFa": "صدا می‌گوید: 'پرواز ساعت ۱۰:۱۵ صبح پرواز می‌کند.'",
+      "category": "Listening"
+    },
+    {
+      "id": 19,
+      "index": 19,
+      "type": "reading",
+      "question": "What is the author's opinion about technology?",
+      "options": [
+        "It is dangerous.",
+        "It is neutral.",
+        "It is beneficial.",
+        "It is unnecessary."
+      ],
+      "correct": 2,
+      "explanation": "The passage states, 'Technology has brought many benefits to society.'",
+      "explanationFa": "متن می‌گوید: 'فناوری بسیاری از مزایایی را به جامعه آورده است.'",
+      "category": "Reading"
+    },
+    {
+      "id": 20,
+      "index": 20,
+      "type": "conversation",
+      "tabTitle": "مکالمه ۴: در بازار",
+      "title": "خرید لوازم",
+      "participants": [
+        {
+          "id": "p1",
+          "name": "Maria",
+          "role": "Customer",
+          "avatar": "images/maria.png",
+          "side": "right"
+        },
+        {
+          "id": "p2",
+          "name": "Shopkeeper",
+          "role": "Vendor",
+          "avatar": "images/shopkeeper.png",
+          "side": "left"
+        }
+      ],
+      "lines": [
+        {
+          "id": 1,
+          "speakerId": "p1",
+          "textEn": "How much is this bag?",
+          "textFa": "این کیف چقدر است؟"
+        },
+        {
+          "id": 2,
+          "speakerId": "p2",
+          "textEn": "It's $25.",
+          "textFa": "۲۵ دلار است."
+        },
+        {
+          "id": 3,
+          "speakerId": "p1",
+          "textEn": "Can I pay with a credit card?",
+          "textFa": "آیا می‌توانم با کارت اعتباری پرداخت کنم؟"
+        }
+      ],
+      "keywords": [
+        {
+          "en": "credit card",
+          "fa": "کارت اعتباری"
+        }
+      ],
+      "question": "What does the customer ask about?",
+      "options": [
+        "The color of the bag",
+        "The price of the bag",
+        "Payment method",
+        "The material of the bag"
+      ],
+      "correct": 2,
+      "explanation": "The customer asks, 'Can I pay with a credit card?'",
+      "explanationFa": "مشتری می‌پرسد: 'آیا می‌توانم با کارت اعتباری پرداخت کنم؟'",
+      "category": "Conversation"
+    },
+    {
+      "id": 21,
+      "index": 21,
+      "type": "vocabulary",
+      "word": "innovative",
+      "level": "C1",
+      "phonetic": {
+        "us": "/ɪnˈoʊvətɪv/",
+        "uk": "/ɪnˈəʊvətɪv/"
+      },
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "persian": {
+        "main": "نوآورانه",
+        "short": "نوآور"
+      },
+      "meanings": [
+        {
+          "definition": {
+            "simple": "Introducing new ideas or methods."
+          },
+          "persianDefinition": "معرفی ایده‌ها یا روش‌های جدید.",
+          "example": {
+            "sentence": "The company is known for its innovative products.",
+            "translation": "شرکت به دلیل محصولات نوآورانه‌اش شناخته شده است."
+          },
+          "synonyms": [
+            "creative",
+            "original"
+          ],
+          "antonyms": [
+            "traditional",
+            "conventional"
+          ]
+        }
+      ],
+      "audio": {
+        "us": "audio/vocab/innovative-us.mp3",
+        "uk": "audio/vocab/innovative-uk.mp3"
+      },
+      "category": "Vocabulary"
+    },
+    {
+      "id": 22,
+      "index": 22,
+      "type": "vocabulary",
+      "word": "collaborate",
+      "level": "B2",
+      "phonetic": {
+        "us": "/kəˈlæbəreɪt/",
+        "uk": "/kəˈlæbəreɪt/"
+      },
+      "partOfSpeech": [
+        "verb"
+      ],
+      "persian": {
+        "main": "همکاری کردن",
+        "short": "همکاری"
+      },
+      "meanings": [
+        {
+          "definition": {
+            "simple": "Work together with someone to achieve a goal."
+          },
+          "persianDefinition": "با کسی همکاری کردن برای دستیابی به هدف.",
+          "example": {
+            "sentence": "The team collaborated to finish the project on time.",
+            "translation": "تیم برای اتمام پروژه در زمان مقرر با هم همکاری کردند."
+          },
+          "synonyms": [
+            "cooperate",
+            "partner"
+          ],
+          "antonyms": [
+            "compete",
+            "conflict"
+          ]
+        }
+      ],
+      "audio": {
+        "us": "audio/vocab/collaborate-us.mp3",
+        "uk": "audio/vocab/collaborate-uk.mp3"
+      },
+      "category": "Vocabulary"
+    },
+    {
+      "id": 23,
+      "index": 23,
+      "type": "grammar",
+      "question": "Which sentence is in the future perfect tense?",
+      "options": [
+        "She will go to school.",
+        "She will have gone to school.",
+        "She goes to school.",
+        "She went to school."
+      ],
+      "correct": 1,
+      "explanation": "Future perfect: 'She will have gone to school.'",
+      "explanationFa": "گذشته آینده: 'او به مدرسه رفته خواهد بود.'",
+      "category": "Grammar"
+    },
+    {
+      "id": 24,
+      "index": 24,
+      "type": "conversation",
+      "tabTitle": "مکالمه ۵: در کافه",
+      "title": "صحبت درباره سلامت",
+      "participants": [
+        {
+          "id": "p1",
+          "name": "Emma",
+          "role": "Customer",
+          "avatar": "images/emma.png",
+          "side": "right"
+        },
+        {
+          "id": "p2",
+          "name": "Barista",
+          "role": "Staff",
+          "avatar": "images/barista.png",
+          "side": "left"
+        }
+      ],
+      "lines": [
+        {
+          "id": 1,
+          "speakerId": "p1",
+          "textEn": "Do you have any healthy drink options?",
+          "textFa": "آیا گزینه‌های سالم دارید؟"
+        },
+        {
+          "id": 2,
+          "speakerId": "p2",
+          "textEn": "Yes, we have green smoothies and herbal teas.",
+          "textFa": "بله، ما سوپریم سبز و چای‌های گیاهی داریم."
+        },
+        {
+          "id": 3,
+          "speakerId": "p1",
+          "textEn": "That sounds great!",
+          "textFa": "این خیلی خوب به نظر می‌رسد!"
+        }
+      ],
+      "keywords": [
+        {
+          "en": "healthy drink",
+          "fa": "نوشیدنی سالم"
+        }
+      ],
+      "question": "What does the customer ask for?",
+      "options": [
+        "Coffee",
+        "Healthy drink",
+        "Tea",
+        "Juice"
+      ],
+      "correct": 1,
+      "explanation": "The customer asks, 'Do you have any healthy drink options?'",
+      "explanationFa": "مشتری می‌پرسد: 'آیا گزینه‌های سالم دارید؟'",
+      "category": "Conversation"
+    },
+    {
+      "id": 25,
+      "index": 25,
+      "type": "reading",
+      "question": "What is the main idea of the passage?",
+      "options": [
+        "The importance of exercise.",
+        "The benefits of a balanced diet.",
+        "The role of technology in education.",
+        "The impact of social media on youth."
+      ],
+      "correct": 1,
+      "explanation": "The passage focuses on the benefits of a balanced diet for health.",
+      "explanationFa": "متن بر مزایای رژیم غذایی متعادل برای سلامت تمرکز دارد.",
+      "category": "Reading"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+/* css/audio-system.css */
+
+.audio-player {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    color: white;
+    
+    /* اصلاح جهت برای نمایش صحیح تایمر و دکمه‌ها */
+    direction: ltr !important; 
+    text-align: left;
+}
+
+.audio-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    
+    /* اطمینان از چیدمان صحیح افقی */
+    flex-direction: row; 
+    align-items: center;
+}
+
+.audio-btn {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    /* فیکس فونت و جهت متن داخل دکمه */
+    font-family: inherit; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}

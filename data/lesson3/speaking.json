@@ -1,0 +1,18 @@
+{
+  "id": "g7_l1_speaking",
+  "title": "تلفظ کلمات",
+  "exercises": [
+    {
+      "id": "sp1",
+      "type": "pronunciation",
+      "word": "manager",
+      "targetText": "manager",
+      "phonetic": "/ˈmæn.ɪ.dʒər/",
+      "hint": "تلفظ: مَن-ای-جر",
+      "audioModel": "audio/lesson1/words/manager_standard.mp3",
+      "minScore": 70,
+      "attempts": 3
+    }
+  ],
+  "tips": ["آرام صحبت کن", "به تلفظ دقت کن"]
+}

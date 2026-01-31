@@ -1,0 +1,113 @@
+[
+  {
+    "id": "g1",
+    "lesson_id": 1,
+
+    "title": {
+      "en": "Simple Present Tense",
+      "fa": "زمان حال ساده"
+    },
+
+    "level": "Basic",
+
+    "standard": {
+      "cefr_level": "A1",
+      "school_grade": 7,
+      "curriculum_ref": "Communicative Language Teaching"
+    },
+
+    "learning_objectives": [
+      {
+        "en": "Students will be able to talk about daily routines and habits.",
+        "fa": "دانش‌آموز می‌تواند درباره عادت‌ها و کارهای روزمره صحبت کند."
+      }
+    ],
+
+    "sections": [
+      {
+        "type": "activation",
+        "content": {
+          "fa": "فکر کن هر روز چه کارهایی انجام می‌دهی.",
+          "en": "Think about what you do every day."
+        }
+      },
+      {
+        "type": "explanation",
+        "content": {
+          "fa": "ما از زمان حال ساده برای بیان عادت‌ها و حقایق کلی استفاده می‌کنیم.",
+          "en": "We use the simple present tense to talk about habits and general facts."
+        }
+      },
+      {
+        "type": "form",
+        "content": "Subject + Verb (base form) + ..."
+      },
+      {
+        "type": "usage",
+        "content": {
+          "fa": "برای عادت‌ها، برنامه‌های روزانه و حقایق علمی",
+          "en": "For habits, daily routines, and general truths"
+        }
+      },
+      {
+        "type": "examples",
+        "context": {
+          "en": "Ali's daily life",
+          "fa": "زندگی روزانه علی"
+        },
+        "items": [
+          {
+            "en": "I play football every day.",
+            "fa": "من هر روز فوتبال بازی می‌کنم.",
+            "audio": "audio/grammar/g1_ex1.mp3"
+          },
+          {
+            "en": "She works in a bank.",
+            "fa": "او در یک بانک کار می‌کند.",
+            "highlight": "works"
+          }
+        ]
+      },
+      {
+        "type": "common_error",
+        "wrong": "She go to school every day.",
+        "correct": "She goes to school every day.",
+        "reason": {
+          "fa": "برای سوم شخص مفرد فعل s می‌گیرد.",
+          "en": "Third person singular takes -s."
+        }
+      },
+      {
+        "type": "warning",
+        "title": {
+          "fa": "نکته مهم!",
+          "en": "Important!"
+        },
+        "content": {
+          "fa": "برای He، She و It به آخر فعل s یا es اضافه می‌کنیم.",
+          "en": "Add -s or -es to the verb for He, She, and It."
+        }
+      }
+    ],
+
+    "quiz": [
+      {
+        "type": "multiple_choice",
+        "skill": "grammar",
+        "blooms_level": "apply",
+        "question": "She _____ to school every day.",
+        "options": ["go", "goes", "going"],
+        "correct_index": 1,
+        "explanation": {
+          "fa": "فاعل She است، پس فعل s می‌گیرد.",
+          "en": "The subject is She, so the verb takes -s."
+        }
+      }
+    ],
+
+    "spiral": {
+      "previous": [],
+      "next": ["g2_present_continuous"]
+    }
+  }
+]

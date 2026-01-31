@@ -1,0 +1,33 @@
+{
+  "appSettings": {
+    "audio": {
+      "enabled": true,
+      "volume": 0.8,
+      "speed": "normal",
+      "accent": "us"
+    },
+    "display": {
+      "fontSize": "medium",
+      "theme": "light",
+      "showTranslations": true,
+      "showPhonetics": true
+    },
+    "learning": {
+      "dailyGoal": 5,
+      "reviewEnabled": true,
+      "difficulty": "adaptive",
+      "notifications": true
+    },
+    "accessibility": {
+      "highContrast": false,
+      "largerText": false,
+      "screenReader": false
+    }
+  },
+  "userPreferences": {
+    "autoPlayAudio": true,
+    "showHints": true,
+    "instantFeedback": true,
+    "progressTracking": true
+  }
+}

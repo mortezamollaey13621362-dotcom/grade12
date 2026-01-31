@@ -1,0 +1,202 @@
+[
+  {
+    "id": "word_001",
+    "word": "abandon",
+    "phonetic": "/əˈbændən/",
+    "partOfSpeech": "verb",
+    "persianMeaning": "رها کردن، ترک کردن",
+    "meanings": [
+      {
+        "persian": "رها کردن، ترک کردن",
+        "level": "B2",
+        "example": "They had to abandon their car in the snow.",
+        "exampleTranslation": "آنها مجبور شدند ماشین خود را در برف رها کنند."
+      },
+      {
+        "persian": "دست کشیدن از چیزی",
+        "level": "B2",
+        "example": "The company abandoned the project due to lack of funds.",
+        "exampleTranslation": "شرکت به دلیل کمبود بودجه از پروژه دست کشید."
+      }
+    ],
+    "wordFamily": {
+      "noun": "abandonment",
+      "adjective": "abandoned",
+      "adverb": "abandonedly"
+    },
+    "synonyms": ["desert", "leave", "forsake", "quit"],
+    "antonyms": ["keep", "maintain", "continue", "stay"],
+    "usageNotes": [
+      "معمولاً به صورت منفی استفاده می‌شود",
+      "می‌تواند برای اشیا یا افراد به کار رود",
+      "در انگلیسی رسمی و غیررسمی کاربرد دارد"
+    ],
+    "collocations": ["abandon ship", "abandon hope", "abandon plan"],
+    "reviewStats": {
+      "reviewCount": 0,
+      "correctCount": 0,
+      "incorrectCount": 0,
+      "lastReviewed": null,
+      "nextReview": null
+    }
+  },
+  {
+    "id": "word_002",
+    "word": "ability",
+    "phonetic": "/əˈbɪləti/",
+    "partOfSpeech": "noun",
+    "persianMeaning": "توانایی، قابلیت",
+    "meanings": [
+      {
+        "persian": "توانایی انجام کاری",
+        "level": "A2",
+        "example": "She has the ability to learn languages quickly.",
+        "exampleTranslation": "او توانایی یادگیری سریع زبان‌ها را دارد."
+      },
+      {
+        "persian": "مهارت، استعداد",
+        "level": "B1",
+        "example": "His musical ability is impressive.",
+        "exampleTranslation": "توانایی موسیقایی او تحسین‌برانگیز است."
+      }
+    ],
+    "wordFamily": {
+      "adjective": "able",
+      "adverb": "ably",
+      "verb": "enable"
+    },
+    "synonyms": ["capability", "capacity", "skill", "talent"],
+    "antonyms": ["inability", "incapacity", "disability"],
+    "usageNotes": [
+      "معمولاً با 'to + verb' استفاده می‌شود",
+      "می‌تواند ذاتی یا اکتسابی باشد"
+    ],
+    "collocations": ["natural ability", "mental ability", "physical ability"],
+    "reviewStats": {
+      "reviewCount": 0,
+      "correctCount": 0,
+      "incorrectCount": 0,
+      "lastReviewed": null,
+      "nextReview": null
+    }
+  },
+  {
+    "id": "word_003",
+    "word": "accept",
+    "phonetic": "/əkˈsept/",
+    "partOfSpeech": "verb",
+    "persianMeaning": "پذیرفتن، قبول کردن",
+    "meanings": [
+      {
+        "persian": "چیزی را پذیرفتن",
+        "level": "A2",
+        "example": "I accept your apology.",
+        "exampleTranslation": "من عذرخواهی شما را می‌پذیرم."
+      },
+      {
+        "persian": "موافقت کردن",
+        "level": "B1",
+        "example": "She accepted the job offer.",
+        "exampleTranslation": "او پیشنهاد شغلی را پذیرفت."
+      }
+    ],
+    "wordFamily": {
+      "noun": "acceptance",
+      "adjective": "acceptable",
+      "adverb": "acceptably"
+    },
+    "synonyms": ["receive", "take", "admit", "agree"],
+    "antonyms": ["reject", "refuse", "decline", "deny"],
+    "usageNotes": [
+      "اغلب با حرف اضافه 'as' یا 'for' به کار می‌رود",
+      "در موقعیت‌های رسمی و غیررسمی کاربرد دارد"
+    ],
+    "collocations": ["accept responsibility", "accept invitation", "accept defeat"],
+    "reviewStats": {
+      "reviewCount": 0,
+      "correctCount": 0,
+      "incorrectCount": 0,
+      "lastReviewed": null,
+      "nextReview": null
+    }
+  },
+  {
+    "id": "word_004",
+    "word": "achieve",
+    "phonetic": "/əˈtʃiːv/",
+    "partOfSpeech": "verb",
+    "persianMeaning": "به دست آوردن، موفق شدن",
+    "meanings": [
+      {
+        "persian": "به هدف رسیدن",
+        "level": "B1",
+        "example": "He achieved his goal of becoming a doctor.",
+        "exampleTranslation": "او به هدف خود برای پزشک شدن رسید."
+      },
+      {
+        "persian": "کسب موفقیت کردن",
+        "level": "B2",
+        "example": "The team achieved great success this year.",
+        "exampleTranslation": "تیم امسال موفقیت بزرگی کسب کرد."
+      }
+    ],
+    "wordFamily": {
+      "noun": "achievement",
+      "adjective": "achievable"
+    },
+    "synonyms": ["accomplish", "attain", "reach", "succeed"],
+    "antonyms": ["fail", "lose", "abandon"],
+    "usageNotes": [
+      "معمولاً برای اهداف و دستاوردهای مثبت به کار می‌رود",
+      "نیازمند تلاش و زمان است"
+    ],
+    "collocations": ["achieve success", "achieve goals", "achieve results"],
+    "reviewStats": {
+      "reviewCount": 0,
+      "correctCount": 0,
+      "incorrectCount": 0,
+      "lastReviewed": null,
+      "nextReview": null
+    }
+  },
+  {
+    "id": "word_005",
+    "word": "advantage",
+    "phonetic": "/ədˈvæntɪdʒ/",
+    "partOfSpeech": "noun",
+    "persianMeaning": "مزیت، برتری",
+    "meanings": [
+      {
+        "persian": "چیزی که باعث موفقیت می‌شود",
+        "level": "B1",
+        "example": "Being tall is an advantage in basketball.",
+        "exampleTranslation": "قد بلند بودن در بسکتبال یک مزیت است."
+      },
+      {
+        "persian": "سود، منفعت",
+        "level": "B2",
+        "example": "Take advantage of this opportunity.",
+        "exampleTranslation": "از این فرصت استفاده کنید."
+      }
+    ],
+    "wordFamily": {
+      "adjective": "advantageous",
+      "adverb": "advantageously",
+      "verb": "advantage"
+    },
+    "synonyms": ["benefit", "asset", "plus", "edge"],
+    "antonyms": ["disadvantage", "drawback", "weakness"],
+    "usageNotes": [
+      "اغلب با 'of' یا 'over' استفاده می‌شود",
+      "در عبارت 'take advantage of' به معنی سوءاستفاده کردن نیز می‌آید"
+    ],
+    "collocations": ["competitive advantage", "take advantage", "unfair advantage"],
+    "reviewStats": {
+      "reviewCount": 0,
+      "correctCount": 0,
+      "incorrectCount": 0,
+      "lastReviewed": null,
+      "nextReview": null
+    }
+  }
+]

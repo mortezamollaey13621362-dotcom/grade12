@@ -1,0 +1,23 @@
+{
+  "id": "g7_l1_review",
+  "title": "مرور درس ۱",
+  "quiz": [
+    {
+      "type": "multiple_choice",
+      "question": "معنی manager چیست؟",
+      "options": ["معلم", "مدیر", "دانش‌آموز", "پزشک"],
+      "correct": 1,
+      "points": 1
+    }
+  ],
+  "games": [
+    {
+      "type": "matching",
+      "title": "تطبیق کلمه و معنی",
+      "pairs": [
+        {"word": "manager", "meaning": "مدیر"},
+        {"word": "teacher", "meaning": "معلم"}
+      ]
+    }
+  ]
+}

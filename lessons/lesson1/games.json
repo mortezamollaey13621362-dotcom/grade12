@@ -1,0 +1,33 @@
+{
+  "id": "g7_l1_games",
+  "games": [
+    {
+      "id": "game1",
+      "type": "hangman",
+      "title": "حدس کلمه",
+      "words": ["manager", "teacher", "student", "doctor"],
+      "hints": ["شغل", "در مدرسه", "یادگیری", "درمان"],
+      "maxAttempts": 6
+    },
+    {
+      "id": "game2",
+      "type": "memory",
+      "title": "بازی حافظه",
+      "pairs": [
+        {"front": "manager", "back": "مدیر"},
+        {"front": "teacher", "back": "معلم"},
+        {"front": "student", "back": "دانش‌آموز"},
+        {"front": "hello", "back": "سلام"}
+      ]
+    },
+    {
+      "id": "game3", 
+      "type": "crossword",
+      "title": "جدول کلمات",
+      "clues": [
+        {"word": "manager", "clue": "رئیس یک شرکت", "direction": "across"},
+        {"word": "teacher", "clue": "در کلاس درس می‌دهد", "direction": "down"}
+      ]
+    }
+  ]
+}

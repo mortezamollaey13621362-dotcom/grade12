@@ -1,0 +1,334 @@
+{
+  "tabs": [
+    {
+      "id": "tab1",
+      "title": "Lesson 1: Choosing a Dictionary",
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "comprehension",
+          "title": "Listen to the conversation between Majid and Mr. Iranmehr.",
+          "audio_text": "Majid is going to choose a suitable dictionary for his English class. He is talking to his English teacher during the break. Majid: Excuse me Mr. Iranmehr, I wonder if you could help me. Mr. Iranmehr: Sure. How can I help you? Majid: I’d like some information about a good English dictionary. Mr. Iranmehr: Oh, well. Have you ever used a dictionary? Majid: Actually, I haven’t. But I’ve heard that using a good dictionary can really help me learn English better. Mr. Iranmehr: That’s right. First, I recommend a learner’s dictionary. Majid: What is a learner’s dictionary? Mr. Iranmehr: It is designed for foreign students. It also helps them learn English better. Majid: Is there only one type of it? Mr. Iranmehr: No, in fact dictionaries have different types, levels, and sizes. Majid: What type do you suggest? Mr. Iranmehr: I suppose a monolingual dictionary is more suitable for you, because you can find word information in English. Majid: And what about levels? Mr. Iranmehr: Well, there are usually three levels: elementary, intermediate and advanced. For you as a high school student, an elementary one is OK. Majid: Do I need a small size one? Mr. Iranmehr: Yes, a pocket dictionary. You can carry it wherever you go. Majid: Ohh, it’s very good. And hmm…, is it expensive? Mr. Iranmehr: No, such dictionaries are not expensive. By the way, you can use a free online dictionary, too. And also there are some free dictionaries for PCs and apps for smart phones. Majid: Thanks, that’s a good idea, but I’d like to use a pocket dictionary!",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "mcq",
+              "text": "Why does Majid talk to Mr. Iranmehr?",
+              "options": [
+                { "text": "To borrow a dictionary", "isCorrect": false },
+                { "text": "To get information about a good English dictionary", "isCorrect": true },
+                { "text": "To talk about his homework", "isCorrect": false },
+                { "text": "To ask about the break time", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q2",
+              "type": "mcq",
+              "text": "What kind of dictionary does Mr. Iranmehr recommend first?",
+              "options": [
+                { "text": "A bilingual dictionary", "isCorrect": false },
+                { "text": "A learner's dictionary", "isCorrect": true },
+                { "text": "A large print dictionary", "isCorrect": false },
+                { "text": "A specialized dictionary", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q3",
+              "type": "tf",
+              "text": "Majid has used a dictionary before.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q4",
+              "type": "mcq",
+              "text": "What type of dictionary does Mr. Iranmehr suggest for Majid?",
+              "options": [
+                { "text": "Bilingual", "isCorrect": false },
+                { "text": "Monolingual", "isCorrect": true },
+                { "text": "Specialized", "isCorrect": false },
+                { "text": "Historical", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q5",
+              "type": "mcq",
+              "text": "Which level of dictionary is suitable for Majid?",
+              "options": [{ "text": "Intermediate", "isCorrect": false },
+                { "text": "Advanced", "isCorrect": false },
+                { "text": "Elementary", "isCorrect": true },
+                { "text": "All levels", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q6",
+              "type": "mcq",
+              "text": "Why does Mr. Iranmehr recommend a pocket dictionary?",
+              "options": [
+                { "text": "It is cheaper", "isCorrect": false },
+                { "text": "It has more words", "isCorrect": false },
+                { "text": "You can carry it wherever you go", "isCorrect": true },
+                { "text": "It is an online dictionary", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q7",
+              "type": "mcq",
+              "text": "According to Mr. Iranmehr, what other free options are there besides a pocket dictionary?",
+              "options": [
+                { "text": "Free online dictionaries, PC dictionaries, and smartphone apps", "isCorrect": true },
+                { "text": "Only free online dictionaries", "isCorrect": false },
+                { "text": "Only smartphone apps", "isCorrect": false },
+                { "text": "None, all dictionaries are expensive", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab2",
+      "title": "Lesson 2: Birthday Invitation",
+      "exercises": [
+        {
+          "id": "ex2",
+          "type": "comprehension",
+          "title": "Listen to the conversation between Zohreh and Maryam.",
+          "audio_text": "Zohreh: This weekend is my birthday. I have invited everyone but Mina. Maryam: Why not? If I were you, I would certainly invite her. As far as I know, you were close friends at school. Zohreh: Yes, but she has moved to another neighborhood. If I had her address, I would invite her. Maryam: What a pity! If I knew that sooner, I could help you. Zohreh: How? Maryam: I could check it with my sister. She is her mother’s friend. Zohreh: Can you call her now? Maryam: Unfortunately, she is not available till next Wednesday. Sorry.",
+          "questions": [
+            {
+              "id": "q8",
+              "type": "mcq",
+              "text": "What is happening this weekend?",
+              "options": [
+                { "text": "A school exam", "isCorrect": false },
+                { "text": "Zohreh's birthday", "isCorrect": true },
+                { "text": "A family trip", "isCorrect": false },
+                { "text": "A party for Mina", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q9",
+              "type": "mcq",
+              "text": "Who has Zohreh NOT invited?",
+              "options": [
+                { "text": "Maryam", "isCorrect": false },
+                { "text": "Mina", "isCorrect": true },
+                { "text": "Her sister", "isCorrect": false },
+                { "text": "Her teacher", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q10",
+              "type": "mcq",
+              "text": "Why hasn't Zohreh invited this person?",
+              "options": [
+                { "text": "They had a fight", "isCorrect": false },
+                { "text": "She doesn't like her", "isCorrect": false },
+                { "text": "She moved and Zohreh doesn't have her address", "isCorrect": true },
+                { "text": "She is out of town", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q11",
+              "type": "tf",
+              "text": "Maryam and Mina were close friends at school.",
+              "options": [
+                { "text": "True", "isCorrect": false },{ "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q12",
+              "type": "mcq",
+              "text": "How could Maryam possibly help find Mina's address?",
+              "options": [
+                { "text": "By asking her mother", "isCorrect": false },
+                { "text": "By checking with her sister who is Mina's mother's friend", "isCorrect": true },
+                { "text": "By searching online", "isCorrect": false },
+                { "text": "By calling Mina directly", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q13",
+              "type": "mcq",
+              "text": "Why can't Maryam's sister help immediately?",
+              "options": [
+                { "text": "She is traveling", "isCorrect": false },
+                { "text": "She is not available until next Wednesday", "isCorrect": true },
+                { "text": "She doesn't know Mina", "isCorrect": false },
+                { "text": "She lost the address", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab3",
+      "title": "Lesson 3: A Friend in Need",
+      "exercises": [
+        {
+          "id": "ex3",
+          "type": "comprehension",
+          "title": "Listen to the conversation between Mehran and Bijan.",
+          "audio_text": "Mehran: Hi, Bijan. Are you OK? Bijan: Hi, Mehran. I’m thinking about something. Mehran: What’s wrong? Bijan: I’ve saved some money to buy a new mobile phone. But one of my friends is in trouble and needs some money. What would you do if you were in my shoes? Mehran: What is his problem? Bijan: I could tell you about it if it weren’t a secret. But it’s an emergency. Mehran: OK. If I were you, I would give him the money. A friend in need is a friend indeed.",
+          "questions": [
+            {
+              "id": "q14",
+              "type": "mcq",
+              "text": "What has Bijan saved money for?",
+              "options": [
+                { "text": "To buy a car", "isCorrect": false },
+                { "text": "To help his family", "isCorrect": false },
+                { "text": "To buy a new mobile phone", "isCorrect": true },
+                { "text": "To go on a trip", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q15",
+              "type": "mcq",
+              "text": "What is Bijan's problem?",
+              "options": [
+                { "text": "He lost his phone", "isCorrect": false },
+                { "text": "He doesn't have enough money for school", "isCorrect": false },
+                { "text": "A friend needs money and he has saved some for a phone", "isCorrect": true },
+                { "text": "He needs advice about a secret", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q16",
+              "type": "mcq",
+              "text": "What does Bijan ask Mehran?",
+              "options": [
+                { "text": "To lend him some money", "isCorrect": false },
+                { "text": "What he would do in Bijan's situation", "isCorrect": true },
+                { "text": "To keep a secret", "isCorrect": false },
+                { "text": "To buy him a phone", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q17",
+              "type": "tf",
+              "text": "Bijan tells Mehran all the details about his friend's problem.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q18",
+              "type": "mcq",
+              "text": "What is Mehran's advice?","options": [
+                { "text": "Keep the money for the phone", "isCorrect": false },
+                { "text": "Ask his parents for help", "isCorrect": false },
+                { "text": "Give the money to his friend in need", "isCorrect": true },
+                { "text": "Find another solution", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q19",
+              "type": "mcq",
+              "text": "What proverb does Mehran use at the end?",
+              "options": [
+                { "text": "Time is money", "isCorrect": false },
+                { "text": "Health is wealth", "isCorrect": false },
+                { "text": "A friend in need is a friend indeed", "isCorrect": true },
+                { "text": "Actions speak louder than words", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab4",
+      "title": "Lesson 4: Imagining Possibilities",
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "comprehension",
+          "title": "Listen to the monologue about imagining things.",
+          "audio_text": "Sometimes it is fun to think about things that would never happen. We can ask ourselves questions that don’t have any real answers. For instance, we can think what would I do if I had a time machine to travel with right now? Some people may say I would visit the past if I had that machine, or I would visit the future to see the world and people of the future. Maybe you have thought about this. What would I do if I had this ability to talk to animals? What would I say? Some people would prefer to talk with cats or birds, but some would not like the idea. They would feel frightened!",
+          "questions": [
+            {
+              "id": "q20",
+              "type": "mcq",
+              "text": "What is the main idea of this monologue?",
+              "options": [
+                { "text": "The importance of science", "isCorrect": false },
+                { "text": "The fun of imagining impossible things", "isCorrect": true },
+                { "text": "How to build a time machine", "isCorrect": false },
+                { "text": "Why animals are scary", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q21",
+              "type": "mcq",
+              "text": "What is the first example of an impossible thing given?",
+              "options": [
+                { "text": "Having super strength", "isCorrect": false },
+                { "text": "Being invisible", "isCorrect": false },
+                { "text": "Having a time machine", "isCorrect": true },
+                { "text": "Flying", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q22",
+              "type": "mcq",
+              "text": "What are the two possible destinations mentioned for time travel?",
+              "options": [
+                { "text": "The moon and Mars", "isCorrect": false },
+                { "text": "Different countries", "isCorrect": false },
+                { "text": "The past and the future", "isCorrect": true },
+                { "text": "Fantasy worlds", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q23",
+              "type": "tf",
+              "text": "The monologue says everyone would love to talk to animals.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q24",
+              "type": "mcq",
+              "text": "How would some people feel about talking to animals?",
+              "options": [
+                { "text": "Excited", "isCorrect": false },{ "text": "Bored", "isCorrect": false },
+                { "text": "Frightened", "isCorrect": true },
+                { "text": "Angry", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q25",
+              "type": "mcq",
+              "text": "What type of animals are mentioned as examples to talk to?",
+              "options": [
+                { "text": "Dogs and fish", "isCorrect": false },
+                { "text": "Cats and birds", "isCorrect": true },
+                { "text": "Elephants and lions", "isCorrect": false },
+                { "text": "Horses and rabbits", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q26",
+              "type": "mcq",
+              "text": "According to the monologue, what is the purpose of asking these imaginative questions?",
+              "options": [
+                { "text": "To find scientific answers", "isCorrect": false },
+                { "text": "To prepare for tests", "isCorrect": false },
+                { "text": "To have fun and think creatively", "isCorrect": true },
+                { "text": "To solve real problems", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

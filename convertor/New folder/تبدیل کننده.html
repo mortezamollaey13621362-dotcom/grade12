@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz JSON Merger</title>
+  <style>
+    body {
+      font-family: "IRANSans", "Segoe UI", sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 20px 45px rgba(30, 41, 59, 0.08);
+      padding: 30px;
+    }
+    .inputs {
+      display: grid;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+    .card {
+      border: 1px solid #e0e7ff;
+      border-radius: 12px;
+      padding: 18px;
+      background: #f8fafc;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px dashed #94a3b8;
+      border-radius: 8px;
+      background: #fff;
+      cursor: pointer;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    button {
+      background: linear-gradient(135deg, #6366f1, #4338ca);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 22px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    button:disabled {
+      background: #cbd5f5;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+    button:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(79, 70, 229, 0.25);
+    }
+    .output {
+      margin-top: 28px;
+    }
+    textarea {
+      width: 100%;
+      height: 420px;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 16px;
+      font-family: "JetBrains Mono", "Fira Code", monospace;
+      font-size: 14px;
+      background: #0f172a;
+      color: #e0f2fe;
+      direction: ltr;
+    }
+    .summary {
+      border: 1px solid #94a3b8;
+      border-radius: 12px;
+      padding: 16px;
+      background: #e0f2fe;
+      margin-top: 18px;
+      line-height: 1.8;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      background: #eef2ff;
+      color: #312e81;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-left: 8px;
+      margin-top: 6px;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .log {
+      font-family: monospace;
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 14px;
+      border-radius: 10px;
+      margin-top: 16px;
+      white-space: pre-wrap;
+      direction: ltr;
+    }
+  </style>
+</head>
+<body>
+  <h1>📦 English7App – مبدل خودکار quiz.json</h1>
+  <div class="container">
+    <div class="inputs">
+      <div class="card">
+        <label for="vocabFile">فایل واژگان (vocab.json)</label>
+        <input type="file" id="vocabFile" accept=".json">
+      </div>
+      <div class="card">
+        <label for="grammarFile">فایل گرامر (grammar.json)</label>
+        <input type="file" id="grammarFile" accept=".json">
+      </div>
+      <div class="card">
+        <label for="conversationFile">فایل مکالمه (conversation.json)</label>
+        <input type="file" id="conversationFile" accept=".json">
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="mergeBtn" disabled>تولید quiz.json</button>
+      <button id="downloadBtn" disabled>دانلود خروجی</button>
+      <button id="resetBtn" type="button">بازنشانی</button>
+    </div>
+
+    <div id="log" class="log hidden"></div>
+
+    <div class="output hidden" id="outputSection">
+      <div class="summary" id="summary"></div>
+      <textarea id="result" readonly></textarea>
+    </div>
+  </div>
+
+  <script>
+    const state = {
+      vocab: null,
+      grammar: null,
+      conversation: null,
+      merged: null
+    };
+
+    const vocabInput = document.getElementById("vocabFile");
+    const grammarInput = document.getElementById("grammarFile");
+    const conversationInput = document.getElementById("conversationFile");
+    const mergeBtn = document.getElementById("mergeBtn");
+    const downloadBtn = document.getElementById("downloadBtn");
+    const resetBtn = document.getElementById("resetBtn");
+    const resultArea = document.getElementById("result");
+    const summaryBox = document.getElementById("summary");
+    const outputSection = document.getElementById("outputSection");
+    const logBox = document.getElementById("log");
+
+    const readers = {
+      vocab: vocabInput,
+      grammar: grammarInput,
+      conversation: conversationInput
+    };
+
+    Object.entries(readers).forEach(([key, input]) => {
+      input.addEventListener("change", (event) => handleFileSelection(key, event));
+    });
+
+    mergeBtn.addEventListener("click", mergeFiles);
+    downloadBtn.addEventListener("click", downloadOutput);
+    resetBtn.addEventListener("click", resetForm);
+
+    function handleFileSelection(type, event) {
+      const file = event.target.files[0];
+      if (!file) {
+        state[type] = null;
+        updateMergeButton();
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          state[type] = parsed;
+          appendLog(`✅ ${type} loaded (${Array.isArray(parsed) ? parsed.length + " items" : "object"})`);
+        } catch (err) {
+          state[type] = null;
+          appendLog(`❌ خطا در خواندن ${type}: ${err.message}`);
+          alert(`ساختار فایل ${type} معتبر نیست. لطفاً JSON درست بارگذاری کنید.`);
+        } finally {
+          updateMergeButton();
+        }
+      };
+      reader.onerror = () => {
+        appendLog(`❌ خطا در خواندن فایل ${type}`);
+        state[type] = null;
+        updateMergeButton();
+      };
+      reader.readAsText(file, "utf-8");
+    }
+
+    function updateMergeButton() {
+      const ready = state.vocab && state.grammar && state.conversation;
+      mergeBtn.disabled = !ready;
+      if (!ready) {
+        downloadBtn.disabled = true;
+      }
+    }
+
+    function appendLog(message) {
+      logBox.textContent += message + "\n";
+      logBox.classList.remove("hidden");
+    }
+
+    function clearLog() {
+      logBox.textContent = "";
+      logBox.classList.add("hidden");
+    }
+
+    function mergeFiles() {
+      try {
+        clearLog();
+        const merged = buildQuizJSON({
+          vocabData: state.vocab,
+          grammarData: state.grammar,
+          conversationData: state.conversation
+        });
+        state.merged = merged;
+        const jsonString = JSON.stringify(merged, null, 2);
+        resultArea.value = jsonString;
+        buildSummary(merged);
+        outputSection.classList.remove("hidden");
+        downloadBtn.disabled = false;
+        appendLog("🎯 ادغام با موفقیت انجام شد.");
+      } catch (error) {
+        appendLog(`❌ خطا در هنگام ادغام: ${error.message}`);
+        alert("خطا در تولید خروجی: " + error.message);
+      }
+    }
+
+    function buildQuizJSON({ vocabData, grammarData, conversationData }) {
+      const vocabArray = Array.isArray(vocabData) ? vocabData : [];
+      const conversations = Array.isArray(conversationData) ? conversationData : [];
+
+      const lessonId = extractLessonId({ vocabArray, grammarData, conversations });
+      const lessonTitle = extractLessonTitle({ grammarData, conversations }) || `Lesson ${lessonId || "?"}`;
+
+      const vocabQuestions = vocabArray.map((item, index) => ({
+        id: item.id || `vocab-${index + 1}`,
+        type: "vocabulary",
+        index: item.index ?? index + 1,
+        word: item.word,
+        level: item.level || null,
+        phonetic: item.phonetic || null,
+        partOfSpeech: item.partOfSpeech || [],
+        persian: item.persian || {},
+        meanings: item.meanings || [],
+        audio: item.audio || null,
+        connections: item.connections || null,
+        source: "vocabulary"
+      }));
+
+      const grammarQuiz = grammarData && typeof grammarData === "object" ? grammarData.quiz || null : null;
+      const grammarQuestions = Array.isArray(grammarQuiz?.questions)
+        ? grammarQuiz.questions.map((question, index) => ({
+            ...question,
+            id: question.id || `grammar-${index + 1}`,
+            type: `grammar_${question.type || "unknown"}`,
+            points: typeof question.points === "number" ? question.points : null,
+            difficulty: question.difficulty || null,
+            explanation: question.explanation || null,
+            source: "grammar"
+          }))
+        : [];
+
+      const conversationQuestions = conversations.map((conversation, index) => ({
+        id: conversation.id || `conversation-${index + 1}`,
+        type: "conversation",
+        lessonId: conversation.lessonId ?? lessonId,
+        tabTitle: conversation.tabTitle,
+        title: conversation.title,
+        participants: conversation.participants || [],
+        lines: conversation.lines || [],
+        keywords: conversation.keywords || [],
+        tip: conversation.tip || null,
+        source: "conversation"
+      }));
+
+      const questions = [
+        ...vocabQuestions,
+        ...grammarQuestions,
+        ...conversationQuestions
+      ];
+
+      const output = {
+        lessonId,
+        lessonTitle,
+        timeLimitSeconds: grammarQuiz?.time_limit_seconds ?? null,
+        totalQuestions: questions.length,
+        summary: {
+          vocabulary: vocabQuestions.length,
+          grammar: grammarQuestions.length,
+          conversation: conversationQuestions.length
+        },
+        quizSettings: grammarQuiz
+          ? {
+              id: grammarQuiz.id || null,
+              title: grammarQuiz.title || null,
+              instructions: grammarQuiz.instructions || null,
+              passingScore: grammarQuiz.passing_score ?? null,
+              shuffleQuestions: grammarQuiz.shuffle_questions ?? false,
+              showExplanationAfter: grammarQuiz.show_explanation_after || null,
+              allowRetry: grammarQuiz.allow_retry ?? null,
+              maxAttempts: grammarQuiz.max_attempts ?? null
+            }
+          : null,
+        questions
+      };
+
+      return cleanNulls(output);
+    }
+
+    function extractLessonId({ vocabArray, grammarData, conversations }) {
+      const fromConversation = conversations.find(item => typeof item.lessonId !== "undefined")?.lessonId;
+      if (typeof fromConversation !== "undefined") return fromConversation;
+
+      if (grammarData && typeof grammarData.lessonId !== "undefined") {
+        return grammarData.lessonId;
+      }
+
+      const fromVocab = vocabArray.find(item => typeof item.lessonId !== "undefined")?.lessonId;
+      if (typeof fromVocab !== "undefined") return fromVocab;
+
+      return null;
+    }
+
+    function extractLessonTitle({ grammarData, conversations }) {
+      const fromConversation = conversations.find(item => item.title)?.title;
+      if (fromConversation) return fromConversation;
+
+      if (grammarData && typeof grammarData.title === "string") {
+        return grammarData.title;
+      }
+
+      return null;
+    }
+
+    function cleanNulls(obj) {
+      if (Array.isArray(obj)) {
+        return obj.map(cleanNulls);
+      }
+      if (obj && typeof obj === "object") {
+        const cleaned = {};
+        Object.entries(obj).forEach(([key, value]) => {
+          if (value === null || value === undefined) return;
+          cleaned[key] = cleanNulls(value);
+        });
+        return cleaned;
+      }
+      return obj;
+    }
+
+    function buildSummary(mergedData) {
+      const { lessonId, lessonTitle, summary } = mergedData;
+      summaryBox.innerHTML = `
+        <div><span class="tag">Lesson ID</span> ${lessonId ?? "تعریف نشده"}</div>
+        <div><span class="tag">Lesson Title</span> ${lessonTitle}</div>
+        <div><span class="tag">Vocabulary</span> ${summary.vocabulary} آیتم</div>
+        <div><span class="tag">Grammar</span> ${summary.grammar} سؤال</div>
+        <div><span class="tag">Conversation</span> ${summary.conversation} مکالمه</div>
+        <div><span class="tag">Total Questions</span> ${mergedData.totalQuestions}</div>
+      `;
+    }
+
+    function downloadOutput() {
+      if (!state.merged) return;
+      const blob = new Blob([JSON.stringify(state.merged, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const lessonId = state.merged.lessonId || "lesson";
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `quiz-${lessonId}.json`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    }
+
+    function resetForm() {
+      Object.keys(state).forEach((key) => (state[key] = null));
+      vocabInput.value = "";
+      grammarInput.value = "";
+      conversationInput.value = "";
+      resultArea.value = "";
+      summaryBox.innerHTML = "";
+      outputSection.classList.add("hidden");
+      downloadBtn.disabled = true;
+      mergeBtn.disabled = true;
+      clearLog();
+      appendLog("🔄 فرم بازنشانی شد.");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "id": "g7_l1_grammar",
+  "lesson_id": 1,
+  "title": "My Name (نام و معرفی)",
+  "darsnameh": {
+    "title": "Lesson 1: الفبا، ضمایر و فعل To Be",
+    "content_html": "<div class='grammar-lesson'><h3>1. الفبای انگلیسی</h3><p>زبان انگلیسی ۲۶ حرف دارد...</p></div>"
+  },
+  "workbook_exercises": [
+    {
+      "id": "ex1",
+      "type": "Grammar",
+      "question": "Fill in the blank with 'am', 'is', or 'are': I _______ a student.",
+      "answer": "am",
+      "explanation": "طبق قانون فعل To Be، ضمیر اول شخص مفرد (I) همیشه و فقط با فعل کمکی 'am' می‌آید.",
+      "options": ["am", "is", "are"],
+      "hint": "به ضمیر توجه کن",
+      "points": 1,
+      "difficulty": "easy"
+    }
+  ],
+  "interactive_exercises": [
+    {
+      "type": "multiple_choice",
+      "question": "کدام گزینه صحیح است؟",
+      "options": ["I is happy", "I am happy", "I are happy"],
+      "correct": 1,
+      "explanation": "I همیشه با am می‌آید"
+    }
+  ]
+}

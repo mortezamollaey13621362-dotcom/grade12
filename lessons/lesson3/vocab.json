@@ -1,0 +1,74 @@
+[
+  {
+    "id": "g7_l1_w1",
+    "word": "manager",
+    "phonetic": "/ˈmæn.ɪ.dʒər/",
+    "persianMeaning": "مدیر",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "a person responsible for controlling or administering an organization or group of staff",
+        "persianMeaning": "مدیر، سرپرست",
+        "example": "He is a good manager.",
+        "exampleTranslation": "او یک مدیر خوب است.",
+        "register": "neutral",
+        "synonyms": ["director", "supervisor", "administrator"],
+        "antonyms": ["employee", "worker"],
+        "level": "A1",
+        "topic": ["jobs", "business"]
+      }
+    ],
+    "audio": {
+      "word": {
+        "standard": "audio/lesson1/words/manager_standard.mp3",
+        "slow": "audio/lesson1/words/manager_slow.mp3",
+        "british": "audio/lesson1/words/manager_british.mp3"
+      },
+      "example": {
+        "standard": "audio/lesson1/sentences/manager_example_standard.mp3",
+        "slow": "audio/lesson1/sentences/manager_example_slow.mp3",
+        "british": "audio/lesson1/sentences/manager_example_british.mp3"
+      }
+    },
+    "tags": ["job", "person", "business"],
+    "frequency": "high",
+    "lastReviewed": null,
+    "mastery": 0
+  },
+  {
+    "id": "g7_l1_w2",
+    "word": "teacher",
+    "phonetic": "/ˈtiː.tʃər/",
+    "persianMeaning": "معلم",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "a person who teaches, especially in a school",
+        "persianMeaning": "معلم، آموزگار",
+        "example": "She is an English teacher.",
+        "exampleTranslation": "او یک معلم انگلیسی است.",
+        "register": "neutral",
+        "synonyms": ["instructor", "educator", "tutor"],
+        "antonyms": ["student", "learner"],
+        "level": "A1",
+        "topic": ["jobs", "education"]
+      }
+    ],
+    "audio": {
+      "word": {
+        "standard": "audio/lesson1/words/teacher_standard.mp3",
+        "slow": "audio/lesson1/words/teacher_slow.mp3",
+        "british": "audio/lesson1/words/teacher_british.mp3"
+      },
+      "example": {
+        "standard": "audio/lesson1/sentences/teacher_example_standard.mp3",
+        "slow": "audio/lesson1/sentences/teacher_example_slow.mp3",
+        "british": "audio/lesson1/sentences/teacher_example_british.mp3"
+      }
+    },
+    "tags": ["job", "education", "person"],
+    "frequency": "very-high",
+    "lastReviewed": null,
+    "mastery": 0
+  }
+]

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبدل حرفه‌ای Quiz.json</title>
+    <style>
+        body { font-family: Tahoma; direction: rtl; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        .upload-section { margin: 20px 0; padding: 20px; background: #e8f4fd; border-radius: 8px; }
+        .file-input { margin: 10px 0; padding: 10px; border: 2px dashed #3498db; border-radius: 5px; background: white; }
+        button { background: #27ae60; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; font-size: 16px; margin: 10px 5px; }
+        button:hover { background: #219a52; }
+        .preview { margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 5px; border: 1px solid #ddd; }
+        .stats { background: #fff3cd; padding: 15px; border-radius: 5px; margin: 15px 0; }
+        .question-sample { background: white; padding: 15px; margin: 10px 0; border-radius: 5px; border-right: 4px solid #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 مبدل حرفه‌ای Quiz.json برای آموزش زبان انگلیسی</h1>
+        
+        <div class="upload-section">
+            <h3>📁 آپلود فایل‌های منبع:</h3>
+            <div class="file-input">
+                <label>فایل واژگان (vocab.json):</label>
+                <input type="file" id="vocabFile" accept=".json">
+            </div>
+            <div class="file-input">
+                <label>فایل گرامر (grammar.json):</label>
+                <input type="file" id="grammarFile" accept=".json">
+            </div>
+            <div class="file-input">
+                <label>فایل مکالمه (conversation.json):</label>
+                <input type="file" id="conversationFile" accept=".json">
+            </div>
+            
+            <button onclick="processFiles()">🔄 تولید Quiz.json</button>
+            <button onclick="downloadQuiz()" id="downloadBtn" style="display:none; background:#3498db;">📥 دانلود Quiz.json</button>
+        </div>
+
+        <div id="stats" class="stats" style="display:none;"></div>
+        <div id="preview" class="preview" style="display:none;"></div>
+    </div>
+
+    <script>
+        let generatedQuiz = null;
+
+        function processFiles() {
+            const files = {
+                vocab: document.getElementById('vocabFile').files[0],
+                grammar: document.getElementById('grammarFile').files[0],
+                conversation: document.getElementById('conversationFile').files[0]
+            };
+
+            // بررسی وجود فایل‌ها
+            if (!files.vocab || !files.grammar || !files.conversation) {
+                alert('لطفاً همه فایل‌ها را آپلود کنید');
+                return;
+            }
+
+            Promise.all([
+                readFile(files.vocab),
+                readFile(files.grammar),
+                readFile(files.conversation)
+            ]).then(([vocabData, grammarData, conversationData]) => {
+                generatedQuiz = createRichQuiz(vocabData, grammarData, conversationData);
+                showPreview(generatedQuiz);
+                document.getElementById('downloadBtn').style.display = 'inline-block';
+            }).catch(error => {
+                alert('خطا در پردازش فایل‌ها: ' + error.message);
+            });
+        }
+
+        function readFile(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = e => resolve(JSON.parse(e.target.result));
+                reader.onerror = reject;
+                reader.readAsText(file);
+            });
+        }
+
+        function createRichQuiz(vocab, grammar, conversation) {
+            const quiz = {
+                metadata: {
+                    title: "آزمون جامع زبان انگلیسی",
+                    description: "آزمون تولید شده از محتوای آموزشی",
+                    level: "Intermediate",
+                    totalQuestions: 0,
+                    estimatedTime: "45 minutes",
+                    generatedAt: new Date().toISOString(),
+                    source: "Professional Quiz Generator"
+                },
+                vocabulary: generateVocabularyQuestions(vocab),
+                grammar: generateGrammarQuestions(grammar),
+                conversation: generateConversationQuestions(conversation),
+                mixed: generateMixedQuestions(vocab, grammar, conversation)
+            };
+
+            // محاسبه آمار
+            quiz.metadata.totalQuestions = 
+                quiz.vocabulary.length + 
+                quiz.grammar.length + 
+                quiz.conversation.length + 
+                quiz.mixed.length;
+
+            return quiz;
+        }
+
+        function generateVocabularyQuestions(vocab) {
+            const questions = [];
+            
+            if (vocab.vocabulary) {
+                vocab.vocabulary.forEach((word, index) => {
+                    // سوال تعریف (Definition)
+                    questions.push({
+                        id: `vocab_def_${index}`,
+                        type: "multiple_choice",
+                        category: "vocabulary",
+                        subcategory: "definition",
+                        difficulty: "easy",
+                        question: `معنی کلمه "${word.word}" چیست؟`,
+                        options: generateWrongDefinitions(word.meaning, vocab.vocabulary),
+                        correctAnswer: word.meaning,
+                        explanation: `تلفظ: ${word.pronunciation || '---'} | مثال: ${word.example || '---'}`,
+                        tags: ["واژگان", "معنی"]
+                    });
+
+                    // سوال مثال (Example Completion)
+                    if (word.example) {
+                        const blankExample = word.example.replace(word.word, '______');
+                        questions.push({
+                            id: `vocab_ex_${index}`,
+                            type: "fill_blank",
+                            category: "vocabulary", 
+                            subcategory: "usage",
+                            difficulty: "medium",
+                            question: `جای خالی را با کلمه مناسب پر کنید:\n"${blankExample}"`,
+                            correctAnswer: word.word,
+                            explanation: `معنی: ${word.meaning}`,
+                            tags: ["کاربرد", "جمله‌سازی"]
+                        });
+                    }
+
+                    // سوال مترادف/متضاد
+                    if (index % 3 === 0) { // هر سه کلمه یکبار
+                        questions.push({
+                            id: `vocab_syn_${index}`,
+                            type: "multiple_choice",
+                            category: "vocabulary",
+                            subcategory: "synonyms",
+                            difficulty: "hard",
+                            question: `مترادف کلمه "${word.word}" کدام است؟`,
+                            options: generateSynonymsAntonyms(word.meaning, vocab.vocabulary, true),
+                            correctAnswer: findSynonym(word.meaning, vocab.vocabulary),
+                            explanation: `کلمه اصلی: ${word.word} - معنی: ${word.meaning}`,
+                            tags: ["مترادف", "واژگان پیشرفته"]
+                        });
+                    }
+                });
+            }
+
+            return questions;
+        }
+
+        function generateGrammarQuestions(grammar) {
+            const questions = [];
+            
+            if (grammar.rules) {
+                grammar.rules.forEach((rule, index) => {
+                    // سوال شناسایی قاعده
+                    questions.push({
+                        id: `grammar_rule_${index}`,
+                        type: "multiple_choice",
+                        category: "grammar",
+                        subcategory: "rule_identification",
+                        difficulty: "medium",
+                        question: `کدام گزینه نمونه‌ای از "${rule.name}" است؟`,
+                        options: generateGrammarExamples(rule, grammar.rules),
+                        correctAnswer: rule.examples[0],
+                        explanation: `قاعده: ${rule.description}`,
+                        tags: ["گرامر", "شناسایی"]
+                    });
+
+                    // سوال تصحیح خطا
+                    if (rule.common_mistakes && rule.common_mistakes.length > 0) {
+                        questions.push({
+                            id: `grammar_correct_${index}`,
+                            type: "multiple_choice",
+                            category: "grammar",
+                            subcategory: "error_correction", 
+                            difficulty: "hard",
+                            question: `جمله زیر را تصحیح کنید:\n"${rule.common_mistakes[0]}"`,
+                            options: generateCorrectionOptions(rule.common_mistakes[0], rule.examples),
+                            correctAnswer: rule.examples[0],
+                            explanation: `خطا: ${rule.common_mistakes[0]} | صحیح: ${rule.examples[0]}`,
+                            tags: ["تصحیح خطا", "گرامر"]
+                        });
+                    }
+
+                    // سوال ساخت جمله
+                    questions.push({
+                        id: `grammar_build_${index}`,
+                        type: "fill_blank",
+                        category: "grammar",
+                        subcategory: "sentence_building",
+                        difficulty: "medium", 
+                        question: `با استفاده از قاعده "${rule.name}" جمله‌ای بسازید:`,
+                        correctAnswer: rule.examples[0],
+                        explanation: rule.description,
+                        tags: ["جمله‌سازی", "کاربرد عملی"]
+                    });
+                });
+            }
+
+            return questions;
+        }
+
+        function generateConversationQuestions(conversation) {
+            const questions = [];
+            
+            if (conversation.dialogues) {
+                conversation.dialogues.forEach((dialogue, index) => {
+                    // سوال ادامه مکالمه
+                    questions.push({
+                        id: `conv_continue_${index}`,
+                        type: "multiple_choice",
+                        category: "conversation", 
+                        subcategory: "continuation",
+                        difficulty: "medium",
+                        question: `در پاسخ به جمله "${dialogue.lines[0]}" چه می‌گویید؟`,
+                        options: generateConversationResponses(dialogue.lines[0], conversation.dialogues),
+                        correctAnswer: dialogue.lines[1] || "I'm not sure",
+                        explanation: `موقعیت: ${dialogue.context || 'عمومی'}`,
+                        tags: ["مکالمه", "واکنش"]
+                    });
+
+                    // سوال درک مطلب مکالمه
+                    if (dialogue.lines.length >= 2) {
+                        questions.push({
+                            id: `conv_comp_${index}`,
+                            type: "multiple_choice",
+                            category: "conversation",
+                            subcategory: "comprehension",
+                            difficulty: "easy",
+                            question: `مکالمه درباره چیست؟\n"${dialogue.lines.slice(0, 2).join(' ')}"`,
+                            options: [
+                                "معرفی و احوالپرسی",
+                                "پرسیدن آدرس", 
+                                "سفارش غذا",
+                                "صحبت درباره آب و هوا"
+                            ],
+                            correctAnswer: dialogue.context || "معرفی و احوالپرسی",
+                            explanation: `موضوع: ${dialogue.context || 'عمومی'}`,
+                            tags: ["درک مطلب", "مکالمه"]
+                        });
+                    }
+                });
+            }
+
+            return questions;
+        }
+
+        function generateMixedQuestions(vocab, grammar, conversation) {
+            const questions = [];
+            
+            // سوالات ترکیبی - استفاده از گرامر در مکالمه
+            if (grammar.rules && conversation.dialogues) {
+                grammar.rules.slice(0, 3).forEach((rule, index) => {
+                    questions.push({
+                        id: `mixed_grammar_conv_${index}`,
+                        type: "multiple_choice",
+                        category: "mixed",
+                        subcategory: "grammar_in_conversation",
+                        difficulty: "hard",
+                        question: `کدام جمله از قاعده "${rule.name}" در مکالمه استفاده کرده است؟`,
+                        options: generateMixedOptions(rule, conversation.dialogues),
+                        correctAnswer: findGrammarInConversation(rule, conversation.dialogues),
+                        explanation: `قاعده: ${rule.description}`,
+                        tags: ["ترکیبی", "گرامر عملی"]
+                    });
+                });
+            }
+
+            // سوالات تطبیق واژگان و معانی
+            if (vocab.vocabulary) {
+                questions.push({
+                    id: "mixed_matching_1",
+                    type: "matching",
+                    category: "mixed",
+                    subcategory: "vocabulary_matching", 
+                    difficulty: "medium",
+                    question: "کلمات را با معانی صحیح تطبیق دهید:",
+                    pairs: generateMatchingPairs(vocab.vocabulary.slice(0, 5)),
+                    explanation: "تطبیق واژگان و معانی",
+                    tags: ["تطبیق", "واژگان"]
+                });
+            }
+
+            return questions;
+        }
+
+        // توابع کمکی
+        function generateWrongDefinitions(correctMeaning, vocabulary) {
+            const wrongOnes = vocabulary
+                .filter(v => v.meaning !== correctMeaning)
+                .slice(0, 3)
+                .map(v => v.meaning);
+            return shuffleArray([correctMeaning, ...wrongOnes]);
+        }
+
+        function generateSynonymsAntonyms(meaning, vocabulary, isSynonym) {
+            // شبیه‌سازی مترادف/متضاد - در واقعیت نیاز به دیتابیس دارد
+            const options = ["similar word", "different word", "opposite word", "unrelated word"];
+            return shuffleArray([meaning, ...options.slice(0, 3)]);
+        }
+
+        function findSynonym(meaning, vocabulary) {
+            return meaning; // در واقعیت باید جستجو کند
+        }
+
+        function generateGrammarExamples(correctRule, allRules) {
+            const otherExamples = allRules
+                .filter(r => r.name !== correctRule.name)
+                .slice(0, 3)
+                .map(r => r.examples[0]);
+            return shuffleArray([correctRule.examples[0], ...otherExamples]);
+        }
+
+        function generateCorrectionOptions(wrongSentence, correctExamples) {
+            const options = [correctExamples[0]];
+            // تولید گزینه‌های نادرست مشابه
+            for (let i = 1; i < 4; i++) {
+                options.push(wrongSentence.replace(/not |don't /g, i % 2 === 0 ? "not " : "don't "));
+            }
+            return shuffleArray(options);
+        }
+
+        function generateConversationResponses(question, dialogues) {
+            const responses = ["I'm fine, thank you", "I don't know", "Maybe later", "That sounds good"];
+            return shuffleArray(responses);
+        }
+
+        function generateMixedOptions(rule, dialogues) {
+            const options = [];
+            // پیدا کردن جملات مکالمه که از این قاعده استفاده می‌کنند
+            dialogues.forEach(dialogue => {
+                dialogue.lines.forEach(line => {
+                    if (line.includes('ing') && rule.name.includes('Present Continuous')) {
+                        options.push(line);
+                    }
+                });
+            });
+            while (options.length < 4) {
+                options.push("Sample sentence " + options.length);
+            }
+            return shuffleArray(options.slice(0, 4));
+        }
+
+        function findGrammarInConversation(rule, dialogues) {
+            // پیدا کردن اولین جمله مکالمه که قاعده را نشان می‌دهد
+            for (let dialogue of dialogues) {
+                for (let line of dialogue.lines) {
+                    if (line.includes('ing') && rule.name.includes('Present Continuous')) {
+                        return line;
+                    }
+                }
+            }
+            return dialogues[0]?.lines[0] || "Not found";
+        }
+
+        function generateMatchingPairs(vocabulary) {
+            return vocabulary.map((word, index) => ({
+                left: word.word,
+                right: word.meaning,
+                id: `pair_${index}`
+            }));
+        }
+
+        function shuffleArray(array) {
+            return array.sort(() => Math.random() - 0.5);
+        }
+
+        function showPreview(quiz) {
+            const statsDiv = document.getElementById('stats');
+            const previewDiv = document.getElementById('preview');
+            
+            // نمایش آمار
+            statsDiv.innerHTML = `
+                <h3>📊 آمار تولید شده:</h3>
+                <p>✅ کل سوالات: ${quiz.metadata.totalQuestions}</p>
+                <p>📚 واژگان: ${quiz.vocabulary.length} سوال</p>
+                <p>🔤 گرامر: ${quiz.grammar.length} سوال</p>
+                <p>💬 مکالمه: ${quiz.conversation.length} سوال</p>
+                <p>🎯 ترکیبی: ${quiz.mixed.length} سوال</p>
+                <p>⏱ زمان تخمینی: ${quiz.metadata.estimatedTime}</p>
+            `;
+            statsDiv.style.display = 'block';
+
+            // نمایش نمونه سوالات
+            let previewHTML = '<h3>🔍 نمونه سوالات تولید شده:</h3>';
+            
+            // نمونه از هر دسته
+            [quiz.vocabulary[0], quiz.grammar[0], quiz.conversation[0], quiz.mixed[0]].forEach((q, i) => {
+                if (q) {
+                    previewHTML += `
+                        <div class="question-sample">
+                            <strong>${['واژگان', 'گرامر', 'مکالمه', 'ترکیبی'][i]}:</strong><br>
+                            <em>${q.question}</em><br>
+                            <small>نوع: ${q.type} | سطح: ${q.difficulty}</small>
+                        </div>
+                    `;
+                }
+            });
+
+            previewDiv.innerHTML = previewHTML;
+            previewDiv.style.display = 'block';
+        }
+
+        function downloadQuiz() {
+            if (!generatedQuiz) return;
+            
+            const dataStr = JSON.stringify(generatedQuiz, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(dataBlob);
+            link.download = 'quiz.json';
+            link.click();
+        }
+    </script>
+</body>
+</html>

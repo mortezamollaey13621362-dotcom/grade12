@@ -1,0 +1,162 @@
+[
+  {
+    "id": "conv_8_1",
+    "lessonId": 8,
+    "tabTitle": "مکالمه ۱: انتخاب دیکشنری",
+    "title": "درس هشتم: یک دیکشنری خوب (A Good Dictionary)",
+    "participants": [
+      {
+        "id": "p1",
+        "name": "Majid",
+        "role": "Student",
+        "avatar": "images/majid.png",
+        "side": "right"
+      },
+      {
+        "id": "p2",
+        "name": "Mr. Iranmehr",
+        "role": "Teacher",
+        "avatar": "images/teacher.png",
+        "side": "left"
+      }
+    ],
+    "lines": [
+      {
+        "id": 1,
+        "speakerId": "p1",
+        "textEn": "Excuse me Mr. Iranmehr, I wonder if you could help me.",
+        "textFa": "ببخشید آقای ایرانمهر، می‌خواستم ببینم امکانش هست به من کمک کنید؟"
+      },
+      {
+        "id": 2,
+        "speakerId": "p2",
+        "textEn": "Sure. How can I help you?",
+        "textFa": "حتماً. چطور می‌توانم کمکت کنم؟"
+      },
+      {
+        "id": 3,
+        "speakerId": "p1",
+        "textEn": "I’d like some information about a good English dictionary.",
+        "textFa": "کمی اطلاعات در مورد یک دیکشنری انگلیسی خوب می‌خواستم."
+      },
+      {
+        "id": 4,
+        "speakerId": "p2",
+        "textEn": "Oh, well. Have you ever used a dictionary?",
+        "textFa": "اوه، خب. آیا تا به حال از دیکشنری استفاده کرده‌ای؟"
+      },
+      {
+        "id": 5,
+        "speakerId": "p1",
+        "textEn": "Actually, I haven’t. But I’ve heard that using a good dictionary can really help me learn English better.",
+        "textFa": "راستش نه. اما شنیده‌ام که استفاده از یک دیکشنری خوب واقعاً می‌تواند به من کمک کند انگلیسی را بهتر یاد بگیرم."
+      },
+      {
+        "id": 6,
+        "speakerId": "p2",
+        "textEn": "That’s right. First, I recommend a learner’s dictionary.",
+        "textFa": "درست است. اول از همه، من یک دیکشنری یادگیرنده (learner's dictionary) را توصیه می‌کنم."
+      },
+      {
+        "id": 7,
+        "speakerId": "p1",
+        "textEn": "What is a learner’s dictionary?",
+        "textFa": "دیکشنری یادگیرنده چیست؟"
+      },
+      {
+        "id": 8,
+        "speakerId": "p2",
+        "textEn": "It is designed for foreign students. It also helps them learn English better.",
+        "textFa": "این برای دانش‌آموزان خارجی طراحی شده است. همچنین به آن‌ها کمک می‌کند انگلیسی را بهتر یاد بگیرند."
+      },
+      {
+        "id": 9,
+        "speakerId": "p1",
+        "textEn": "Is there only one type of it?",
+        "textFa": "آیا فقط یک نوع از آن وجود دارد؟"
+      },
+      {
+        "id": 10,
+        "speakerId": "p2",
+        "textEn": "No, in fact dictionaries have different types, levels, and sizes.",
+        "textFa": "نه، در واقع دیکشنری‌ها انواع، سطوح و اندازه‌های مختلفی دارند."
+      },
+      {
+        "id": 11,
+        "speakerId": "p1",
+        "textEn": "What type do you suggest?",
+        "textFa": "شما چه نوعی را پیشنهاد می‌کنید؟"
+      },
+      {
+        "id": 12,
+        "speakerId": "p2",
+        "textEn": "I suppose a monolingual dictionary is more suitable for you, because you can find word information in English.",
+        "textFa": "فکر می‌کنم یک دیکشنری تک‌زبانه برای تو مناسب‌تر است، چون می‌توانی اطلاعات کلمات را به انگلیسی پیدا کنی."
+      },
+      {
+        "id": 13,
+        "speakerId": "p1",
+        "textEn": "And what about levels?",
+        "textFa": "و در مورد سطوح چطور؟"
+      },
+      {
+        "id": 14,
+        "speakerId": "p2",
+        "textEn": "Well, there are usually three levels: elementary, intermediate and advanced. For you as a high school student, an elementary one is OK.",
+        "textFa": "خب، معمولاً سه سطح وجود دارد: مقدماتی، متوسط و پیشرفته. برای تو به عنوان یک دانش‌آموز دبیرستانی، سطح مقدماتی مناسب است."
+      },
+      {
+        "id": 15,
+        "speakerId": "p1",
+        "textEn": "Do I need a small size one?",
+        "textFa": "آیا به یک سایز کوچک نیاز دارم؟"
+      },
+      {
+        "id": 16,
+        "speakerId": "p2",
+        "textEn": "Yes, a pocket dictionary. You can carry it wherever you go.",
+        "textFa": "بله، یک دیکشنری جیبی. می‌توانی آن را هرجا که می‌روی با خودت ببری."
+      },
+      {
+        "id": 17,
+        "speakerId": "p1",
+        "textEn": "Oh, it’s very good. And hmm…, is it expensive?",
+        "textFa": "اوه، خیلی خوب است. و... گران است؟"
+      },
+      {
+        "id": 18,
+        "speakerId": "p2",
+        "textEn": "No, such dictionaries are not expensive. By the way, you can use a free online dictionary, too. And also, there are some free dictionaries for PCs and apps for smart phones.",
+        "textFa": "نه، چنین دیکشنری‌هایی گران نیستند. راستی، می‌توانی از دیکشنری آنلاین رایگان هم استفاده کنی. همچنین دیکشنری‌های رایگان برای کامپیوتر و اپلیکیشن‌هایی برای گوشی‌های هوشمند هم وجود دارد."
+      },
+      {
+        "id": 19,
+        "speakerId": "p1",
+        "textEn": "Thanks, that’s a good idea, but I’d like to use a pocket dictionary!",
+        "textFa": "ممنونم، ایده خوبی است، اما من ترجیح می‌دهم از دیکشنری جیبی استفاده کنم!"
+      }
+    ],
+    "keywords": [
+      {
+        "en": "learner’s dictionary",
+        "fa": "دیکشنری یادگیرنده"
+      },
+      {
+        "en": "monolingual dictionary",
+        "fa": "دیکشنری تک‌زبانه"
+      },
+      {
+        "en": "pocket dictionary",
+        "fa": "دیکشنری جیبی"
+      },
+      {
+        "en": "online dictionary",
+        "fa": "دیکشنری آنلاین"
+      }
+    ],
+    "tip": {
+      "type": "vocabulary",
+      "text": "در زبان انگلیسی انواع مختلفی از دیکشنری وجود دارد. 'Monolingual' (تک‌زبانه) فقط به انگلیسی توضیح می‌دهد. 'Bilingual' (دوزبانه) کلمات را به زبان دیگری ترجمه می‌کند. 'Learner's Dictionary' برای زبان‌آموزان طراحی شده و توضیحات ساده‌تری دارد."
+    }
+  }
+]

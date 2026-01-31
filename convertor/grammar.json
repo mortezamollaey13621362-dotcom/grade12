@@ -1,0 +1,414 @@
+{
+  "id": "grammar-b1-unit3",
+  "title": "جملات شرطی نوع دوم (Conditional Type 2)",
+  "description": "آموزش ساختار و کاربرد جملات شرطی غیرواقعی در زمان حال برای بیان آرزوها، موقعیت‌های خیالی و توصیه‌ها.",
+  "level": "متوسط",
+  "version": "2.1",
+  "last_updated": "2024-09-10",
+  "estimated_time_minutes": 45,
+
+  "standard": {
+    "cefr_level": "B1",
+    "school_grade": 12,
+    "curriculum": "کتاب درسی پایه ۱۲ - فصل ۳",
+    "method": "Task-Based Learning & Deductive Approach"
+  },
+
+  "learning_objectives": [
+    {
+      "id": "obj1",
+      "fa": "دانش‌آموز می‌تواند موقعیت‌های غیرواقعی یا خیالی در زمان حال را با ساختار شرطی نوع دوم بیان کند.",
+      "en": "The student can express unreal or hypothetical present situations using the second conditional structure.",
+      "assessment_criteria": "استفاده صحیح از If + Past Simple, Would + Base Verb در جملات پیچیده"
+    },
+    {
+      "id": "obj2",
+      "fa": "دانش‌آموز می‌تواند برای دادن توصیه‌های مؤدبانه یا غیرمستقیم از این ساختار استفاده کند.",
+      "en": "The student can use this structure to give polite or indirect advice.",
+      "assessment_criteria": "تشکیل جملات شرطی با کاربرد توصیه (If I were you...)"
+    },
+    {
+      "id": "obj3",
+      "fa": "دانش‌آموز قادر به تشخیص تفاوت‌های کاربردی بین شرطی نوع صفر، یک و دو است.",
+      "en": "The student can distinguish the functional differences between conditional types zero, one, and two.",
+      "assessment_criteria": "تفسیر و تبدیل جملات بین سه نوع شرطی در تمرینات تطبیقی"
+    }
+  ],
+
+  "prerequisites": ["past-simple-tense", "conditional-type-1", "modal-verbs"],
+  "next_lessons": ["conditional-type-3", "wish-structures"],
+
+  "topics": [
+    {
+      "id": "topic1",
+      "order": 1,
+      "title": "مفهوم و ساختار پایه",
+      "icon": "🏗️",
+      "description": "معرفی شرطی نوع دوم به عنوان بیان آرزو و موقعیت غیرواقعی",
+      "sections": [
+        {
+          "id": "sec1-1",
+          "order": 1,
+          "type": "mixed",
+          "content": [
+            {
+              "type": "text",
+              "value": "از <b>شرطی نوع دوم (Second Conditional یا Unreal Present)</b> برای صحبت در مورد موقعیت‌های <mark>غیرواقعی</mark>، <mark>خیالی</mark> یا <mark>بعید</mark> در زمان حال یا آینده استفاده می‌کنیم. این موقعیت‌ها یا امکان‌پذیر نیستند یا احتمال وقوع آن‌ها بسیار کم است."
+            },
+            {
+              "type": "audio",
+              "src": "audio/cond2-concept.mp3",
+              "duration_seconds": 60,
+              "transcript": "The second conditional is used to talk about imaginary, impossible, or unlikely situations in the present or future. It's the language of dreams, hypotheticals, and polite advice..."
+            },
+            {
+              "type": "image",
+              "src": "images/cond2-mindmap.png",
+              "alt": "نقشه ذهنی کاربردهای شرطی نوع دو",
+              "caption": "کاربردهای اصلی: آرزو، تخیل، توصیه غیرمستقیم"
+            }
+          ]
+        },
+        {
+          "id": "sec1-2",
+          "order": 2,
+          "type": "formula",
+          "title": "🧮 فرمول طلایی ساختار",
+          "content": "If + Subject + Past Simple, Subject + Would/Could/Might + Base Verb",
+          "examples": [
+            {
+              "en": "If I <b>had</b> a million dollars, I <b>would buy</b> a house.",
+              "fa": "اگر یک میلیون دلار داشتم، یک خانه می‌خریدم.",
+              "breakdown": ["If I", "had (Past Simple)", "a million dollars,", "I", "would buy (Would + Base)", "a house"],
+              "note": "واقعیت: من یک میلیون دلار ندارم."
+            },
+            {
+              "en": "If she <b>studied</b> harder, she <b>could get</b> better grades.",
+              "fa": "اگر سخت‌تر درس می‌خواند، می‌توانست نمرات بهتری بگیرد.",
+              "breakdown": ["If she", "studied (Past Simple)", "harder,", "she", "could get (Could + Base)", "better grades"],
+              "note": "واقعیت: او سخت‌تر درس نمی‌خواند."
+            }
+          ]
+        },
+        {
+          "id": "sec1-3",
+          "order": 3,
+          "type": "table",
+          "title": "📊 مقایسه سه نوع شرطی اصلی",
+          "description": "تفاوت در احتمال، زمان و ساختار",
+          "headers": ["نوع", "احتمال", "ساختار (If Clause)", "ساختار (Main Clause)", "مثال"],
+          "rows": [
+            {
+              "id": "row1",
+              "cols": ["صفر (Zero)", "قطعیت / قانون علمی", "Present Simple", "Present Simple", "If you heat water to 100°C, it boils."],
+              "highlight": false
+            },
+            {
+              "id": "row2",
+              "cols": ["یک (First)", "احتمال قوی در آینده", "Present Simple", "Will + Base Verb", "If it rains, I will stay home."],
+              "highlight": false
+            },
+            {
+              "id": "row3",
+              "cols": ["دو (Second)", "غیرواقعی / احتمالی ضعیف", "<b>Past Simple</b>", "<b>Would/Could/Might + Base</b>", "If I won the lottery, I would travel the world."],
+              "highlight": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic2",
+      "order": 2,
+      "title": "کاربردهای پیشرفته و استثناها",
+      "icon": "⚡",
+      "description": "ورود به جزئیات: Were برای همه فاعل‌ها، دادن توصیه، و جملات معکوس",
+      "sections": [
+        {
+          "id": "sec2-1",
+          "order": 1,
+          "type": "warning",
+          "title": "⚠️ استثنای مهم: فعل To Be",
+          "content": [
+            "در جملات شرطی نوع دوم، می‌توانیم برای همه فاعل‌ها (حتی he/she/it) از <b>were</b> به جای <b>was</b> استفاده کنیم. این حالت رسمی‌تر و رایج‌تر است.",
+            "مثال: If I <b>were</b> you,... (رایج) / If I <b>was</b> you,... (غیررسمی)",
+            "این قاعده <b>فقط برای فعل To Be</b> صدق می‌کند. برای سایر افعال، صرف عادی گذشته ساده را استفاده می‌کنیم."
+          ],
+          "severity": "high"
+        },
+        {
+          "id": "sec2-2",
+          "order": 2,
+          "type": "examples",
+          "title": "🗣️ کاربردهای کلیدی در گفتگو",
+          "items": [
+            {
+              "id": "ex1",
+              "en": "If I were the president, I would invest more in education.",
+              "fa": "اگر رئیس‌جمهور بودم، بیشتر در آموزش سرمایه‌گذاری می‌کردم.",
+              "context": "بیان یک آرزو یا موقعیت کاملاً خیالی",
+              "audio": "audio/if-i-were-president.mp3"
+            },
+            {
+              "id": "ex2",
+              "en": "If I were you, I would apologize to her.",
+              "fa": "اگر جای تو بودم، از او عذرخواهی می‌کردم.",
+              "context": "دادن توصیه‌ای مؤدبانه و غیرمستقیم (کاربرد بسیار رایج)",
+              "note": "هرگز نگویید 'If I was you' در انگلیسی استاندارد."
+            },
+            {
+              "id": "ex3",
+              "en": "What would you do if you saw a ghost?",
+              "fa": "اگر یک روح می‌دیدی چه کار می‌کردی؟",
+              "context": "سوال کردن درباره یک موقعیت فرضی و غیرممکن",
+              "image": "images/hypothetical-question.jpg"
+            }
+          ]
+        },
+        {
+          "id": "sec2-3",
+          "order": 3,
+          "type": "interactive",
+          "title": "🔄 تمرین: تشخیص نوع شرطی",
+          "activity_type": "classification",
+          "prompt": "هر جمله را به نوع شرطی مربوطه بکشید:",
+          "categories": ["Zero Conditional", "First Conditional", "Second Conditional"],
+          "items": [
+            {
+              "id": "class1",
+              "sentence": "If you mix blue and yellow, you get green.",
+              "correct_category": "Zero Conditional"
+            },
+            {
+              "id": "class2",
+              "sentence": "If I had more time, I would learn a new language.",
+              "correct_category": "Second Conditional"
+            },
+            {
+              "id": "class3",
+              "sentence": "If it's sunny tomorrow, we'll go to the beach.",
+              "correct_category": "First Conditional"
+            }
+          ],
+          "feedback": "به زمان فعل در جمله if و فعل جمله اصلی دقت کنید."
+        }
+      ]
+    },
+    {
+      "id": "topic3",
+      "order": 3,
+      "title": "صورت‌های پیشرفته و نگارش",
+      "icon": "✍️",
+      "description": "جابجایی اجزا، حذف If و استفاده از Unless",
+      "sections": [
+        {
+          "id": "sec3-1",
+          "order": 1,
+          "type": "comparison",
+          "title": "🔄 حالت‌های مختلف یک جمله",
+          "columns": ["صورت پایه", "صورت معکوس (Inversion)", "صورت با Unless"],
+          "rows": [
+            {
+              "id": "comp1",
+              "cols": ["If I knew the answer, I would tell you.", "<b>Were I to know</b> the answer, I would tell you.", "I wouldn't tell you <b>unless</b> I knew the answer."],
+              "explanation": "صورت معکوس (بدون If) بسیار رسمی است. Unless به معنای 'اگر ... نه' یا 'مگر اینکه' است."
+            },
+            {
+              "id": "comp2",
+              "cols": ["If he asked me, I would help him.", "<b>Should he ask</b> me, I would help him.", "I wouldn't help him <b>unless</b> he asked me."],
+              "explanation": "در صورت معکوس از Should + Subject + Base Verb نیز می‌توان استفاده کرد."
+            }
+          ]
+        },
+        {
+          "id": "sec3-2",
+          "order": 2,
+          "type": "interactive",
+          "title": "✍️ تمرین نگارش",
+          "activity_type": "sentence_transformation",
+          "prompt": "جمله زیر را به سه صورت بنویسید: ۱) با If ۲) به صورت معکوس (بدون If) ۳) با Unless",
+          "base_sentence": "I would travel the world if I had enough money.",
+          "hint": "برای صورت معکوس: Were I to have... / Should I have...",
+          "solutions": [
+            "If I had enough money, I would travel the world. (تنها جای if و main clause جابجا شد)",
+            "Were I to have enough money, I would travel the world.",
+            "I wouldn't travel the world unless I had enough money."
+          ]
+        }
+      ]
+    }
+  ],
+
+  "quiz": {
+    "id": "quiz-cond2-b1",
+    "title": "آزمون پایانی شرطی نوع دوم",
+    "instructions": "به ۱۲ سوال پاسخ دهید. دقت کنید که برخی سوالات بیش از یک پاسخ صحیح دارند. زمان کل: ۲۰ دقیقه",
+    "passing_score": 75,
+    "time_limit_seconds": 1200,
+    "shuffle_questions": true,
+    "show_explanation_after": "on_submit",
+    "allow_retry": true,
+    "max_attempts": 2,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "difficulty": "easy",
+        "question": "Which sentence is a correct second conditional?",
+        "options": [
+          "If I see him, I will tell him.",
+          "If I saw him, I would tell him.",
+          "If I had seen him, I would have told him."
+        ],
+        "correct_index": 1,
+        "explanation": "گزینه ۲ ساختار صحیح If + Past Simple, Would + Base را دارد. گزینه ۱ شرطی نوع یک و گزینه ۳ شرطی نوع سه است.",
+        "points": 8
+      },
+      {
+        "id": "q2",
+        "type": "multiple_select",
+        "difficulty": "medium",
+        "question": "Which of the following are CORRECT ways to give advice using the second conditional? (Choose two)",
+        "options": [
+          "If I am you, I study more.",
+          "If I were you, I would study more.",
+          "Were I you, I would study more.",
+          "If I was you, I studied more."
+        ],
+        "correct_indices": [1, 2],
+        "explanation": "گزینه‌های ۲ و ۳ صحیح هستند. گزینه ۲ رایج‌ترین حالت است. گزینه ۳ حالت رسمی و معکوس است. گزینه ۱ از نظر گرامری اشتباه است. گزینه ۴ نیز ساختار گذشته ساده را در بخش اصلی اشتباه به کار برده.",
+        "points": 12
+      },
+      {
+        "id": "q3",
+        "type": "fill_blank",
+        "difficulty": "medium",
+        "question": "If she __________ (have) a car, she __________ (drive) to work every day.",
+        "correct_answer": "had, would drive",
+        "explanation": "جمله یک موقعیت غیرواقعی حال را بیان می‌کند: او در واقعیت ماشین ندارد. پس ساختار If + Past Simple (had), Would + Base Verb (would drive) می‌شود.",
+        "points": 10
+      },
+      {
+        "id": "q4",
+        "type": "true_false",
+        "difficulty": "easy",
+        "statement": "The second conditional is used to talk about likely future events.",
+        "correct_answer": false,
+        "explanation": "اشتباه است. شرطی نوع دوم برای موقعیت‌های <b>غیرواقعی</b>، <b>خیالی</b> یا <b>بعید</b> در حال یا آینده استفاده می‌شود. برای وقایع محتمل آینده از شرطی نوع یک استفاده می‌کنیم.",
+        "points": 8
+      },
+      {
+        "id": "q5",
+        "type": "matching",
+        "difficulty": "medium",
+        "instruction": "نیمه اول جملات شرطی را به نیمه دوم منطبق کنید:",
+        "pairs": [
+          ["If I spoke French,", "I would understand this movie."],
+          ["If it snowed in July,", "people would be very surprised."],
+          ["If they offered me the job,", "I would probably accept it."]
+        ],
+        "points": 15
+      },
+      {
+        "id": "q6",
+        "type": "ordering",
+        "difficulty": "hard",
+        "instruction": "کلمات را به ترتیب صحیح قرار دهید تا یک جمله شرطی نوع دوم معکوس (Inversion) بسازید:",
+        "words": ["to", "you", "advice", "Were", "I", "take", "my", "would"],
+        "correct_order": ["Were", "I", "you", ",", "I", "would", "take", "my", "advice"],
+        "explanation": "این شکل بسیار رسمی جمله 'If I were you, I would take my advice.' است.",
+        "points": 15
+      },
+      {
+        "id": "q7",
+        "type": "translation",
+        "difficulty": "hard",
+        "instruction": "جمله فارسی زیر را به انگلیسی ترجمه کنید (از شرطی نوع دو استفاده کنید):",
+        "persian_sentence": "اگر هوا گرم‌تر بود، به استخر می‌رفتیم.",
+        "correct_answer": "If the weather were hotter, we would go to the pool.",
+        "acceptable_variations": ["If it were hotter, we would go swimming.", "Were the weather hotter, we would go to the pool."],
+        "points": 20
+      },
+      {
+        "id": "q8",
+        "type": "error_correction",
+        "difficulty": "hard",
+        "instruction": "اشتباه(های) گرامری در جمله زیر را پیدا و اصلاح کنید:",
+        "sentence": "If I would have more free time, I will read more books.",
+        "corrected_sentence": "If I had more free time, I would read more books.",
+        "explanation": "دو اشتباه: ۱) در جمله if (شرط) نباید از would استفاده کرد، بلکه از Past Simple (had) استفاده می‌شود. ۲) در جمله اصلی از will (شرطی نوع یک) استفاده شده در حالی که باید از would (شرطی نوع دو) استفاده شود.",
+        "points": 15
+      }
+    ],
+    "results_categories": [
+      {
+        "range": "0-60",
+        "title": "نیاز به مرور مجدد",
+        "message": "مفاهیم پایه‌ای ساختار و کاربرد شرطی نوع دوم نیاز به تمرکز بیشتر دارد. بخش 'مفهوم و ساختار پایه' را مجدداً مطالعه کنید."
+      },
+      {
+        "range": "61-80",
+        "title": "در مسیر درست",
+        "message": "شما ساختار اصلی را فرا گرفته‌اید، اما روی استثناها (مانند Were) و کاربردهای پیشرفته (توصیه، معکوس) نیاز به تمرین دارید."
+      },
+      {
+        "range": "81-100",
+        "title": "تبحر عالی!",
+        "message": "شما بر گرامر پیچیده شرطی نوع دوم، از ساختار پایه تا حالت‌های پیشرفته و معکوس، مسلط هستید. آماده یادگیری شرطی نوع سوم یا ساختار Wish هستید."
+      }
+    ]
+  },
+
+  "additional_resources": [
+    {
+      "type": "video",
+      "title": "شرطی نوع دوم در فیلم‌ها و سریال‌ها",
+      "url": "https://example.com/cond2-in-movies",
+      "duration": "7:15",
+      "description": "گردآوری دیالوگ‌های واقعی از فیلم‌های معروف با این ساختار"
+    },
+    {
+      "type": "pdf",
+      "title": "چک‌لیست تفاوت شرطی نوع ۰، ۱، ۲، ۳",
+      "url": "https://example.com/conditionals-cheatsheet.pdf",
+      "pages": 3
+    },
+    {
+      "type": "game",
+      "title": "بازی 'جهان موازی'",
+      "url": "game://parallel-world-cond2",
+      "description": "با ساختن جملات شرطی نوع دوم، یک دنیای خیالی بسازید و امتیاز بگیرید."
+    },
+    {
+      "type": "article",
+      "title": "تاریچه مختصر: چرا از 'Were' با 'I' استفاده می‌کنیم؟ (Subjunctive Mood)",
+      "url": "https://example.com/subjunctive-mood-article",
+      "description": "یک توضیح زبان‌شناختی جالب درباره ریشه این قاعده"
+    }
+  ],
+
+  "metadata": {
+    "author": "تیم پیشرفته انگلیسی پایه دوازدهم",
+    "reviewed_by": ["دکتر شریفی (دکترای زبان شناسی)", "استاد محمدی"],
+    "created_date": "2024-08-01",
+    "update_history": [
+      {
+        "version": "2.0",
+        "date": "2024-08-20",
+        "changes": "افزودن بخش‌های پیشرفته Inversion و Unless"
+      },
+      {
+        "version": "2.1",
+        "date": "2024-09-10",
+        "changes": "افزودن سوالات چندگزینه‌ای (multiple select) و تصحیح خطا (error correction) به کوئیز"
+      }
+    ],
+    "tags": ["conditional-type-2", "unreal-present", "گرامر پیشرفته", "پایه دوازدهم", "subjunctive", "hypothetical"],
+    "accessibility": {
+      "text_to_speech": true,
+      "high_contrast": true,
+      "font_size_adjustable": true,
+      "transcripts": true
+    }
+  }
+}

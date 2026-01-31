@@ -1,0 +1,59 @@
+{
+  "id": "g7_l1_quiz",
+  "title": "آزمون درس ۱",
+  "description": "آزمون پایان درس برای سنجش یادگیری",
+  "totalQuestions": 10,
+  "passScore": 7,
+  "timeLimit": 900, // ثانیه
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "question": "معنی کلمه 'manager' چیست؟",
+      "options": ["معلم", "مدیر", "دانش‌آموز", "پزشک"],
+      "correctAnswer": 1,
+      "points": 1,
+      "explanation": "مدیر = manager"
+    },
+    {
+      "id": "q2",
+      "type": "true_false",
+      "question": "جمله 'I are a student' صحیح است.",
+      "correctAnswer": false,
+      "points": 1,
+      "explanation": "باید 'I am a student' باشد."
+    },
+    {
+      "id": "q3",
+      "type": "fill_blank",
+      "question": "He ______ a teacher. (is/am/are)",
+      "correctAnswer": "is",
+      "points": 1,
+      "explanation": "با he از is استفاده می‌کنیم."
+    },
+    {
+      "id": "q4",
+      "type": "matching",
+      "question": "کلمات را با معنی‌هایشان تطبیق دهید:",
+      "pairs": [
+        {"word": "teacher", "meaning": "معلم"},
+        {"word": "student", "meaning": "دانش‌آموز"}
+      ],
+      "points": 2
+    },
+    {
+      "id": "q5",
+      "type": "ordering",
+      "question": "جملات را به ترتیب صحیح مرتب کنید:",
+      "items": ["My", "name", "is", "Ali"],
+      "correctOrder": [0, 1, 2, 3],
+      "points": 2
+    }
+  ],
+  "feedback": {
+    "excellent": "عالی! تسلط کامل دارید.",
+    "good": "خوب است، کمی بیشتر تمرین کنید.",
+    "average": "قابل قبول، نیاز به مرور دارید.",
+    "poor": "نیاز به مطالعه مجدد درس دارید."
+  }
+}

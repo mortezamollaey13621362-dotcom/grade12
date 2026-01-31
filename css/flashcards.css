@@ -1,0 +1,741 @@
+/* css/flashcards.css - نسخه نهایی کاملاً اصلاح شده */
+
+/* ============ تنظیمات اولیه ============ */
+.flashcards-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    direction: rtl;
+    font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, sans-serif;
+}
+
+/* ============ هدر ============ */
+.flashcards-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.flashcards-header h3 {
+    color: #6c5ce7;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.flashcards-stats {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-counter {
+    background: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #2d3436;
+    border: 1px solid #dfe6e9;
+    font-size: 0.9rem;
+}
+
+.btn-mode, .btn-settings {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dfe6e9;
+    background: white;
+    color: #6c5ce7;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.btn-mode:hover, .btn-settings:hover {
+    background: #f1f2f6;
+}
+
+/* ============ اطلاعات جلسه ============ */
+.session-info {
+    background: #f8f9fe;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.session-badge {
+    background: #6c5ce7;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.session-stats {
+    color: #636e72;
+}
+
+/* ============ کانتینر اصلی کارت ============ */
+.flashcards-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.flashcard-wrapper {
+    perspective: 1200px;
+    height: 450px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.flashcard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-radius: 20px;
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+/* جلوی کارت (انگلیسی) */
+.flashcard-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    direction: ltr;
+}
+
+/* پشت کارت (فارسی) */
+.flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    direction: rtl;
+    text-align: right;
+    transform: rotateY(180deg);
+    overflow: hidden;
+}
+
+/* ============ محتوای کارت ============ */
+.card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.card-main {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-word {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.card-phonetic {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-style: italic;
+}
+
+.card-meaning {
+    font-size: 1.8rem !important;
+    font-weight: 700;
+    margin: 0 0 15px 0 !important;
+    line-height: 1.3;
+    color: white !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.card-definition {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.95) !important;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    direction: ltr;
+    text-align: left;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* ============ بخش مثال ============ */
+.card-example {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.card-example-header {
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-example-header h4 {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-example-header h4 i {
+    color: #FFD700;
+    font-size: 1rem;
+}
+
+/* دکمه‌های تلفظ مثال - بالای جمله */
+.card-audio-example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.audio-btn-example {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.audio-btn-example:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.audio-btn-example:active {
+    transform: translateY(0);
+}
+
+.audio-btn-example i {
+    font-size: 0.9rem;
+}
+
+/* محتوای مثال */
+.card-example-content {
+    padding: 12px;
+}
+
+.example-sentence {
+    font-size: 1rem !important;
+    color: white !important;
+    margin: 0 0 10px 0 !important;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    direction: ltr;
+    text-align: left;
+    unicode-bidi: embed;
+    line-height: 1.6;
+    font-style: italic;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.example-translation {
+    font-size: 0.9rem !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    margin: 0 !important;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.5;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* ============ نکات و هم‌آیی‌ها ============ */
+.card-collocation,
+.card-tip {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-collocation h4,
+.card-tip h4 {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 6px 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.collocation-text {
+    font-size: 0.95rem;
+    color: white;
+    font-weight: 500;
+    direction: ltr;
+    text-align: left;
+}
+
+/* ============ دکمه‌های صوتی اصلی ============ */
+.card-audio-front {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card-audio-back {
+    display: none !important;
+}
+
+.audio-btn {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    direction: ltr;
+    min-width: 120px;
+    justify-content: center;
+}
+
+.audio-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: scale(1.05);
+}
+
+.audio-btn.us {
+    background: rgba(76, 175, 80, 0.3);
+    border-color: #4CAF50;
+}
+
+.audio-btn.uk {
+    background: rgba(33, 150, 243, 0.3);
+    border-color: #2196F3;
+}
+
+/* ============ کنترل‌های اصلی ============ */
+.flashcards-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.control-btn {
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    min-width: 120px;
+    justify-content: center;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.control-btn.prev {
+    background: #a4b0be;
+}
+
+.control-btn.next {
+    background: #00b894;
+}
+
+.control-btn.flip {
+    background: #6c5ce7;
+    min-width: 140px;
+}
+
+.control-btn.mark {
+    background: #fd79a8;
+}
+
+.control-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* ============ کنترل‌های اضافی ============ */
+.flashcards-extra {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.extra-btn {
+    background: white;
+    border: 1px solid #e1e1e1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #636e72;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.extra-btn:hover {
+    background: #f1f2f6;
+    color: #2d3436;
+}
+
+/* ============ سطح‌بندی ============ */
+.card-level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+.level-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.difficulty {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* ============ نوار پیشرفت ============ */
+.progress-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    border: 1px solid #dfe6e9;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #dfe6e9;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, #6c5ce7, #a29bfe);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    text-align: center;
+    color: #636e72;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ============ راهنمایی‌ها ============ */
+.card-instruction {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.card-instruction.back {
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============ افکت‌های ویژه ============ */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.audio-btn.playing,
+.audio-btn-example.playing {
+    animation: pulse 1s infinite;
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.flashcard {
+    animation: fadeIn 0.5s ease;
+}
+
+/* ============ حالت بدون کارت ============ */
+.no-cards {
+    text-align: center;
+    padding: 40px 20px;
+    color: #636e72;
+    font-size: 1rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+/* ============ واکنش‌گرایی ============ */
+@media (max-width: 768px) {
+    .flashcard-wrapper {
+        height: 400px;
+    }
+    
+    .flashcards-controls {
+        flex-wrap: wrap;
+        width: 95%;
+        gap: 10px;
+    }
+    
+    .control-btn {
+        min-width: calc(50% - 10px);
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .card-word {
+        font-size: 2rem;
+    }
+    
+    .card-meaning {
+        font-size: 1.6rem !important;
+    }
+    
+    .card-audio-example {
+        gap: 8px;
+        padding: 8px;
+    }
+    
+    .audio-btn-example {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .card-audio-front {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .audio-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flashcards-section {
+        padding: 15px 10px;
+    }
+    
+    .flashcard-wrapper {
+        height: 380px;
+    }
+    
+    .flashcard-front,
+    .flashcard-back {
+        padding: 20px;
+    }
+    
+    .flashcards-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .flashcards-stats {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .card-word {
+        font-size: 1.8rem;
+    }
+    
+    .card-meaning {
+        font-size: 1.4rem !important;
+    }
+    
+    .card-phonetic {
+        font-size: 1.1rem;
+    }
+    
+    .example-sentence {
+        font-size: 0.9rem !important;
+    }
+    
+    .example-translation {
+        font-size: 0.85rem !important;
+    }
+    
+    .card-audio-example {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    
+    .audio-btn-example {
+        padding: 5px 10px;
+        font-size: 0.75rem;
+    }
+    
+    .session-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .flashcards-controls {
+        flex-direction: column;
+    }
+    
+    .control-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .flashcard-wrapper {
+        height: 320px;
+    }
+    
+    .flashcard-back {
+        padding: 18px;
+    }
+    
+    .card-word {
+        font-size: 1.6rem;
+    }
+    
+    .card-meaning {
+        font-size: 1.3rem !important;
+    }
+    
+    .example-sentence {
+        font-size: 0.85rem !important;
+    }
+    
+    .audio-btn-example {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+    
+    .card-example-header,
+    .card-audio-example {
+        padding: 6px 10px;
+    }
+    
+    .card-example-content {
+        padding: 10px;
+    }
+}

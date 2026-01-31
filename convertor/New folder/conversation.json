@@ -1,0 +1,101 @@
+[
+  {
+    "id": "conv_1_1",
+    "lessonId": 1,
+    "tabTitle": "مکالمه ۱: آشنایی در مدرسه",
+    "title": "درس اول: آشنایی (Introduction)",
+    "participants": [
+      {
+        "id": "p1",
+        "name": "Ali",
+        "role": "Student",
+        "avatar": "images/ali.png",
+        "side": "right"
+      },
+      {
+        "id": "p2",
+        "name": "Reza",
+        "role": "New Friend",
+        "avatar": "images/reza.png",
+        "side": "left"
+      }
+    ],
+    "lines": [
+      {
+        "id": 1,
+        "speakerId": "p1",
+        "textEn": "Hi, my name is Ali. What’s your name?",
+        "textFa": "سلام، اسم من علی است. اسم شما چیست؟"
+      },
+      {
+        "id": 2,
+        "speakerId": "p2",
+        "textEn": "Hello Ali! I’m Reza. Nice to meet you.",
+        "textFa": "سلام علی! من رضا هستم. از دیدنت خوشبختم."
+      },
+      {
+        "id": 3,
+        "speakerId": "p1",
+        "textEn": "Nice to meet you too, Reza.",
+        "textFa": "من هم از دیدن شما خوشبختم، رضا."
+      }
+    ],
+    "keywords": [
+      { "en": "Nice to meet you", "fa": "از دیدنت خوشبختم" },
+      { "en": "What's your name?", "fa": "اسم شما چیست؟" }
+    ],
+    "tip": {
+      "type": "culture",
+      "text": "در زبان انگلیسی برای معرفی خود معمولاً از عبارت I'm... یا My name is... استفاده می‌کنیم."
+    }
+  },
+  {
+    "id": "conv_1_2",
+    "lessonId": 1,
+    "tabTitle": "مکالمه ۲: گفتگو با معلم",
+    "title": "درس اول: آشنایی (Introduction)",
+    "participants": [
+      {
+        "id": "p1",
+        "name": "Ali",
+        "role": "Student",
+        "avatar": "images/ali.png",
+        "side": "right"
+      },
+      {
+        "id": "p3",
+        "name": "Mr. Karimi",
+        "role": "Teacher",
+        "avatar": "images/teacher.png",
+        "side": "left"
+      }
+    ],
+    "lines": [
+      {
+        "id": 1,
+        "speakerId": "p3",
+        "textEn": "Good morning, Ali.",
+        "textFa": "صبح بخیر علی."
+      },
+      {
+        "id": 2,
+        "speakerId": "p1",
+        "textEn": "Good morning, Mr. Karimi. How are you?",
+        "textFa": "صبح بخیر آقای کریمی. حال شما چطور است؟"
+      },
+      {
+        "id": 3,
+        "speakerId": "p3",
+        "textEn": "Great, thanks!",
+        "textFa": "عالی، ممنون!"
+      }
+    ],
+    "keywords": [
+      { "en": "Good morning", "fa": "صبح بخیر" }
+    ],
+    "tip": {
+      "type": "grammar",
+      "text": "برای خطاب کردن آقایان به صورت رسمی از Mr. به همراه نام خانوادگی استفاده می‌کنیم."
+    }
+  }
+]

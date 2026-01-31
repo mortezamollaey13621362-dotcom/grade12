@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0",
+  "metrics": {
+    "vocabulary": {
+      "wordsLearned": "integer",
+      "wordsMastered": "integer", 
+      "averageMastery": "float"
+    },
+    "grammar": {
+      "exercisesCompleted": "integer",
+      "averageScore": "float",
+      "weakAreas": "array"
+    },
+    "skills": {
+      "listening": {"score": "float", "attempts": "integer"},
+      "speaking": {"score": "float", "attempts": "integer"},
+      "reading": {"score": "float", "attempts": "integer"},
+      "writing": {"score": "float", "attempts": "integer"}
+    },
+    "engagement": {
+      "totalTime": "integer",
+      "dailyStreak": "integer",
+      "lastActive": "timestamp"
+    }
+  },
+  "achievements": [
+    {
+      "id": "first_lesson",
+      "title": "شروع سفر",
+      "description": "اولین درس را کامل کردی",
+      "icon": "🎯",
+      "threshold": 1
+    },
+    {
+      "id": "vocab_master",
+      "title": "استاد واژگان",
+      "description": "۵۰ کلمه را یاد گرفتی",
+      "icon": "📚",
+      "threshold": 50
+    },
+    {
+      "id": "perfect_score",
+      "title": "نمره کامل",
+      "description": "در یک آزمون نمره کامل گرفتی",
+      "icon": "🏆",
+      "threshold": 100
+    }
+  ]
+}

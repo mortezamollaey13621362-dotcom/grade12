@@ -1,0 +1,18 @@
+{
+  "id": "g7_l1_conversation",
+  "title": "معرفی خود",
+  "dialogues": [
+    {
+      "id": "d1",
+      "speaker": "Ali",
+      "text": "Hello. I'm Ali. What's your name?",
+      "translation": "سلام. من علی هستم. اسم تو چیست؟",
+      "audio": "audio/lesson1/conversation/ali_intro.mp3",
+      "slowAudio": "audio/lesson1/conversation/ali_intro_slow.mp3"
+    }
+  ],
+  "practice": {
+    "roleplay": "خودت را معرفی کن",
+    "hints": ["از Hello شروع کن", "اسم خودت را بگو", "بپرس What's your name?"]
+  }
+}

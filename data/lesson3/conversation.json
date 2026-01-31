@@ -1,0 +1,152 @@
+[
+  {
+    "id": "conv_9_1",
+    "lessonId": 9,
+    "tabTitle": "مکالمه ۱: انرژی پاک",
+    "title": "درس نهم: انرژی‌های پاک (Clean Energies)",
+    "participants": [
+      {
+        "id": "p1",
+        "name": "Emad",
+        "role": "Son",
+        "avatar": "images/emad.png",
+        "side": "right"
+      },
+      {
+        "id": "p2",
+        "name": "Father",
+        "role": "Father",
+        "avatar": "images/father.png",
+        "side": "left"
+      }
+    ],
+    "lines": [
+      {
+        "id": 1,
+        "speakerId": "p1",
+        "textEn": "Daddy, look at those big fans!",
+        "textFa": "بابا، به آن پنکه‌های بزرگ نگاه کن!"
+      },
+      {
+        "id": 2,
+        "speakerId": "p2",
+        "textEn": "They are actually wind turbines.",
+        "textFa": "آنها در واقع توربین‌های بادی هستند."
+      },
+      {
+        "id": 3,
+        "speakerId": "p1",
+        "textEn": "Wind turbines?",
+        "textFa": "توربین‌های بادی؟"
+      },
+      {
+        "id": 4,
+        "speakerId": "p2",
+        "textEn": "Yes, wind turbines are used to produce electricity from wind power.",
+        "textFa": "بله، از توربین‌های بادی برای تولید برق از نیروی باد استفاده می‌شود."
+      },
+      {
+        "id": 5,
+        "speakerId": "p1",
+        "textEn": "I know electricity can be produced from water and sunlight. How might it be generated from wind?",
+        "textFa": "می‌دانم که برق را می‌توان از آب و نور خورشید تولید کرد. چطور ممکن است از باد تولید شود؟"
+      },
+      {
+        "id": 6,
+        "speakerId": "p2",
+        "textEn": "Well, a wind turbine works the opposite of a fan. Instead of using electricity to make wind, a turbine uses wind to make electricity. It is a type of clean energy.",
+        "textFa": "خب، یک توربین بادی برعکس یک پنکه کار می‌کند. به جای استفاده از برق برای تولید باد، یک توربین از باد برای تولید برق استفاده می‌کند. این یک نوع انرژی پاک است."
+      },
+      {
+        "id": 7,
+        "speakerId": "p1",
+        "textEn": "These wind turbines remind me of what I read about using wind power in Yazd’s buildings.",
+        "textFa": "این توربین‌های بادی من را به یاد چیزی می‌اندازد که در مورد استفاده از نیروی باد در ساختمان‌های یزد خوانده بودم."
+      },
+      {
+        "id": 8,
+        "speakerId": "p2",
+        "textEn": "You mean wind towers?",
+        "textFa": "منظورت بادگیرها است؟"
+      },
+      {
+        "id": 9,
+        "speakerId": "p1",
+        "textEn": "Yes, they are natural air-cooling systems and can be used instead of electrical air conditioners. This is another source of clean energy, isn’t it?",
+        "textFa": "بله، آنها سیستم‌های خنک‌کننده طبیعی هوا هستند و می‌توانند به جای کولرهای گازی برقی استفاده شوند. این هم یک منبع دیگر انرژی پاک است، اینطور نیست؟"
+      },
+      {
+        "id": 10,
+        "speakerId": "p2",
+        "textEn": "Yes, it is. An excellent type of clean energy!",
+        "textFa": "بله، همینطور است. یک نوع عالیp1",
+        "textEn": "I know electricity can be produced from water and sunlight. How might it be generated from wind?",
+        "textFa": "می‌دانم که برق را می‌توان از آب و نور خورشید تولید کرد. چطور ممکن است از باد تولید شود؟"
+      },
+      {
+        "id": 6,
+        "speakerId": "p2",
+        "textEn": "Well, a wind turbine works the opposite of a fan. Instead of using electricity to make wind, a turbine uses wind to make electricity. It is a type of clean energy.",
+        "textFa": "خب، یک توربین بادی برعکس یک پنکه کار می‌کند. به جای استفاده از برق برای تولید باد، یک توربین از باد برای تولید برق استفاده می‌کند. این یک نوع انرژی پاک است."
+      },
+      {
+        "id": 7,
+        "speakerId": "p1",
+        "textEn": "These wind turbines remind me of what I read about using wind power in Yazd’s buildings.",
+        "textFa": "این توربین‌های بادی من را به یاد چیزی می‌اندازد که در مورد استفاده از نیروی باد در ساختمان‌های یزد خوانده بودم."
+      },
+      {
+        "id": 8,
+        "speakerId": "p2",
+        "textEn": "You mean wind towers?",
+        "textFa": "منظورت بادگیرها است؟"
+      },
+      {
+        "id": 9,
+        "speakerId": "p1",
+        "textEn": "Yes, they are natural air-cooling systems and can be used instead of electrical air conditioners. This is another source of clean energy, isn’t it?",
+        "textFa": "بله، آنها سیستم‌های خنک‌کننده طبیعی هوا هستند و می‌توانند به جای کولرهای گازی برقی استفاده شوند. این هم یک منبع دیگر انرژی پاک است، اینطور نیست؟"
+      },
+      {
+        "id": 10,
+        "speakerId": "p2",
+        "textEn": "Yes, it is. An excellent type of clean energy!",
+        "textFa": "بله، همینطور است. یک نوع عالی از انرژی پاک!"
+      },
+      {
+        "id": 11,
+        "speakerId": "p1",
+        "textEn": "Daddy, can we travel to Yazd this Norooz?",
+        "textFa": "بابا، می‌توانیم این نوروز به یزد سفر کنیم؟"
+      },
+      {
+        "id": 12,
+        "speakerId": "p2",
+        "textEn": "That’s OK with me. Let’s check it with others.",
+        "textFa": "من موافقم. بیا با بقیه هم هماهنگ کنیم."
+      }
+    ],
+    "keywords": [
+      {
+        "en": "wind turbines",
+        "fa": "توربین‌های بادی"
+      },
+      {
+        "en": "produce electricity",
+        "fa": "تولید برق"
+      },
+      {
+        "en": "clean energy",
+        "fa": "انرژی پاک"
+      },
+      {
+        "en": "wind towers",
+        "fa": "بادگیرها"
+      }
+    ],
+    "tip": {
+      "type": "culture",
+      "text": "بادگیرها (Wind towers) که در مکالمه به آنها اشاره شد، یکی از شاهکارهای معماری سنتی ایران در مناطق کویری مانند یزد هستند. این سازه‌ها بدون استفاده از برق، هوای گرم بیرون را به هوای خنک و مطبوع در داخل ساختمان تبدیل می‌کنند و نمونه‌ای عالی از انرژی پاک در گذشته به شمار می‌روند."
+    }
+  }
+]

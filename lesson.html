@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درس - English7App</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modern-ui.css">
+</head>
+<body>
+    <!-- کانتینر اصلی -->
+    <div class="lesson-container">
+        
+        <!-- دکمه بازگشت -->
+        <button class="back-button" onclick="goBack()">
+            <span>←</span>
+            <span>بازگشت به صفحه اصلی</span>
+        </button>
+        
+        <!-- هدر درس -->
+        <div class="lesson-header">
+            <h1 id="lessonTitle">در حال بارگذاری...</h1>
+            <p id="lessonDescription">لطفاً صبر کنید</p>
+            
+            <!-- نوار پیشرفت -->
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="lessonProgress" style="width: 0%"></div>
+            </div>
+            <p class="progress-text" id="progressText">0% تکمیل شده</p>
+        </div>
+        
+        <!-- گرید بخش‌ها -->
+        <div class="sections-grid" id="sectionsGrid">
+            <!-- بخش‌ها به صورت داینامیک اضافه می‌شوند -->
+        </div>
+        
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/lesson-ui.js"></script>
+</body>
+</html>

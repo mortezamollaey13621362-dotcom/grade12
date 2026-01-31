@@ -1,0 +1,5204 @@
+[
+  {
+    "id": "g7_l1_fc1",
+    "word": "sense",
+    "phonetic": "/sens/",
+    "persianMeaning": "حس",
+    "example": "She has a good sense of direction.",
+    "exampleTranslation": "او حس جهت‌یابی خوبی دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc2",
+    "word": "appreciation",
+    "phonetic": "/əˌpriːʃiˈeɪʃn/",
+    "persianMeaning": "قدردانی",
+    "example": "We showed our appreciation for their kindness.",
+    "exampleTranslation": "ما قدردانی خود را از محبتشان نشان دادیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc3",
+    "word": "interesting",
+    "phonetic": "/ˈɪntrəstɪŋ/",
+    "persianMeaning": "جالب",
+    "example": "This book has many interesting facts.",
+    "exampleTranslation": "این کتاب حقایق جالب زیادی دارد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc4",
+    "word": "helping",
+    "phonetic": "/ˈhelpɪŋ/",
+    "persianMeaning": "کمک کردن",
+    "example": "Helping others makes you feel good.",
+    "exampleTranslation": "کمک کردن به دیگران باعث می‌شود احساس خوبی داشته باشید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc5",
+    "word": "lowers",
+    "phonetic": "/ˈloʊərz/",
+    "persianMeaning": "پایین می‌آورد",
+    "example": "Exercise lowers blood pressure.",
+    "exampleTranslation": "ورزش فشار خون را پایین می‌آورد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc6",
+    "word": "blood",
+    "phonetic": "/blʌd/",
+    "persianMeaning": "خون",
+    "example": "The doctor checked his blood pressure.",
+    "exampleTranslation": "دکتر فشار خون او را چک کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc7",
+    "word": "pressure",
+    "phonetic": "/ˈpreʃər/",
+    "persianMeaning": "فشار",
+    "example": "High blood pressure is dangerous for health.",
+    "exampleTranslation": "فشار خون بالا برای سلامتی خطرناک است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc8",
+    "word": "kindness",
+    "phonetic": "/ˈkaɪndnəs/",
+    "persianMeaning": "مهربانی",
+    "example": "Her kindness made everyone feel welcome.",
+    "exampleTranslation": "مهربانی او باعث شد همه احساس خوشامد کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc9",
+    "word": "boosts",
+    "phonetic": "/buːsts/",
+    "persianMeaning": "تقویت می‌کند",
+    "example": "Kindness boosts energy in elderly people.",
+    "exampleTranslation": "مهربانی انرژی را در افراد سالمند افزایش می‌دهد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc10",
+    "word": "energy",
+    "phonetic": "/ˈenərdʒi/",
+    "persianMeaning": "انرژی",
+    "example": "Children have a lot of energy.",
+    "exampleTranslation": "کودکان انرژی زیادی دارند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc11",
+    "word": "strength",
+    "phonetic": "/streŋθ/",
+    "persianMeaning": "قدرت",
+    "example": "Weight training builds muscle strength.",
+    "exampleTranslation": "تمرین با وزنه قدرت عضلانی را می‌سازد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc12",
+    "word": "elderly",
+    "phonetic": "/ˈeldərli/",
+    "persianMeaning": "سالمند",
+    "example": "We should respect elderly people.",
+    "exampleTranslation": "ما باید به افراد سالمند احترام بگذاریم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc13",
+    "word": "teenagers",
+    "phonetic": "/ˈtiːnˌeɪdʒərz/",
+    "persianMeaning": "نوجوانان",
+    "example": "Many teenagers use social media.",
+    "exampleTranslation": "بسیاری از نوجوانان از شبکه‌های اجتماعی استفاده می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc14",
+    "word": "successful",
+    "phonetic": "/səkˈsesfl/",
+    "persianMeaning": "موفق",
+    "example": "She is a successful businesswoman.",
+    "exampleTranslation": "او یک زن بازرگان موفق است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc15",
+    "word": "listening",
+    "phonetic": "/ˈlɪsənɪŋ/",
+    "persianMeaning": "گوش دادن",
+    "example": "Listening to music relaxes me.",
+    "exampleTranslation": "گوش دادن به موسیقی من را آرام می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc16",
+    "word": "advice",
+    "phonetic": "/ədˈvaɪs/",
+    "persianMeaning": "پند",
+    "example": "My father gave me good advice.",
+    "exampleTranslation": "پدرم به من پند خوبی داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc17",
+    "word": "older",
+    "phonetic": "/ˈoʊldər/",
+    "persianMeaning": "بزرگتر",
+    "example": "My older brother helps me with homework.",
+    "exampleTranslation": "برادر بزرگترم در تکالیف به من کمک می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc18",
+    "word": "improves",
+    "phonetic": "/ɪmˈpruːvz/",
+    "persianMeaning": "بهبود می‌بخشد",
+    "example": "Reading improves your vocabulary.",
+    "exampleTranslation": "خواندن دایره لغات شما را بهبود می‌بخشد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc19",
+    "word": "taking",
+    "phonetic": "/ˈteɪkɪŋ/",
+    "persianMeaning": "گرفتن",
+    "example": "She is taking care of her little sister.",
+    "exampleTranslation": "او از خواهر کوچکش مراقبت می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc20",
+    "word": "care",
+    "phonetic": "/ker/",
+    "persianMeaning": "مراقبت",
+    "example": "Parents give care to their children.",
+    "exampleTranslation": "والدین از کودکان خود مراقبت می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc21",
+    "word": "grandchildren",
+    "phonetic": "/ˈɡræntʃaɪldrən/",
+    "persianMeaning": "نوه‌ها",
+    "example": "My grandmother loves her grandchildren.",
+    "exampleTranslation": "مادربزرگم نوه‌هایش را دوست دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc22",
+    "word": "increases",
+    "phonetic": "/ɪnˈkriːsɪz/",
+    "persianMeaning": "افزایش می‌دهد",
+    "example": "Exercise increases muscle strength.",
+    "exampleTranslation": "ورزش قدرت عضلات را افزایش می‌دهد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc23",
+    "word": "brain",
+    "phonetic": "/breɪn/",
+    "persianMeaning": "مغز",
+    "example": "The brain is very important for memory.",
+    "exampleTranslation": "مغز برای حافظه بسیار مهم است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc24",
+    "word": "function",
+    "phonetic": "/ˈfʌŋkʃn/",
+    "persianMeaning": "عملکرد",
+    "example": "The main function of the heart is pumping blood.",
+    "exampleTranslation": "عملکرد اصلی قلب پمپاژ خون است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc25",
+    "word": "memory",
+    "phonetic": "/ˈmeməri/",
+    "persianMeaning": "حافظه",
+    "example": "She has a good memory for names.",
+    "exampleTranslation": "او حافظه خوبی برای نام‌ها دارد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc26",
+    "word": "facts",
+    "phonetic": "/fækts/",
+    "persianMeaning": "حقایق",
+    "example": "The book contains interesting facts about science.",
+    "exampleTranslation": "کتاب حاوی حقایق جالبی درباره علم است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc27",
+    "word": "select",
+    "phonetic": "/sɪˈlekt/",
+    "persianMeaning": "انتخاب کردن",
+    "example": "Please select your favorite color.",
+    "exampleTranslation": "لطفا رنگ مورد علاقه خود را انتخاب کنید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc28",
+    "word": "boost",
+    "phonetic": "/buːst/",
+    "persianMeaning": "تقویت کردن",
+    "example": "Coffee can boost your energy in the morning.",
+    "exampleTranslation": "قهوه می‌تواند صبح‌ها انرژی شما را تقویت کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc29",
+    "word": "dedicate",
+    "phonetic": "/ˈdedɪkeɪt/",
+    "persianMeaning": "وقف کردن",
+    "example": "She dedicates her time to helping the poor.",
+    "exampleTranslation": "او وقت خود را وقف کمک به فقرا می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc30",
+    "word": "dedicated",
+    "phonetic": "/ˈdedɪkeɪtɪd/",
+    "persianMeaning": "فداکار",
+    "example": "He is a dedicated teacher.",
+    "exampleTranslation": "او یک معلم فداکار است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc31",
+    "word": "distinguish",
+    "phonetic": "/dɪˈstɪŋɡwɪʃ/",
+    "persianMeaning": "تشخیص دادن",
+    "example": "Can you distinguish between these two colors?",
+    "exampleTranslation": "آیا می‌توانید بین این دو رنگ تمایز قائل شوید؟",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc32",
+    "word": "distinguished",
+    "phonetic": "/dɪˈstɪŋɡwɪʃt/",
+    "persianMeaning": "برجسته",
+    "example": "He is a distinguished scientist.",
+    "exampleTranslation": "او یک دانشمند برجسته است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc33",
+    "word": "found",
+    "phonetic": "/faʊnd/",
+    "persianMeaning": "بنیان نهادن",
+    "example": "They founded a new school in the village.",
+    "exampleTranslation": "آن‌ها یک مدرسه جدید در روستا تاسیس کردند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc34",
+    "word": "known",
+    "phonetic": "/noʊn/",
+    "persianMeaning": "شناخته شده",
+    "example": "He is a known artist in our city.",
+    "exampleTranslation": "او یک هنرمند شناخته شده در شهر ما است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc35",
+    "word": "loving",
+    "phonetic": "/ˈlʌvɪŋ/",
+    "persianMeaning": "مهربان",
+    "example": "She has a loving family.",
+    "exampleTranslation": "او یک خانواده مهربان دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc36",
+    "word": "lower",
+    "phonetic": "/ˈloʊər/",
+    "persianMeaning": "کم کردن",
+    "example": "Please lower your voice.",
+    "exampleTranslation": "لطفا صدای خود را پایین بیاورید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc37",
+    "word": "physician",
+    "phonetic": "/fɪˈzɪʃn/",
+    "persianMeaning": "پزشک",
+    "example": "The physician examined the patient carefully.",
+    "exampleTranslation": "پزشک بیمار را با دقت معاینه کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc38",
+    "word": "pity",
+    "phonetic": "/ˈpɪti/",
+    "persianMeaning": "حس ترحم",
+    "example": "I feel pity for the homeless people.",
+    "exampleTranslation": "من برای افراد بی‌خانمان احساس ترحم می‌کنم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc39",
+    "word": "regard",
+    "phonetic": "/rɪˈɡɑːrd/",
+    "persianMeaning": "در نظر گرفتن",
+    "example": "I regard him as my best friend.",
+    "exampleTranslation": "من او را به عنوان بهترین دوستم در نظر می‌گیرم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc40",
+    "word": "spare",
+    "phonetic": "/sper/",
+    "persianMeaning": "فروگذار کردن",
+    "example": "Can you spare a few minutes to help me?",
+    "exampleTranslation": "آیا می‌توانید چند دقیقه وقت بگذارید تا به من کمک کنید؟",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc41",
+    "word": "surprisingly",
+    "phonetic": "/sərˈpraɪzɪŋli/",
+    "persianMeaning": "به شکل تعجب‌انگیز",
+    "example": "Surprisingly, he passed the exam without studying.",
+    "exampleTranslation": "به شکل تعجب‌انگیزی، او بدون مطالعه در امتحان قبول شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc42",
+    "word": "terrible",
+    "phonetic": "/ˈterəbl/",
+    "persianMeaning": "وحشتناک",
+    "example": "We had terrible weather yesterday.",
+    "exampleTranslation": "ما دیروز آب و هوای وحشتناکی داشتیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc43",
+    "word": "diploma",
+    "phonetic": "/dɪˈploʊmə/",
+    "persianMeaning": "دیپلم",
+    "example": "She received her high school diploma last year.",
+    "exampleTranslation": "او سال گذشته دیپلم دبیرستان خود را دریافت کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc44",
+    "word": "grandchild",
+    "phonetic": "/ˈɡræntʃaɪld/",
+    "persianMeaning": "نوه",
+    "example": "My grandchild visits me every weekend.",
+    "exampleTranslation": "نوه من هر آخر هفته به دیدن من می‌آید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc45",
+    "word": "professor",
+    "phonetic": "/prəˈfesər/",
+    "persianMeaning": "استاد",
+    "example": "My father is a professor of physics.",
+    "exampleTranslation": "پدرم استاد فیزیک است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc46",
+    "word": "temperature",
+    "phonetic": "/ˈtemprətʃər/",
+    "persianMeaning": "دما",
+    "example": "The temperature today is 25 degrees.",
+    "exampleTranslation": "دمای امروز ۲۵ درجه است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc47",
+    "word": "textbook",
+    "phonetic": "/ˈtekstbʊk/",
+    "persianMeaning": "کتاب درسی",
+    "example": "Please open your English textbook to page 50.",
+    "exampleTranslation": "لطفا کتاب درسی انگلیسی خود را به صفحه ۵۰ باز کنید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc48",
+    "word": "teenager",
+    "phonetic": "/ˈtiːnˌeɪdʒər/",
+    "persianMeaning": "نوجوان",
+    "example": "As a teenager, he loves playing video games.",
+    "exampleTranslation": "به عنوان یک نوجوان، او عاشق بازی کردن ویدیو گیم است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc49",
+    "word": "not surprisingly",
+    "phonetic": "/nɑːt sərˈpraɪzɪŋli/",
+    "persianMeaning": "جای تعجب نیست، همانطور که انتظار می‌رفت",
+    "example": "Not surprisingly, he passed the exam with a high score.",
+    "exampleTranslation": "جای تعجب نیست (همانطور که انتظار می‌رفت) او با نمره بالا در امتحان قبول شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc50",
+    "word": "take temperature",
+    "phonetic": "/teɪk ˈtemprətʃər/",
+    "persianMeaning": "تب گرفتن، اندازه گیری دما",
+    "example": "The nurse took the child's temperature.",
+    "exampleTranslation": "پرستار تب کودک را گرفت (اندازه گیری کرد).",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc51",
+    "word": "physician",
+    "phonetic": "/fɪˈzɪʃn/",
+    "persianMeaning": "پزشک، طبیب",
+    "example": "You should consult a physician if the pain continues.",
+    "exampleTranslation": "اگر درد ادامه یافت باید با یک پزشک مشورت کنی.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g7_l1_fc52",
+    "word": "regard",
+    "phonetic": "/rɪˈɡɑːrd/",
+    "persianMeaning": "احترام، توجه",
+    "example": "He is held in high regard by his colleagues.",
+    "exampleTranslation": "او نزد همکارانش احترام زیادی دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc53",
+    "word": "found",
+    "phonetic": "/faʊnd/",
+    "persianMeaning": "یافت، پیدا کرد (گذشته find)",
+    "example": "I found my keys under the sofa.",
+    "exampleTranslation": "من کلیدهایم را زیر مبل پیدا کردم (یافتم).",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc54",
+    "word": "dedicated",
+    "phonetic": "/ˈdedɪkeɪtɪd/",
+    "persianMeaning": "متعهد، فداکار",
+    "example": "The team is dedicated to their project.",
+    "exampleTranslation": "تیم نسبت به پروژه خود متعهد است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc55",
+    "word": "spare no pains",
+    "phonetic": "/sper noʊ peɪnz/",
+    "persianMeaning": "دریغ نکردن از هیچ کوششی، نهایت تلاش را کردن",
+    "example": "They spared no pains to make the party a success.",
+    "exampleTranslation": "آن‌ها برای موفقیت مهمانی از هیچ کوششی دریغ نکردند.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g7_l1_fc56",
+    "word": "distinguished",
+    "phonetic": "/dɪˈstɪŋɡwɪʃt/",
+    "persianMeaning": "برجسته، ممتاز",
+    "example": "He is a distinguished writer.",
+    "exampleTranslation": "او یک نویسنده برجسته است.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g7_l1_fc57",
+    "word": "truth",
+    "phonetic": "/truːθ/",
+    "persianMeaning": "حقیقت",
+    "example": "Always tell the truth to your parents.",
+    "exampleTranslation": "همیشه به والدین خود حقیقت را بگویید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc58",
+    "word": "strength",
+    "phonetic": "/streŋθ/",
+    "persianMeaning": "قدرت",
+    "example": "Exercise builds muscle strength.",
+    "exampleTranslation": "ورزش قدرت عضلات را می‌سازد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc59",
+    "word": "kindness",
+    "phonetic": "/ˈkaɪndnəs/",
+    "persianMeaning": "مهربانی",
+    "example": "Her kindness helped the new student feel welcome.",
+    "exampleTranslation": "مهربانی او به دانش‌آموز جدید کمک کرد احساس خوشامد کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc60",
+    "word": "diploma",
+    "phonetic": "/dɪˈploʊmə/",
+    "persianMeaning": "دیپلم",
+    "example": "She received her high school diploma last year.",
+    "exampleTranslation": "او سال گذشته دیپلم دبیرستان خود را دریافت کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc61",
+    "word": "happiness",
+    "phonetic": "/ˈhæpinəs/",
+    "persianMeaning": "خوشحالی",
+    "example": "Family brings me great happiness.",
+    "exampleTranslation": "خانواده شادی بزرگی برای من می‌آورد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc62",
+    "word": "project",
+    "phonetic": "/ˈprɑːdʒekt/",
+    "persianMeaning": "پروژه",
+    "example": "Our science project is about plants.",
+    "exampleTranslation": "پروژه علمی ما درباره گیاهان است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc63",
+    "word": "agricultural",
+    "phonetic": "/ˌæɡrɪˈkʌltʃərəl/",
+    "persianMeaning": "کشاورزی",
+    "example": "Agricultural products include wheat and rice.",
+    "exampleTranslation": "محصولات کشاورزی شامل گندم و برنج می‌شود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc64",
+    "word": "production",
+    "phonetic": "/prəˈdʌkʃn/",
+    "persianMeaning": "تولید",
+    "example": "The factory increased its car production.",
+    "exampleTranslation": "کارخانه تولید ماشین خود را افزایش داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc65",
+    "word": "boost",
+    "phonetic": "/buːst/",
+    "persianMeaning": "تقویت کردن",
+    "example": "Eating fruit can boost your health.",
+    "exampleTranslation": "خوردن میوه می‌تواند سلامتی شما را تقویت کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc66",
+    "word": "calm",
+    "phonetic": "/kɑːm/",
+    "persianMeaning": "آرام",
+    "example": "She stays calm during exams.",
+    "exampleTranslation": "او در طول امتحانات آرام می‌ماند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc67",
+    "word": "solve",
+    "phonetic": "/sɑːlv/",
+    "persianMeaning": "حل کردن",
+    "example": "Can you solve this math problem?",
+    "exampleTranslation": "آیا می‌توانی این مسئله ریاضی را حل کنی؟",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc68",
+    "word": "refer",
+    "phonetic": "/rɪˈfɜːr/",
+    "persianMeaning": "ارجاع دادن",
+    "example": "Please refer to page 50 for more information.",
+    "exampleTranslation": "لطفا برای اطلاعات بیشتر به صفحه ۵۰ مراجعه کنید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc69",
+    "word": "couple",
+    "phonetic": "/ˈkʌpl/",
+    "persianMeaning": "زوج",
+    "example": "A young couple walked in the park.",
+    "exampleTranslation": "یک زوج جوان در پارک قدم می‌زدند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc70",
+    "word": "silently",
+    "phonetic": "/ˈsaɪləntli/",
+    "persianMeaning": "بی صدا",
+    "example": "The cat walked silently across the room.",
+    "exampleTranslation": "گربه بی‌صدا از اتاق عبور کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc71",
+    "word": "mashed",
+    "phonetic": "/mæʃt/",
+    "persianMeaning": "له شده",
+    "example": "Mashed potatoes are my favorite food.",
+    "exampleTranslation": "سیب‌زمینی له شده غذای مورد علاقه من است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc72",
+    "word": "elderly",
+    "phonetic": "/ˈeldərli/",
+    "persianMeaning": "سالمند",
+    "example": "We should help elderly people cross the street.",
+    "exampleTranslation": "ما باید به افراد سالمند کمک کنیم از خیابان عبور کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc73",
+    "word": "available",
+    "phonetic": "/əˈveɪləbl/",
+    "persianMeaning": "موجود",
+    "example": "Is this book available in the library?",
+    "exampleTranslation": "آیا این کتاب در کتابخانه موجود است؟",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc74",
+    "word": "main",
+    "phonetic": "/meɪn/",
+    "persianMeaning": "اصلی",
+    "example": "The main reason for my success is hard work.",
+    "exampleTranslation": "دلیل اصلی موفقیت من کار سخت است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc75",
+    "word": "study",
+    "phonetic": "/ˈstʌdi/",
+    "persianMeaning": "مطالعه",
+    "example": "A new study shows the benefits of exercise.",
+    "exampleTranslation": "یک مطالعه جدید فواید ورزش را نشان می‌دهد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc76",
+    "word": "facts",
+    "phonetic": "/fækts/",
+    "persianMeaning": "حقایق",
+    "example": "Scientists base their work on facts.",
+    "exampleTranslation": "دانشمندان کار خود را بر اساس حقایق قرار می‌دهند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc77",
+    "word": "weight",
+    "phonetic": "/weɪt/",
+    "persianMeaning": "وزن",
+    "example": "Her weight is 50 kilograms.",
+    "exampleTranslation": "وزن او ۵۰ کیلوگرم است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc78",
+    "word": "caused",
+    "phonetic": "/kɔːzd/",
+    "persianMeaning": "ایجاد کرد",
+    "example": "The rain caused the accident.",
+    "exampleTranslation": "باران باعث تصادف شد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc79",
+    "word": "addition",
+    "phonetic": "/əˈdɪʃn/",
+    "persianMeaning": "افزودن",
+    "example": "In addition to apples, we bought oranges.",
+    "exampleTranslation": "علاوه بر سیب، ما پرتقال خریدیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc80",
+    "word": "sugar",
+    "phonetic": "/ˈʃʊɡər/",
+    "persianMeaning": "شکر",
+    "example": "Too much sugar is bad for your teeth.",
+    "exampleTranslation": "قند زیاد برای دندان‌های شما بد است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc81",
+    "word": "fat",
+    "phonetic": "/fæt/",
+    "persianMeaning": "چربی",
+    "example": "Some fats are necessary for health.",
+    "exampleTranslation": "برخی چربی‌ها برای سلامتی لازم هستند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc82",
+    "word": "dedicated",
+    "phonetic": "/ˈdedɪkeɪtɪd/",
+    "persianMeaning": "فداکار",
+    "example": "She is a dedicated teacher who loves her job.",
+    "exampleTranslation": "او یک معلم فداکار است که کارش را دوست دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc83",
+    "word": "known",
+    "phonetic": "/noʊn/",
+    "persianMeaning": "شناخته شده",
+    "example": "He is a known writer in our country.",
+    "exampleTranslation": "او یک نویسنده شناخته شده در کشور ما است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc84",
+    "word": "painless",
+    "phonetic": "/ˈpeɪnləs/",
+    "persianMeaning": "بی درد",
+    "example": "The injection was almost painless.",
+    "exampleTranslation": "تزریق تقریباً بدون درد بود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc85",
+    "word": "protective",
+    "phonetic": "/prəˈtektɪv/",
+    "persianMeaning": "محافظتی",
+    "example": "Parents have a protective feeling toward their children.",
+    "exampleTranslation": "والدین احساس محافظتی نسبت به فرزندان خود دارند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc86",
+    "word": "dedicate",
+    "phonetic": "/ˈdedɪkeɪt/",
+    "persianMeaning": "وقف کردن",
+    "example": "He wants to dedicate his life to helping others.",
+    "exampleTranslation": "او می‌خواهد زندگی خود را وقف کمک به دیگران کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc87",
+    "word": "surprisingly",
+    "phonetic": "/sərˈpraɪzɪŋli/",
+    "persianMeaning": "به شکل تعجب‌انگیز",
+    "example": "Surprisingly, he passed the difficult exam.",
+    "exampleTranslation": "به شکل تعجب‌انگیزی، او امتحان سخت را قبول شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc88",
+    "word": "creatively",
+    "phonetic": "/kriˈeɪtɪvli/",
+    "persianMeaning": "خلاقانه",
+    "example": "She solved the problem creatively.",
+    "exampleTranslation": "او مسئله را خلاقانه حل کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc89",
+    "word": "dangerously",
+    "phonetic": "/ˈdeɪndʒərəsli/",
+    "persianMeaning": "به شکل خطرناک",
+    "example": "He drove dangerously fast.",
+    "exampleTranslation": "او به شکل خطرناکی سریع رانندگی کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc90",
+    "word": "beautifully",
+    "phonetic": "/ˈbjuːtɪfli/",
+    "persianMeaning": "زیبا",
+    "example": "She sings beautifully.",
+    "exampleTranslation": "او زیبا می‌خواند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc91",
+    "word": "relationship",
+    "phonetic": "/rɪˈleɪʃnʃɪp/",
+    "persianMeaning": "رابطه",
+    "example": "Good communication improves relationships.",
+    "exampleTranslation": "ارتباط خوب روابط را بهبود می‌بخشد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc92",
+    "word": "beauty",
+    "phonetic": "/ˈbjuːti/",
+    "persianMeaning": "زیبایی",
+    "example": "Everyone admired the beauty of the garden.",
+    "exampleTranslation": "همه زیبایی باغ را تحسین کردند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc93",
+    "word": "technology",
+    "phonetic": "/tekˈnɑːlədʒi/",
+    "persianMeaning": "فناوری",
+    "example": "Modern technology helps us communicate faster.",
+    "exampleTranslation": "فناوری مدرن به ما کمک می‌کند سریعتر ارتباط برقرار کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc94",
+    "word": "heart",
+    "phonetic": "/hɑːrt/",
+    "persianMeaning": "قلب",
+    "example": "A healthy heart is important for a long life.",
+    "exampleTranslation": "یک قلب سالم برای زندگی طولانی مهم است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc95",
+    "word": "company",
+    "phonetic": "/ˈkʌmpəni/",
+    "persianMeaning": "شرکت",
+    "example": "My father works for a car company.",
+    "exampleTranslation": "پدرم برای یک شرکت ماشین کار می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc96",
+    "word": "originally",
+    "phonetic": "/əˈrɪdʒənəli/",
+    "persianMeaning": "در اصل",
+    "example": "This building was originally a school.",
+    "exampleTranslation": "این ساختمان در اصل یک مدرسه بود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc97",
+    "word": "engineer",
+    "phonetic": "/ˌendʒɪˈnɪr/",
+    "persianMeaning": "مهندس",
+    "example": "The engineer fixed the broken bridge.",
+    "exampleTranslation": "مهندس پل شکسته را تعمیر کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc98",
+    "word": "scientist",
+    "phonetic": "/ˈsaɪəntɪst/",
+    "persianMeaning": "دانشمند",
+    "example": "The scientist discovered a new medicine.",
+    "exampleTranslation": "دانشمند یک داروی جدید کشف کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc99",
+    "word": "founded",
+    "phonetic": "/ˈfaʊndɪd/",
+    "persianMeaning": "تاسیس کرد",
+    "example": "The school was founded fifty years ago.",
+    "exampleTranslation": "مدرسه پنجاه سال پیش تاسیس شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc100",
+    "word": "counted",
+    "phonetic": "/ˈkaʊntɪd/",
+    "persianMeaning": "شمرد",
+    "example": "She counted the students in the class.",
+    "exampleTranslation": "او دانش‌آموزان کلاس را شمرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc101",
+    "word": "produced",
+    "phonetic": "/prəˈduːst/",
+    "persianMeaning": "تولید کرد",
+    "example": "This factory produces cars.",
+    "exampleTranslation": "این کارخانه ماشین تولید می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc102",
+    "word": "foreign",
+    "phonetic": "/ˈfɔːrən/",
+    "persianMeaning": "خارجی",
+    "example": "She speaks three foreign languages.",
+    "exampleTranslation": "او سه زبان خارجی صحبت می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc103",
+    "word": "workers",
+    "phonetic": "/ˈwɜːrkərz/",
+    "persianMeaning": "کارگران",
+    "example": "The workers built the new road.",
+    "exampleTranslation": "کارگران جاده جدید را ساختند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc104",
+    "word": "rights",
+    "phonetic": "/raɪts/",
+    "persianMeaning": "حقوق",
+    "example": "Every citizen has basic rights.",
+    "exampleTranslation": "هر شهروند حقوق اساسی دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc105",
+    "word": "payments",
+    "phonetic": "/ˈpeɪmənts/",
+    "persianMeaning": "پرداخت‌ها",
+    "example": "She receives monthly payments from her job.",
+    "exampleTranslation": "او پرداخت‌های ماهانه از کارش دریافت می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc106",
+    "word": "lower",
+    "phonetic": "/ˈloʊər/",
+    "persianMeaning": "پایین‌تر",
+    "example": "They offer lower prices than other shops.",
+    "exampleTranslation": "آن‌ها قیمت‌های پایین‌تری نسبت به سایر مغازه‌ها ارائه می‌دهند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc107",
+    "word": "terrible",
+    "phonetic": "/ˈterəbl/",
+    "persianMeaning": "وحشتناک",
+    "example": "We had terrible weather on our trip.",
+    "exampleTranslation": "ما در سفرمان آب و هوای وحشتناکی داشتیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc108",
+    "word": "medical",
+    "phonetic": "/ˈmedɪkl/",
+    "persianMeaning": "پزشکی",
+    "example": "She needs medical attention for her injury.",
+    "exampleTranslation": "او برای آسیب‌اش نیاز به مراقبت پزشکی دارد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc109",
+    "word": "natural",
+    "phonetic": "/ˈnætʃrəl/",
+    "persianMeaning": "طبیعی",
+    "example": "Honey is a natural sweetener.",
+    "exampleTranslation": "عسل یک شیرین‌کننده طبیعی است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc110",
+    "word": "tone",
+    "phonetic": "/toʊn/",
+    "persianMeaning": "تن صدا",
+    "example": "His friendly tone made me feel welcome.",
+    "exampleTranslation": "لحن دوستانه او باعث شد احساس خوشامد کنم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc111",
+    "word": "clear",
+    "phonetic": "/klɪr/",
+    "persianMeaning": "واضح",
+    "example": "The teacher gave clear instructions.",
+    "exampleTranslation": "معلم دستورالعمل‌های واضحی داد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc112",
+    "word": "select",
+    "phonetic": "/sɪˈlekt/",
+    "persianMeaning": "انتخاب کردن",
+    "example": "Please select your favorite subject.",
+    "exampleTranslation": "لطفاً موضوع مورد علاقه خود را انتخاب کنید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc113",
+    "word": "distinguish",
+    "phonetic": "/dɪˈstɪŋɡwɪʃ/",
+    "persianMeaning": "تشخیص دادن",
+    "example": "Can you distinguish between these two colors?",
+    "exampleTranslation": "آیا می‌توانید بین این دو رنگ تمایز قائل شوید؟",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc114",
+    "word": "donate",
+    "phonetic": "/ˈdoʊneɪt/",
+    "persianMeaning": "اهداء کردن",
+    "example": "Many people donate money to charity.",
+    "exampleTranslation": "بسیاری از مردم پول به خیریه اهدا می‌کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc115",
+    "word": "respect",
+    "phonetic": "/rɪˈspekt/",
+    "persianMeaning": "احترام گذاشتن",
+    "example": "Children should respect their teachers.",
+    "exampleTranslation": "کودکان باید به معلمان خود احترام بگذارند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc116",
+    "word": "parents",
+    "phonetic": "/ˈperənts/",
+    "persianMeaning": "والدین",
+    "example": "My parents help me with my homework.",
+    "exampleTranslation": "والدینم در تکالیفم به من کمک می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc117",
+    "word": "members",
+    "phonetic": "/ˈmembərz/",
+    "persianMeaning": "اعضا",
+    "example": "All family members attended the party.",
+    "exampleTranslation": "تمام اعضای خانواده در مهمانی شرکت کردند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc118",
+    "word": "donating",
+    "phonetic": "/ˈdoʊneɪtɪŋ/",
+    "persianMeaning": "اهداء کردن",
+    "example": "Donating blood can save lives.",
+    "exampleTranslation": "اهدای خون می‌تواند جان‌ها را نجات دهد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc119",
+    "word": "sofa",
+    "phonetic": "/ˈsoʊfə/",
+    "persianMeaning": "مبل",
+    "example": "We sit on the sofa to watch TV together.",
+    "exampleTranslation": "ما روی مبل می‌نشینیم تا با هم تلویزیون تماشا کنیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc120",
+    "word": "watches",
+    "phonetic": "/ˈwɑːtʃɪz/",
+    "persianMeaning": "تماشا می‌کند",
+    "example": "My brother watches football matches every weekend.",
+    "exampleTranslation": "برادرم هر آخر هفته مسابقات فوتبال را تماشا می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc121",
+    "word": "grandfather",
+    "phonetic": "/ˈɡrænfɑːðər/",
+    "persianMeaning": "پدربزرگ",
+    "example": "My grandfather tells us interesting stories.",
+    "exampleTranslation": "پدربزرگم داستان‌های جالب برای ما تعریف می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc122",
+    "word": "feeds",
+    "phonetic": "/fiːdz/",
+    "persianMeaning": "غذا می‌دهد",
+    "example": "She feeds the cat every morning.",
+    "exampleTranslation": "او هر صبح به گربه غذا می‌دهد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc123",
+    "word": "pigeons",
+    "phonetic": "/ˈpɪdʒɪnz/",
+    "persianMeaning": "کبوترها",
+    "example": "Many pigeons gather in the city square.",
+    "exampleTranslation": "بسیاری از کبوترها در میدان شهر جمع می‌شوند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc124",
+    "word": "shouted",
+    "phonetic": "/ˈʃaʊtɪd/",
+    "persianMeaning": "فریاد زد",
+    "example": "The teacher shouted to get the students' attention.",
+    "exampleTranslation": "معلم فریاد زد تا توجه دانش‌آموزان را جلب کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc125",
+    "word": "louder",
+    "phonetic": "/ˈlaʊdər/",
+    "persianMeaning": "بلندتر",
+    "example": "Please speak louder so everyone can hear you.",
+    "exampleTranslation": "لطفاً بلندتر صحبت کن تا همه بتوانند تو را بشنوند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc126",
+    "word": "hard of hearing",
+    "phonetic": "/hɑːrd əv ˈhɪrɪŋ/",
+    "persianMeaning": "کم شنوا",
+    "example": "My grandfather is hard of hearing, so we speak clearly.",
+    "exampleTranslation": "پدربزرگم کم شنواست، بنابراین ما واضح صحبت می‌کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc127",
+    "word": "born",
+    "phonetic": "/bɔːrn/",
+    "persianMeaning": "متولد شد",
+    "example": "I was born in Tehran in 2005.",
+    "exampleTranslation": "من در سال ۱۳۸۴ در تهران متولد شدم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc128",
+    "word": "village",
+    "phonetic": "/ˈvɪlɪdʒ/",
+    "persianMeaning": "روستا",
+    "example": "My grandparents live in a quiet village.",
+    "exampleTranslation": "پدربزرگ و مادربزرگم در یک روستای آرام زندگی می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc129",
+    "word": "uncle",
+    "phonetic": "/ˈʌŋkl/",
+    "persianMeaning": "عمو / دایی",
+    "example": "My uncle helps me with my homework sometimes.",
+    "exampleTranslation": "عمویم گاهی در تکالیفم به من کمک می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc130",
+    "word": "hugged",
+    "phonetic": "/hʌɡd/",
+    "persianMeaning": "در آغوش گرفت",
+    "example": "She hugged her friend when they met after a long time.",
+    "exampleTranslation": "او وقتی پس از مدت طولانی دوستش را دید، او را در آغوش گرفت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc131",
+    "word": "lap",
+    "phonetic": "/læp/",
+    "persianMeaning": "دامن",
+    "example": "The cat likes to sleep on my lap.",
+    "exampleTranslation": "گربه دوست دارد روی دامنم بخوابد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc132",
+    "word": "burst into tears",
+    "phonetic": "/bɜːrst ˈɪntə tɪərz/",
+    "persianMeaning": "زیر گریه زدن",
+    "example": "She burst into tears when she heard the sad news.",
+    "exampleTranslation": "او وقتی خبر غم‌انگیز را شنید، زیر گریه زد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc133",
+    "word": "score",
+    "phonetic": "/skɔːr/",
+    "persianMeaning": "نمره",
+    "example": "She got a high score on her English exam.",
+    "exampleTranslation": "او نمره بالایی در امتحان انگلیسی خود گرفت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc134",
+    "word": "repeatedly",
+    "phonetic": "/rɪˈpiːtɪdli/",
+    "persianMeaning": "مکرراً",
+    "example": "The teacher repeatedly warned the students about being late.",
+    "exampleTranslation": "معلم مکرراً به دانش‌آموزان درباره دیر آمدن هشدار داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc135",
+    "word": "politely",
+    "phonetic": "/pəˈlaɪtli/",
+    "persianMeaning": "مودبانه",
+    "example": "He always speaks politely to older people.",
+    "exampleTranslation": "او همیشه با افراد مسن مودبانه صحبت می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc136",
+    "word": "forgive",
+    "phonetic": "/fərˈɡɪv/",
+    "persianMeaning": "بخشیدن",
+    "example": "I hope you can forgive me for my mistake.",
+    "exampleTranslation": "امیدوارم بتوانی مرا برای اشتباهم ببخشی.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc137",
+    "word": "broke",
+    "phonetic": "/broʊk/",
+    "persianMeaning": "شکست",
+    "example": "I accidentally broke the window with a ball.",
+    "exampleTranslation": "من به طور تصادفی پنجره را با یک توپ شکستم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc138",
+    "word": "vase",
+    "phonetic": "/veɪs/",
+    "persianMeaning": "گلدان",
+    "example": "She put fresh flowers in the glass vase.",
+    "exampleTranslation": "او گل‌های تازه را در گلدان شیشه‌ای گذاشت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc139",
+    "word": "calmly",
+    "phonetic": "/ˈkɑːmli/",
+    "persianMeaning": "با آرامش",
+    "example": "She explained the problem calmly without shouting.",
+    "exampleTranslation": "او مشکل را با آرامش و بدون فریاد توضیح داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc140",
+    "word": "diary",
+    "phonetic": "/ˈdaɪəri/",
+    "persianMeaning": "دفتر خاطرات",
+    "example": "She writes in her diary every night before sleeping.",
+    "exampleTranslation": "او هر شب قبل از خواب در دفتر خاطراتش می‌نویسد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc141",
+    "word": "record",
+    "phonetic": "/rɪˈkɔːrd/",
+    "persianMeaning": "ثبت کردن",
+    "example": "The scientist recorded the results of the experiment.",
+    "exampleTranslation": "دانشمند نتایج آزمایش را ثبت کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc142",
+    "word": "spring",
+    "phonetic": "/sprɪŋ/",
+    "persianMeaning": "بهار",
+    "example": "Flowers bloom beautifully in spring.",
+    "exampleTranslation": "گل‌ها در بهار زیبا شکوفا می‌شوند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc143",
+    "word": "newspaper",
+    "phonetic": "/ˈnuːzpeɪpər/",
+    "persianMeaning": "روزنامه",
+    "example": "My father reads the newspaper every morning.",
+    "exampleTranslation": "پدرم هر صبح روزنامه می‌خواند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc144",
+    "word": "window",
+    "phonetic": "/ˈwɪndoʊ/",
+    "persianMeaning": "پنجره",
+    "example": "Please open the window to let fresh air in.",
+    "exampleTranslation": "لطفاً پنجره را باز کن تا هوای تازه وارد شود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc145",
+    "word": "quietly",
+    "phonetic": "/ˈkwaɪətli/",
+    "persianMeaning": "آرام",
+    "example": "The students worked quietly in the library.",
+    "exampleTranslation": "دانش‌آموزان در کتابخانه آرام کار کردند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc146",
+    "word": "edge",
+    "phonetic": "/edʒ/",
+    "persianMeaning": "لبه",
+    "example": "Be careful near the edge of the cliff.",
+    "exampleTranslation": "نزدیک لبه پرتگاه مراقب باش.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc147",
+    "word": "reply",
+    "phonetic": "/rɪˈplaɪ/",
+    "persianMeaning": "پاسخ دادن",
+    "example": "Please reply to my email as soon as possible.",
+    "exampleTranslation": "لطفاً به ایمیل من در اسرع وقت پاسخ دهید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc148",
+    "word": "lovingly",
+    "phonetic": "/ˈlʌvɪŋli/",
+    "persianMeaning": "با مهربانی",
+    "example": "She looked at her baby lovingly.",
+    "exampleTranslation": "او با مهربانی به نوزادش نگاه کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc149",
+    "word": "angry",
+    "phonetic": "/ˈæŋɡri/",
+    "persianMeaning": "عصبانی",
+    "example": "My father was angry when I came home late.",
+    "exampleTranslation": "پدرم وقتی دیر به خانه آمدم عصبانی شد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc150",
+    "word": "kissed",
+    "phonetic": "/kɪst/",
+    "persianMeaning": "بوسید",
+    "example": "She kissed her child goodnight before bed.",
+    "exampleTranslation": "او قبل از خواب کودکش را شب‌بخیر بوسید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc151",
+    "word": "once",
+    "phonetic": "/wʌns/",
+    "persianMeaning": "یک بار",
+    "example": "I visited London once when I was a child.",
+    "exampleTranslation": "من یک بار زمانی که کودک بودم از لندن بازدید کردم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc152",
+    "word": "medical",
+    "phonetic": "/ˈmedɪkl/",
+    "persianMeaning": "پزشکی، درمانی",
+    "example": "The Children's Medical Center helps sick children.",
+    "exampleTranslation": "مرکز درمانی کودکان به بچه‌های بیمار کمک می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc153",
+    "word": "center",
+    "phonetic": "/ˈsentər/",
+    "persianMeaning": "مرکز",
+    "example": "She has been in the Children's Medical Center for a week.",
+    "exampleTranslation": "او یک هفته است که در مرکز درمانی کودکان است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc154",
+    "word": "caught",
+    "phonetic": "/kɔːt/",
+    "persianMeaning": "گرفت (گیرانداختن، مبتلا شدن)",
+    "example": "She has caught a terrible flu.",
+    "exampleTranslation": "او یک آنفولانزای وحشتناک گرفته است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc155",
+    "word": "terrible",
+    "phonetic": "/ˈterəbl/",
+    "persianMeaning": "وحشتناک، بسیار بد",
+    "example": "She is sick with a terrible flu.",
+    "exampleTranslation": "او با یک آنفولانزای وحشتناک بیمار است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc156",
+    "word": "flu",
+    "phonetic": "/fluː/",
+    "persianMeaning": "آنفولانزا",
+    "example": "You should rest if you have the flu.",
+    "exampleTranslation": "اگر آنفولانزا داری باید استراحت کنی.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc157",
+    "word": "photograph",
+    "phonetic": "/ˈfoʊtəɡræf/",
+    "persianMeaning": "عکس، تصویر",
+    "example": "There is a photograph of an old man on the wall.",
+    "exampleTranslation": "یک عکس از یک مرد سالمند روی دیوار است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc158",
+    "word": "temperature",
+    "phonetic": "/ˈtemprətʃər/",
+    "persianMeaning": "دما، درجه حرارت",
+    "example": "The nurse is taking her temperature.",
+    "exampleTranslation": "پرستار دارد دمای بدن او را اندازه می‌گیرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc159",
+    "word": "heard",
+    "phonetic": "/hɜːrd/",
+    "persianMeaning": "شنیده",
+    "example": "Have you ever heard of Dr. Mohammad Gharib?",
+    "exampleTranslation": "آیا تا به حال نام دکتر محمد قریب را شنیده‌ای؟",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc160",
+    "word": "famous",
+    "phonetic": "/ˈfeɪməs/",
+    "persianMeaning": "مشهور، معروف",
+    "example": "Dr. Gharib was a famous physician.",
+    "exampleTranslation": "دکتر قریب یک پزشک مشهور بود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc161",
+    "word": "physician",
+    "phonetic": "/fɪˈzɪʃn/",
+    "persianMeaning": "پزشک",
+    "example": "Her father is a kind and experienced physician.",
+    "exampleTranslation": "پدرش یک پزشک مهربان و باتجربه است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc162",
+    "word": "abroad",
+    "phonetic": "/əˈbrɔːd/",
+    "persianMeaning": "به خارج از کشور",
+    "example": "He went abroad to study medicine.",
+    "exampleTranslation": "او برای تحصیل پزشکی به خارج از کشور رفت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc163",
+    "word": "homeland",
+    "phonetic": "/ˈhoʊmlænd/",
+    "persianMeaning": "زادگاه، میهن",
+    "example": "He came back to his homeland after finishing his studies.",
+    "exampleTranslation": "او بعد از اتمام تحصیلاتش به میهنش بازگشت.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc164",
+    "word": "founded",
+    "phonetic": "/ˈfaʊndɪd/",
+    "persianMeaning": "تأسیس کرد",
+    "example": "This center was founded by Dr. Gharib.",
+    "exampleTranslation": "این مرکز توسط دکتر قریب تأسیس شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc165",
+    "word": "generous",
+    "phonetic": "/ˈdʒenərəs/",
+    "persianMeaning": "سخاوتمند، بخشنده",
+    "example": "He was a generous man who helped poor families.",
+    "exampleTranslation": "او مرد سخاوتمندی بود که به خانواده‌های فقیر کمک می‌کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc166",
+    "word": "spared",
+    "phonetic": "/sperd/",
+    "persianMeaning": "دریغ نکرد",
+    "example": "He spared no pains to cure sick children.",
+    "exampleTranslation": "او از هیچ تلاشی برای درمان کودکان بیمار دریغ نکرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc167",
+    "word": "cure",
+    "phonetic": "/kjʊr/",
+    "persianMeaning": "درمان کردن",
+    "example": "Doctors work hard to cure their patients.",
+    "exampleTranslation": "پزشکان سخت کار می‌کنند تا بیماران خود را درمان کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc168",
+    "word": "helpful",
+    "phonetic": "/ˈhelpfl/",
+    "persianMeaning": "مفید، کمک کننده",
+    "example": "He was very friendly and helpful to poor families.",
+    "exampleTranslation": "او با خانواده‌های فقیر بسیار دوستانه و کمک‌کننده بود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc169",
+    "word": "regarded",
+    "phonetic": "/rɪˈɡɑːrdɪd/",
+    "persianMeaning": "در نظر گرفته شد",
+    "example": "He was regarded as a dedicated physician.",
+    "exampleTranslation": "او به عنوان یک پزشک متعهد در نظر گرفته می‌شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc170",
+    "word": "dedicated",
+    "phonetic": "/ˈdedɪkeɪtɪd/",
+    "persianMeaning": "متعهد، فداکار",
+    "example": "She is a dedicated teacher who loves her students.",
+    "exampleTranslation": "او یک معلم متعهد است که دانش‌آموزانش را دوست دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc171",
+    "word": "pity",
+    "phonetic": "/ˈpɪti/",
+    "persianMeaning": "تأسف، افسوس",
+    "example": "It's a pity I didn't know such a great man.",
+    "exampleTranslation": "افسوس که من چنین مرد بزرگی را نمی‌شناختم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc172",
+    "word": "distinguished",
+    "phonetic": "/dɪˈstɪŋɡwɪʃt/",
+    "persianMeaning": "برجسته، ممتاز",
+    "example": "He was a distinguished university professor.",
+    "exampleTranslation": "او یک استاد دانشگاه برجسته بود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc173",
+    "word": "professor",
+    "phonetic": "/prəˈfesər/",
+    "persianMeaning": "استاد دانشگاه",
+    "example": "The professor taught medicine to thousands of students.",
+    "exampleTranslation": "استاد پزشکی را به هزاران دانشجو تدریس کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc174",
+    "word": "textbook",
+    "phonetic": "/ˈtekstbʊk/",
+    "persianMeaning": "کتاب درسی",
+    "example": "The first Persian textbook on children's diseases was written by him.",
+    "exampleTranslation": "اولین کتاب درسی فارسی درباره بیماری‌های کودکان توسط او نوشته شد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc175",
+    "word": "diseases",
+    "phonetic": "/dɪˈziːzɪz/",
+    "persianMeaning": "بیماری‌ها",
+    "example": "Learning about children's diseases is important for doctors.",
+    "exampleTranslation": "یادگیری درباره بیماری‌های کودکان برای پزشکان مهم است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc176",
+    "word": "taught",
+    "phonetic": "/tɔːt/",
+    "persianMeaning": "تدریس کرد",
+    "example": "He taught medicine to thousands of students.",
+    "exampleTranslation": "او پزشکی را به هزاران دانشجو تدریس کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc177",
+    "word": "interesting",
+    "phonetic": "/ˈɪntrəstɪŋ/",
+    "persianMeaning": "جالب",
+    "example": "It might be interesting to know that fact.",
+    "exampleTranslation": "ممکن است دانستن آن واقعیت جالب باشد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc178",
+    "word": "while",
+    "phonetic": "/waɪl/",
+    "persianMeaning": "مدت کوتاهی",
+    "example": "Please wait for a while; I will be back soon.",
+    "exampleTranslation": "لطفاً یک مدت کوتاه صبر کن؛ من به زودی برمی‌گردم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc179",
+    "word": "quantity",
+    "phonetic": "/ˈkwɑːntəti/",
+    "persianMeaning": "مقدار، کمیت",
+    "example": "We need a large quantity of water for the trip.",
+    "exampleTranslation": "ما برای سفر به مقدار زیادی آب نیاز داریم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc180",
+    "word": "again",
+    "phonetic": "/əˈɡen/",
+    "persianMeaning": "دوباره",
+    "example": "Please read the sentence again.",
+    "exampleTranslation": "لطفاً جمله را دوباره بخوان.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc181",
+    "word": "record",
+    "phonetic": "/rɪˈkɔːrd/",
+    "persianMeaning": "ثبت کردن",
+    "example": "The secretary records the minutes of every meeting.",
+    "exampleTranslation": "منشی صورت جلسه هر جلسه را ثبت می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc182",
+    "word": "aloud",
+    "phonetic": "/əˈlaʊd/",
+    "persianMeaning": "با صدای بلند",
+    "example": "The teacher asked me to read the poem aloud.",
+    "exampleTranslation": "معلم از من خواست که شعر را با صدای بلند بخوانم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc183",
+    "word": "repeatedly",
+    "phonetic": "/rɪˈpiːtɪdli/",
+    "persianMeaning": "مکرراً، بارها",
+    "example": "He knocked on the door repeatedly but no one answered.",
+    "exampleTranslation": "او مکرراً در را زد اما کسی جواب نداد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc184",
+    "word": "burst",
+    "phonetic": "/bɜːrst/",
+    "persianMeaning": "ترکیدن",
+    "example": "The balloon burst when it touched the thorn.",
+    "exampleTranslation": "بادکنک وقتی به خار برخورد کرد ترکید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc185",
+    "word": "reply",
+    "phonetic": "/rɪˈplaɪ/",
+    "persianMeaning": "پاسخ دادن، پاسخ",
+    "example": "Please reply to my email as soon as you can.",
+    "exampleTranslation": "لطفاً در اسرع وقت به ایمیل من پاسخ بده.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc186",
+    "word": "care for",
+    "phonetic": "/ker fɔːr/",
+    "persianMeaning": "مراقبت کردن از",
+    "example": "Nurses care for sick people in the hospital.",
+    "exampleTranslation": "پرستاران از بیماران در بیمارستان مراقبت می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc187",
+    "word": "score",
+    "phonetic": "/skɔːr/",
+    "persianMeaning": "نمره، امتیاز",
+    "example": "Ali got a high score in the math exam.",
+    "exampleTranslation": "علی در امتحان ریاضی نمره بالایی گرفت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc188",
+    "word": "diary",
+    "phonetic": "/ˈdaɪəri/",
+    "persianMeaning": "دفتر یادداشت روزانه",
+    "example": "She writes about her feelings in her diary every night.",
+    "exampleTranslation": "او هر شب درباره احساساتش در دفتر خاطراتش می‌نویسد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc189",
+    "word": "shout",
+    "phonetic": "/ʃaʊt/",
+    "persianMeaning": "فریاد زدن، فریاد",
+    "example": "The coach shouted instructions to the players.",
+    "exampleTranslation": "مربی به بازیکنان دستورات را فریاد زد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc190",
+    "word": "feed",
+    "phonetic": "/fiːd/",
+    "persianMeaning": "غذا دادن",
+    "example": "Every morning, she feeds the birds in the garden.",
+    "exampleTranslation": "او هر صبح به پرندگان در باغ غذا می‌دهد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc191",
+    "word": "sound",
+    "phonetic": "/saʊnd/",
+    "persianMeaning": "به نظر رسیدن",
+    "example": "Your plan sounds very interesting.",
+    "exampleTranslation": "طرح تو خیلی جالب به نظر می‌رسد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc192",
+    "word": "forgive",
+    "phonetic": "/fərˈɡɪv/",
+    "persianMeaning": "بخشیدن",
+    "example": "I hope you can forgive me for my mistake.",
+    "exampleTranslation": "امیدوارم بتوانی مرا برای اشتباهم ببخشی.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc193",
+    "word": "tear",
+    "phonetic": "/tɪr/",
+    "persianMeaning": "اشک",
+    "example": "A tear rolled down her cheek when she heard the sad news.",
+    "exampleTranslation": "وقتی خبر غم‌انگیز را شنید، اشکی روی گونه‌اش غلتید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc194",
+    "word": "generate",
+    "phonetic": "/ˈdʒenəreɪt/",
+    "persianMeaning": "تولید کردن، به وجود آوردن",
+    "example": "Wind turbines generate electricity from the wind.",
+    "exampleTranslation": "توربین‌های بادی از باد برق تولید می‌کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc195",
+    "word": "unnatural",
+    "phonetic": "/ʌnˈnætʃrəl/",
+    "persianMeaning": "غیر طبیعی",
+    "example": "The color of that flower looks unnatural.",
+    "exampleTranslation": "رنگ آن گل غیرطبیعی به نظر می‌رسد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc196",
+    "word": "generation",
+    "phonetic": "/ˌdʒenəˈreɪʃn/",
+    "persianMeaning": "نسل",
+    "example": "My grandparents' generation lived through many changes.",
+    "exampleTranslation": "نسل پدربزرگ و مادربزرگ من تغییرات زیادی را تجربه کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc197",
+    "word": "whereby",
+    "phonetic": "/werˈbaɪ/",
+    "persianMeaning": "که به وسیله آن",
+    "example": "They set up a system whereby students can ask questions online.",
+    "exampleTranslation": "آن‌ها سیستمی راه انداختند که به وسیله آن دانش‌آموزان می‌توانند آنلاین سؤال بپرسند.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g7_l1_fc198",
+    "word": "lap",
+    "phonetic": "/læp/",
+    "persianMeaning": "روی پا، ران",
+    "example": "The cat is sleeping peacefully on my lap.",
+    "exampleTranslation": "گربه به آرامی روی پای من خوابیده است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc199",
+    "word": "be born",
+    "phonetic": "/bi bɔːrn/",
+    "persianMeaning": "متولد شدن، به دنیا آمدن",
+    "example": "My sister was born in the spring.",
+    "exampleTranslation": "خواهرم در بهار به دنیا آمد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc200",
+    "word": "location",
+    "phonetic": "/loʊˈkeɪʃn/",
+    "persianMeaning": "مکان، محل",
+    "example": "The map shows the exact location of the treasure.",
+    "exampleTranslation": "نقشه مکان دقیق گنج را نشان می‌دهد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc201",
+    "word": "collocation",
+    "phonetic": "/ˌkɑːləˈkeɪʃn/",
+    "persianMeaning": "همایند، عبارت همنشین",
+    "example": "\"Make a decision\" is a common collocation in English.",
+    "exampleTranslation": "\"اتخاذ تصمیم\" یک همایند رایج در انگلیسی است.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g7_l1_fc202",
+    "word": "lovingly",
+    "phonetic": "/ˈlʌvɪŋli/",
+    "persianMeaning": "با محبت، محبت‌آمیز",
+    "example": "She looked lovingly at her newborn baby.",
+    "exampleTranslation": "او با محبت به نوزاد تازه متولد شده‌اش نگاه کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc203",
+    "word": "hard of hearing",
+    "phonetic": "/ˌhɑːrd əv ˈhɪrɪŋ/",
+    "persianMeaning": "سنگین گوش",
+    "example": "My grandfather is hard of hearing, so we speak loudly.",
+    "exampleTranslation": "پدربزرگ من سنگین گوش است، بنابراین بلند صحبت می‌کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc204",
+    "word": "meaningful",
+    "phonetic": "/ˈmiːnɪŋfl/",
+    "persianMeaning": "پرمعنی، معنی‌دار",
+    "example": "They had a meaningful conversation about their future.",
+    "exampleTranslation": "آن‌ها یک گفتگوی پرمعنی درباره آینده خود داشتند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc205",
+    "word": "kiss",
+    "phonetic": "/kɪs/",
+    "persianMeaning": "بوسیدن، بوس",
+    "example": "She kissed her child goodnight.",
+    "exampleTranslation": "او کودکش را برای شب بخیر بوسید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc206",
+    "word": "on the other hand",
+    "phonetic": "/ɒn ði ˈʌðər hænd/",
+    "persianMeaning": "از طرف دیگر",
+    "example": "I want to buy a car. On the other hand, I need to save money.",
+    "exampleTranslation": "می‌خواهم یک ماشین بخرم. از طرف دیگر، باید پول پس‌انداز کنم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc207",
+    "word": "pause",
+    "phonetic": "/pɔːz/",
+    "persianMeaning": "مکث کردن، درنگ کردن",
+    "example": "He paused to think before answering the question.",
+    "exampleTranslation": "او برای فکر کردن قبل از پاسخ به سؤال مکث کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc208",
+    "word": "process",
+    "phonetic": "/ˈprɑːses/",
+    "persianMeaning": "فرآیند، روند",
+    "example": "Learning a language is a long process.",
+    "exampleTranslation": "یادگیری یک زبان یک فرآیند طولانی است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc209",
+    "word": "pigeon",
+    "phonetic": "/ˈpɪdʒɪn/",
+    "persianMeaning": "کبوتر",
+    "example": "We fed the pigeons in the park.",
+    "exampleTranslation": "ما به کبوترهای پارک غذا دادیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc210",
+    "word": "provide",
+    "phonetic": "/prəˈvaɪd/",
+    "persianMeaning": "فراهم کردن، تهیه کردن",
+    "example": "The school provides books for all students.",
+    "exampleTranslation": "مدرسه برای همه دانش‌آموزان کتاب فراهم می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc211",
+    "word": "sofa",
+    "phonetic": "/ˈsoʊfə/",
+    "persianMeaning": "مبل",
+    "example": "We sat on the sofa and watched a movie.",
+    "exampleTranslation": "ما روی مبل نشستیم و یک فیلم تماشا کردیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc212",
+    "word": "burst into tears",
+    "phonetic": "/bɜːrst ˈɪntə tɪrz/",
+    "persianMeaning": "ناگهان شروع به گریه کردن",
+    "example": "When she heard the bad news, she burst into tears.",
+    "exampleTranslation": "وقتی خبر بد را شنید، ناگهان شروع به گریه کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc213",
+    "word": "vase",
+    "phonetic": "/veɪs/",
+    "persianMeaning": "گلدان",
+    "example": "She put the beautiful roses in a glass vase.",
+    "exampleTranslation": "او رزهای زیبا را در یک گلدان شیشه‌ای گذاشت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc214",
+    "word": "collocation",
+    "phonetic": "/ˌkɑːləˈkeɪʃn/",
+    "persianMeaning": "همایند، ترکیب کلمات متداول",
+    "example": "Learning English collocations improves your speaking.",
+    "exampleTranslation": "یادگیری همایندهای انگلیسی صحبت کردن شما را بهبود می‌بخشد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc215",
+    "word": "unnatural",
+    "phonetic": "/ʌnˈnætʃrəl/",
+    "persianMeaning": "غیرطبیعی، مصنوعی",
+    "example": "Using the wrong collocation can sound unnatural.",
+    "exampleTranslation": "استفاده از همایند نادرست می‌تواند غیرطبیعی به نظر برسد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc216",
+    "word": "fast",
+    "phonetic": "/fæst/",
+    "persianMeaning": "سریع، تند",
+    "example": "She likes to eat fast food sometimes.",
+    "exampleTranslation": "او گاهی اوقات دوست دارد فست فود بخورد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc217",
+    "word": "quick",
+    "phonetic": "/kwɪk/",
+    "persianMeaning": "سریع، چابک",
+    "example": "I took a quick shower before breakfast.",
+    "exampleTranslation": "من قبل از صبحانه یک دوش سریع گرفتم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc218",
+    "word": "shower",
+    "phonetic": "/ˈʃaʊər/",
+    "persianMeaning": "دوش",
+    "example": "He has a quick shower every morning.",
+    "exampleTranslation": "او هر صبح یک دوش سریع می‌گیرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc219",
+    "word": "meal",
+    "phonetic": "/miːl/",
+    "persianMeaning": "وعده غذایی",
+    "example": "We had a quick meal before the movie.",
+    "exampleTranslation": "ما قبل از فیلم یک غذای سریع خوردیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc220",
+    "word": "unit",
+    "phonetic": "/ˈjuːnɪt/",
+    "persianMeaning": "واحد",
+    "example": "Learn collocations as one language unit.",
+    "exampleTranslation": "همایندها را به عنوان یک واحد زبانی یاد بگیرید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc221",
+    "word": "vaguely",
+    "phonetic": "/ˈveɪɡli/",
+    "persianMeaning": "مبهم، به طور نامشخص",
+    "example": "I vaguely remember meeting him years ago.",
+    "exampleTranslation": "من به طور مبهم به یاد دارم که سال‌ها پیش او را ملاقات کردم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc222",
+    "word": "vividly",
+    "phonetic": "/ˈvɪvɪdli/",
+    "persianMeaning": "به طور زنده، واضح",
+    "example": "She vividly remembers her first day at school.",
+    "exampleTranslation": "او اولین روز مدرسه را به وضوح به یاد می‌آورد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc223",
+    "word": "various",
+    "phonetic": "/ˈveriəs/",
+    "persianMeaning": "گوناگون، مختلف",
+    "example": "There are various reasons for learning collocations.",
+    "exampleTranslation": "دلایل مختلفی برای یادگیری همایندها وجود دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc224",
+    "word": "category",
+    "phonetic": "/ˈkætəɡɔːri/",
+    "persianMeaning": "دسته، رده",
+    "example": "Put the words into the correct category.",
+    "exampleTranslation": "کلمات را در دسته صحیح قرار دهید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc225",
+    "word": "comprehensive",
+    "phonetic": "/ˌkɑːmprɪˈhensɪv/",
+    "persianMeaning": "جامع، فراگیر",
+    "example": "You can find collocations in a comprehensive dictionary.",
+    "exampleTranslation": "می‌توانید همایندها را در یک فرهنگ لغت جامع بیابید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc226",
+    "word": "housework",
+    "phonetic": "/ˈhaʊswɜːrk/",
+    "persianMeaning": "کار خانه",
+    "example": "I help my mother with the housework.",
+    "exampleTranslation": "من به مادرم در کارهای خانه کمک می‌کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc227",
+    "word": "favor",
+    "phonetic": "/ˈfeɪvər/",
+    "persianMeaning": "لطف، خدمت",
+    "example": "Could you do me a favor and close the window?",
+    "exampleTranslation": "می‌توانی لطفی بکنی و پنجره را ببندی؟",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc228",
+    "word": "harm",
+    "phonetic": "/hɑːrm/",
+    "persianMeaning": "آسیب، ضرر",
+    "example": "Too much sun can do harm to your skin.",
+    "exampleTranslation": "آفتاب بیش از حد می‌تواند به پوست شما آسیب بزند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc229",
+    "word": "ironing",
+    "phonetic": "/ˈaɪərnɪŋ/",
+    "persianMeaning": "اتوکشی",
+    "example": "Doing the ironing takes a lot of time.",
+    "exampleTranslation": "اتو کشیدن زمان زیادی می‌برد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc230",
+    "word": "decision",
+    "phonetic": "/dɪˈsɪʒn/",
+    "persianMeaning": "تصمیم",
+    "example": "Making the right decision is sometimes difficult.",
+    "exampleTranslation": "گرفتن تصمیم درست گاهی اوقات دشوار است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc231",
+    "word": "progress",
+    "phonetic": "/ˈprɑːɡres/",
+    "persianMeaning": "پیشرفت",
+    "example": "She is making good progress in learning English.",
+    "exampleTranslation": "او در یادگیری انگلیسی پیشرفت خوبی دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc232",
+    "word": "list",
+    "phonetic": "/lɪst/",
+    "persianMeaning": "فهرست، لیست",
+    "example": "Make a list of things you need to buy.",
+    "exampleTranslation": "لیستی از چیزهایی که باید بخری تهیه کن.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc233",
+    "word": "promise",
+    "phonetic": "/ˈprɑːmɪs/",
+    "persianMeaning": "قول",
+    "example": "He made a promise to help me with my homework.",
+    "exampleTranslation": "او قول داد که در تکالیفم به من کمک کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc234",
+    "word": "mistake",
+    "phonetic": "/mɪˈsteɪk/",
+    "persianMeaning": "اشتباه",
+    "example": "I made a mistake in my math test.",
+    "exampleTranslation": "من در آزمون ریاضی‌ام یک اشتباه کردم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc235",
+    "word": "chance",
+    "phonetic": "/tʃæns/",
+    "persianMeaning": "فرصت، شانس",
+    "example": "I want to take a chance and start my own business.",
+    "exampleTranslation": "می‌خواهم فرصت را غنیمت شمرم و کسب و کار خودم را شروع کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc236",
+    "word": "break",
+    "phonetic": "/breɪk/",
+    "persianMeaning": "استراحت کوتاه، وقفه",
+    "example": "Let's take a ten-minute break.",
+    "exampleTranslation": "بیایید ده دقیقه استراحت کنیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc237",
+    "word": "risk",
+    "phonetic": "/rɪsk/",
+    "persianMeaning": "خطر، ریسک",
+    "example": "Driving too fast is a big risk.",
+    "exampleTranslation": "رانندگی خیلی سریع یک خطر بزرگ است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc238",
+    "word": "notes",
+    "phonetic": "/noʊts/",
+    "persianMeaning": "یادداشت‌ها",
+    "example": "Students take notes during the lesson.",
+    "exampleTranslation": "دانش‌آموزان در طول درس یادداشت برمی‌دارند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc239",
+    "word": "passive",
+    "phonetic": "/ˈpæsɪv/",
+    "persianMeaning": "مجهول، منفعل",
+    "example": "'The window was broken' is a passive sentence.",
+    "exampleTranslation": "'The window was broken' یک جمله مجهول است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc240",
+    "word": "active",
+    "phonetic": "/ˈæktɪv/",
+    "persianMeaning": "معلوم، فعال",
+    "example": "'He broke the window' is an active sentence.",
+    "exampleTranslation": "'He broke the window' یک جمله معلوم است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc241",
+    "word": "butter",
+    "phonetic": "/ˈbʌtər/",
+    "persianMeaning": "کره",
+    "example": "I keep the butter in the fridge.",
+    "exampleTranslation": "من کره را در یخچال نگه می‌دارم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc242",
+    "word": "fridge",
+    "phonetic": "/frɪdʒ/",
+    "persianMeaning": "یخچال",
+    "example": "The milk is in the fridge.",
+    "exampleTranslation": "شیر در یخچال است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc243",
+    "word": "vague",
+    "phonetic": "/veɪɡ/",
+    "persianMeaning": "مبهم، نامشخص",
+    "example": "Words like 'someone' or 'people' can be vague.",
+    "exampleTranslation": "کلماتی مانند 'someone' یا 'people' می‌توانند مبهم باشند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc244",
+    "word": "storm",
+    "phonetic": "/stɔːrm/",
+    "persianMeaning": "طوفان",
+    "example": "There was a terrible storm last night.",
+    "exampleTranslation": "دیشب یک طوفان وحشتناک بود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc245",
+    "word": "destroyed",
+    "phonetic": "/dɪˈstrɔɪd/",
+    "persianMeaning": "نابود شد، ویران شد",
+    "example": "Hundreds of houses were destroyed in the storm.",
+    "exampleTranslation": "صدها خانه در طوفان ویران شدند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc246",
+    "word": "corrected",
+    "phonetic": "/kəˈrektɪd/",
+    "persianMeaning": "تصحیح کرد",
+    "example": "The teacher has corrected the exam papers.",
+    "exampleTranslation": "معلم برگه‌های امتحان را تصحیح کرده است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc247",
+    "word": "author",
+    "phonetic": "/ˈɔːθər/",
+    "persianMeaning": "نویسنده",
+    "example": "The author of this book is very famous.",
+    "exampleTranslation": "نویسنده این کتاب بسیار معروف است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc248",
+    "word": "by heart",
+    "phonetic": "/baɪ hɑːrt/",
+    "persianMeaning": "از حفظ",
+    "example": "She learned the poem by heart.",
+    "exampleTranslation": "او شعر را از حفظ یاد گرفت.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc249",
+    "word": "countless",
+    "phonetic": "/ˈkaʊntləs/",
+    "persianMeaning": "بی‌شمار",
+    "example": "There are countless stars in the sky.",
+    "exampleTranslation": "ستاره‌های بی‌شماری در آسمان وجود دارند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc250",
+    "word": "discover",
+    "phonetic": "/dɪˈskʌvər/",
+    "persianMeaning": "کشف کردن",
+    "example": "Scientists discover new things every day.",
+    "exampleTranslation": "دانشمندان هر روز چیزهای جدیدی کشف می‌کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc251",
+    "word": "doer",
+    "phonetic": "/ˈduːər/",
+    "persianMeaning": "کننده",
+    "example": "He is a doer, not just a talker.",
+    "exampleTranslation": "او یک کننده است، نه فقط یک حرف‌زن.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc252",
+    "word": "ethics",
+    "phonetic": "/ˈeθɪks/",
+    "persianMeaning": "اخلاقیات",
+    "example": "Medical students learn about professional ethics.",
+    "exampleTranslation": "دانشجویان پزشکی درباره اخلاق حرفه‌ای می‌آموزند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc253",
+    "word": "inspiration",
+    "phonetic": "/ˌɪnspəˈreɪʃn/",
+    "persianMeaning": "الهام",
+    "example": "Nature is a great source of inspiration for artists.",
+    "exampleTranslation": "طبیعت منبع بزرگی از الهام برای هنرمندان است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc254",
+    "word": "ordinary",
+    "phonetic": "/ˈɔːrdneri/",
+    "persianMeaning": "معمولی",
+    "example": "He leads an ordinary life like everyone else.",
+    "exampleTranslation": "او مانند بقیه مردم زندگی معمولی دارد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc255",
+    "word": "oven",
+    "phonetic": "/ˈʌvn/",
+    "persianMeaning": "اجاق",
+    "example": "My mother bakes bread in the oven.",
+    "exampleTranslation": "مادرم در اجاق نان می‌پزد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc256",
+    "word": "poetry",
+    "phonetic": "/ˈpoʊətri/",
+    "persianMeaning": "شعر",
+    "example": "She enjoys reading Persian poetry.",
+    "exampleTranslation": "او از خواندن شعر فارسی لذت می‌برد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc257",
+    "word": "religious",
+    "phonetic": "/rɪˈlɪdʒəs/",
+    "persianMeaning": "مذهبی",
+    "example": "They follow their religious traditions carefully.",
+    "exampleTranslation": "آن‌ها با دقت از سنت‌های مذهبی خود پیروی می‌کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc258",
+    "word": "solution",
+    "phonetic": "/səˈluːʃn/",
+    "persianMeaning": "راه‌حل",
+    "example": "We need to find a solution to this math problem.",
+    "exampleTranslation": "ما باید یک راه‌حل برای این مسئله ریاضی پیدا کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc259",
+    "word": "tool",
+    "phonetic": "/tuːl/",
+    "persianMeaning": "ابزار",
+    "example": "A hammer is a useful tool for building.",
+    "exampleTranslation": "چکش یک ابزار مفید برای ساختن است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc260",
+    "word": "accidently",
+    "phonetic": "/ˈæksɪdəntli/",
+    "persianMeaning": "به طور تصادفی",
+    "example": "I dropped my phone accidently.",
+    "exampleTranslation": "من به طور تصادفی تلفنم را انداختم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc261",
+    "word": "Anno Domini",
+    "phonetic": "/ˌænoʊ ˈdɒmɪnaɪ/",
+    "persianMeaning": "میلادی",
+    "example": "The year 2024 is written as 2024 AD.",
+    "exampleTranslation": "سال ۲۰۲۴ به صورت ۲۰۲۴ میلادی نوشته می‌شود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc262",
+    "word": "by accident",
+    "phonetic": "/baɪ ˈæksɪdənt/",
+    "persianMeaning": "تصادفی",
+    "example": "We met by accident at the supermarket.",
+    "exampleTranslation": "ما به طور تصادفی در سوپرمارکت همدیگر را ملاقات کردیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc263",
+    "word": "childhood",
+    "phonetic": "/ˈtʃaɪldhʊd/",
+    "persianMeaning": "دوران کودکی",
+    "example": "I have happy memories of my childhood.",
+    "exampleTranslation": "من خاطرات خوشی از دوران کودکی خود دارم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc264",
+    "word": "dishwasher",
+    "phonetic": "/ˈdɪʃwɑːʃər/",
+    "persianMeaning": "ماشین ظرفشویی",
+    "example": "We put dirty plates in the dishwasher.",
+    "exampleTranslation": "ما ظرف‌های کثیف را در ماشین ظرفشویی می‌گذاریم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc265",
+    "word": "fix",
+    "phonetic": "/fɪks/",
+    "persianMeaning": "تعمیر کردن",
+    "example": "My father can fix the broken bicycle.",
+    "exampleTranslation": "پدرم می‌تواند دوچرخه شکسته را تعمیر کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc266",
+    "word": "housewife",
+    "phonetic": "/ˈhaʊswaɪf/",
+    "persianMeaning": "زن خانه‌دار",
+    "example": "My mother is a housewife and takes care of us.",
+    "exampleTranslation": "مادرم یک زن خانه‌دار است و از ما مراقبت می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc267",
+    "word": "microwave",
+    "phonetic": "/ˈmaɪkroʊweɪv/",
+    "persianMeaning": "مایکروفر",
+    "example": "I warm my milk in the microwave.",
+    "exampleTranslation": "من شیرم را در مایکروفر گرم می‌کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc268",
+    "word": "pancake",
+    "phonetic": "/ˈpænkeɪk/",
+    "persianMeaning": "پنکیک",
+    "example": "We eat pancakes with honey for breakfast.",
+    "exampleTranslation": "ما برای صبحانه پنکیک با عسل می‌خوریم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc269",
+    "word": "passive",
+    "phonetic": "/ˈpæsɪv/",
+    "persianMeaning": "غیرفعال",
+    "example": "He has a passive attitude towards his studies.",
+    "exampleTranslation": "او نگرش غیرفعالی نسبت به درس‌هایش دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc270",
+    "word": "smartphone",
+    "phonetic": "/ˈsmɑːrtfoʊn/",
+    "persianMeaning": "تلفن هوشمند",
+    "example": "Most teenagers use smartphones nowadays.",
+    "exampleTranslation": "امروزه بیشتر نوجوانان از تلفن‌های هوشمند استفاده می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc271",
+    "word": "voice",
+    "phonetic": "/vɔɪs/",
+    "persianMeaning": "صدا",
+    "example": "She has a beautiful singing voice.",
+    "exampleTranslation": "او صدای خوانندگی زیبایی دارد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc272",
+    "word": "creation",
+    "phonetic": "/kriˈeɪʃn/",
+    "persianMeaning": "آفرینش",
+    "example": "The artist's creation was admired by everyone.",
+    "exampleTranslation": "آفرینش هنرمند مورد تحسین همه قرار گرفت.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc273",
+    "word": "previous",
+    "phonetic": "/ˈpriːviəs/",
+    "persianMeaning": "قبلی",
+    "example": "In the previous lesson, we learned about verbs.",
+    "exampleTranslation": "در درس قبلی، ما درباره افعال یاد گرفتیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc274",
+    "word": "provide",
+    "phonetic": "/prəˈvaɪd/",
+    "persianMeaning": "فراهم کردن",
+    "example": "Schools provide education for children.",
+    "exampleTranslation": "مدارس آموزش را برای کودکان فراهم می‌کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc275",
+    "word": "explanation",
+    "phonetic": "/ˌekspləˈneɪʃn/",
+    "persianMeaning": "توضیح",
+    "example": "The teacher gave a clear explanation of the grammar rule.",
+    "exampleTranslation": "معلم توضیح واضحی از قاعده گرامر داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc276",
+    "word": "invitation",
+    "phonetic": "/ˌɪnvɪˈteɪʃn/",
+    "persianMeaning": "دعوت",
+    "example": "I received an invitation to my friend's birthday party.",
+    "exampleTranslation": "من یک دعوتنامه برای جشن تولد دوستم دریافت کردم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc277",
+    "word": "description",
+    "phonetic": "/dɪˈskrɪpʃn/",
+    "persianMeaning": "توضیح",
+    "example": "He gave a detailed description of the accident.",
+    "exampleTranslation": "او توضیح مفصلی از حادثه داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc278",
+    "word": "disagrees",
+    "phonetic": "/ˌdɪsəˈɡriːz/",
+    "persianMeaning": "مخالفت می‌کند",
+    "example": "My brother often disagrees with me about movies.",
+    "exampleTranslation": "برادرم اغلب درباره فیلم‌ها با من مخالفت می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc279",
+    "word": "separate",
+    "phonetic": "/ˈseprət/",
+    "persianMeaning": "جدا کردن",
+    "example": "Please separate the white clothes from the colored ones.",
+    "exampleTranslation": "لطفاً لباس‌های سفید را از رنگی‌ها جدا کن.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc280",
+    "word": "technology",
+    "phonetic": "/tekˈnɑːlədʒi/",
+    "persianMeaning": "فناوری",
+    "example": "Modern technology has changed our lives.",
+    "exampleTranslation": "فناوری مدرن زندگی ما را تغییر داده است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc281",
+    "word": "friendly",
+    "phonetic": "/ˈfrendli/",
+    "persianMeaning": "دوستانه",
+    "example": "Our new neighbors are very friendly.",
+    "exampleTranslation": "همسایه‌های جدید ما بسیار دوستانه هستند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc282",
+    "word": "language",
+    "phonetic": "/ˈlæŋɡwɪdʒ/",
+    "persianMeaning": "زبان",
+    "example": "English is an international language.",
+    "exampleTranslation": "انگلیسی یک زبان بین‌المللی است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc283",
+    "word": "quick",
+    "phonetic": "/kwɪk/",
+    "persianMeaning": "سریع",
+    "example": "She gave a quick answer to the question.",
+    "exampleTranslation": "او پاسخ سریعی به سوال داد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc284",
+    "word": "drug",
+    "phonetic": "/drʌɡ/",
+    "persianMeaning": "دارو",
+    "example": "The doctor prescribed a new drug for his illness.",
+    "exampleTranslation": "دکتر یک داروی جدید برای بیماری او تجویز کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc285",
+    "word": "researching",
+    "phonetic": "/rɪˈsɜːrtʃɪŋ/",
+    "persianMeaning": "تحقیق کردن",
+    "example": "Scientists are researching new treatments for cancer.",
+    "exampleTranslation": "دانشمندان در حال تحقیق درباره درمان‌های جدید برای سرطان هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc286",
+    "word": "unnaturally",
+    "phonetic": "/ʌnˈnætʃrəli/",
+    "persianMeaning": "به طور غیرطبیعی",
+    "example": "The flowers were colored unnaturally bright.",
+    "exampleTranslation": "گل‌ها به طور غیرطبیعی روشن رنگ شده بودند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc287",
+    "word": "fortunately",
+    "phonetic": "/ˈfɔːrtʃənətli/",
+    "persianMeaning": "خوشبختانه",
+    "example": "Fortunately, I found my lost keys.",
+    "exampleTranslation": "خوشبختانه، کلیدهای گمشده‌ام را پیدا کردم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc288",
+    "word": "learners",
+    "phonetic": "/ˈlɜːrnərz/",
+    "persianMeaning": "یادگیرندگان",
+    "example": "English learners practice speaking every day.",
+    "exampleTranslation": "یادگیرندگان انگلیسی هر روز صحبت کردن را تمرین می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc289",
+    "word": "main",
+    "phonetic": "/meɪn/",
+    "persianMeaning": "اصلی",
+    "example": "The main reason for my visit is to see my family.",
+    "exampleTranslation": "دلیل اصلی بازدید من دیدن خانواده‌ام است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc290",
+    "word": "structures",
+    "phonetic": "/ˈstrʌktʃərz/",
+    "persianMeaning": "ساختارها",
+    "example": "We study sentence structures in grammar class.",
+    "exampleTranslation": "ما در کلاس گرامر ساختارهای جمله را مطالعه می‌کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc291",
+    "word": "decision",
+    "phonetic": "/dɪˈsɪʒn/",
+    "persianMeaning": "تصمیم",
+    "example": "Making the right decision is sometimes difficult.",
+    "exampleTranslation": "گرفتن تصمیم درست گاهی دشوار است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc292",
+    "word": "confusion",
+    "phonetic": "/kənˈfjuːʒn/",
+    "persianMeaning": "سردرگمی",
+    "example": "There was confusion about the meeting time.",
+    "exampleTranslation": "درباره زمان جلسه سردرگمی وجود داشت.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc293",
+    "word": "topics",
+    "phonetic": "/ˈtɑːpɪks/",
+    "persianMeaning": "موضوعات",
+    "example": "We discussed interesting topics in class today.",
+    "exampleTranslation": "ما امروز در کلاس موضوعات جالبی را بحث کردیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc294",
+    "word": "avoid",
+    "phonetic": "/əˈvɔɪd/",
+    "persianMeaning": "اجتناب کردن",
+    "example": "You should avoid too much sugar for better health.",
+    "exampleTranslation": "شما باید برای سلامتی بهتر از قند زیاد اجتناب کنید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc295",
+    "word": "appropriate",
+    "phonetic": "/əˈproʊpriət/",
+    "persianMeaning": "مناسب",
+    "example": "Wearing formal clothes is appropriate for a job interview.",
+    "exampleTranslation": "پوشیدن لباس رسمی برای مصاحبه شغلی مناسب است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc296",
+    "word": "division",
+    "phonetic": "/dɪˈvɪʒn/",
+    "persianMeaning": "تقسیم‌بندی",
+    "example": "The teacher explained the division of words into syllables.",
+    "exampleTranslation": "معلم تقسیم‌بندی کلمات به هجاها را توضیح داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc297",
+    "word": "types",
+    "phonetic": "/taɪps/",
+    "persianMeaning": "انواع",
+    "example": "There are many types of flowers in this garden.",
+    "exampleTranslation": "انواع مختلفی از گل‌ها در این باغ وجود دارند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc298",
+    "word": "questions",
+    "phonetic": "/ˈkwestʃənz/",
+    "persianMeaning": "سوالات",
+    "example": "The students asked many questions in class.",
+    "exampleTranslation": "دانش‌آموزان سوالات زیادی در کلاس پرسیدند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc299",
+    "word": "wh-questions",
+    "phonetic": "/ˈdʌbəljuː ˈeɪtʃ ˈkwestʃənz/",
+    "persianMeaning": "سوالات wh",
+    "example": "We practice wh-questions in English class.",
+    "exampleTranslation": "ما سوالات wh را در کلاس انگلیسی تمرین می‌کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc300",
+    "word": "simple",
+    "phonetic": "/ˈsɪmpl/",
+    "persianMeaning": "ساده",
+    "example": "This is a simple math problem for beginners.",
+    "exampleTranslation": "این یک مسئله ریاضی ساده برای مبتدیان است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc301",
+    "word": "declarative",
+    "phonetic": "/dɪˈklærətɪv/",
+    "persianMeaning": "خبری",
+    "example": "'The sky is blue' is a declarative sentence.",
+    "exampleTranslation": "'آسمان آبی است' یک جمله خبری است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc302",
+    "word": "interrogative",
+    "phonetic": "/ˌɪntəˈrɑːɡətɪv/",
+    "persianMeaning": "پرسشی",
+    "example": "'Are you coming?' is an interrogative sentence.",
+    "exampleTranslation": "'آیا می‌آیی؟' یک جمله پرسشی است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc303",
+    "word": "auxiliary",
+    "phonetic": "/ɔːɡˈzɪliəri/",
+    "persianMeaning": "کمکی",
+    "example": "'Do', 'have', and 'be' are auxiliary verbs in English.",
+    "exampleTranslation": "'Do'، 'have' و 'be' افعال کمکی در انگلیسی هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc304",
+    "word": "clean",
+    "phonetic": "/kliːn/",
+    "persianMeaning": "تمیز کردن",
+    "example": "I clean my room every Saturday.",
+    "exampleTranslation": "من هر شنبه اتاقم را تمیز می‌کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc305",
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "persianMeaning": "خانه",
+    "example": "They bought a new house near the park.",
+    "exampleTranslation": "آن‌ها یک خانه جدید نزدیک پارک خریدند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc306",
+    "word": "moment",
+    "phonetic": "/ˈmoʊmənt/",
+    "persianMeaning": "لحظه",
+    "example": "Please wait a moment; I'll be right back.",
+    "exampleTranslation": "لطفاً یک لحظه صبر کن؛ من همین الان برمی‌گردم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc307",
+    "word": "leave",
+    "phonetic": "/liːv/",
+    "persianMeaning": "ترک کردن",
+    "example": "What time did you leave home this morning?",
+    "exampleTranslation": "امروز صبح چه ساعتی خانه را ترک کردی؟",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc308",
+    "word": "yesterday",
+    "phonetic": "/ˈjestərdeɪ/",
+    "persianMeaning": "دیروز",
+    "example": "We had a math test yesterday.",
+    "exampleTranslation": "دیروز یک امتحان ریاضی داشتیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc309",
+    "word": "week",
+    "phonetic": "/wiːk/",
+    "persianMeaning": "هفته",
+    "example": "There are 52 weeks in a year.",
+    "exampleTranslation": "در یک سال 52 هفته وجود دارد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc310",
+    "word": "arrive",
+    "phonetic": "/əˈraɪv/",
+    "persianMeaning": "رسیدن",
+    "example": "The train will arrive at the station at 9 PM.",
+    "exampleTranslation": "قطار ساعت 9 شب به ایستگاه می‌رسد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc311",
+    "word": "dirty",
+    "phonetic": "/ˈdɜːrti/",
+    "persianMeaning": "کثیف",
+    "example": "Wash your hands; they are dirty.",
+    "exampleTranslation": "دست‌هایت را بشور؛ کثیف هستند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc312",
+    "word": "tomorrow",
+    "phonetic": "/təˈmɑːroʊ/",
+    "persianMeaning": "فردا",
+    "example": "We have an English class tomorrow.",
+    "exampleTranslation": "ما فردا کلاس انگلیسی داریم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc313",
+    "word": "teacher",
+    "phonetic": "/ˈtiːtʃər/",
+    "persianMeaning": "معلم",
+    "example": "Our math teacher is very kind.",
+    "exampleTranslation": "معلم ریاضی ما خیلی مهربان است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc314",
+    "word": "teach",
+    "phonetic": "/tiːtʃ/",
+    "persianMeaning": "آموزش دادن",
+    "example": "My father teaches me how to play chess.",
+    "exampleTranslation": "پدرم به من شطرنج بازی کردن یاد می‌دهد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc315",
+    "word": "student",
+    "phonetic": "/ˈstuːdnt/",
+    "persianMeaning": "دانش‌آموز، دانشجو",
+    "example": "Good students always do their homework.",
+    "exampleTranslation": "دانش‌آموزان خوب همیشه تکالیفشان را انجام می‌دهند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc316",
+    "word": "enjoy",
+    "phonetic": "/ɪnˈdʒɔɪ/",
+    "persianMeaning": "لذت بردن",
+    "example": "I enjoy listening to music in my free time.",
+    "exampleTranslation": "من در وقت آزادم از گوش دادن به موسیقی لذت می‌برم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc317",
+    "word": "invite",
+    "phonetic": "/ɪnˈvaɪt/",
+    "persianMeaning": "دعوت کردن",
+    "example": "I will invite all my friends to my birthday party.",
+    "exampleTranslation": "من همه دوستانم را به جشن تولدم دعوت خواهم کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc318",
+    "word": "party",
+    "phonetic": "/ˈpɑːrti/",
+    "persianMeaning": "مهمانی",
+    "example": "We had a great time at Sara's birthday party.",
+    "exampleTranslation": "ما در جشن تولد سارا وقت خوبی داشتیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc319",
+    "word": "land",
+    "phonetic": "/lænd/",
+    "persianMeaning": "زمین، ملک",
+    "example": "They own a large piece of land in the countryside.",
+    "exampleTranslation": "آن‌ها صاحب یک قطعه زمین بزرگ در حومه شهر هستند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc320",
+    "word": "government",
+    "phonetic": "/ˈɡʌvərnmənt/",
+    "persianMeaning": "دولت",
+    "example": "The government is building new schools.",
+    "exampleTranslation": "دولت در حال ساخت مدارس جدید است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc321",
+    "word": "recently",
+    "phonetic": "/ˈriːsntli/",
+    "persianMeaning": "اخیراً",
+    "example": "We recently moved to a new city.",
+    "exampleTranslation": "ما اخیراً به یک شهر جدید نقل مکان کردیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc322",
+    "word": "footballer",
+    "phonetic": "/ˈfʊtbɔːlər/",
+    "persianMeaning": "فوتبالیست",
+    "example": "That young footballer is very talented.",
+    "exampleTranslation": "آن فوتبالیست جوان خیلی بااستعداد است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc323",
+    "word": "field",
+    "phonetic": "/fiːld/",
+    "persianMeaning": "زمین بازی، میدان",
+    "example": "The children are playing football in the field.",
+    "exampleTranslation": "کودکان در زمین بازی فوتبال بازی می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc324",
+    "word": "shoe",
+    "phonetic": "/ʃuː/",
+    "persianMeaning": "کفش",
+    "example": "I need to buy a new pair of shoes.",
+    "exampleTranslation": "من باید یک جفت کفش جدید بخرم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc325",
+    "word": "repair",
+    "phonetic": "/rɪˈper/",
+    "persianMeaning": "تعمیر کردن",
+    "example": "My father can repair our old car.",
+    "exampleTranslation": "پدرم می‌تواند ماشین قدیمی ما را تعمیر کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc326",
+    "word": "car park",
+    "phonetic": "/ˈkɑːr pɑːrk/",
+    "persianMeaning": "پارکینگ",
+    "example": "I couldn't find a space in the car park.",
+    "exampleTranslation": "نتوانستم جای خالی در پارکینگ پیدا کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc327",
+    "word": "steal",
+    "phonetic": "/stiːl/",
+    "persianMeaning": "دزدیدن",
+    "example": "Someone stole my bicycle from the yard.",
+    "exampleTranslation": "کسی دوچرخه‌ام را از حیاط دزدید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc328",
+    "word": "energy",
+    "phonetic": "/ˈenərdʒi/",
+    "persianMeaning": "انرژی",
+    "example": "Solar panels use the sun's energy to make electricity.",
+    "exampleTranslation": "پنل‌های خورشیدی از انرژی خورشید برای تولید برق استفاده می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc329",
+    "word": "property",
+    "phonetic": "/ˈprɑːpərti/",
+    "persianMeaning": "ملک، دارایی",
+    "example": "Private property should be respected.",
+    "exampleTranslation": "دارایی شخصی باید محترم شمرده شود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc330",
+    "word": "team",
+    "phonetic": "/tiːm/",
+    "persianMeaning": "تیم",
+    "example": "Our school basketball team won the championship.",
+    "exampleTranslation": "تیم بسکتبال مدرسه ما قهرمان شد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc331",
+    "word": "country",
+    "phonetic": "/ˈkʌntri/",
+    "persianMeaning": "کشور",
+    "example": "Iran is a beautiful country with a long history.",
+    "exampleTranslation": "ایران کشوری زیبا با تاریخ طولانی است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc332",
+    "word": "previous",
+    "phonetic": "/ˈpriːviəs/",
+    "persianMeaning": "قبلی",
+    "example": "I met him on the previous day.",
+    "exampleTranslation": "من روز قبل او را ملاقات کردم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc333",
+    "word": "Olympic Games",
+    "phonetic": "/əˌlɪmpɪk ˈɡeɪmz/",
+    "persianMeaning": "بازی‌های المپیک",
+    "example": "Many athletes dream of participating in the Olympic Games.",
+    "exampleTranslation": "بسیاری از ورزشکاران آرزوی شرکت در بازی‌های المپیک را دارند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc334",
+    "word": "computer programmer",
+    "phonetic": "/kəmˈpjuːtər ˈproʊɡræmər/",
+    "persianMeaning": "برنامه‌نویس کامپیوتر",
+    "example": "My brother is a computer programmer at a big company.",
+    "exampleTranslation": "برادرم برنامه‌نویس کامپیوتر در یک شرکت بزرگ است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc335",
+    "word": "company",
+    "phonetic": "/ˈkʌmpəni/",
+    "persianMeaning": "شرکت",
+    "example": "My father works for an oil company.",
+    "exampleTranslation": "پدرم برای یک شرکت نفت کار می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc336",
+    "word": "apartment",
+    "phonetic": "/əˈpɑːrtmənt/",
+    "persianMeaning": "آپارتمان",
+    "example": "They live in a small apartment in the city center.",
+    "exampleTranslation": "آن‌ها در یک آپارتمان کوچک در مرکز شهر زندگی می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc337",
+    "word": "poor",
+    "phonetic": "/pɔːr/",
+    "persianMeaning": "فقیر",
+    "example": "We should help poor people in our community.",
+    "exampleTranslation": "ما باید به مردم فقیر در جامعه خود کمک کنیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc338",
+    "word": "employee",
+    "phonetic": "/ɪmˈplɔɪiː/",
+    "persianMeaning": "کارمند",
+    "example": "The company has over 500 employees.",
+    "exampleTranslation": "شرکت بیش از 500 کارمند دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc339",
+    "word": "during",
+    "phonetic": "/ˈdʊrɪŋ/",
+    "persianMeaning": "در طول",
+    "example": "Please don't talk during the movie.",
+    "exampleTranslation": "لطفاً در طول فیلم صحبت نکن.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc340",
+    "word": "manager",
+    "phonetic": "/ˈmænɪdʒər/",
+    "persianMeaning": "مدیر",
+    "example": "The manager called a meeting with all the staff.",
+    "exampleTranslation": "مدیر جلسه‌ای با همه کارکنان تشکیل داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc341",
+    "word": "office",
+    "phonetic": "/ˈɑːfɪs/",
+    "persianMeaning": "دفتر",
+    "example": "My mother goes to her office at 8 o'clock every day.",
+    "exampleTranslation": "مادرم هر روز ساعت 8 به دفترش می‌رود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc342",
+    "word": "paint",
+    "phonetic": "/peɪnt/",
+    "persianMeaning": "نقاشی کردن",
+    "example": "We decided to paint the walls blue.",
+    "exampleTranslation": "تصمیم گرفتیم دیوارها را آبی رنگ کنیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc343",
+    "word": "know",
+    "phonetic": "/noʊ/",
+    "persianMeaning": "دانستن",
+    "example": "I know the answer to that question.",
+    "exampleTranslation": "من جواب آن سوال را می‌دانم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc344",
+    "word": "girl",
+    "phonetic": "/ɡɜːrl/",
+    "persianMeaning": "دختر",
+    "example": "The little girl is playing with her doll.",
+    "exampleTranslation": "دختر کوچک با عروسکش بازی می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc345",
+    "word": "disappear",
+    "phonetic": "/ˌdɪsəˈpɪr/",
+    "persianMeaning": "ناپدید شدن",
+    "example": "The sun disappeared behind the clouds.",
+    "exampleTranslation": "خورشید پشت ابرها ناپدید شد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc346",
+    "word": "report",
+    "phonetic": "/rɪˈpɔːrt/",
+    "persianMeaning": "گزارش دادن",
+    "example": "The police reported the accident to the newspaper.",
+    "exampleTranslation": "پلیس حادثه را به روزنامه گزارش داد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc347",
+    "word": "missing",
+    "phonetic": "/ˈmɪsɪŋ/",
+    "persianMeaning": "مفقود",
+    "example": "My keys are missing; I can't find them anywhere.",
+    "exampleTranslation": "کلیدهایم گم شده‌اند؛ نمی‌توانم آن‌ها را هیچ جا پیدا کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc348",
+    "word": "north pole",
+    "phonetic": "/ˌnɔːrθ ˈpoʊl/",
+    "persianMeaning": "قطب شمال",
+    "example": "It is very cold at the North Pole.",
+    "exampleTranslation": "در قطب شمال خیلی سرد است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc349",
+    "word": "magnet",
+    "phonetic": "/ˈmæɡnət/",
+    "persianMeaning": "آهن‌ربا",
+    "example": "We used a magnet to pick up the pins.",
+    "exampleTranslation": "ما از یک آهن‌ربا برای برداشتن سوزن‌ها استفاده کردیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc350",
+    "word": "immediately",
+    "phonetic": "/ɪˈmiːdiətli/",
+    "persianMeaning": "فوراً، بلافاصله",
+    "example": "When the bell rings, please stop writing immediately.",
+    "exampleTranslation": "وقتی زنگ به صدا درآمد، لطفاً بلافاصله نوشتن را متوقف کنید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc351",
+    "word": "move away",
+    "phonetic": "/muːv əˈweɪ/",
+    "persianMeaning": "دور شدن",
+    "example": "The cat moved away when it saw the dog.",
+    "exampleTranslation": "گربه وقتی سگ را دید دور شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc352",
+    "word": "rock",
+    "phonetic": "/rɑːk/",
+    "persianMeaning": "سنگ",
+    "example": "Children should not throw rocks.",
+    "exampleTranslation": "کودکان نباید سنگ پرتاب کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc353",
+    "word": "million",
+    "phonetic": "/ˈmɪljən/",
+    "persianMeaning": "میلیون",
+    "example": "The city has a population of over two million people.",
+    "exampleTranslation": "جمعیت شهر بیش از دو میلیون نفر است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc354",
+    "word": "billion",
+    "phonetic": "/ˈbɪljən/",
+    "persianMeaning": "میلیارد",
+    "example": "The government spent billions of dollars on the project.",
+    "exampleTranslation": "دولت میلیاردها دلار برای پروژه هزینه کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc355",
+    "word": "find",
+    "phonetic": "/faɪnd/",
+    "persianMeaning": "پیدا کردن",
+    "example": "I can't find my glasses. Have you seen them?",
+    "exampleTranslation": "نمی‌توانم عینکم را پیدا کنم. آن‌ها را دیده‌ای؟",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc356",
+    "word": "mile",
+    "phonetic": "/maɪl/",
+    "persianMeaning": "مایل",
+    "example": "The school is about two miles from my house.",
+    "exampleTranslation": "مدرسه حدود دو مایل از خانه من فاصله دارد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc357",
+    "word": "begin",
+    "phonetic": "/bɪˈɡɪn/",
+    "persianMeaning": "شروع کردن",
+    "example": "The movie will begin in ten minutes.",
+    "exampleTranslation": "فیلم ده دقیقه دیگر شروع می‌شود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc358",
+    "word": "belief",
+    "phonetic": "/bɪˈliːf/",
+    "persianMeaning": "باور، اعتقاد",
+    "example": "Religious beliefs are important to many people.",
+    "exampleTranslation": "باورهای مذهبی برای بسیاری از مردم مهم هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc359",
+    "word": "short",
+    "phonetic": "/ʃɔːrt/",
+    "persianMeaning": "کوتاه",
+    "example": "She has short hair.",
+    "exampleTranslation": "او موهای کوتاهی دارد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc360",
+    "word": "questions",
+    "phonetic": "/ˈkwestʃənz/",
+    "persianMeaning": "سوالات",
+    "example": "The teacher answered all our questions.",
+    "exampleTranslation": "معلم به تمام سوالات ما پاسخ داد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc361",
+    "word": "end",
+    "phonetic": "/end/",
+    "persianMeaning": "پایان",
+    "example": "We reached the end of the road.",
+    "exampleTranslation": "ما به انتهای جاده رسیدیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc362",
+    "word": "positive",
+    "phonetic": "/ˈpɑːzətɪv/",
+    "persianMeaning": "مثبت",
+    "example": "She gave a positive answer to our request.",
+    "exampleTranslation": "او پاسخ مثبتی به درخواست ما داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc363",
+    "word": "negative",
+    "phonetic": "/ˈneɡətɪv/",
+    "persianMeaning": "منفی",
+    "example": "He had a negative reaction to the news.",
+    "exampleTranslation": "او واکنش منفی نسبت به خبر نشان داد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc364",
+    "word": "usually",
+    "phonetic": "/ˈjuːʒuəli/",
+    "persianMeaning": "معمولاً",
+    "example": "I usually go to bed at 10 p.m.",
+    "exampleTranslation": "من معمولاً ساعت ۱۰ شب به رختخواب می‌روم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc365",
+    "word": "usage",
+    "phonetic": "/ˈjuːsɪdʒ/",
+    "persianMeaning": "کاربرد",
+    "example": "Learning word usage helps in speaking correctly.",
+    "exampleTranslation": "یادگیری کاربرد کلمات به صحبت کردن صحیح کمک می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc366",
+    "word": "ensure",
+    "phonetic": "/ɪnˈʃʊr/",
+    "persianMeaning": "اطمینان حاصل کردن",
+    "example": "Please ensure that the door is locked.",
+    "exampleTranslation": "لطفاً اطمینان حاصل کنید که در قفل است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc367",
+    "word": "matter",
+    "phonetic": "/ˈmætər/",
+    "persianMeaning": "مسئله",
+    "example": "This is an important matter to discuss.",
+    "exampleTranslation": "این یک مسئله مهم برای بحث است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc368",
+    "word": "assumption",
+    "phonetic": "/əˈsʌmpʃn/",
+    "persianMeaning": "فرض",
+    "example": "My assumption was that he would come on time.",
+    "exampleTranslation": "فرض من این بود که او به موقع خواهد آمد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc369",
+    "word": "expresses",
+    "phonetic": "/ɪkˈspresɪz/",
+    "persianMeaning": "بیان می‌کند",
+    "example": "She expresses her ideas clearly in class.",
+    "exampleTranslation": "او ایده‌هایش را به وضوح در کلاس بیان می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc370",
+    "word": "adds",
+    "phonetic": "/ædz/",
+    "persianMeaning": "اضافه می‌کند",
+    "example": "She adds sugar to her tea.",
+    "exampleTranslation": "او به چایش شکر اضافه می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc371",
+    "word": "correct",
+    "phonetic": "/kəˈrekt/",
+    "persianMeaning": "درست",
+    "example": "Your answer is correct.",
+    "exampleTranslation": "پاسخ شما درست است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc372",
+    "word": "news",
+    "phonetic": "/nuːz/",
+    "persianMeaning": "اخبار",
+    "example": "I watch the news on TV every evening.",
+    "exampleTranslation": "من هر شب اخبار را در تلویزیون تماشا می‌کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc373",
+    "word": "request",
+    "phonetic": "/rɪˈkwest/",
+    "persianMeaning": "درخواست",
+    "example": "He made a request for help.",
+    "exampleTranslation": "او درخواست کمک کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc374",
+    "word": "scientific",
+    "phonetic": "/ˌsaɪənˈtɪfɪk/",
+    "persianMeaning": "علمی",
+    "example": "Scientific discoveries help improve our lives.",
+    "exampleTranslation": "کشفیات علمی به بهبود زندگی ما کمک می‌کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc375",
+    "word": "truth",
+    "phonetic": "/truːθ/",
+    "persianMeaning": "حقیقت",
+    "example": "Always tell the truth.",
+    "exampleTranslation": "همیشه حقیقت را بگو.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc376",
+    "word": "tag",
+    "phonetic": "/tæɡ/",
+    "persianMeaning": "ضمیمه",
+    "example": "In 'You're coming, aren't you?', 'aren't you?' is a tag.",
+    "exampleTranslation": "در 'شما می‌آیید، مگر نه؟'، 'مگر نه؟' یک سوال ضمیمه است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc377",
+    "word": "opposite",
+    "phonetic": "/ˈɑːpəzɪt/",
+    "persianMeaning": "مخالف",
+    "example": "Hot is the opposite of cold.",
+    "exampleTranslation": "گرم مخالف سرد است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc378",
+    "word": "main",
+    "phonetic": "/meɪn/",
+    "persianMeaning": "اصلی",
+    "example": "The main reason for my visit is to see you.",
+    "exampleTranslation": "دلیل اصلی بازدید من دیدن شماست.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc379",
+    "word": "sentence",
+    "phonetic": "/ˈsentəns/",
+    "persianMeaning": "جمله",
+    "example": "We write a complete sentence with a subject and verb.",
+    "exampleTranslation": "ما یک جمله کامل با فاعل و فعل می‌نویسیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc380",
+    "word": "subject",
+    "phonetic": "/ˈsʌbdʒɪkt/",
+    "persianMeaning": "فاعل",
+    "example": "In 'Ali reads a book', 'Ali' is the subject.",
+    "exampleTranslation": "در 'علی یک کتاب می‌خواند'، 'علی' فاعل است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc381",
+    "word": "pronoun",
+    "phonetic": "/ˈproʊnaʊn/",
+    "persianMeaning": "ضمیر",
+    "example": "He, she, it, they are pronouns.",
+    "exampleTranslation": "او (مذکر)، او (مؤنث)، آن، آن‌ها ضمیر هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc382",
+    "word": "contracted",
+    "phonetic": "/kənˈtræktɪd/",
+    "persianMeaning": "مخفف",
+    "example": "We use contracted forms in informal speaking.",
+    "exampleTranslation": "ما از فرم‌های مخفف در صحبت غیررسمی استفاده می‌کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc383",
+    "word": "lacks",
+    "phonetic": "/læks/",
+    "persianMeaning": "فاقد است",
+    "example": "The room lacks enough light for reading.",
+    "exampleTranslation": "اتاق نور کافی برای خواندن ندارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc384",
+    "word": "derivatives",
+    "phonetic": "/dɪˈrɪvətɪvz/",
+    "persianMeaning": "مشتقات",
+    "example": "Do, does, did are derivatives of the same verb.",
+    "exampleTranslation": "Do، does، did مشتقات همان فعل هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc385",
+    "word": "according",
+    "phonetic": "/əˈkɔːrdɪŋ/",
+    "persianMeaning": "مطابق",
+    "example": "According to the weather forecast, it will rain tomorrow.",
+    "exampleTranslation": "بر اساس پیش‌بینی هوا، فردا باران می‌بارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc386",
+    "word": "suitable",
+    "phonetic": "/ˈsuːtəbl/",
+    "persianMeaning": "مناسب",
+    "example": "This book is suitable for beginners.",
+    "exampleTranslation": "این کتاب برای مبتدیان مناسب است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc387",
+    "word": "main verb",
+    "phonetic": "/meɪn vɜːrb/",
+    "persianMeaning": "فعل اصلی",
+    "example": "In 'She is reading a book', 'reading' is the main verb.",
+    "exampleTranslation": "در 'او در حال خواندن یک کتاب است'، 'خواندن' فعل اصلی است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc388",
+    "word": "past",
+    "phonetic": "/pæst/",
+    "persianMeaning": "گذشته",
+    "example": "We studied past tense in English class.",
+    "exampleTranslation": "ما زمان گذشته را در کلاس انگلیسی مطالعه کردیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc389",
+    "word": "simple",
+    "phonetic": "/ˈsɪmpl/",
+    "persianMeaning": "ساده",
+    "example": "This grammar rule is simple to learn.",
+    "exampleTranslation": "این قاعده گرامری ساده برای یادگیری است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc390",
+    "word": "separated",
+    "phonetic": "/ˈsepəreɪtɪd/",
+    "persianMeaning": "جدا شده",
+    "example": "The teacher separated the two arguing students.",
+    "exampleTranslation": "معلم دو دانش‌آموز مشاجره‌کننده را جدا کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc391",
+    "word": "comma",
+    "phonetic": "/ˈkɑːmə/",
+    "persianMeaning": "ویرگول",
+    "example": "Use a comma before 'and' in a list.",
+    "exampleTranslation": "قبل از 'و' در یک لیست ویرگول بگذار.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc392",
+    "word": "adverb",
+    "phonetic": "/ˈædvɜːrb/",
+    "persianMeaning": "قید",
+    "example": "In 'She runs quickly', 'quickly' is an adverb.",
+    "exampleTranslation": "در 'او سریع می‌دود'، 'سریع' یک قید است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc393",
+    "word": "never",
+    "phonetic": "/ˈnevər/",
+    "persianMeaning": "هرگز",
+    "example": "I never eat meat.",
+    "exampleTranslation": "من هرگز گوشت نمی‌خورم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc394",
+    "word": "hardly",
+    "phonetic": "/ˈhɑːrdli/",
+    "persianMeaning": "به سختی",
+    "example": "He hardly studies, so his grades are low.",
+    "exampleTranslation": "او به سختی درس می‌خواند، بنابراین نمراتش پایین است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc395",
+    "word": "scarcely",
+    "phonetic": "/ˈskersli/",
+    "persianMeaning": "به ندرت",
+    "example": "There is scarcely any milk left in the fridge.",
+    "exampleTranslation": "به ندرت هیچ شیری در یخچال باقی مانده است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc396",
+    "word": "seldom",
+    "phonetic": "/ˈseldəm/",
+    "persianMeaning": "به ندرت",
+    "example": "She seldom visits her relatives.",
+    "exampleTranslation": "او به ندرت از بستگانش دیدار می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc397",
+    "word": "rarely",
+    "phonetic": "/ˈrerli/",
+    "persianMeaning": "به ندرت",
+    "example": "He rarely gets angry.",
+    "exampleTranslation": "او به ندرت عصبانی می‌شود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc398",
+    "word": "everyone",
+    "phonetic": "/ˈevriwʌn/",
+    "persianMeaning": "همه",
+    "example": "Everyone in the class passed the exam.",
+    "exampleTranslation": "همه در کلاس امتحان را قبول شدند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc399",
+    "word": "everybody",
+    "phonetic": "/ˈevribɑːdi/",
+    "persianMeaning": "همه",
+    "example": "Everybody likes her because she is kind.",
+    "exampleTranslation": "همه او را دوست دارند چون مهربان است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc400",
+    "word": "nobody",
+    "phonetic": "/ˈnoʊbədi/",
+    "persianMeaning": "هیچ کس",
+    "example": "Nobody was at home when I visited.",
+    "exampleTranslation": "هنگامی که من سر زدم هیچ کس در خانه نبود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc401",
+    "word": "someone",
+    "phonetic": "/ˈsʌmwʌn/",
+    "persianMeaning": "کسی",
+    "example": "Someone called you while you were out.",
+    "exampleTranslation": "کسی وقتی بیرون بودی به تو تلفن کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc402",
+    "word": "somebody",
+    "phonetic": "/ˈsʌmbədi/",
+    "persianMeaning": "کسی",
+    "example": "Somebody left their bag in the classroom.",
+    "exampleTranslation": "کسی کیفش را در کلاس جا گذاشت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc403",
+    "word": "plural",
+    "phonetic": "/ˈplʊrəl/",
+    "persianMeaning": "جمع",
+    "example": "The plural of 'child' is 'children'.",
+    "exampleTranslation": "جمع 'child'، 'children' است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc404",
+    "word": "imperative",
+    "phonetic": "/ɪmˈperətɪv/",
+    "persianMeaning": "امری",
+    "example": "'Close the door' is an imperative sentence.",
+    "exampleTranslation": "'در را ببند' یک جمله امری است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc405",
+    "word": "yard",
+    "phonetic": "/jɑːrd/",
+    "persianMeaning": "حیاط",
+    "example": "The children play in the yard after school.",
+    "exampleTranslation": "کودکان بعد از مدرسه در حیاط بازی می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc406",
+    "word": "few",
+    "phonetic": "/fjuː/",
+    "persianMeaning": "کم",
+    "example": "Few students passed the difficult exam.",
+    "exampleTranslation": "دانش‌آموزان کمی امتحان سخت را قبول شدند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc407",
+    "word": "little",
+    "phonetic": "/ˈlɪtl/",
+    "persianMeaning": "کم",
+    "example": "There is little water left in the bottle.",
+    "exampleTranslation": "آب کمی در بطری باقی مانده است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc408",
+    "word": "negatives",
+    "phonetic": "/ˈneɡətɪvz/",
+    "persianMeaning": "منفی‌ها",
+    "example": "We learn how to make negatives in English grammar.",
+    "exampleTranslation": "ما یاد می‌گیریم چگونه منفی‌ها را در گرامر انگلیسی بسازیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc409",
+    "word": "always",
+    "phonetic": "/ˈɔːlweɪz/",
+    "persianMeaning": "همیشه",
+    "example": "She always arrives early for class.",
+    "exampleTranslation": "او همیشه برای کلاس زود می‌رسد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc410",
+    "word": "noun",
+    "phonetic": "/naʊn/",
+    "persianMeaning": "اسم",
+    "example": "Teacher, school, book are all nouns.",
+    "exampleTranslation": "معلم، مدرسه، کتاب همه اسم هستند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc411",
+    "word": "demostrative",
+    "phonetic": "/dɪˈmɒnstrətɪv/",
+    "persianMeaning": "اشاره‌ای",
+    "example": "In 'This is my book', 'this' is a demonstrative pronoun.",
+    "exampleTranslation": "در 'این کتاب من است'، 'این' یک ضمیر اشاره‌ای است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc412",
+    "word": "only",
+    "phonetic": "/ˈoʊnli/",
+    "persianMeaning": "فقط",
+    "example": "I have only one brother.",
+    "exampleTranslation": "من فقط یک برادر دارم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc413",
+    "word": "answered",
+    "phonetic": "/ˈænsərd/",
+    "persianMeaning": "پاسخ داد",
+    "example": "She answered all the questions correctly.",
+    "exampleTranslation": "او به تمام سوالات به درستی پاسخ داد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc414",
+    "word": "live",
+    "phonetic": "/lɪv/",
+    "persianMeaning": "زندگی کردن",
+    "example": "I live in Tehran with my family.",
+    "exampleTranslation": "من در تهران با خانواده‌ام زندگی می‌کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc415",
+    "word": "near",
+    "phonetic": "/nɪr/",
+    "persianMeaning": "نزدیک",
+    "example": "My school is near my house.",
+    "exampleTranslation": "مدرسه من نزدیک خانه‌ام است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc416",
+    "word": "built",
+    "phonetic": "/bɪlt/",
+    "persianMeaning": "ساخت",
+    "example": "They built a new bridge over the river.",
+    "exampleTranslation": "آن‌ها یک پل جدید روی رودخانه ساختند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc417",
+    "word": "steam",
+    "phonetic": "/stiːm/",
+    "persianMeaning": "بخار",
+    "example": "Steam comes from boiling water.",
+    "exampleTranslation": "بخار از آب جوش بیرون می‌آید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc418",
+    "word": "engine",
+    "phonetic": "/ˈendʒɪn/",
+    "persianMeaning": "موتور",
+    "example": "The car engine needs repair.",
+    "exampleTranslation": "موتور ماشین نیاز به تعمیر دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc419",
+    "word": "simple sentence",
+    "phonetic": "/ˈsɪmpl ˈsentəns/",
+    "persianMeaning": "جمله ساده",
+    "example": "'Birds fly' is a simple sentence.",
+    "exampleTranslation": "'پرندگان پرواز می‌کنند' یک جمله ساده است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc420",
+    "word": "minimum",
+    "phonetic": "/ˈmɪnɪməm/",
+    "persianMeaning": "حداقل",
+    "example": "The minimum age for driving is 18.",
+    "exampleTranslation": "حداقل سن برای رانندگی ۱۸ سال است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc421",
+    "word": "independent",
+    "phonetic": "/ˌɪndɪˈpendənt/",
+    "persianMeaning": "مستقل",
+    "example": "She is an independent student who studies alone.",
+    "exampleTranslation": "او یک دانش‌آموز مستقل است که به تنهایی مطالعه می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc422",
+    "word": "tricked",
+    "phonetic": "/trɪkt/",
+    "persianMeaning": "فریب خورد",
+    "example": "Don't be tricked by false promises.",
+    "exampleTranslation": "توسط وعده‌های دروغین فریب نخورید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc423",
+    "word": "compound",
+    "phonetic": "/ˈkɑːmpaʊnd/",
+    "persianMeaning": "مرکب",
+    "example": "A compound sentence has two independent clauses.",
+    "exampleTranslation": "یک جمله مرکب دو عبارت مستقل دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc424",
+    "word": "conjunction",
+    "phonetic": "/kənˈdʒʌŋkʃn/",
+    "persianMeaning": "حرف ربط",
+    "example": "And, but, or are common conjunctions.",
+    "exampleTranslation": "و، اما، یا حروف ربط رایج هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc425",
+    "word": "connect",
+    "phonetic": "/kəˈnekt/",
+    "persianMeaning": "وصل کردن",
+    "example": "Please connect the printer to the computer.",
+    "exampleTranslation": "لطفاً پرینتر را به کامپیوتر وصل کنید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc426",
+    "word": "properly",
+    "phonetic": "/ˈprɑːpərli/",
+    "persianMeaning": "به درستی",
+    "example": "Please write your name properly on the paper.",
+    "exampleTranslation": "لطفاً اسم خود را به درستی روی کاغذ بنویسید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc427",
+    "word": "punctuation",
+    "phonetic": "/ˌpʌŋktʃuˈeɪʃn/",
+    "persianMeaning": "نشانه‌گذاری",
+    "example": "Good punctuation makes writing clear.",
+    "exampleTranslation": "نشانه‌گذاری خوب نوشتن را واضح می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc428",
+    "word": "fanboys",
+    "phonetic": "/ˈfænbɔɪz/",
+    "persianMeaning": "حروف ربط اصلی",
+    "example": "We use FANBOYS to remember coordinating conjunctions.",
+    "exampleTranslation": "ما از FANBOYS برای یادآوری حروف ربط همپایه استفاده می‌کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc429",
+    "word": "addition",
+    "phonetic": "/əˈdɪʃn/",
+    "persianMeaning": "جمع، اضافه",
+    "example": "My little sister is learning addition in school.",
+    "exampleTranslation": "خواهر کوچکم در مدرسه در حال یادگیری جمع است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc430",
+    "word": "agreement",
+    "phonetic": "/əˈɡriːmənt/",
+    "persianMeaning": "توافق",
+    "example": "They finally reached an agreement on the price.",
+    "exampleTranslation": "آنها در نهایت بر سر قیمت به توافق رسیدند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc431",
+    "word": "belonging",
+    "phonetic": "/bɪˈlɔːŋɪŋ/",
+    "persianMeaning": "تعلق، وابستگی",
+    "example": "She has a strong sense of belonging to her family.",
+    "exampleTranslation": "او حس تعلق قوی به خانواده خود دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc432",
+    "word": "blessing",
+    "phonetic": "/ˈblesɪŋ/",
+    "persianMeaning": "نعمت، برکت، دعای خیر",
+    "example": "Having good health is a great blessing.",
+    "exampleTranslation": "سلامت خوب داشتن یک نعمت بزرگ است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc433",
+    "word": "bring up",
+    "phonetic": "/brɪŋ ʌp/",
+    "persianMeaning": "بزرگ کردن، پرورش دادن",
+    "example": "Her grandparents brought her up after her parents passed away.",
+    "exampleTranslation": "پدربزرگ و مادربزرگش او را پس از فوت والدینش بزرگ کردند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc434",
+    "word": "combine",
+    "phonetic": "/kəmˈbaɪn/",
+    "persianMeaning": "ترکیب کردن، به هم پیوستن",
+    "example": "Combine the eggs and flour in a bowl.",
+    "exampleTranslation": "تخم مرغ‌ها و آرد را در یک کاسه ترکیب کن.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc435",
+    "word": "compound",
+    "phonetic": "/ˈkɑːmpaʊnd/",
+    "persianMeaning": "ترکیب، جسم مرکب",
+    "example": "Water is a compound of hydrogen and oxygen.",
+    "exampleTranslation": "آب ترکیبی از هیدروژن و اکسیژن است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc436",
+    "word": "confirm",
+    "phonetic": "/kənˈfɜːrm/",
+    "persianMeaning": "تأیید کردن، تصدیق کردن",
+    "example": "Please confirm your attendance by email.",
+    "exampleTranslation": "لطفاً حضور خود را با ایمیل تأیید کنید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc437",
+    "word": "connect",
+    "phonetic": "/kəˈnekt/",
+    "persianMeaning": "به هم متصل کردن، وصل کردن",
+    "example": "Connect the printer to the computer with this cable.",
+    "exampleTranslation": "پرینتر را با این کابل به کامپیوتر وصل کن.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc438",
+    "word": "definitely",
+    "phonetic": "/ˈdefɪnətli/",
+    "persianMeaning": "قطعاً، یقیناً",
+    "example": "I will definitely be there at 8 o'clock.",
+    "exampleTranslation": "من قطعاً ساعت ۸ آنجا خواهم بود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc439",
+    "word": "either",
+    "phonetic": "/ˈiːðər/",
+    "persianMeaning": "یا... یا",
+    "example": "You can have either tea or coffee.",
+    "exampleTranslation": "می‌توانی یا چای یا قهوه داشته باشی.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc440",
+    "word": "elder",
+    "phonetic": "/ˈeldər/",
+    "persianMeaning": "مسن‌تر، بزرگتر",
+    "example": "We should listen to the advice of our elders.",
+    "exampleTranslation": "ما باید به توصیه بزرگانمان گوش دهیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc441",
+    "word": "elicit",
+    "phonetic": "/iˈlɪsɪt/",
+    "persianMeaning": "بیرون کشیدن، استنباط کردن",
+    "example": "The teacher used pictures to elicit answers from the shy student.",
+    "exampleTranslation": "معلم از تصاویر برای بیرون کشیدن پاسخ‌های دانش‌آموز خجالتی استفاده کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc442",
+    "word": "go through",
+    "phonetic": "/ɡoʊ θruː/",
+    "persianMeaning": "تحمل کردن، با دقت انجام دادن",
+    "example": "She went through a lot of difficulties to achieve her dream.",
+    "exampleTranslation": "او برای رسیدن به رویایش سختی‌های زیادی را تحمل کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc443",
+    "word": "guidance",
+    "phonetic": "/ˈɡaɪdns/",
+    "persianMeaning": "راهنمایی، خط مشی",
+    "example": "Teachers provide guidance to students about their future studies.",
+    "exampleTranslation": "معلمان راهنمایی‌هایی درباره مطالعات آینده به دانش‌آموزان ارائه می‌دهند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc444",
+    "word": "hate",
+    "phonetic": "/heɪt/",
+    "persianMeaning": "متنفر بودن",
+    "example": "I hate getting up early on cold mornings.",
+    "exampleTranslation": "من از زود بیدار شدن در صبح‌های سرد متنفرم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc445",
+    "word": "heavy",
+    "phonetic": "/ˈhevi/",
+    "persianMeaning": "سنگین",
+    "example": "This box is too heavy for me to carry alone.",
+    "exampleTranslation": "این جعبه برای من خیلی سنگین است که به تنهایی حملش کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc446",
+    "word": "heritage",
+    "phonetic": "/ˈherɪtɪdʒ/",
+    "persianMeaning": "میراث، ارمغان",
+    "example": "We must protect our national heritage for our children.",
+    "exampleTranslation": "ما باید میراث ملی خود را برای فرزندانمان حفظ کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc447",
+    "word": "hide",
+    "phonetic": "/haɪd/",
+    "persianMeaning": "مخفی کردن، پنهان کردن",
+    "example": "The children like to hide behind the sofa.",
+    "exampleTranslation": "بچه‌ها دوست دارند پشت کاناپه مخفی شوند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc448",
+    "word": "insight",
+    "phonetic": "/ˈɪnsaɪt/",
+    "persianMeaning": "بینش، بصیرت",
+    "example": "The book gives us an insight into life in ancient times.",
+    "exampleTranslation": "کتاب به ما بینشی از زندگی در دوران باستان می‌دهد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc449",
+    "word": "peaceful",
+    "phonetic": "/ˈpiːsfl/",
+    "persianMeaning": "آرام، مسالمت‌آمیز",
+    "example": "We spent a peaceful afternoon by the lake.",
+    "exampleTranslation": "ما یک بعدازظهر آرام را کنار دریاچه گذراندیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc450",
+    "word": "principle",
+    "phonetic": "/ˈprɪnsəpl/",
+    "persianMeaning": "اصل، اصول اخلاقی",
+    "example": "Honesty is an important principle to live by.",
+    "exampleTranslation": "صداقت یک اصل مهم برای زندگی کردن است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc451",
+    "word": "regarding",
+    "phonetic": "/rɪˈɡɑːrdɪŋ/",
+    "persianMeaning": "درباره، در باب",
+    "example": "I have a question regarding the homework assignment.",
+    "exampleTranslation": "من یک سؤال درباره تکلیف خانه دارم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc452",
+    "word": "regretful",
+    "phonetic": "/rɪˈɡretfl/",
+    "persianMeaning": "پشیمان",
+    "example": "She was regretful about missing her friend's party.",
+    "exampleTranslation": "او از اینکه جشن تولد دوستش را از دست داده بود پشیمان بود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc453",
+    "word": "replace",
+    "phonetic": "/rɪˈpleɪs/",
+    "persianMeaning": "جایگزین کردن، جابجا کردن",
+    "example": "We need to replace the old batteries in the remote.",
+    "exampleTranslation": "ما باید باتری‌های قدیمی در ریموت را جایگزین کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc454",
+    "word": "responsible",
+    "phonetic": "/rɪˈspɑːnsəbl/",
+    "persianMeaning": "مسئول",
+    "example": "Parents are responsible for their children's safety.",
+    "exampleTranslation": "والدین مسئول ایمنی فرزندان خود هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc455",
+    "word": "rest",
+    "phonetic": "/rest/",
+    "persianMeaning": "استراحت",
+    "example": "After a long walk, I needed a good rest.",
+    "exampleTranslation": "بعد از یک پیاده‌روی طولانی، به یک استراحت خوب نیاز داشتم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc456",
+    "word": "signal",
+    "phonetic": "/ˈsɪɡnəl/",
+    "persianMeaning": "علامت، نشانه",
+    "example": "The traffic signal turned red, so we stopped.",
+    "exampleTranslation": "چراغ راهنمایی قرمز شد، بنابراین توقف کردیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc457",
+    "word": "uncertainly",
+    "phonetic": "/ʌnˈsɜːrtnli/",
+    "persianMeaning": "با تردید، با شک",
+    "example": "He looked at the map uncertainly, not sure which way to go.",
+    "exampleTranslation": "او با تردید به نقشه نگاه کرد، مطمئن نبود کدام مسیر را برود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc458",
+    "word": "ups and downs",
+    "phonetic": "/ˌʌps ən ˈdaʊnz/",
+    "persianMeaning": "فراز و نشیب، پستی و بلندی",
+    "example": "Every marriage has its ups and downs.",
+    "exampleTranslation": "هر ازدواجی فراز و نشیب‌های خود را دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc459",
+    "word": "willing",
+    "phonetic": "/ˈwɪlɪŋ/",
+    "persianMeaning": "مایل، راغب",
+    "example": "She is always willing to help her friends.",
+    "exampleTranslation": "او همیشه مایل است به دوستانش کمک کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc460",
+    "word": "wisdom",
+    "phonetic": "/ˈwɪzdəm/",
+    "persianMeaning": "خرد، عقل",
+    "example": "With age comes wisdom and experience.",
+    "exampleTranslation": "با افزایش سن، خرد و تجربه می‌آید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc461",
+    "word": "worth",
+    "phonetic": "/wɜːrθ/",
+    "persianMeaning": "ارزش",
+    "example": "The new computer has already proved its worth.",
+    "exampleTranslation": "کامپیوتر جدید قبلاً ارزش خود را ثابت کرده است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc462",
+    "word": "yet",
+    "phonetic": "/jet/",
+    "persianMeaning": "با این وجود، هنوز",
+    "example": "He is very tired, yet he continues to work.",
+    "exampleTranslation": "او خیلی خسته است، با این وجود به کارش ادامه می‌دهد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc463",
+    "word": "chess",
+    "phonetic": "/tʃes/",
+    "persianMeaning": "شطرنج",
+    "example": "My brother is very good at playing chess.",
+    "exampleTranslation": "برادرم در بازی شطرنج بسیار خوب است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc464",
+    "word": "top",
+    "phonetic": "/tɑːp/",
+    "persianMeaning": "نوک، راس، بالا",
+    "example": "There is a flag at the top of the mountain.",
+    "exampleTranslation": "یک پرچم در نوک کوه هست.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc465",
+    "word": "What's wrong with...?",
+    "phonetic": "/wɑːts rɔːŋ wɪð/",
+    "persianMeaning": "... چه عیبی دارد؟",
+    "example": "\"What's wrong with the car?\" \"It won't start.\"",
+    "exampleTranslation": "\"ماشین چه عیبی دارد؟\" \"استارت نمی‌خورد.\"",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc466",
+    "word": "deserve",
+    "phonetic": "/dɪˈzɜːrv/",
+    "persianMeaning": "سزاوار بودن، لایق بودن",
+    "example": "You worked hard, so you deserve a good rest.",
+    "exampleTranslation": "تو سخت کار کردی، پس سزاوار یک استراحت خوبی.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc467",
+    "word": "robber",
+    "phonetic": "/ˈrɑːbər/",
+    "persianMeaning": "دزد، سارق",
+    "example": "The bank robber was caught by the police.",
+    "exampleTranslation": "سارق بانک توسط پلیس دستگیر شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc468",
+    "word": "duty",
+    "phonetic": "/ˈduːti/",
+    "persianMeaning": "وظیفه، مسئولیت",
+    "example": "It is your duty to study for the exam.",
+    "exampleTranslation": "مطالعه برای امتحان وظیفه توست.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc469",
+    "word": "end in",
+    "phonetic": "/end ɪn/",
+    "persianMeaning": "منجر شدن به",
+    "example": "Their argument ended in a fight.",
+    "exampleTranslation": "بحث آن‌ها به یک دعوا ختم شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc470",
+    "word": "failure",
+    "phonetic": "/ˈfeɪljər/",
+    "persianMeaning": "شکست",
+    "example": "He was sad about his failure in the test.",
+    "exampleTranslation": "او از شکستش در آزمون ناراحت بود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc471",
+    "word": "grateful",
+    "phonetic": "/ˈɡreɪtfl/",
+    "persianMeaning": "سپاسگزار، ممنون",
+    "example": "I am very grateful for your help.",
+    "exampleTranslation": "من برای کمک شما بسیار سپاسگزارم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc472",
+    "word": "unconditional",
+    "phonetic": "/ˌʌnkənˈdɪʃənl/",
+    "persianMeaning": "بی‌شرط، بدون قید و شرط",
+    "example": "Parents often have unconditional love for their children.",
+    "exampleTranslation": "والدین اغلب عشق بی‌شرطی به فرزندان خود دارند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc473",
+    "word": "handle",
+    "phonetic": "/ˈhændl/",
+    "persianMeaning": "کنترل کردن، اداره کردن",
+    "example": "She can handle difficult customers very well.",
+    "exampleTranslation": "او می‌تواند مشتریان مشکل‌دار را خیلی خوب اداره کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc474",
+    "word": "variation",
+    "phonetic": "/ˌveriˈeɪʃn/",
+    "persianMeaning": "تغییر، اختلاف",
+    "example": "There is a lot of variation in temperature between day and night.",
+    "exampleTranslation": "تفاوت زیادی در دما بین روز و شب وجود دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc475",
+    "word": "hence",
+    "phonetic": "/hens/",
+    "persianMeaning": "از این رو، بنابراین",
+    "example": "The road was blocked; hence, we had to take a different route.",
+    "exampleTranslation": "جاده مسدود بود؛ بنابراین، مجبور شدیم مسیر دیگری را انتخاب کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc476",
+    "word": "verily",
+    "phonetic": "/ˈverəli/",
+    "persianMeaning": "به درستی، حقیقتاً",
+    "example": "Verily, I say unto you, hard work brings success.",
+    "exampleTranslation": "به راستی به شما می‌گویم، کار سخت موفقیت می‌آورد.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g7_l1_fc477",
+    "word": "inform",
+    "phonetic": "/ɪnˈfɔːrm/",
+    "persianMeaning": "اطلاع دادن، آگاه کردن",
+    "example": "Please inform me when the teacher arrives.",
+    "exampleTranslation": "لطفاً هنگامی که معلم رسید به من اطلاع بده.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc478",
+    "word": "cage",
+    "phonetic": "/keɪdʒ/",
+    "persianMeaning": "قفس",
+    "example": "The bird is in a cage.",
+    "exampleTranslation": "پرنده در یک قفس است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc479",
+    "word": "lack",
+    "phonetic": "/læk/",
+    "persianMeaning": "کمبود، نداشتن",
+    "example": "The plants died because of a lack of water.",
+    "exampleTranslation": "گیاهان به دلیل کمبود آب مردند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc480",
+    "word": "fridge",
+    "phonetic": "/frɪdʒ/",
+    "persianMeaning": "یخچال",
+    "example": "Put the milk in the fridge, please.",
+    "exampleTranslation": "لطفاً شیر را در یخچال بگذار.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc481",
+    "word": "parrot",
+    "phonetic": "/ˈpærət/",
+    "persianMeaning": "طوطی",
+    "example": "My grandmother has a parrot that can say hello.",
+    "exampleTranslation": "مادربزرگم یک طوطی دارد که می‌تواند سلام بگوید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc482",
+    "word": "toy",
+    "phonetic": "/tɔɪ/",
+    "persianMeaning": "اسباب بازی",
+    "example": "The child's favorite toy is a teddy bear.",
+    "exampleTranslation": "اسباب بازی مورد علاقه کودک یک خرس عروسکی است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc483",
+    "word": "cost",
+    "phonetic": "/kɔːst/",
+    "persianMeaning": "هزینه",
+    "example": "The cost of living in big cities is high.",
+    "exampleTranslation": "هزینه زندگی در شهرهای بزرگ بالا است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc484",
+    "word": "transport",
+    "phonetic": "/ˈtrænspɔːrt/",
+    "persianMeaning": "حمل و نقل",
+    "example": "Public transport is cheaper than using a private car.",
+    "exampleTranslation": "حمل و نقل عمومی از استفاده از ماشین شخصی ارزان‌تر است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc485",
+    "word": "major",
+    "phonetic": "/ˈmeɪdʒər/",
+    "persianMeaning": "عمده، اصلی",
+    "example": "Pollution is a major problem in many cities.",
+    "exampleTranslation": "آلودگی یک مشکل عمده در بسیاری از شهرهاست.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc486",
+    "word": "expense",
+    "phonetic": "/ɪkˈspens/",
+    "persianMeaning": "هزینه، مخارج",
+    "example": "Buying a new computer is a big expense.",
+    "exampleTranslation": "خرید یک کامپیوتر جدید هزینه بزرگی است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc487",
+    "word": "industry",
+    "phonetic": "/ˈɪndəstri/",
+    "persianMeaning": "صنعت",
+    "example": "The car industry is very important for the country's economy.",
+    "exampleTranslation": "صنعت خودرو برای اقتصاد کشور بسیار مهم است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc488",
+    "word": "factory",
+    "phonetic": "/ˈfæktri/",
+    "persianMeaning": "کارخانه",
+    "example": "My father works in a shoe factory.",
+    "exampleTranslation": "پدرم در یک کارخانه کفش کار می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc489",
+    "word": "consideration",
+    "phonetic": "/kənˌsɪdəˈreɪʃn/",
+    "persianMeaning": "ملاحظه، در نظر گرفتن",
+    "example": "Safety is the most important consideration when driving.",
+    "exampleTranslation": "ایمنی مهم‌ترین ملاحظه هنگام رانندگی است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc490",
+    "word": "mention",
+    "phonetic": "/ˈmenʃn/",
+    "persianMeaning": "اشاره، نام بردن",
+    "example": "He didn't even mention his trip to Paris.",
+    "exampleTranslation": "او حتی به سفرش به پاریس اشاره‌ای نکرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc491",
+    "word": "deal with",
+    "phonetic": "/ˈdiːl wɪð/",
+    "persianMeaning": "کنار آمدن با، رسیدگی کردن به",
+    "example": "Our teacher knows how to deal with difficult students.",
+    "exampleTranslation": "معلم ما می‌داند چگونه با دانش‌آموزان مشکل‌دار کنار بیاید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc492",
+    "word": "honor",
+    "phonetic": "/ˈɑːnər/",
+    "persianMeaning": "احترام، افتخار",
+    "example": "It is an honor to meet such a great scientist.",
+    "exampleTranslation": "ملاقات با چنین دانشمند بزرگی افتخار است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc493",
+    "word": "title",
+    "phonetic": "/ˈtaɪtl/",
+    "persianMeaning": "عنوان",
+    "example": "What is the title of your favorite movie?",
+    "exampleTranslation": "عنوان فیلم مورد علاقه تو چیست؟",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc494",
+    "word": "principle",
+    "phonetic": "/ˈprɪnsəpl/",
+    "persianMeaning": "اصل",
+    "example": "Honesty is an important principle in our family.",
+    "exampleTranslation": "صداقت یک اصل مهم در خانواده ماست.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc495",
+    "word": "identity",
+    "phonetic": "/aɪˈdentəti/",
+    "persianMeaning": "هویت",
+    "example": "Your ID card shows your identity.",
+    "exampleTranslation": "کارت شناسایی تو هویت تو را نشان می‌دهد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc496",
+    "word": "relation",
+    "phonetic": "/rɪˈleɪʃn/",
+    "persianMeaning": "رابطه، نسبت",
+    "example": "The relation between diet and health is clear.",
+    "exampleTranslation": "رابطه بین رژیم غذایی و سلامت واضح است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc497",
+    "word": "inventor",
+    "phonetic": "/ɪnˈventər/",
+    "persianMeaning": "مخترع",
+    "example": "Thomas Edison was a famous inventor.",
+    "exampleTranslation": "توماس ادیسون یک مخترع مشهور بود.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc498",
+    "word": "design",
+    "phonetic": "/dɪˈzaɪn/",
+    "persianMeaning": "طرح، طراحی",
+    "example": "The architect showed us the design for the new building.",
+    "exampleTranslation": "معمار طرح ساختمان جدید را به ما نشان داد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc499",
+    "word": "originally",
+    "phonetic": "/əˈrɪdʒənəli/",
+    "persianMeaning": "در اصل، ابتدا",
+    "example": "This house was originally a small shop.",
+    "exampleTranslation": "این خانه در اصل یک مغازه کوچک بود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc500",
+    "word": "destination",
+    "phonetic": "/ˌdestɪˈneɪʃn/",
+    "persianMeaning": "مقصد",
+    "example": "Our destination is the beach.",
+    "exampleTranslation": "مقصد ما ساحل است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc501",
+    "word": "abroad",
+    "phonetic": "/əˈbrɔːd/",
+    "persianMeaning": "خارج از کشور",
+    "example": "My uncle lives abroad.",
+    "exampleTranslation": "دایی من در خارج از کشور زندگی می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc502",
+    "word": "dedicated",
+    "phonetic": "/ˈdedɪkeɪtɪd/",
+    "persianMeaning": "متعهد، وقف شده",
+    "example": "She is a dedicated teacher who loves her students.",
+    "exampleTranslation": "او یک معلم متعهد است که دانش‌آموزانش را دوست دارد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc503",
+    "word": "polite",
+    "phonetic": "/pəˈlaɪt/",
+    "persianMeaning": "مؤدب",
+    "example": "It is polite to say 'please' and 'thank you'.",
+    "exampleTranslation": "گفتن 'لطفاً' و 'متشکرم' مؤدبانه است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc504",
+    "word": "necessary",
+    "phonetic": "/ˈnesəseri/",
+    "persianMeaning": "ضروری",
+    "example": "Food and water are necessary for life.",
+    "exampleTranslation": "غذا و آب برای زندگی ضروری هستند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc505",
+    "word": "especially",
+    "phonetic": "/ɪˈspeʃəli/",
+    "persianMeaning": "به خصوص، مخصوصاً",
+    "example": "I love all fruits, especially oranges.",
+    "exampleTranslation": "من همه میوه‌ها را دوست دارم، مخصوصاً پرتقال.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc506",
+    "word": "mind",
+    "phonetic": "/maɪnd/",
+    "persianMeaning": "ذهن",
+    "example": "Keep your mind on your work.",
+    "exampleTranslation": "ذهنت را روی کارت متمرکز کن.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc507",
+    "word": "usefulness",
+    "phonetic": "/ˈjuːsflnəs/",
+    "persianMeaning": "سودمندی",
+    "example": "The usefulness of this tool is clear to everyone.",
+    "exampleTranslation": "سودمندی این ابزار برای همه واضح است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc508",
+    "word": "effect",
+    "phonetic": "/ɪˈfekt/",
+    "persianMeaning": "تأثیر",
+    "example": "The medicine had a good effect on the patient.",
+    "exampleTranslation": "دارو تأثیر خوبی روی بیمار داشت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc509",
+    "word": "illness",
+    "phonetic": "/ˈɪlnəs/",
+    "persianMeaning": "بیماری",
+    "example": "He missed school because of a serious illness.",
+    "exampleTranslation": "او به دلیل یک بیماری جدی مدرسه را از دست داد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc510",
+    "word": "sadness",
+    "phonetic": "/ˈsædnəs/",
+    "persianMeaning": "اندوه",
+    "example": "Her face showed deep sadness when she heard the news.",
+    "exampleTranslation": "چهره او اندوه عمیقی را وقتی خبر را شنید نشان داد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc511",
+    "word": "enjoy",
+    "phonetic": "/ɪnˈdʒɔɪ/",
+    "persianMeaning": "لذت بردن",
+    "example": "We enjoy playing football in the park.",
+    "exampleTranslation": "ما از فوتبال بازی کردن در پارک لذت می‌بریم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc512",
+    "word": "offer",
+    "phonetic": "/ˈɔːfər/",
+    "persianMeaning": "پیشنهاد دادن",
+    "example": "Can I offer you a cup of tea?",
+    "exampleTranslation": "می‌توانم یک فنجان چای به تو پیشنهاد بدهم؟",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc513",
+    "word": "complicated",
+    "phonetic": "/ˈkɑːmplɪkeɪtɪd/",
+    "persianMeaning": "پیچیده",
+    "example": "The instructions for this game are too complicated.",
+    "exampleTranslation": "دستورالعمل‌های این بازی خیلی پیچیده است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc514",
+    "word": "absorb",
+    "phonetic": "/əbˈzɔːrb/",
+    "persianMeaning": "جذب کردن",
+    "example": "Plants absorb water from the soil.",
+    "exampleTranslation": "گیاهان آب را از خاک جذب می‌کنند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc515",
+    "word": "inspiration",
+    "phonetic": "/ˌɪnspəˈreɪʃn/",
+    "persianMeaning": "الهام",
+    "example": "Nature is a source of inspiration for many artists.",
+    "exampleTranslation": "طبیعت منبع الهام بسیاری از هنرمندان است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc516",
+    "word": "distinguished",
+    "phonetic": "/dɪˈstɪŋɡwɪʃt/",
+    "persianMeaning": "برجسته، ممتاز",
+    "example": "He is a distinguished scientist in his field.",
+    "exampleTranslation": "او یک دانشمند برجسته در زمینه خود است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc517",
+    "word": "vocabulary",
+    "phonetic": "/vəˈkæbjəleri/",
+    "persianMeaning": "واژگان، دایره لغات",
+    "example": "Reading books helps you expand your vocabulary.",
+    "exampleTranslation": "خواندن کتاب‌ها به گسترش دایره لغات تو کمک می‌کند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc518",
+    "word": "tide",
+    "phonetic": "/taɪd/",
+    "persianMeaning": "جزر و مد",
+    "example": "We can swim when the tide is low.",
+    "exampleTranslation": "می‌توانیم وقتی جزر است شنا کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc519",
+    "word": "guide word",
+    "phonetic": "/ˈɡaɪd wɜːrd/",
+    "persianMeaning": "واژه راهنما",
+    "example": "Look at the guide words to find the word quickly.",
+    "exampleTranslation": "برای پیدا کردن سریع کلمه، به واژه‌های راهنما نگاه کن.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc520",
+    "word": "introduction",
+    "phonetic": "/ˌɪntrəˈdʌkʃn/",
+    "persianMeaning": "مقدمه",
+    "example": "Read the introduction to understand what the book is about.",
+    "exampleTranslation": "برای فهمیدن موضوع کتاب، مقدمه را بخوان.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc521",
+    "word": "pains",
+    "phonetic": "/peɪnz/",
+    "persianMeaning": "زحمت، تلاش",
+    "example": "She took great pains to prepare a perfect dinner.",
+    "exampleTranslation": "او زحمت زیادی کشید تا یک شام عالی آماده کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc522",
+    "word": "physician",
+    "phonetic": "/fɪˈzɪʃn/",
+    "persianMeaning": "پزشک",
+    "example": "The physician examined the patient carefully.",
+    "exampleTranslation": "پزشک بیمار را با دقت معاینه کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc523",
+    "word": "bilingual",
+    "phonetic": "/baɪˈlɪŋɡwəl/",
+    "persianMeaning": "دو زبانه",
+    "example": "She is bilingual; she speaks English and Persian.",
+    "exampleTranslation": "او دو زبانه است؛ انگلیسی و فارسی صحبت می‌کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc524",
+    "word": "wind turbine",
+    "phonetic": "/ˈwɪnd tɜːrbaɪn/",
+    "persianMeaning": "توربین بادی",
+    "example": "Wind turbines are a clean source of energy.",
+    "exampleTranslation": "توربین‌های بادی یک منبع انرژی پاک هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc525",
+    "word": "organize",
+    "phonetic": "/ˈɔːrɡənaɪz/",
+    "persianMeaning": "سازماندهی کردن، مرتب کردن",
+    "example": "Please organize your books on the shelf.",
+    "exampleTranslation": "لطفاً کتاب‌هایت را روی قفسه مرتب کن.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc526",
+    "word": "appreciate",
+    "phonetic": "/əˈpriːʃieɪt/",
+    "persianMeaning": "قدردانی کردن، قدر دانستن",
+    "example": "I appreciate your help with my homework.",
+    "exampleTranslation": "من از کمک تو در تکالیفم قدردانی می‌کنم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc527",
+    "word": "jump into",
+    "phonetic": "/dʒʌmp ˈɪntə/",
+    "persianMeaning": "پریدن داخل",
+    "example": "He jumped into the discussion without thinking.",
+    "exampleTranslation": "او بدون فکر به بحث پرید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc528",
+    "word": "rarely",
+    "phonetic": "/ˈrerli/",
+    "persianMeaning": "به ندرت",
+    "example": "She rarely watches TV; she prefers to read.",
+    "exampleTranslation": "او به ندرت تلویزیون تماشا می‌کند؛ ترجیح می‌دهد کتاب بخواند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc529",
+    "word": "accidentally",
+    "phonetic": "/ˌæksɪˈdentəli/",
+    "persianMeaning": "اتفاقی، به طور تصادفی",
+    "example": "I accidentally dropped my phone.",
+    "exampleTranslation": "من به طور تصادفی موبایلم را انداختم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc530",
+    "word": "compile",
+    "phonetic": "/kəmˈpaɪl/",
+    "persianMeaning": "تدوین کردن، گردآوری کردن",
+    "example": "He compiled a list of important dates for the exam.",
+    "exampleTranslation": "او لیستی از تاریخ‌های مهم برای امتحان را گردآوری کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc531",
+    "word": "hearing",
+    "phonetic": "/ˈhɪrɪŋ/",
+    "persianMeaning": "شنوایی",
+    "example": "Loud noises can damage your hearing.",
+    "exampleTranslation": "صداهای بلند می‌توانند به شنوایی تو آسیب بزنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc532",
+    "word": "reduce",
+    "phonetic": "/rɪˈduːs/",
+    "persianMeaning": "کاهش دادن",
+    "example": "We should reduce the amount of plastic we use.",
+    "exampleTranslation": "ما باید مقدار پلاستیکی که استفاده می‌کنیم را کاهش دهیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc533",
+    "word": "temperature",
+    "phonetic": "/ˈtemprətʃər/",
+    "persianMeaning": "دما",
+    "example": "The temperature today is 25 degrees Celsius.",
+    "exampleTranslation": "دمای امروز 25 درجه سانتیگراد است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc534",
+    "word": "injure",
+    "phonetic": "/ˈɪndʒər/",
+    "persianMeaning": "مجروح کردن",
+    "example": "He injured his leg while playing football.",
+    "exampleTranslation": "او هنگام فوتبال بازی کردن پای خود را مجروح کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc535",
+    "word": "severe",
+    "phonetic": "/sɪˈvɪr/",
+    "persianMeaning": "شدید، جدی",
+    "example": "There was a severe storm last night.",
+    "exampleTranslation": "دیشب یک طوفان شدید بود.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc536",
+    "word": "suffer",
+    "phonetic": "/ˈsʌfər/",
+    "persianMeaning": "رنج بردن",
+    "example": "Many people suffer from headaches.",
+    "exampleTranslation": "بسیاری از مردم از سردرد رنج می‌برند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc537",
+    "word": "but",
+    "phonetic": "/bət/",
+    "persianMeaning": "اما",
+    "example": "I like tea, but I don't like coffee.",
+    "exampleTranslation": "من چای دوست دارم، اما قهوه دوست ندارم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc538",
+    "word": "so",
+    "phonetic": "/soʊ/",
+    "persianMeaning": "پس، بنابراین",
+    "example": "It was raining, so we stayed home.",
+    "exampleTranslation": "باران می‌آمد، بنابراین در خانه ماندیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc539",
+    "word": "or",
+    "phonetic": "/ɔːr/",
+    "persianMeaning": "یا",
+    "example": "You can have apple juice or orange juice.",
+    "exampleTranslation": "می‌توانی آب سیب یا آب پرتقال داشته باشی.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc540",
+    "word": "break",
+    "phonetic": "/breɪk/",
+    "persianMeaning": "شکستن",
+    "example": "Be careful not to break the glass.",
+    "exampleTranslation": "مراقب باش شیشه را نشکنی.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc541",
+    "word": "milk",
+    "phonetic": "/mɪlk/",
+    "persianMeaning": "شیر",
+    "example": "I drink a glass of milk every morning.",
+    "exampleTranslation": "من هر صبح یک لیوان شیر می‌نوشم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc542",
+    "word": "glass",
+    "phonetic": "/ɡlæs/",
+    "persianMeaning": "لیوان، شیشه",
+    "example": "Please pour some water in the glass.",
+    "exampleTranslation": "لطفاً مقداری آب در لیوان بریز.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc543",
+    "word": "appreciation",
+    "phonetic": "/əˌpriːʃiˈeɪʃn/",
+    "persianMeaning": "قدردانی",
+    "example": "We should show appreciation for the hard work of our teachers.",
+    "exampleTranslation": "ما باید برای کار سخت معلمان‌مان قدردانی نشان دهیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc544",
+    "word": "respect",
+    "phonetic": "/rɪˈspekt/",
+    "persianMeaning": "احترام، احترام گذاشتن",
+    "example": "Students should respect their parents and teachers.",
+    "exampleTranslation": "دانش‌آموزان باید به والدین و معلمان خود احترام بگذارند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc545",
+    "word": "elders",
+    "phonetic": "/ˈeldərz/",
+    "persianMeaning": "بزرگترها، سالخوردگان",
+    "example": "We should listen to the advice of our elders.",
+    "exampleTranslation": "ما باید به توصیه بزرگترهای خود گوش دهیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc546",
+    "word": "generation",
+    "phonetic": "/ˌdʒenəˈreɪʃn/",
+    "persianMeaning": "نسل",
+    "example": "My grandfather belongs to a different generation.",
+    "exampleTranslation": "پدربزرگ من متعلق به نسل دیگری است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc547",
+    "word": "experiences",
+    "phonetic": "/ɪkˈspɪriənsɪz/",
+    "persianMeaning": "تجربیات",
+    "example": "Traveling to new countries gives you many good experiences.",
+    "exampleTranslation": "سفر به کشورهای جدید تجربیات خوب زیادی به شما می‌دهد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc548",
+    "word": "failure",
+    "phonetic": "/ˈfeɪljər/",
+    "persianMeaning": "شکست",
+    "example": "His first business attempt ended in failure.",
+    "exampleTranslation": "اولین تلاش تجاری او به شکست ختم شد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc549",
+    "word": "deserve",
+    "phonetic": "/dɪˈzɜːrv/",
+    "persianMeaning": "سزاوار بودن، لایق بودن",
+    "example": "Hardworking students deserve good grades.",
+    "exampleTranslation": "دانش‌آموزان سخت‌کوش سزاوار نمرات خوب هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc550",
+    "word": "share",
+    "phonetic": "/ʃer/",
+    "persianMeaning": "سهیم شدن، تقسیم کردن",
+    "example": "Good friends share their food and toys.",
+    "exampleTranslation": "دوستان خوب غذا و اسباب‌بازی‌هایشان را تقسیم می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc551",
+    "word": "unconditionally",
+    "phonetic": "/ˌʌnkənˈdɪʃənəli/",
+    "persianMeaning": "بی‌قید و شرط",
+    "example": "Parents love their children unconditionally.",
+    "exampleTranslation": "والدین فرزندان خود را بی‌قید و شرط دوست دارند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc552",
+    "word": "handle",
+    "phonetic": "/ˈhændl/",
+    "persianMeaning": "مدیریت کردن، اداره کردن",
+    "example": "A good teacher knows how to handle difficult students.",
+    "exampleTranslation": "یک معلم خوب می‌داند چگونه با دانش‌آموزان مشکل‌ساز برخورد کند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc553",
+    "word": "care for",
+    "phonetic": "/ker fɔːr/",
+    "persianMeaning": "مراقبت کردن از، مواظبت کردن",
+    "example": "Children must learn to care for their pets.",
+    "exampleTranslation": "کودکان باید یاد بگیرند از حیوانات خانگی خود مراقبت کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc554",
+    "word": "grow",
+    "phonetic": "/ɡroʊ/",
+    "persianMeaning": "رشد کردن، بزرگ شدن",
+    "example": "Children grow very fast in their first few years.",
+    "exampleTranslation": "کودکان در سال‌های اولیه زندگی بسیار سریع رشد می‌کنند.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc555",
+    "word": "feel",
+    "phonetic": "/fiːl/",
+    "persianMeaning": "احساس کردن",
+    "example": "I feel happy when I spend time with my friends.",
+    "exampleTranslation": "من وقتی با دوستانم وقت می‌گذرانم احساس خوشحالی می‌کنم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc556",
+    "word": "appreciate",
+    "phonetic": "/əˈpriːʃieɪt/",
+    "persianMeaning": "قدردانی کردن",
+    "example": "We should appreciate the beauty of nature.",
+    "exampleTranslation": "ما باید از زیبایی طبیعت قدردانی کنیم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc557",
+    "word": "later",
+    "phonetic": "/ˈleɪtər/",
+    "persianMeaning": "بعداً، دیرتر",
+    "example": "I will finish my homework later this evening.",
+    "exampleTranslation": "من تکالیفم را بعداً در همین عصر تمام خواهم کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc558",
+    "word": "curious",
+    "phonetic": "/ˈkjʊriəs/",
+    "persianMeaning": "کنجکاو",
+    "example": "Children are naturally curious about the world around them.",
+    "exampleTranslation": "کودکان به طور طبیعی در مورد دنیای اطراف خود کنجکاو هستند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc559",
+    "word": "knowledge",
+    "phonetic": "/ˈnɑːlɪdʒ/",
+    "persianMeaning": "دانش، آگاهی",
+    "example": "Reading books increases our knowledge about different subjects.",
+    "exampleTranslation": "خواندن کتاب‌ها دانش ما را در مورد موضوعات مختلف افزایش می‌دهد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc560",
+    "word": "challenge",
+    "phonetic": "/ˈtʃælɪndʒ/",
+    "persianMeaning": "چالش، به چالش کشیدن",
+    "example": "Learning a new language is a good challenge for the mind.",
+    "exampleTranslation": "یادگیری یک زبان جدید چالش خوبی برای ذهن است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc561",
+    "word": "answers",
+    "phonetic": "/ˈænsərz/",
+    "persianMeaning": "پاسخ‌ها، جواب‌ها",
+    "example": "Please write your answers on the worksheet.",
+    "exampleTranslation": "لطفاً پاسخ‌های خود را روی برگه کار بنویسید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc562",
+    "word": "questions",
+    "phonetic": "/ˈkwestʃənz/",
+    "persianMeaning": "سوالات، پرسش‌ها",
+    "example": "The teacher asked many questions about the lesson.",
+    "exampleTranslation": "معلم سوالات زیادی در مورد درس پرسید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc563",
+    "word": "ask",
+    "phonetic": "/æsk/",
+    "persianMeaning": "پرسیدن، درخواست کردن",
+    "example": "If you don't understand, you should ask the teacher.",
+    "exampleTranslation": "اگر متوجه نمی‌شوید، باید از معلم بپرسید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc564",
+    "word": "inform",
+    "phonetic": "/ɪnˈfɔːrm/",
+    "persianMeaning": "اطلاع دادن، آگاه کردن",
+    "example": "Please inform me if there is any change in the schedule.",
+    "exampleTranslation": "لطفاً اگر تغییری در برنامه هست به من اطلاع دهید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc565",
+    "word": "information",
+    "phonetic": "/ˌɪnfərˈmeɪʃn/",
+    "persianMeaning": "اطلاعات",
+    "example": "You can find useful information in the library.",
+    "exampleTranslation": "می‌توانید اطلاعات مفیدی در کتابخانه پیدا کنید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc566",
+    "word": "cruel",
+    "phonetic": "/ˈkruːəl/",
+    "persianMeaning": "ظالم، بی‌رحم",
+    "example": "It is cruel to hurt animals for fun.",
+    "exampleTranslation": "آزار حیوانات برای تفریح کار بی‌رحمی است.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc567",
+    "word": "hunter",
+    "phonetic": "/ˈhʌntər/",
+    "persianMeaning": "شکارچی",
+    "example": "The hunter waited quietly in the forest.",
+    "exampleTranslation": "شکارچی در جنگل به آرامی منتظر ماند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc568",
+    "word": "gazelle",
+    "phonetic": "/ɡəˈzel/",
+    "persianMeaning": "غزال، آهو",
+    "example": "The gazelle ran quickly to escape from the lion.",
+    "exampleTranslation": "غزال برای فرار از شیر به سرعت دوید.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc569",
+    "word": "invented",
+    "phonetic": "/ɪnˈventɪd/",
+    "persianMeaning": "اختراع کرد",
+    "example": "Alexander Graham Bell invented the telephone.",
+    "exampleTranslation": "الکساندر گراهام بل تلفن را اختراع کرد.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc570",
+    "word": "robber",
+    "phonetic": "/ˈrɑːbər/",
+    "persianMeaning": "دزد، راهزن",
+    "example": "The police caught the robber who stole from the bank.",
+    "exampleTranslation": "پلیس دزدی را که از بانک دزدی کرده بود، دستگیر کرد.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc571",
+    "word": "fast food",
+    "phonetic": "/ˈfæst fuːd/",
+    "persianMeaning": "فست فود، غذای سریع",
+    "example": "Eating too much fast food is not good for your health.",
+    "exampleTranslation": "خوردن بیش از حد فست فود برای سلامتی شما خوب نیست.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc572",
+    "word": "parrots",
+    "phonetic": "/ˈpærəts/",
+    "persianMeaning": "طوطی‌ها",
+    "example": "My uncle has two parrots that can say hello.",
+    "exampleTranslation": "دایی من دو طوطی دارد که می‌توانند سلام بگویند.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc573",
+    "word": "cage",
+    "phonetic": "/keɪdʒ/",
+    "persianMeaning": "قفس",
+    "example": "The bird flew happily out of its cage.",
+    "exampleTranslation": "پرنده با خوشحالی از قفسش بیرون پرید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc574",
+    "word": "steal",
+    "phonetic": "/stiːl/",
+    "persianMeaning": "دزدیدن",
+    "example": "It is wrong to steal money from others.",
+    "exampleTranslation": "دزدیدن پول از دیگران کار غلطی است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc575",
+    "word": "tag question",
+    "phonetic": "/ˈtæɡ ˌkwestʃən/",
+    "persianMeaning": "سوال دنباله‌دار، پرسش تأکیدی",
+    "example": "It's a beautiful day, isn't it?",
+    "exampleTranslation": "روز زیبایی است، نه؟",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g7_l1_fc576",
+    "word": "lovely",
+    "phonetic": "/ˈlʌvli/",
+    "persianMeaning": "دلپذیر، زیبا",
+    "example": "We had a lovely time at the park yesterday.",
+    "exampleTranslation": "ما دیروز وقت دلپذیری در پارک داشتیم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc577",
+    "word": "forgot",
+    "phonetic": "/fərˈɡɑːt/",
+    "persianMeaning": "فراموش کرد",
+    "example": "I forgot to bring my notebook to class today.",
+    "exampleTranslation": "من امروز دفترم را سر کلاس آوردن فراموش کردم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc578",
+    "word": "feed",
+    "phonetic": "/fiːd/",
+    "persianMeaning": "غذا دادن",
+    "example": "Please remember to feed the cat before you leave.",
+    "exampleTranslation": "لطفاً یادتان باشد قبل از رفتن به گربه غذا بدهید.",
+    "difficulty": "easy"
+  }
+]

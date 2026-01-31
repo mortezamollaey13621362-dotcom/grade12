@@ -1,0 +1,90 @@
+[
+  {
+    "id": "lesson1",
+    "title": "درس اول: معرفی و احوالپرسی",
+    "description": "آموزش واژگان و عبارات پایه برای معرفی خود و احوالپرسی",
+    "path": "data/lesson1",
+    "icon": "fas fa-handshake",
+    "duration": "45 دقیقه",
+    "difficulty": "آسان",
+    "totalWords": 20,
+    "totalExercises": 8
+  },
+  {
+    "id": "lesson2",
+    "title": "درس دوم: خانواده و روابط",
+    "description": "واژگان مربوط به اعضای خانواده و روابط اجتماعی",
+    "path": "data/lesson2",
+    "icon": "fas fa-users",
+    "duration": "50 دقیقه",
+    "difficulty": "آسان",
+    "totalWords": 25,
+    "totalExercises": 10
+  },
+  {
+    "id": "lesson3",
+    "title": "درس سوم: مدرسه و آموزش",
+    "description": "کلمات و عبارات مرتبط با مدرسه، کلاس و وسایل آموزشی",
+    "path": "data/lesson3",
+    "icon": "fas fa-graduation-cap",
+    "duration": "55 دقیقه",
+    "difficulty": "متوسط",
+    "totalWords": 30,
+    "totalExercises": 12
+  },
+  {
+    "id": "lesson4",
+    "title": "درس چهارم: خانه و زندگی روزمره",
+    "description": "واژگان مربوط به اتاق‌ها، وسایل خانه و فعالیت‌های روزمره",
+    "path": "data/lesson4",
+    "icon": "fas fa-home",
+    "duration": "60 دقیقه",
+    "difficulty": "متوسط",
+    "totalWords": 35,
+    "totalExercises": 14
+  },
+  {
+    "id": "lesson5",
+    "title": "درس پنجم: غذا و رستوران",
+    "description": "آموزش لغات غذاها، میوه‌ها، سبزیجات و عبارات رستوران",
+    "path": "data/lesson5",
+    "icon": "fas fa-utensils",
+    "duration": "65 دقیقه",
+    "difficulty": "متوسط",
+    "totalWords": 40,
+    "totalExercises": 16
+  },
+  {
+    "id": "lesson6",
+    "title": "درس ششم: ورزش و سلامتی",
+    "description": "واژگان ورزش‌های مختلف، اعضای بدن و سلامتی",
+    "path": "data/lesson6",
+    "icon": "fas fa-running",
+    "duration": "70 دقیقه",
+    "difficulty": "پیشرفته",
+    "totalWords": 45,
+    "totalExercises": 18
+  },
+  {
+    "id": "lesson7",
+    "title": "درس هفتم: سفر و گردشگری",
+    "description": "کلمات و عبارات مورد نیاز در فرودگاه، هتل و گردشگری",
+    "path": "data/lesson7",
+    "icon": "fas fa-plane",
+    "duration": "75 دقیقه",
+    "difficulty": "پیشرفته",
+    "totalWords": 50,
+    "totalExercises": 20
+  },
+  {
+    "id": "lesson8",
+    "title": "درس هشتم: تجارت و کار",
+    "description": "واژگان اداری، مشاغل و مکالمات کاری",
+    "path": "data/lesson8",
+    "icon": "fas fa-briefcase",
+    "duration": "80 دقیقه",
+    "difficulty": "پیشرفته",
+    "totalWords": 55,
+    "totalExercises": 22
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "g7_l1_fc1",
+    "word": "Hello",
+    "phonetic": "/həˈloʊ/",
+    "persianMeaning": "سلام",
+    "example": "Hello, my name is Ali.",
+    "exampleTranslation": "سلام، اسم من علی است.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc2",
+    "word": "Goodbye",
+    "phonetic": "/ˌɡʊdˈbaɪ/",
+    "persianMeaning": "خداحافظ",
+    "example": "Goodbye, see you tomorrow.",
+    "exampleTranslation": "خداحافظ، فردا می‌بینمت.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc3",
+    "word": "Thank you",
+    "phonetic": "/ˈθæŋk juː/",
+    "persianMeaning": "متشکرم",
+    "example": "Thank you for your help.",
+    "exampleTranslation": "بابت کمک‌تان متشکرم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc4",
+    "word": "Please",
+    "phonetic": "/pliːz/",
+    "persianMeaning": "لطفاً",
+    "example": "Please sit down.",
+    "exampleTranslation": "لطفاً بنشینید.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc5",
+    "word": "Sorry",
+    "phonetic": "/ˈsɔːri/",
+    "persianMeaning": "متأسفم",
+    "example": "I'm sorry I'm late.",
+    "exampleTranslation": "متأسفم دیر کردم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc6",
+    "word": "Yes",
+    "phonetic": "/jes/",
+    "persianMeaning": "بله",
+    "example": "Yes, I understand.",
+    "exampleTranslation": "بله، متوجه شدم.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc7",
+    "word": "No",
+    "phonetic": "/noʊ/",
+    "persianMeaning": "نه",
+    "example": "No, thank you.",
+    "exampleTranslation": "نه، ممنون.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc8",
+    "word": "Name",
+    "phonetic": "/neɪm/",
+    "persianMeaning": "اسم",
+    "example": "What's your name?",
+    "exampleTranslation": "اسم شما چیست؟",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc9",
+    "word": "How",
+    "phonetic": "/haʊ/",
+    "persianMeaning": "چگونه",
+    "example": "How are you?",
+    "exampleTranslation": "حال شما چطور است؟",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g7_l1_fc10",
+    "word": "What",
+    "phonetic": "/wʌt/",
+    "persianMeaning": "چه",
+    "example": "What is this?",
+    "exampleTranslation": "این چیست؟",
+    "difficulty": "easy"
+  }
+]

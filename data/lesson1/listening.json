@@ -1,0 +1,251 @@
+{
+  "tabs": [
+    {
+      "id": "tab1",
+      "title": "Lesson 1: Conversation",
+      "exercises": [
+        {
+          "id": "ex1",
+          "type": "comprehension",
+          "title": "Listen to the conversation between Sara and the nurse.",
+          "audio_text": "Sara has been in the Children’s Medical Center for a week. She has caught a terrible flu. The doctor told her to stay there to get better. There is a photograph of an old man on the wall. While the nurse is taking her temperature, they start talking. Sara: Excuse me, who is that man in the picture? Nurse: Oh, don’t you know him? Have you ever heard of Dr. Mohammad Gharib? Sara: I guess I have only seen his name in my English book, but I’m not sure about it. Nurse: Dr. Gharib was a famous physician. Sara: Oh, can you tell me a little about his life? Nurse: Dr. Gharib was born in Tehran in 1288. After receiving his diploma, he went abroad to study medicine. In 1316 he became a physician and then came back to his homeland. In 1347 this center was founded by Dr. Gharib and one of his close friends. Sara: Really? I didn’t know that. Nurse: Dr. Gharib was also a generous man. He spared no pains to cure sick children. He was very friendly and helpful to poor families. Not surprisingly, he was regarded as a dedicated physician. Sara: It’s a pity! I didn’t know such a great man. Nurse: He was known as a distinguished university professor, too. The first Persian textbook on children’s diseases was written by him. He taught medicine to thousands of students. Sara: Oh, what a great man he was! Nurse: By the way, it might be interesting to know that your physician was one of Dr. Gharib’s students! Sara: Really?! That’s interesting!",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "mcq",
+              "text": "Why is Sara in the Children’s Medical Center?",
+              "options": [
+                { "text": "To visit a friend", "isCorrect": false },
+                { "text": "She has caught a terrible flu", "isCorrect": true },
+                { "text": "She works there", "isCorrect": false },
+                { "text": "She is a doctor", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q2",
+              "type": "mcq",
+              "text": "What was Dr. Gharib's profession?",
+              "options": [
+                { "text": "A teacher", "isCorrect": false },
+                { "text": "A nurse", "isCorrect": false },
+                { "text": "A famous physician", "isCorrect": true },
+                { "text": "A writer", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q3",
+              "type": "tf",
+              "text": "Dr. Gharib went abroad to study medicine after receiving his diploma.",
+              "options": [
+                { "text": "True", "isCorrect": true },
+                { "text": "False", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q4",
+              "type": "mcq",
+              "text": "The Children’s Medical Center was founded by Dr. Gharib in _________.",
+              "options": [
+                { "text": "1316", "isCorrect": false },
+                { "text": "1288", "isCorrect": false },
+                { "text": "1347", "isCorrect": true },
+                { "text": "1350", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab2",
+      "title": "Lesson 2: Conversation",
+      "exercises": [
+        {
+          "id": "ex2",
+          "type": "comprehension",
+          "title": "Listen to the conversation about Sam.",
+          "audio_text": "A: Sam has not come to work. I’ve heard he’s sick, isn’t he? B: Oh, yes. He was not well yesterday. A: What’s wrong with him? B: The doctors are checking his health condition. A: It isn’t something serious, is it? B: I hope not.",
+          "questions": [
+            {
+              "id": "q5",
+              "type": "mcq",
+              "text": "Why is Sam absent from work?",
+              "options": [
+                { "text": "He is on vacation.", "isCorrect": false },
+                { "text": "He is sick.", "isCorrect": true },
+                { "text": "He is busy with a project.", "isCorrect": false },
+                { "text": "He has gone abroad.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q6",
+              "type": "mcq",
+              "text": "What are the doctors doing for Sam?",
+              "options": [
+                { "text": "Giving him medicine", "isCorrect": false },
+                { "text": "Checking his health condition", "isCorrect": true },
+                { "text": "Asking him to rest", "isCorrect": false },
+                { "text": "Sending him home", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q7",
+              "type": "tf",
+              "text": "Person A is sure that Sam's illness is serious.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab3",
+      "title": "Lesson 3: Conversation",
+      "exercises": [
+        {
+          "id": "ex3",
+          "type": "comprehension",
+          "title": "Listen to the conversation between Behzad and Amin.",
+          "audio_text": "Behzad: How is everything, Amin? You seem to be busy these days, don’t you? Amin: I’m OK, Behzad. I’m working on a new project. I’m really tired. Behzad: But your health is really important, isn’t it? Amin: I know. But what about work, money, responsibility? We need to consider them all, don’t we? Behzad: Yes, but health is on top of everything.",
+          "questions": [
+            {
+              "id": "q8",
+              "type": "mcq",
+              "text": "Why is Amin tired?",
+              "options": [
+                { "text": "He is sick.", "isCorrect": false },
+                { "text": "He is working on a new project.", "isCorrect": true },
+                { "text": "He doesn't sleep well.", "isCorrect": false },
+                { "text": "He exercises too much.", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q9",
+              "type": "mcq",
+              "text": "What does Behzad believe is the most important thing?",
+              "options": [
+                { "text": "Work", "isCorrect": false },
+                { "text": "Money", "isCorrect": false },
+                { "text": "Health", "isCorrect": true },
+                { "text": "Responsibility", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q10",
+              "type": "tf",
+              "text": "Amin disagrees that health is important.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab4",
+      "title": "Lesson 4: Conversation",
+      "exercises": [
+        {
+          "id": "ex4",
+          "type": "comprehension",
+          "title": "Listen to the conversation between Roya and Mina.",
+          "audio_text": "Roya: We are going to the gym on Friday. Will you come with us, Mina? Mina: I don’t think so. Roya: You don’t like sports, do you? Mina: Actually, I don’t know. I think it depends on the type of sport. Roya: You prefer team sports, don’t you? Mina: Well, it seems to be OK. But honestly, I prefer less active sports like chess.",
+          "questions": [
+            {
+              "id": "q11",
+              "type": "mcq",
+              "text": "Where is Roya going on Friday?",
+              "options": [
+                { "text": "To a park", "isCorrect": false },
+                { "text": "To the cinema", "isCorrect": false },
+                { "text": "To the gym", "isCorrect": true },
+                { "text": "To a library", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q12",
+              "type": "mcq",
+              "text": "What kind of sports does Mina prefer?",
+              "options": [
+                { "text": "Team sports", "isCorrect": false },
+                { "text": "Very active sports", "isCorrect": false },
+                { "text": "Less active sports like chess", "isCorrect": true },
+                { "text": "All kinds of sports", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q13",
+              "type": "tf",
+              "text": "Mina is sure that she doesn't like any type of sport.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab5",
+      "title": "Lesson 5: Monologue",
+      "exercises": [
+        {
+          "id": "ex5",
+          "type": "comprehension",
+          "title": "Listen to Dr. Asadi's speech.",
+          "audio_text": "Dr. Asadi is answering this important question. Why is it important to care for our elders? I think first of all we need to remember that they are our mother and father and our first teachers. They teach us how to love, how to care, how to forgive, and how to accept. Second, elders have more knowledge and wisdom than any of us. They’ve come so far and they’ve learned so much. We have a responsibility to learn from that wisdom.",
+          "questions": [
+            {
+              "id": "q14",
+              "type": "mcq",
+              "text": "According to Dr. Asadi, who are our first teachers?",
+              "options": [
+                { "text": "Our school teachers", "isCorrect": false },
+                { "text": "Our friends", "isCorrect": false },
+                { "text": "Our elders (mother and father)", "isCorrect": true },
+                { "text": "Books", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q15",
+              "type": "mcq",
+              "text": "What do elders teach us?",
+              "options": [
+                { "text": "Only science and math", "isCorrect": false },
+                { "text": "How to love, care, forgive, and accept", "isCorrect": true },
+                { "text": "How to make money", "isCorrect": false },
+                { "text": "Foreign languages", "isCorrect": false }
+              ]
+            },
+            {
+              "id": "q16",
+              "type": "tf",
+              "text": "Dr. Asadi believes elders have less knowledge than young people.",
+              "options": [
+                { "text": "True", "isCorrect": false },
+                { "text": "False", "isCorrect": true }
+              ]
+            },
+            {
+              "id": "q17",
+              "type": "mcq",
+              "text": "What is our responsibility towards elders, according to the speech?",
+              "options": [
+                { "text": "To ignore them", "isCorrect": false },
+                { "text": "To learn from their wisdom", "isCorrect": true },
+                { "text": "To teach them new things", "isCorrect": false },
+                { "text": "To send them away", "isCorrect": false }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

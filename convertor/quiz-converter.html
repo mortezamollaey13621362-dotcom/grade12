@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مبدل داده‌های English7App - تبدیل به quiz.json</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            background: linear-gradient(90deg, #4CAF50, #2196F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-right: 5px solid #4CAF50;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: 0.3s;
+            display: inline-block;
+            min-width: 180px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .btn-convert {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+        }
+        .file-input {
+            width: 100%;
+            margin: 15px 0;
+            padding: 15px;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            text-align: center;
+            background: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .file-input:hover {
+            border-color: #4CAF50;
+            background: #f0fff0;
+        }
+        .stats {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        .progress {
+            height: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            width: 0%;
+            transition: width 0.5s;
+        }
+        .status {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            background: #e3f2fd;
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .status.success {
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-right: 5px solid #4CAF50;
+        }
+        .status.error {
+            background: #ffebee;
+            color: #c62828;
+            border-right: 5px solid #f44336;
+        }
+        .status.info {
+            background: #e3f2fd;
+            color: #1565c0;
+            border-right: 5px solid #2196F3;
+        }
+        .file-list {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .file-item {
+            padding: 8px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid #FF9800;
+        }
+        .file-label {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vazirmatn/matn@1.0.0-alpha.2/vazirmatn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-sync-alt"></i> مبدل داده‌های English7App</h1>
+        
+        <div class="card">
+            <h3><i class="fas fa-file-upload"></i> قدم 1: آپلود فایل‌های ورودی</h3>
+            <p>فایل‌های زیر را از پوشه <code>data/lesson1</code> انتخاب کنید:</p>
+            
+            <div class="file-label">فایل ورودی 1: vocab.json</div>
+            <input type="file" id="vocabFile" accept=".json" class="file-input">
+            
+            <div class="file-label">فایل ورودی 2: grammar.json</div>
+            <input type="file" id="grammarFile" accept=".json" class="file-input">
+            
+            <div class="file-label">فایل ورودی 3: conversation.json</div>
+            <input type="file" id="conversationFile" accept=".json" class="file-input">
+            
+            <div id="fileInfo" class="stats"></div>
+            <div class="progress">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-cogs"></i> قدم 2: تبدیل داده‌ها</h3>
+            <p>فایل‌های ورودی را به فایل <code>quiz.json</code> تبدیل کنید:</p>
+            <div style="text-align: center;">
+                <button class="btn btn-convert" onclick="convertToQuiz()">
+                    <i class="fas fa-sync-alt"></i> تبدیل به quiz.json
+                </button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3><i class="fas fa-download"></i> قدم 3: دانلود فایل خروجی</h3>
+            <p>فایل <code>quiz.json</code> آماده دانلود است:</p>
+            <div id="downloadButtons"></div>
+            <div id="fileList" class="file-list" style="display: none;">
+                <h4><i class="fas fa-list"></i> جزئیات فایل خروجی:</h4>
+                <div id="filesContainer"></div>
+            </div>
+        </div>
+        
+        <div id="status" class="status"></div>
+    </div>
+    
+    <script>
+        let vocabData = [];
+        let grammarData = [];
+        let conversationData = [];
+        let combinedQuestions = [];
+        
+        document.getElementById('vocabFile').addEventListener('change', function(e) {
+            processFile(e.target, 'vocab');
+        });
+        
+        document.getElementById('grammarFile').addEventListener('change', function(e) {
+            processFile(e.target, 'grammar');
+        });
+        
+        document.getElementById('conversationFile').addEventListener('change', function(e) {
+            processFile(e.target, 'conversation');
+        });
+        
+        function processFile(input, type) {
+            const file = input.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            const progressBar = document.getElementById('progressBar');
+            
+            reader.onprogress = function(event) {
+                if (event.lengthComputable) {
+                    const percent = (event.loaded / event.total) * 100;
+                    progressBar.style.width = percent + '%';
+                }
+            };
+            
+            reader.onload = function(event) {
+                progressBar.style.width = '100%';
+                try {
+                    const jsonData = JSON.parse(event.target.result);
+                    
+                    // ✅ پشتیبانی از ساختارهای مختلف فایل
+                    let questionsArray = [];
+                    
+                    // 1. آرایه مستقیم (مثل vocab.json)
+                    if (Array.isArray(jsonData)) {
+                        questionsArray = jsonData;
+                    }
+                    // 2. ساختار معمول (questions)
+                    else if (jsonData.questions && Array.isArray(jsonData.questions)) {
+                        questionsArray = jsonData.questions;
+                    }
+                    // 3. ساختار گرامر (quiz.questions)
+                    else if (jsonData.quiz && jsonData.quiz.questions && Array.isArray(jsonData.quiz.questions)) {
+                        questionsArray = jsonData.quiz.questions;
+                    }
+                    else {
+                        throw new Error('ساختار فایل نامعتبر است. فایل باید یک آرایه، شیء با خاصیت questions یا quiz.questions باشد');
+                    }
+                    
+                    // ذخیره داده‌ها
+                    if (type === 'vocab') {
+                        vocabData = questionsArray;
+                    } else if (type === 'grammar') {
+                        grammarData = questionsArray;
+                    } else if (type === 'conversation') {
+                        conversationData = questionsArray;
+                    }
+                    
+                    // نمایش اطلاعات فایل
+                    document.getElementById('fileInfo').innerHTML = `
+                        <i class="fas fa-check-circle"></i> فایل ${type}.json بارگذاری شد
+                        <br><i class="fas fa-chart-bar"></i> تعداد سوالات: <strong>${questionsArray.length}</strong>
+                        <br><i class="fas fa-hdd"></i> حجم فایل: <strong>${(file.size / 1024).toFixed(1)} KB</strong>
+                        <br><i class="fas fa-file-alt"></i> نام فایل: <strong>${file.name}</strong>
+                    `;
+                    
+                    showStatus(`✅ فایل ${type}.json بارگذاری شد (${questionsArray.length} سوال)`, 'success');
+                } catch (error) {
+                    showStatus(`❌ خطا در خواندن فایل ${type}.json: ${error.message}`, 'error');
+                    console.error('خطای پارس:', error);
+                }
+                
+                setTimeout(() => {
+                    progressBar.style.width = '0%';
+                }, 1000);
+            };
+            
+            reader.onerror = function() {
+                showStatus(`❌ خطا در خواندن فایل ${type}.json`, 'error');
+            };
+            
+            showStatus(`📥 در حال بارگذاری فایل ${type}.json...`, 'info');
+            reader.readAsText(file);
+        }
+        
+        function convertToQuiz() {
+            if (vocabData.length === 0 && grammarData.length === 0 && conversationData.length === 0) {
+                showStatus('❌ ابتدا فایل‌های ورودی را آپلود کنید', 'error');
+                return;
+            }
+            
+            showStatus('🔄 در حال ترکیب سوالات...', 'info');
+            
+            try {
+                combinedQuestions = [
+                    ...vocabData,
+                    ...grammarData,
+                    ...conversationData
+                ];
+                
+                // ✅ تغییر اصلی: تخصیص ID از 1 شروع می‌شود
+                let nextId = 1;
+                combinedQuestions = combinedQuestions.map(q => ({
+                    ...q,
+                    id: nextId++
+                }));
+                
+                // ✅ تغییر اصلی: ساختار quiz.json کامل
+                const quizData = {
+                    lessonId: 1,
+                    lessonTitle: "آشنایی و سلام و احوالپرسی",
+                    timeLimit: 2,
+                    totalQuestions: combinedQuestions.length,
+                    questions: combinedQuestions
+                };
+                
+                const jsonStr = JSON.stringify(quizData, null, 2);
+                
+                createDownloadButton('quiz.json', quizData);
+                
+                document.getElementById('fileList').style.display = 'block';
+                updateFileList();
+                
+                showStatus(`✅ فایل quiz.json ساخته شد (${combinedQuestions.length} سوال)`, 'success');
+            } catch (error) {
+                showStatus(`❌ خطا در تبدیل داده‌ها: ${error.message}`, 'error');
+            }
+        }
+        
+        function createDownloadButton(filename, data) {
+            const existingBtn = document.querySelector(`[data-filename="${filename}"]`);
+            if (existingBtn) existingBtn.remove();
+            
+            const jsonStr = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const btn = document.createElement('button');
+            btn.className = 'btn btn-convert';
+            btn.setAttribute('data-filename', filename);
+            btn.innerHTML = `<i class="fas fa-download"></i> دانلود ${filename}`;
+            btn.onclick = () => {
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                setTimeout(() => URL.revokeObjectURL(url), 100);
+            };
+            
+            document.getElementById('downloadButtons').appendChild(btn);
+            
+            const fileData = {
+                filename: filename,
+                size: (jsonStr.length / 1024).toFixed(1) + ' KB',
+                items: combinedQuestions.length
+            };
+            
+            const filesContainer = document.getElementById('filesContainer');
+            filesContainer.innerHTML = `
+                <div class="file-item">
+                    <i class="fas fa-file-alt"></i>
+                    <strong>${filename}</strong>
+                    <br>
+                    <small>
+                        <i class="fas fa-hashtag"></i> ${fileData.items} سوال
+                        | <i class="fas fa-hdd"></i> ${fileData.size}
+                    </small>
+                </div>
+            `;
+        }
+        
+        function updateFileList() {
+            // این تابع برای نمایش جزئیات فایل‌ها است
+        }
+        
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = `<i class="fas fa-info-circle"></i> ${message}`;
+            statusDiv.className = `status ${type}`;
+            statusDiv.style.display = 'block';
+            setTimeout(() => {
+                if (statusDiv.innerHTML.includes(message)) {
+                    statusDiv.style.display = 'none';
+                }
+            }, 8000);
+        }
+        
+        showStatus('📁 لطفاً فایل‌های vocab.json، grammar.json و conversation.json را آپلود کنید', 'info');
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "levels": {
+    "beginner": [
+      {
+        "id": "b1",
+        "text": "Hello",
+        "translation": "سلام",
+        "phonetic": "/həˈloʊ/"
+      },
+      {
+        "id": "b2",
+        "text": "Good morning",
+        "translation": "صبح بخیر",
+        "phonetic": "/ɡʊd ˈmɔːrnɪŋ/"
+      },
+      {
+        "id": "b3",
+        "text": "Thank you",
+        "translation": "متشکرم",
+        "phonetic": "/θæŋk juː/"
+      },
+      {
+        "id": "b4",
+        "text": "How are you?",
+        "translation": "حال شما چطور است؟",
+        "phonetic": "/haʊ ɑːr juː/"
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "i1",
+        "text": "I like learning English",
+        "translation": "من دوست دارم انگلیسی یاد بگیرم",
+        "phonetic": "/aɪ laɪk ˈlɜːrnɪŋ ˈɪŋɡlɪʃ/"
+      },
+      {
+        "id": "i2",
+        "text": "Where is the library?",
+        "translation": "کتابخانه کجاست؟",
+        "phonetic": "/weər ɪz ðə ˈlaɪbreri/"
+      }
+    ],
+    "advanced": [
+      {
+        "id": "a1",
+        "text": "She sells seashells by the seashore",
+        "translation": "تمرین تلفظ پیشرفته",
+        "phonetic": "Tongue Twister"
+      }
+    ]
+  },
+  "metadata": {
+    "lesson": 1,
+    "title": "Speaking Exercises",
+    "version": "1.0",
+    "created": "2024"
+  }
+}

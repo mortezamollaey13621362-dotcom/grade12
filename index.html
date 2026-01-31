@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>English 12 App - پایه دوازدهم</title>
+        <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="English7">
+    <link rel="apple-touch-icon" href="/images/icon-192.png">
+    <!-- فونت‌ها و آیکون‌ها -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+
+    <!-- استایل‌های پایه -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- استایل ماژول‌های اختصاصی -->
+    <link rel="stylesheet" href="css/flashcards.css">
+    <link rel="stylesheet" href="css/grammar.css">
+    <link rel="stylesheet" href="css/conversation.css">
+    <link rel="stylesheet" href="css/listening.css">
+    <link rel="stylesheet" href="css/speaking.css">
+    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/review.css">
+    <!-- استایل آزمون -->
+    <link rel="stylesheet" href="css/quiz.css">
+    <!-- 🆕 استایل واژگان - اضافه شد -->
+    <link rel="stylesheet" href="css/vocabulary-styles.css">
+    <link rel="stylesheet" href="css/modern-ui.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+        :root {
+            --primary-color: #4a6bff;
+            --text-color: #2d3436;
+            --bg-gradient-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --bg-gradient-dark: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+        }
+        
+        body {
+            font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+            background: var(--bg-gradient-light);
+            min-height: 100vh;
+            margin: 0;
+            color: var(--text-color);
+            transition: background 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+        }
+        
+        body.dark-mode {
+            background: var(--bg-gradient-dark);
+            color: #dfe6e9;
+        }
+
+        #section-container {
+            width: 100%;
+            min-height: 500px;
+            position: relative;
+            padding-bottom: 80px;
+        }
+
+        .app-loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+        
+        /* ✅ استایل اضافی برای review-section */
+        .review-section {
+            width: 100%;
+            min-height: 400px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-top: 20px;
+        }
+        
+        body.dark-mode .review-section {
+            background: #2d3436;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* ✅ استایل برای speaking-section */
+        .speaking-section {
+            width: 100%;
+            min-height: 400px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-top: 20px;
+        }
+        
+        body.dark-mode .speaking-section {
+            background: #2d3436;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        /* ✅ استایل برای modal و notification */
+        .modal-overlay { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            background: rgba(0,0,0,0.6); backdrop-filter: blur(3px); z-index: 9999; 
+            display: flex; justify-content: center; align-items: center; 
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            max-width: 90%;
+            width: 400px;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        body.dark-mode .modal-content {
+            background: #2d3436;
+            color: #dfe6e9;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        body.dark-mode .modal-header {
+            border-bottom-color: #495057;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .close-modal-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #6c757d;
+            transition: color 0.2s;
+        }
+
+        .close-modal-btn:hover {
+            color: #dc3545;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 🆕 استایل‌های برای بخش واژگان */
+        .vocab-section-container {
+            width: 100%;
+            padding: 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* استایل برای دکمه‌های صوتی زیر مثال */
+        .card-example-audio-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(108, 92, 231, 0.2);
+            width: 100%;
+        }
+        
+        .example-audio-btn-compact {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid;
+            padding: 6px 12px;
+            border-radius: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            direction: ltr;
+            min-width: 90px;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+        }
+        
+        .example-audio-btn-compact.us {
+            border-color: #4CAF50;
+            color: #4CAF50;
+            background: rgba(76, 175, 80, 0.1);
+        }
+        
+        .example-audio-btn-compact.uk {
+            border-color: #2196F3;
+            color: #2196F3;
+            background: rgba(33, 150, 243, 0.1);
+        }
+        
+        .example-audio-btn-compact:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .example-audio-btn-compact.playing {
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* استایل‌های واکنش‌گرا */
+        @media (max-width: 768px) {
+            .card-example-audio-bar {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            .example-audio-btn-compact {
+                min-width: 80px;
+                padding: 5px 10px;
+                font-size: 0.75rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .card-example-audio-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .example-audio-btn-compact {
+                width: 100%;
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- کانتینر اصلی برنامه -->
+    <main id="app-container">
+        
+        <!-- =========================================
+             صفحه اصلی (Home Page)
+        ========================================= -->
+        <div id="home-page" class="page active">
+            <div class="home-container">
+                <div class="header-section">
+                    <h1 class="app-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        English 12 App
+                    </h1>
+                    <p class="app-subtitle">برنامه آموزشی تعاملی زبان انگلیسی پایه دوازدهم</p>
+                    
+                    <div class="user-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                               <!-- 👇 دکمه نصب PWA - اضافه کنید -->
+<button id="installBtn" class="install-btn" style="display: none;">
+    📥 نصب اپلیکیشن
+</button>
+ 
+                                <span class="stat-value" id="overall-progress-text">0%</span>
+                                <span class="stat-label">پیشرفت کلی</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span class="stat-value" id="total-time">0</span>
+                                <span class="stat-label">دقیقه مطالعه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lessons-section">
+                    <h2 class="section-title">
+                        <i class="fas fa-book-open"></i>
+                        دروس کتاب
+                    </h2>
+                    <div id="lessons-container" class="lessons-grid">
+                        <div class="app-loader">
+                            <i class="fas fa-circle-notch fa-spin"></i>&nbsp; در حال بارگذاری دروس...
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quick-actions">
+                    <button class="action-btn" onclick="showAbout()">
+                        <i class="fas fa-info-circle"></i>
+                        درباره
+                    </button>
+                    <button class="action-btn" onclick="app.resetProgress()">
+                        <i class="fas fa-redo"></i>
+                        بازنشانی
+                    </button>
+                    <button class="action-btn" onclick="toggleDarkMode()">
+                        <i class="fas fa-moon"></i>
+                        تم
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- =========================================
+             صفحه درس (Lesson Page)
+        ========================================= -->
+        <div id="lesson-page" class="page">
+            <div class="lesson-container">
+                <!-- نوار بالای درس -->
+                <div class="lesson-top-bar">
+                    <button id="back-to-home" class="btn-back btn-gradient">
+                        <i class="fas fa-arrow-right"></i>
+                        خانه
+                    </button>
+                    
+                    <div class="lesson-progress-info">
+                        <span class="progress-label">پیشرفت درس:</span>
+                        <div class="progress-circle-mini">
+                            <svg width="40" height="40">
+                                <circle cx="20" cy="20" r="18" stroke="#e9ecef" stroke-width="3" fill="none"/>
+                                <circle id="lesson-progress-circle" cx="20" cy="20" r="18" stroke="#00b894" 
+                                        stroke-width="3" fill="none" stroke-linecap="round"
+                                        stroke-dasharray="113" stroke-dashoffset="113"/>
+                            </svg>
+                            <span id="lesson-progress-text" style="font-size: 10px;">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- هدر عنوان درس -->
+                <div class="lesson-header">
+                    <div class="lesson-icon-large" id="lesson-icon">📘</div>
+                    <div class="lesson-title-section">
+                        <h2 id="lesson-title">عنوان درس</h2>
+                        <p id="lesson-subtitle">توضیحات درس</p>
+                    </div>
+                </div>
+                
+                <!-- منوی ناوبری داخل درس -->
+                <div class="nav-section">
+                    <div class="nav-buttons-wrapper">
+                        <div class="nav-buttons" id="sections-list">
+                            <button class="nav-btn" data-section="vocab">
+                                 <i class="fas fa-book"></i> (Vocabulary)واژگان
+                            </button>
+                            <button class="nav-btn" data-section="grammar">
+                                <i class="fas fa-pen-nib"></i> (Grammar)گرامر
+                            </button>
+                            <button class="nav-btn" data-section="conversation">
+                                <i class="fas fa-comments"></i> (Conversation)مکالمه
+                            </button>
+                            <button class="nav-btn" data-section="speaking">
+                                <i class="fas fa-microphone"></i> (Speaking)گفتار
+                            </button>
+                            <button class="nav-btn" data-section="listening">
+                                <i class="fas fa-headphones"></i> (Listening)شنیدار
+                            </button>
+                            <button class="nav-btn" data-section="review">
+                                <i class="fas fa-redo"></i> (Leitner System)مرور
+                            </button>
+                            <button class="nav-btn" data-section="quiz">
+                                <i class="fas fa-clipboard-list"></i> (Quiz)آزمون
+                            </button>
+                            <button class="nav-btn" data-section="games">
+                                <i class="fas fa-gamepad"></i> (Games)بازی
+                            </button>
+                            <button class="nav-btn" data-section="flashcard">
+                                <i class="fas fa-layer-group"></i> (Flashcards)فلش‌کارت
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- محل تزریق محتوای ماژول‌ها -->
+                <div id="section-container" class="section-content">
+                    
+                    <!-- پیام پیش‌فرض -->
+                    <div id="default-message" class="app-loader">یکی از بخش‌های بالا را انتخاب کنید...</div>
+                    
+                    <!-- =========================================
+                         بخش HTML ماژول آزمون (Quiz)
+                    ========================================= -->
+                    <div id="quiz-module" class="module-content" style="display: none;">
+                        
+                        <!-- ۱. کارت شروع (Intro) -->
+                        <div id="quiz-intro" class="quiz-card text-center">
+                            <h3>آزمون پایان درس</h3>
+                            <p class="text-muted mb-4">سوالات چند گزینه‌ای برای سنجش یادگیری شما</p>
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle"></i>
+                                با زدن دکمه شروع، تایمر فعال می‌شود.
+                            </div>
+                            <button id="start-quiz-btn" class="btn-quiz-primary w-100 mt-3">
+                                <i class="fas fa-play me-2"></i> شروع آزمون
+                            </button>
+                        </div>
+
+                        <!-- ۲. محیط برگزاری آزمون (Question Box) -->
+                        <div id="quiz-box" class="quiz-card hidden">
+                            <div class="quiz-header">
+                                <span class="quiz-timer" id="timer">00:00</span>
+                                <span class="text-muted" id="question-count">...</span>
+                            </div>
+                            
+                            <div class="progress">
+                                <div class="progress-bar" id="quiz-progress" style="width: 0%"></div>
+                            </div>
+
+                            <h4 id="question-text">...</h4>
+
+                            <div id="options-container">
+                                <!-- گزینه‌ها اینجا توسط جاوااسکریپت ساخته می‌شوند -->
+                            </div>
+                        </div>
+
+                        <!-- ۳. کارنامه نهایی (Result) -->
+                        <div id="quiz-result" class="quiz-card text-center hidden">
+                            <div class="result-icon mb-3">
+                                <i class="fas fa-trophy text-warning fa-3x"></i>
+                            </div>
+                            <h3>نتیجه آزمون</h3>
+                            <h1 class="display-4 fw-bold text-primary my-3" id="final-score">0%</h1>
+                            <p id="result-message">...</p>
+                            
+                            <div class="result-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">درست</span>
+                                    <h5 class="text-success" id="correct-count">0</h5>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">غلط</span>
+                                    <h5 class="text-danger" id="wrong-count">0</h5>
+                                </div>
+                            </div>
+
+                            <button onclick="location.reload()" class="btn-quiz-primary mt-4 w-100">
+                                <i class="fas fa-redo me-2"></i> بازگشت به خانه
+                            </button>
+                        </div>
+                    </div>
+                    <!-- پایان بخش آزمون -->
+
+                </div>
+                
+                <!-- ⭐⭐ **بخش مرور** ⭐⭐ -->
+                <div id="review-section" class="review-section" style="display: none;">
+                    <!-- محتوای ReviewManager.js اینجا تزریق می‌شود -->
+                </div>
+                
+                <!-- ⭐⭐ **بخش گفتار (Speaking)** ⭐⭐ -->
+                <div id="speaking-section" class="speaking-section" style="display: none;">
+                    <!-- محتوای Speaking.js اینجا تزریق می‌شود -->
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- دکمه اسکرول به بالا -->
+    <button id="scroll-to-top" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- مودال کلمات -->
+    <div id="word-modal" class="word-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>جزئیات کلمه</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- ✅ ماژول‌های جاوااسکریپت - ترتیب بهینه شده -->
+    
+    <!-- 1️⃣ ماژول‌های پایه (بدون وابستگی) -->
+    <script type="module" src="js/utils/UI.js"></script>
+    <script type="module" src="js/modules/AudioManager.js"></script>
+    
+    <!-- 2️⃣ ماژول مدیریت درس (وابسته به UI) -->
+    <script type="module" src="js/modules/LessonManager.js"></script>
+    
+    <!-- 3️⃣ ماژول پیشرفت (وابسته به LessonManager) -->
+    <script type="module" src="js/modules/ProgressManager.js"></script>
+    
+    <!-- 4️⃣ ماژول رندر بخش‌ها -->
+    <script type="module" src="js/modules/SectionRenderer.js"></script>
+    
+    <!-- 5️⃣ ماژول‌های آموزشی (بدون وابستگی متقابل) -->
+    <script type="module" src="js/modules/Vocabulary.js"></script>
+    <script type="module" src="js/modules/Grammar.js"></script>
+    <script type="module" src="js/modules/Conversation.js"></script>
+    <script type="module" src="js/modules/Listening.js"></script>
+    <script type="module" src="js/modules/Speaking.js"></script>
+    <script type="module" src="js/modules/Flashcards.js"></script>
+    
+    <!-- 6️⃣ ماژول‌های مرور -->
+    <script type="module" src="js/modules/review/LeitnerEngine.js"></script>
+    <script type="module" src="js/modules/review/ReviewManager.js"></script>
+    
+    <!-- 7️⃣ ماژول‌های تکمیلی -->
+    <script type="module" src="js/modules/Quiz.js"></script>
+    <script type="module" src="js/modules/Games.js"></script>
+    
+    <!-- 8️⃣ فایل اصلی برنامه (آخرین اسکریپت) -->
+    <script type="module" src="js/app.js"></script>
+
+    
+    <!-- اسکریپت‌های کمکی UI -->
+    <script>
+        // --- UI Utilities ---
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDark);
+            showNotification(isDark ? 'حالت شب فعال شد 🌙' : 'حالت روز فعال شد ☀️', 'info');
+        }
+        
+        function showNotification(message, type = 'info') {
+            const existing = document.querySelector('.notification');
+            if(existing) existing.remove();
+
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-info-circle'}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            document.body.appendChild(notification);
+            
+            requestAnimationFrame(() => notification.classList.add('show'));
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+                notification.classList.add('fade-out');
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+        
+        function showAbout() {
+            const aboutModal = document.createElement('div');
+            aboutModal.className = 'modal-overlay';
+            aboutModal.innerHTML = `
+                <div class="modal-content" style="max-width: 400px; animation: slideIn 0.3s;">
+                    <div class="modal-header">
+                        <h3><i class="fas fa-graduation-cap"></i> درباره برنامه</h3>
+                        <button class="close-modal-btn"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div style="margin-bottom: 15px;">
+                            <i class="fas fa-book-reader fa-3x" style="color: var(--primary-color);"></i>
+                        </div>
+                        <h4>English 12 App</h4>
+                        <p class="text-muted">نسخه: 3.3.0 (Speaking Lab Edition)</p>
+                        <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+                        <p>شامل ماژول‌های مکالمه، شنیدار، گرامر، مرور، آزمون و آزمایشگاه تلفظ حرفه‌ای</p>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(aboutModal);
+            
+            const close = () => aboutModal.remove();
+            aboutModal.querySelector('.close-modal-btn').onclick = close;
+            aboutModal.onclick = (e) => { if(e.target === aboutModal) close(); };
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const backBtn = document.getElementById('back-to-home');
+            if(backBtn) {
+                backBtn.addEventListener('click', () => {
+                    if(window.app && window.app.goToHome) {
+                        window.app.goToHome();
+                    } else {
+                        document.getElementById('lesson-page').classList.remove('active');
+                        document.getElementById('home-page').classList.add('active');
+                    }
+                });
+            }
+
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+            
+            const style = document.createElement('style');
+            style.textContent = `
+                .notification { 
+                    position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-20px); 
+                    background: white; padding: 12px 25px; border-radius: 50px; 
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.15); z-index: 10000; 
+                    opacity: 0; transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    display: flex; align-items: center; gap: 10px; font-weight: 500;
+                }
+                .notification.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+                .notification.success { border-left: 4px solid #00b894; color: #2d3436; }
+                .notification.info { border-left: 4px solid #0984e3; color: #2d3436; }
+                
+                body.dark-mode .notification {
+                    background: #2d3436;
+                    color: #dfe6e9;
+                }
+                
+                .notification-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                
+                .notification i {
+                    font-size: 18px;
+                }
+                
+                .notification.success i {
+                    color: #00b894;
+                }
+                
+                .notification.info i {
+                    color: #0984e3;
+                }
+                
+                .fade-out {
+                    opacity: 0 !important;
+                    transform: translateX(-50%) translateY(-20px) !important;
+                }
+            `;
+            document.head.appendChild(style); 
+        });
+    <!-- قبل از </body> -->
+
+<script>
+// ثبت Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then((registration) => {
+        console.log('✅ Service Worker ثبت شد:', registration);
+      })
+      .catch((error) => {
+        console.log('❌ خطا در ثبت Service Worker:', error);
+      });
+  });
+}
+
+// 👇 کد جدید: مدیریت دکمه نصب PWA
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+// وقتی مرورگر آماده نصب است
+window.addEventListener('beforeinstallprompt', (e) => {
+  console.log('🎯 رویداد نصب فعال شد');
+  
+  // جلوگیری از نمایش خودکار
+  e.preventDefault();
+  
+  // ذخیره رویداد برای استفاده بعدی
+  deferredPrompt = e;
+  
+  // نمایش دکمه نصب
+  if (installBtn) {
+    installBtn.style.display = 'block';
+    console.log('✅ دکمه نصب نمایش داده شد');
+  }
+});
+
+// وقتی کاربر روی دکمه کلیک می‌کند
+if (installBtn) {
+  installBtn.addEventListener('click', async () => {
+    console.log('👆 کاربر روی دکمه نصب کلیک کرد');
+    
+    if (!deferredPrompt) {
+      console.log('❌ رویداد نصب موجود نیست');
+      return;
+    }
+    
+    // نمایش دیالوگ نصب
+    deferredPrompt.prompt();
+    
+    // منتظر انتخاب کاربر
+    const { outcome } = await deferredPrompt.userChoice;
+    
+    console.log(`کاربر ${outcome === 'accepted' ? '✅ قبول' : '❌ رد'} کرد`);
+    
+    // پاک کردن prompt
+    deferredPrompt = null;
+    
+    // مخفی کردن دکمه
+    installBtn.style.display = 'none';
+  });
+}
+
+// وقتی اپ نصب شد
+window.addEventListener('appinstalled', () => {
+  console.log('🎉 اپلیکیشن با موفقیت نصب شد');
+  deferredPrompt = null;
+  
+  // نمایش پیام موفقیت
+  if (typeof showNotification === 'function') {
+    showNotification('✅ اپلیکیشن نصب شد!', 'success');
+  }
+});
+</script>
+
+
+</body>
+</html>

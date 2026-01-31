@@ -1,0 +1,3149 @@
+/* css/style.css - نسخه نهایی با فونت لوکال (آفلاین) */
+@charset "UTF-8";
+
+/* =========================================
+   0. Local Fonts Setup (Vazirmatn)
+   ========================================= */
+
+/* تعریف فونت معمولی */
+@font-face {
+    font-family: 'Vazirmatn';
+    /* اون دو نقطه (..) یعنی از پوشه css بیا بیرون */
+    src: url('../fonts/Vazirmatn-Regular.woff2') format('woff2'); 
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* تعریف فونت ضخیم (Bold) */
+@font-face {
+    font-family: 'Vazirmatn';
+    /* اون دو نقطه (..) یعنی از پوشه css بیا بیرون */
+    src: url('../fonts/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* =========================================
+   1. Design Tokens & Variables
+   ========================================= */
+:root {
+    /* Colors - Brand */
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --secondary-gradient: linear-gradient(45deg, #00b894, #00cec9);
+    --accent-gradient: linear-gradient(45deg, #ff7675, #fd79a8);
+    --blue-gradient: linear-gradient(45deg, #74b9ff, #0984e3);
+    
+    /* Colors - Solid */
+    --color-primary: #667eea;
+    --color-secondary: #00b894;
+    --color-text-dark: #2d3436;
+    --color-text-medium: #495057;
+    --color-text-light: #636e72;
+    --color-bg-light: #f8f9fa;
+    --color-border: #f1f2f6;
+    --color-white: #ffffff;
+    
+    /* Typography */
+    /* اول وزیرمتن لوکال، بعد فونت‌های سیستم */
+    --font-main: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-mono: monospace;
+    
+    /* Spacing & Layout */
+    --container-width: 1200px;
+    --border-radius-lg: 20px;
+    --border-radius-md: 15px;
+    --border-radius-sm: 10px;
+    
+    /* Shadows */
+    --shadow-sm: 0 5px 15px rgba(0,0,0,0.08);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.1);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.1);
+    --shadow-hover: 0 20px 40px rgba(102, 126, 234, 0.2);
+    
+    /* Z-Index Layers */
+    --z-nav: 100;
+    --z-sticky-btn: 200;
+    --z-modal: 1000;
+}
+
+/* =========================================
+   2. Reset & Base Styles
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background: var(--primary-gradient);
+    min-height: 100vh;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+    font-family: var(--font-main);
+}
+
+/* =========================================
+   3. Layout Components
+   ========================================= */
+
+/* صفحه اصلی */
+#home-page {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.app-title {
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* صفحه درس */
+#lesson-page {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-lg);
+}
+
+.lesson-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color-border);
+}
+
+#lesson-title {
+    color: var(--color-text-dark);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#lesson-subtitle {
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   4. UI Cards & Elements
+   ========================================= */
+
+/* Lesson Card */
+.lesson-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: 25px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-hover);
+}
+
+.lesson-icon {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.lesson-card h3 {
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.lesson-card .subtitle {
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Progress Bar */
+.lesson-progress {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: var(--color-border);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--secondary-gradient);
+    border-radius: 5px;
+    transition: width 0.8s ease-out;
+}
+
+.progress-text {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-gradient {
+    background: var(--primary-gradient);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.start-lesson-btn {
+    background: var(--secondary-gradient);
+}
+
+.btn-back {
+    background: var(--accent-gradient);
+    width: auto;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.btn-back i {
+    transform: rotate(180deg);
+}
+
+/* =========================================
+   5. Vocabulary Section Specifics
+   ========================================= */
+.vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.vocab-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-md);
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+    border: 2px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+.vocab-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: #74b9ff;
+}
+
+.vocab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.vocab-word {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* کلمه انگلیسی با فونت انگلیسی */
+}
+
+.vocab-phonetic {
+    font-family: var(--font-mono);
+    color: var(--color-text-light);
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.word-status {
+    display: flex;
+    gap: 5px;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge.learned { background: var(--color-secondary); color: white; }
+.badge.level { background: #74b9ff; color: white; }
+
+.vocab-meaning {
+    font-size: 1.2rem;
+    color: #0984e3;
+    font-weight: 600;
+    margin: 15px 0;
+    padding-right: 10px;
+    border-right: 3px solid #74b9ff;
+}
+
+.vocab-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+/* استایل پایه برای دکمه‌های کلمات */
+.details-btn,
+.mark-btn {
+    /* استایل پایه */
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    min-width: 0;
+    
+    /* برای flex */
+    flex: 1;
+}
+
+/* رنگ‌های خاص هر دکمه */
+.details-btn {
+    background: var(--blue-gradient);
+}
+
+.mark-btn.learn {
+    background: var(--secondary-gradient);
+}
+
+.mark-btn.mastered {
+    background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+}
+
+/* هاور افکت */
+.details-btn:hover,
+.mark-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.details-btn {
+    background: var(--blue-gradient);
+    flex: 2;
+}
+
+.mark-btn { flex: 3; }
+.mark-btn.learn { background: var(--secondary-gradient); }
+.mark-btn.mastered { background: linear-gradient(45deg, #a29bfe, #6c5ce7); }
+
+/* Audio Controls Small */
+.audio-controls-small {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.audio-btn-small {
+    flex: 1;
+    background: rgba(116, 185, 255, 0.1);
+    border: 2px solid rgba(116, 185, 255, 0.3);
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #0984e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.audio-btn-small:hover {
+    background: rgba(116, 185, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.audio-btn-small.us { border-color: rgba(0, 184, 148, 0.3); color: #00b894; }
+.audio-btn-small.uk { border-color: rgba(253, 121, 168, 0.3); color: #fd79a8; }
+
+/* =========================================
+   6. Modal Components
+   ========================================= */
+.word-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.word-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+.word-modal {
+    animation: fadeIn 0.3s ease forwards;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text-dark);
+     color: #333; /* رنگ متن اصلی */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.close-modal:hover { color: #ff4757; }
+
+.modal-body { padding: 20px; }
+color: #333; /* رنگ متن */
+
+.word-main {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.word-main h2 {
+    font-size: 2.5rem;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.phonetics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.phonetics span {
+    background: var(--color-bg-light);
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.persian-main {
+    font-size: 1.5rem;
+    color: #0984e3;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.example {
+    background: var(--color-bg-light);
+    padding: 15px;
+    border-radius: 10px;
+    border-right: 4px solid var(--color-secondary);
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+/* Modal Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    background: var(--blue-gradient);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+}
+
+.tag-collocation { background: rgba(116, 185, 255, 0.1); color: #0984e3; border: 1px solid rgba(116, 185, 255, 0.3); }
+.tag-synonym { background: rgba(0, 184, 148, 0.1); color: #00b894; border: 1px solid rgba(0, 184, 148, 0.3); }
+.tag-antonym { background: rgba(253, 121, 168, 0.1); color: #fd79a8; border: 1px solid rgba(253, 121, 168, 0.3); }
+
+/* -----------------------------------------------------------------
+   6.1. FIX: Modal Audio Buttons Visibility (بخش اصلاح شده)
+   ----------------------------------------------------------------- */
+.modal-body button {
+    background: var(--blue-gradient);
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    margin: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.modal-body button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    filter: brightness(1.1);
+}
+
+.modal-body button:active {
+    transform: scale(0.95);
+}
+
+.modal-body button.us { background: var(--secondary-gradient); }
+.modal-body button.uk { background: var(--accent-gradient); }
+
+/* =========================================
+   7. Navigation & Scroll (اصلاح شده: بدون چسبندگی)
+   ========================================= */
+
+/* Scroll To Top Button */
+.scroll-to-top-btn {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: var(--z-sticky-btn);
+    box-shadow: 0 5px 25px rgba(102, 126, 234, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top-btn:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+}
+
+.scroll-to-top-btn i { font-size: 20px; margin-bottom: 2px; }
+.scroll-to-top-btn .btn-text { font-size: 11px; font-weight: 500; }
+
+/* Internal Nav Section */
+.nav-section {
+    background: var(--color-white);
+    border-radius: var(--border-radius-md);
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.05);
+    
+    position: relative !important;
+    top: auto !important;
+    z-index: 1;
+}
+
+.nav-title {
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 5px;
+}
+
+.nav-btn {
+    background: var(--color-bg-light);
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--color-text-medium);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-btn i {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.nav-btn:hover {
+    background: #eef2ff;
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.nav-btn.active {
+    background: var(--primary-gradient);
+    color: var(--color-white);
+    box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3);
+    font-weight: 600;
+}
+
+.nav-btn.active i { color: var(--color-white); }
+
+.section-info {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#current-section-name {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.nav-section.is-stuck {
+    position: static !important;
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+    box-shadow: var(--shadow-sm) !important;
+    border-radius: var(--border-radius-md) !important;
+}
+
+/* =========================================
+   8. Utilities & Animations
+   ========================================= */
+.page { display: none; }
+.page.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.loading-section, .error-section, .no-lessons {
+    text-align: center;
+    padding: 100px 20px;
+    color: var(--color-text-light);
+}
+
+.error-section { color: #ff7675; }
+.error-section i { font-size: 3rem; margin-bottom: 20px; }
+.no-lessons { background: var(--color-white); border-radius: var(--border-radius-lg); font-size: 1.2rem; }
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid var(--color-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* =========================================
+   9. Media Queries
+   ========================================= */
+@media (max-width: 1024px) {
+    .nav-btn {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* تنظیمات موبایل - بدون حالت چسبنده */
+    .nav-section {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: var(--border-radius-md);
+        top: auto;
+        @media (max-width: 768px) {
+    /* ... کدهای موجود فعلی ... */
+    
+    /* 🔽 این کد جدید را اینجا اضافه کن 🔽 */
+    
+    /* تنظیم دکمه‌های کلمات برای موبایل */
+    .vocab-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .details-btn,
+    .mark-btn {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+    
+    /* دکمه بستن مودال در موبایل */
+    .close-modal {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    /* 🔼 تا اینجا 🔼 */
+}
+    }
+    
+    .nav-buttons {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .nav-buttons::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .nav-btn {
+        flex: 0 0 auto;
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    .scroll-to-top-btn {
+        left: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .scroll-to-top-btn .btn-text { display: none; }
+    .scroll-to-top-btn i { margin-bottom: 0; }
+}
+
+@media (max-width: 480px) {
+    .lesson-card { padding: 15px; }
+    #lesson-page { padding: 15px; }
+}
+
+/* --- Grammar Section Modern Styles --- */
+.grammar-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 80px;
+}
+
+.grammar-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.intro-card {
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 4px solid #2196F3;
+}
+.grammar-icon {
+    font-size: 1.5rem;
+}
+
+.formula-card {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+.formula-box {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 1.1em;
+    color: #ffd700;
+    margin-top: 5px;
+}
+
+.warning-card {
+    background: #fff3e0;
+    border: 1px solid #ffe0b2;
+    border-right: 4px solid #ff9800;
+}
+.warning-card h5 {
+    color: #e65100;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grammar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+.grammar-table th {
+    color: #666;
+    font-size: 0.9rem;
+    padding: 5px;
+}
+.grammar-table td {
+    background: white;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #eee;
+}
+.grammar-table tr:first-child td:first-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+.grammar-table tr:first-child td:last-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+
+.badge-verb {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.example-list {
+    list-style: none;
+    padding: 0;
+}
+.example-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+.example-item:last-child { border-bottom: none; }
+.en-text {
+    font-weight: 600;
+    color: #333;
+    direction: ltr;
+    text-align: left;
+}
+.fa-text {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+
+.level-badge {
+    background: #ffecb3;
+    color: #ff6f00;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* --- بخش جدید: تب‌های مکالمه --- */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.tab-btn:hover {
+    background: #d4d4d4;
+}
+
+.tab-btn.active {
+    background: #fff;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+/* --- استایل‌های بخش مرور (Review Module) --- */
+.review-container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.review-header h3 {
+    color: #4a4a4a;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.review-header h3 i {
+    color: #6c5ce7;
+}
+
+.review-tabs-wrapper {
+    margin-bottom: 25px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.review-tabs {
+    display: flex;
+    gap: 12px;
+}
+
+.review-tab-btn {
+    background: #f1f3f8;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    color: #636e72;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    font-size: 0.95rem;
+}
+
+.review-tab-btn i {
+    font-size: 1.1em;
+}
+
+.review-tab-btn:hover {
+    background: #e2e6ea;
+    transform: translateY(-2px);
+}
+
+.review-tab-btn.active {
+    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+    transform: scale(1.05);
+}
+
+.review-content-area {
+    background: #fdfdfd;
+    border: 2px dashed #dfe6e9;
+    border-radius: 15px;
+    padding: 30px;
+    min-height: 200px;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.review-empty-state {
+    text-align: center;
+    color: #b2bec3;
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .review-container {
+        padding: 15px;
+    }
+    
+    .review-tab-btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .review-tab-btn.active {
+        transform: scale(1);
+    }
+}
+/* استایل‌های بخش آزمون */
+.quiz-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    animation: fadeIn 0.5s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    text-align: right;
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.option-btn:hover {
+    border-color: #6c5ce7;
+    background: #f8f9fa;
+}
+
+.option-btn.selected {
+    background-color: #6c5ce7;
+    color: white;
+    border-color: #6c5ce7;
+}
+
+.option-btn.correct {
+    background-color: #00b894 !important;
+    color: white !important;
+    border-color: #00b894 !important;
+}
+
+.option-btn.wrong {
+    background-color: #d63031 !important;
+    color: white !important;
+    border-color: #d63031 !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* =========================================
+   استایل‌های بخش آزمون (Quiz Module Styles)
+   ========================================= */
+
+/* باکس اصلی آزمون */
+#quiz-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* کارت‌های آزمون (شروع، سوال، نتیجه) */
+.quiz-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #eee;
+    margin-top: 20px;
+}
+
+/* هدر باکس سوال (تایمر و شماره سوال) */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #eee;
+}
+
+.quiz-timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #fff3cd; /* زرد ملایم */
+    color: #856404;
+}
+
+.quiz-timer.bg-danger {
+    background-color: #dc3545 !important; /* قرمز برای اخطار */
+    color: white !important;
+}
+
+/* نوار پیشرفت */
+.progress {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #6c5ce7; /* رنگ بنفش اصلی تم */
+    transition: width 0.3s ease;
+}
+
+/* متن سوال */
+#question-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* کانتینر گزینه‌ها */
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* دکمه‌های گزینه‌ها */
+.option-btn {
+    width: 100%;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    font-family: inherit; /* ارث‌بری فونت وزیر */
+    font-size: 1.1rem;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+.option-btn:hover {
+    background-color: #e2e6ea;
+    border-color: #adb5bd;
+    transform: translateY(-2px);
+}
+
+.option-btn .opt-text {
+    pointer-events: none;
+}
+
+/* استایل گزینه صحیح */
+.option-btn.correct {
+    background-color: #d4edda !important;
+    border-color: #28a745 !important;
+    color: #155724 !important;
+}
+
+/* استایل گزینه غلط */
+.option-btn.wrong {
+    background-color: #f8d7da !important;
+    border-color: #dc3545 !important;
+    color: #721c24 !important;
+}
+
+/* آیکون داخل دکمه‌ها */
+.option-btn i {
+    font-size: 1.2rem;
+}
+
+/* بخش نتیجه آزمون */
+.result-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #6c5ce7;
+}
+
+.stat-label {
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+/* دکمه‌های عمومی آزمون */
+.btn-quiz-primary {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+    transition: transform 0.2s;
+}
+
+.btn-quiz-primary:hover {
+    background-color: #5b4cc4;
+    transform: scale(1.05);
+}
+
+/* کلاس کمکی مخفی کردن */
+.hidden {
+    display: none !important;
+}
+/* --- استایل‌های جدید ماژول آزمون --- */
+.quiz-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* کارت‌های ورود */
+.quiz-landing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.quiz-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    width: 280px;
+    transition: transform 0.3s;
+    border: 2px solid transparent;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+}
+
+.student-card { border-bottom: 5px solid #6c63ff; }
+.teacher-card { border-bottom: 5px solid #2ecc71; }
+
+.icon-wrapper {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.quiz-division-line {
+    width: 2px;
+    height: 150px;
+    background: #ddd;
+}
+
+/* پنل معلم */
+.teacher-dashboard {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: right;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.config-box label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-action {
+    flex: 1;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.btn-action.secondary { background: #27ae60; }
+.btn-action:hover { opacity: 0.9; }
+
+/* آزمون دانش‌آموز */
+.student-quiz-ui {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.question-box { margin: 30px 0; }
+
+.q-badge {
+    background: #e1f5fe;
+    color: #0288d1;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.q-text {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.btn-option {
+    padding: 15px;
+    border: 2px solid #eee;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.btn-option:hover {
+    border-color: #6c63ff;
+    background: #f4f3ff;
+}
+
+.input-text-answer {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+    margin-bottom: 15px;
+}
+
+.btn-submit-text {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* --- طراحی کاغذ برای پرینت (مهم) --- */
+#print-layer-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #525659; /* رنگ پس‌زمینه مثل PDF Reader */
+    z-index: 9999;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.printable-paper {
+    width: 210mm; /* عرض A4 */
+    min-height: 297mm; /* ارتفاع A4 */
+    background: white;
+    padding: 20mm;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    direction: rtl;
+    text-align: right;
+    font-family: 'B Nazanin', 'Tahoma', sans-serif; /* فونت رسمی */
+    position: relative;
+}
+
+.paper-header {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paper-question {
+    margin-bottom: 25px;
+    page-break-inside: avoid; /* جلوگیری از شکستن سوال بین صفحات */
+}
+
+.q-stem { font-weight: bold; font-size: 1.1rem; margin-bottom: 10px; display: block;}
+
+.paper-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.paper-opt-item { display: flex; align-items: center; gap: 8px; }
+.circle {
+    width: 15px; height: 15px; 
+    border: 1px solid black; 
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* استایل پاسخنامه */
+.answer-key-box {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-right: 4px solid #333;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.highlight-correct {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.print-controls-overlay {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-big-print, .btn-big-close {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-big-print { background: #4caf50; color: white; }
+.btn-big-close { background: #f44336; color: white; }
+
+/* دستورات مخصوص پرینتر */
+@media print {
+    body * {
+        visibility: hidden; /* مخفی کردن همه چیز */
+    }
+    #print-layer-container, 
+    #print-layer-container .printable-paper, 
+    #print-layer-container .printable-paper * {
+        visibility: visible; /* نمایش فقط کاغذ */
+    }
+    #print-layer-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+    .printable-paper {
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .print-controls-overlay { display: none !important; } /* دکمه‌ها چاپ نشوند */
+}
+/* --- کلاس‌های حیاتی برای رفع مشکل جهت متن و اعداد --- */
+.ltr-content {
+    direction: ltr !important;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; /* فونت انگلیسی */
+    unicode-bidi: embed;
+}
+
+.text-left { text-align: left !important; }
+
+/* استایل کارنامه داخلی دانش‌آموز */
+.score-card {
+    background: #6c63ff;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.score-number { font-size: 2.5rem; font-weight: bold; }
+
+.results-breakdown {
+    text-align: right;
+    margin-bottom: 60px; /* فضا برای دکمه‌های شناور */
+}
+
+.result-item {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.result-item.wrong-item { border-right: 4px solid #e74c3c; }
+.result-item.correct-item { border-right: 4px solid #2ecc71; }
+
+.r-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.r-q { font-weight: bold; width: 100%; text-align: left; }
+
+.wrong-txt { color: #e74c3c; }
+.correct-txt { color: #2ecc71; font-weight: bold; }
+.small-note { font-size: 0.85rem; color: #666; margin-top: 5px; }
+
+.sticky-actions {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 10px;
+}
+
+/* --- استایل پرینت (اصلاح شده) --- */
+#print-layer-container {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #525659;
+    z-index: 10000;
+    overflow-y: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.printable-paper {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    padding: 20mm;
+    direction: rtl; /* کلیت کاغذ راست‌چین است */
+    position: relative;
+}
+
+/* ردیف سوال در کاغذ */
+.q-row {
+    display: flex;
+    flex-direction: row-reverse; /* سوالات انگلیسی از چپ شروع شوند اما شماره سمت راست باشد */
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.q-num { font-weight: bold; min-width: 25px; }
+.q-content { flex-grow: 1; }
+.q-score { font-size: 0.8rem; color: #555; align-self: center; margin-right: auto; }
+
+/* گزینه‌ها در کاغذ */
+.paper-options {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px; /* فاصله از چپ */
+    flex-wrap: wrap;
+}
+.circle {
+    display: inline-block;
+    width: 20px; height: 20px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.answer-key-box {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px dashed #999;
+    font-size: 0.9rem;
+}
+
+.fa-explanation-box {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+    color: #444;
+    text-align: right; /* توضیحات فارسی راست‌چین */
+    direction: rtl;
+}
+
+/* دکمه‌های شناور پایین صفحه پرینت */
+.print-controls-overlay {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    border-radius: 50px;
+}
+
+@media print {
+    body * { visibility: hidden; }
+    #print-layer-container, #print-layer-container * { visibility: visible; }
+    #print-layer-container { 
+        position: absolute; 
+        top: 0; left: 0; 
+        width: 100%; 
+        background: white; 
+        height: auto;
+        overflow: visible;
+        display: block;
+        padding: 0;
+    }
+    .printable-paper { 
+        box-shadow: none; 
+        margin: 0; 
+        width: 100%; 
+    }
+    .print-controls-overlay { display: none !important; }
+}
+/* --- کلاس برای اعداد انگلیسی (اجباری) --- */
+.en-num {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    direction: ltr !important;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* --- تنظیمات پرینت (رفع باگ صفحه آبی) --- */
+@media print {
+    body, html {
+        background-color: #ffffff !important; /* پس زمینه سفید اجباری */
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* مخفی کردن تمام بخش‌های اصلی سایت تا فقط برگه آزمون بماند */
+    body > :not(#print-layer-container) {
+        display: none !important;
+    }
+
+    #print-layer-container { 
+        position: relative; 
+        top: 0; left: 0; 
+        width: 100%; 
+        background: white !important; /* حذف رنگ خاکستری اورلی */
+        height: auto;
+        overflow: visible;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .printable-paper { 
+        box-shadow: none; 
+        margin: 0; 
+        width: 100%;
+        max-width: 100%;
+        padding: 10mm; /* تنظیم حاشیه مناسب برای چاپ */
+    }
+
+    /* مخفی کردن دکمه‌های شناور */
+    .print-controls-overlay { 
+        display: none !important; 
+    }
+}
+
+/* --- استایل نمایشی (Web View) لایه پرینت --- */
+#print-layer-container {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #525659; /* رنگ خاکستری فقط در نمای وب */
+    z-index: 10000;
+    overflow-y: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* اصلاحات فاصله گزینه‌ها */
+.paper-opt-item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.paper-opt-item .circle {
+    margin-right: 8px; /* فاصله دایره از متن */
+}
+/* --- کانتینر دکمه‌های شناور (اصلاح موقعیت) --- */
+.print-controls-overlay {
+    position: fixed;
+    top: 20px;            /* فاصله از بالا */
+    right: 30px;          /* فاصله از راست */
+    bottom: auto;         /* حذف حالت قبلی */
+    left: auto;           /* حذف حالت قبلی */
+    transform: none;      /* حذف وسط‌چین قبلی */
+    
+    background-color: rgba(50, 50, 50, 0.9); /* پس‌زمینه تیره و کمی شفاف */
+    padding: 10px 15px;
+    border-radius: 50px; /* گوشه‌های کاملاً گرد */
+    display: flex;
+    gap: 10px;
+    z-index: 10001;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px); /* مات کردن پس‌زمینه زیر دکمه‌ها */
+}
+
+/* --- استایل دکمه‌های داخل نوار (کوچک‌تر و شیک‌تر) --- */
+.btn-big-print, .btn-big-close {
+    padding: 8px 16px;       /* کاهش پدینگ */
+    font-size: 0.9rem;       /* کاهش سایز فونت */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* دکمه چاپ (سبز) */
+.btn-big-print {
+    background-color: #2ecc71;
+    color: white;
+}
+.btn-big-print:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* دکمه بستن (قرمز/نارنجی) */
+.btn-big-close {
+    background-color: #e74c3c;
+    color: white;
+}
+.btn-big-close:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* --- مخفی کردن دکمه‌ها هنگام پرینت واقعی (تکرار برای اطمینان) --- */
+@media print {
+    .print-controls-overlay {
+        display: none !important;
+    }
+}
+/* مخفی کردن نوار ناوبری متنی قدیمی مزاحم */
+.nav-links {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+}
+
+/* جهت اطمینان بیشتر، اگر کلاس خاصی ندارد و فقط لینک است */
+#lesson-content > a {
+    display: none !important;
+}
+/* مخفی کردن تمام لینک‌هایی که داخل دکمه‌های خوشگل نیستند */
+
+/* مخفی کردن لینک‌های متنی که مستقیم زیر تیترها ول شده‌اند */
+#lesson-content > a,
+#app > a,
+.dashboard-container > a {
+    display: none !important;
+}
+
+/* مخفی کردن دایوهای بدون کلاس که فقط حاوی لینک هستند */
+#lesson-content > div:not([class]),
+#lesson-content > div:not([id]) {
+    /* تذکر: این ممکن است خطرناک باشد، اول تست کنید */
+   /* display: none; */ 
+}
+
+/* روش دقیق‌تر: مخفی کردن لینک‌هایی که کلاس 'dashboard-btn' ندارند */
+/* فرض بر این است که دکمه‌های خوشگل کلاس دارند اما زشت‌ها ندارند */
+a:not(.dashboard-btn):not(.nav-item):not(.print-btn) {
+    /* اگر لینک‌های زشت داخل سکشن اصلی هستند */
+    /* display: none; */
+}
+/* استایل‌های جدید برای Quiz */
+.print-controls-overlay.expanded {
+    gap: 15px;
+    padding: 12px 25px;
+}
+
+.btn-big-secondary {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-big-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.student-analysis {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-right: 4px solid #dee2e6;
+}
+
+.analysis-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.analysis-row.correct {
+    background-color: rgba(40, 167, 69, 0.1);
+    border-right: 3px solid #28a745;
+}
+
+.analysis-row.wrong {
+    background-color: rgba(220, 53, 69, 0.1);
+    border-right: 3px solid #dc3545;
+}
+
+.analysis-label {
+    font-weight: bold;
+    margin-left: 10px;
+    min-width: 100px;
+}
+
+.analysis-value {
+    flex-grow: 1;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    direction: ltr;
+    text-align: left;
+}
+
+.analysis-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.previous-exam-section {
+    animation: fadeIn 0.5s ease;
+}
+
+/* =========================================
+   10. استایل‌های بخش مرور (Review System) - اضافه شده
+   ========================================= */
+
+/* کانتینر اصلی مرور */
+.review-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease;
+    min-height: 600px;
+    display: none; /* به صورت پیش‌فرض مخفی */
+}
+
+/* داشبورد مرور */
+.review-dashboard {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.dashboard-header .subtitle {
+    opacity: 0.9;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* آمار امروز */
+.today-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    min-width: 50px;
+}
+
+.stat-info {
+    flex: 1;
+}
+
+.stat-value {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* باکس‌های لایتنر */
+.leitner-boxes {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: var(--color-text-dark);
+}
+
+.leitner-boxes h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--color-text-dark);
+}
+
+.boxes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.leitner-box {
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s;
+    background: white;
+}
+
+.leitner-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.box-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.box-icon {
+    font-size: 1.5rem;
+}
+
+.box-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.box-count {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.box-interval {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* دکمه‌های اقدام */
+.review-actions {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-start-review {
+    padding: 18px 40px;
+    background: linear-gradient(135deg, var(--color-secondary), var(--success-dark));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+    margin: 0 auto;
+}
+
+.btn-start-review:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+}
+
+.no-review-message {
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--color-text-dark);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.no-review-message i {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    margin-bottom: 15px;
+}
+
+.next-review {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+/* کانتینر جلسه مرور */
+#review-session-container {
+    animation: fadeIn 0.5s ease;
+}
+
+.review-card-wrapper {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    margin-top: 20px;
+}
+
+.review-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.card-progress {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-text {
+    font-weight: bold;
+    color: var(--color-text-dark);
+}
+
+.mini-progress {
+    width: 100px;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.mini-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--primary-dark));
+    transition: width 0.5s ease;
+}
+
+.card-box-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* کارت مرور */
+.review-card {
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f0f0f0;
+    border-radius: 15px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.review-card[data-flipped="true"] {
+    border-color: var(--color-secondary);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    transition: all 0.5s ease;
+}
+
+.card-back {
+    display: none;
+}
+
+.review-card[data-flipped="true"] .card-back {
+    display: flex;
+    animation: fadeIn 0.5s ease;
+}
+
+.review-card[data-flipped="true"] .card-front {
+    display: none;
+}
+
+.card-question,
+.card-answer {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-text-dark);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* کنترل‌های کارت */
+.review-card-controls {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-secondary {
+    padding: 16px 30px;
+    background: linear-gradient(135deg, var(--color-primary), var(--primary-dark));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.answer-buttons {
+    display: none;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.answer-buttons.show {
+    display: flex;
+}
+
+.answer-buttons button {
+    flex: 1;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.answer-buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--danger-color), var(--danger-dark));
+    color: white;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, var(--color-secondary), var(--success-dark));
+    color: white;
+}
+
+/* پایان جلسه */
+.review-complete-card {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.complete-icon {
+    font-size: 4rem;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.review-complete-card h2 {
+    color: var(--color-text-dark);
+    margin-bottom: 30px;
+}
+
+.session-summary {
+    max-width: 500px;
+    margin: 30px auto;
+    background: var(--color-bg-light);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-row.highlight {
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.btn-back-dashboard {
+    padding: 16px 40px;
+    background: linear-gradient(135deg, var(--color-primary), var(--primary-dark));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.btn-back-dashboard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* متغیرهای رنگ برای بخش مرور */
+:root {
+    --success-color: #10b981;
+    --success-dark: #059669;
+    --danger-color: #ef4444;
+    --danger-dark: #dc2626;
+    --primary-dark: #764ba2;
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* رسپانسیو */
+@media (max-width: 768px) {
+    .review-section {
+        padding: 15px;
+    }
+    
+    .review-dashboard {
+        padding: 20px;
+    }
+    
+    .today-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .stat-card {
+        padding: 15px;
+    }
+    
+    .stat-value {
+        font-size: 1.8rem;
+    }
+    
+    .boxes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .card-text {
+        font-size: 1.8rem;
+    }
+    
+    .answer-buttons {
+        flex-direction: column;
+    }
+    
+    .answer-buttons button {
+        width: 100%;
+    }
+}
+/* در style.css اضافه کنید */
+.session-summary {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #dee2e6;
+}
+
+.session-summary h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.summary-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid;
+}
+
+.summary-item.correct {
+    border-left-color: #4CAF50;
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.summary-item.total {
+    border-left-color: #2196F3;
+    background: rgba(33, 150, 243, 0.1);
+}
+
+.summary-item.accuracy {
+    border-left-color: #9C27B0;
+    background: rgba(156, 39, 176, 0.1);
+}
+
+.summary-item.points {
+    border-left-color: #FFC107;
+    background: rgba(255, 193, 7, 0.1);
+}
+
+.summary-label {
+    font-weight: bold;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.summary-value {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.remaining-text {
+    background: rgba(33, 150, 243, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    color: #0d47a1;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+/* انیمیشن نوتیفیکیشن */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+/* 🔴 حذف کد قبلی اگر اضافه کرده‌ای - از این به بعد کپی کن 🔴 */
+
+/* =========================================
+   FIX: اصلاح دکمه‌های کلمات - نسخه تمیز
+   ========================================= */
+
+/* فقط استایل‌های دکمه‌ها را بازنویسی کن */
+.vocab-actions .details-btn,
+.vocab-actions .mark-btn {
+    background: var(--primary-gradient) !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 20px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+    min-height: 44px !important;
+    text-align: center !important;
+    flex: 1 !important;
+}
+
+/* رنگ‌های خاص */
+.vocab-actions .details-btn {
+    background: var(--blue-gradient) !important;
+    flex: 2 !important;
+}
+
+.vocab-actions .mark-btn.learn {
+    background: var(--secondary-gradient) !important;
+    flex: 3 !important;
+}
+
+.vocab-actions .mark-btn.mastered {
+    background: linear-gradient(45deg, #a29bfe, #6c5ce7) !important;
+    flex: 3 !important;
+}
+
+/* هاور */
+.vocab-actions .details-btn:hover,
+.vocab-actions .mark-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15) !important;
+}
+
+/* موبایل */
+@media (max-width: 768px) {
+    .vocab-actions {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    
+    .vocab-actions .details-btn,
+    .vocab-actions .mark-btn {
+        width: 100% !important;
+        flex: none !important;
+        padding: 14px 20px !important;
+    }
+}
+
+/* =========================================
+   FIX: رفع سیاهی مودال
+   ========================================= */
+
+/* فقط رنگ متن مودال را اصلاح کن */
+.word-modal .modal-content,
+.word-modal .modal-body,
+.word-modal .word-main h2,
+.word-modal .phonetics span,
+.word-modal .example,
+.word-modal .tags * {
+    color: #333333 !important;
+}
+
+.word-modal .persian-main {
+    color: #0984e3 !important;
+}
+/* ===================================
+   VOCABULARY SEARCH STYLES (افزوده شده)
+   =================================== */
+
+/* کانتینر جستجو */
+.vocab-search-container {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px 0 30px 0;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.12);
+    border: 2px solid #eef2ff;
+    position: relative;
+    overflow: hidden;
+}
+
+.vocab-search-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eef2ff;
+}
+
+.search-header h4 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-header h4 i {
+    color: #667eea;
+    font-size: 1.2rem;
+}
+
+.search-count {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* کنترل‌های جستجو */
+.search-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    color: #667eea;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.search-input {
+    width: 100%;
+    padding: 16px 60px 16px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    font-size: 1.05rem;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: all 0.3s ease;
+    background: white;
+    color: #2c3e50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.15);
+    transform: translateY(-2px);
+}
+
+.search-input::placeholder {
+    color: #a0a0a0;
+    opacity: 0.8;
+}
+
+.clear-search-btn {
+    position: absolute;
+    left: 20px;
+    background: #f0f0f0;
+    border: none;
+    color: #666;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.clear-search-btn:hover {
+    background: #e74c3c;
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* فیلترهای جستجو */
+.search-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-family: 'Vazirmatn', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-btn:hover {
+    border-color: #667eea;
+    color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+}
+
+.filter-btn i {
+    font-size: 1rem;
+}
+
+.search-hints {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-hints i {
+    color: #667eea;
+}
+
+/* پیام نتایج جستجو */
+.search-results-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    border-radius: 12px;
+    border-right: 4px solid #667eea;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.results-badge i {
+    color: #27ae60;
+    font-size: 1.2rem;
+}
+
+.results-badge strong {
+    color: #667eea;
+    font-weight: 700;
+}
+
+/* پیام عدم یافتن نتیجه */
+.search-no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #7f8c8d;
+    animation: fadeIn 0.6s ease;
+}
+
+.search-no-results i {
+    font-size: 4rem;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.search-no-results p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.search-no-results strong {
+    color: #e74c3c;
+}
+
+/* هایلایت کلمات پیدا شده */
+.search-highlight {
+    background: linear-gradient(135deg, #fff9c4, #fff59d);
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    animation: highlightPulse 2s infinite;
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+}
+
+@keyframes highlightPulse {
+    0%, 100% {
+        background: linear-gradient(135deg, #fff9c4, #fff59d);
+    }
+    50% {
+        background: linear-gradient(135deg, #fff59d, #ffeb3b);
+    }
+}
+
+/* آمار جستجو */
+.search-stats {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-time {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* رسپانسیو برای بخش جستجو */
+@media (max-width: 768px) {
+    .vocab-search-container {
+        padding: 20px;
+        margin: 15px 0 25px 0;
+    }
+    
+    .search-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    
+    .search-header h4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .search-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-buttons {
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .search-hints {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .search-input {
+        padding: 14px 50px 14px 20px;
+        font-size: 1rem;
+    }
+    
+    .search-results-info {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .search-no-results {
+        padding: 30px 15px;
+    }
+    
+    .search-no-results i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-buttons {
+        flex-direction: column;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search-input {
+        font-size: 0.95rem;
+        padding: 12px 45px 12px 20px;
+    }
+    
+    .search-count {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* انیمیشن‌های اضافی برای جستجو */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 8px 32px rgba(102, 126, 234, 0.12);
+    }
+    50% {
+        box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2);
+    }
+}
+
+.vocab-search-container:hover {
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* استایل برای نتایج جستجو در لیست */
+.vocab-card.search-result {
+    border-left: 5px solid #667eea;
+    animation: resultAppear 0.5s ease;
+}
+
+@keyframes resultAppear {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* استایل برای حالت جستجو */
+.searching .vocab-card:not(.search-result) {
+    opacity: 0.5;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+}
+
+.searching .vocab-card.search-result {
+    opacity: 1;
+    filter: none;
+}
+
+/* پیام کلمات پیدا نشد */
+.no-words-message {
+    text-align: center;
+    padding: 50px 20px;
+    color: #7f8c8d;
+    grid-column: 1 / -1;
+}
+
+.no-words-message p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.no-words-message i {
+    font-size: 3rem;
+    color: #ddd;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* دکمه‌های جستجو */
+.btn-search-action {
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-search-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-search-action.secondary {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-search-action.secondary:hover {
+    background: #f8f9ff;
+}

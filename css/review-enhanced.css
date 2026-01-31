@@ -1,0 +1,506 @@
+/* css/review-enhanced.css */
+.review-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.review-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-header h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 0.75rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-item span {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-bottom: 0.25rem;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.progress-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4cd964, #5ac8fa);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-box {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background: #f0f0f0;
+    margin-bottom: 1.5rem;
+}
+
+.card-content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-front h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.phonetic {
+    font-size: 1.2rem;
+    color: #666;
+    font-family: monospace;
+}
+
+.card-back {
+    animation: fadeIn 0.3s ease;
+}
+
+.translation {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.example {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card-stats span {
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-show, .btn-wrong, .btn-correct {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-show {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+
+.btn-show:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.answer-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-wrong {
+    background: #e74c3c;
+    color: white;
+    flex: 1;
+}
+
+.btn-wrong:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.btn-correct {
+    background: #2ecc71;
+    color: white;
+    flex: 1;
+}
+
+.btn-correct:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.no-cards {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.no-cards-icon {
+    font-size: 4rem;
+    color: #2ecc71;
+    margin-bottom: 1rem;
+}
+
+.no-cards h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.no-cards p {
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+.next-review {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.session-complete {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.complete-icon {
+    font-size: 4rem;
+    color: #f1c40f;
+    margin-bottom: 1rem;
+}
+
+.complete-stats {
+    margin: 2rem 0;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.stat-col {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.btn-restart {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-restart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.3);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-front h2 {
+        font-size: 2rem;
+    }
+    
+    .answer-buttons {
+        flex-direction: column;
+    }
+    
+    .stat-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+/* ==================== Review Card Styles ==================== */
+
+.review-card-wrapper {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.review-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.card-progress {
+    flex: 1;
+}
+
+.progress-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.mini-progress {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mini-progress-fill {
+    height: 100%;
+    background: #4ade80;
+    transition: width 0.5s ease;
+}
+
+.card-box-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.review-card {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    min-height: 300px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 3px solid #e0e0e0;
+}
+
+.review-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.card-front,
+.card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 1rem;
+}
+
+.card-text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+.card-back {
+    border-top: 2px dashed #e0e0e0;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.card-back .card-text {
+    color: #16a34a;
+}
+
+/* حالت Flip شده */
+.review-card[data-flipped="true"] {
+    border-color: #16a34a;
+}
+
+.review-card[data-flipped="true"] .card-back {
+    display: flex !important;
+}
+
+/* دکمه‌های کنترل */
+.review-card-controls {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-show-answer {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-show-answer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.answer-buttons {
+    display: none;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.answer-buttons button {
+    flex: 1;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.answer-buttons .btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+}
+
+.answer-buttons .btn-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+}
+
+.answer-buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.answer-buttons button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .review-card-wrapper {
+        padding: 0.5rem;
+    }
+    
+    .card-text {
+        font-size: 1.5rem;
+    }
+    
+    .review-card {
+        min-height: 250px;
+        padding: 1.5rem;
+    }
+    
+    .answer-buttons {
+        flex-direction: column;
+    }
+}

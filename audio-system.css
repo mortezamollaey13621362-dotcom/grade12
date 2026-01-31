@@ -1,0 +1,83 @@
+/* audio-system.css - استایل‌های سیستم صوتی */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(10px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.audio-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.audio-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.audio-btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.audio-btn:active {
+    transform: scale(0.95);
+}
+
+.audio-btn.slow {
+    background: #9b59b6;
+}
+
+.audio-btn.uk {
+    background: #e74c3c;
+}
+
+.audio-btn.us {
+    background: #2ecc71;
+}
+
+.audio-btn:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+
+.audio-indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3498db;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.8); opacity: 0.7; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.8); opacity: 0.7; }
+}
+
+.audio-fallback-bubble {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    z-index: 10000;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    animation: fadeInOut 3s ease;
+}
