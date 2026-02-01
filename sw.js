@@ -1,7 +1,7 @@
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.1.0'; // 🔄 نسخه را افزایش دادم
 const CACHE_NAMES = {
-  static: `english-app-static-${APP_VERSION}`,
-  data: `english-app-data-${APP_VERSION}`
+  static: `english-app-static-${APP_VERSION}-${Date.now()}`, // 🔄 timestamp اضافه شد
+  data: `english-app-data-${APP_VERSION}-${Date.now()}`
 };
 
 // فایل‌های ضروری (ثابت)
@@ -16,40 +16,51 @@ const STATIC_ASSETS = [
 
 // ==================== نصب ====================
 self.addEventListener('install', event => {
-  console.log('📱 نصب اپلیکیشن آموزش زبان');
+  console.log('📱 نصب اپلیکیشن آموزش زبان - نسخه ' + APP_VERSION);
   
   event.waitUntil(
     Promise.all([
       // کش کردن فایل‌های ثابت
       caches.open(CACHE_NAMES.static).then(cache => {
         console.log('📦 کش کردن فایل‌های اصلی...');
-        return cache.addAll(STATIC_ASSETS);
+        return cache.addAll(STATIC_ASSETS.map(url => `${url}?v=${APP_VERSION}`));
       }),
       
       // کش کردن خودکار ماژول‌ها
       cacheDynamicModules()
-    ]).then(() => self.skipWaiting())
+    ]).then(() => {
+      console.log('🚀 پرش از مرحله انتظار...');
+      return self.skipWaiting(); // فوراً فعال شو
+    })
   );
 });
 
 // ==================== فعال‌سازی ====================
 self.addEventListener('activate', event => {
-  console.log('✅ فعال‌سازی کامل');
+  console.log('✅ فعال‌سازی نسخه جدید: ' + APP_VERSION);
   
   event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames
-          .filter(name => name.startsWith('english-app-') && !Object.values(CACHE_NAMES).includes(name))
-          .map(name => {
-            console.log(`🗑️ حذف کش قدیمی: ${name}`);
-            return caches.delete(name);
-          })
-      );
-    }).then(() => {
-      console.log('🎯 آماده برای درس‌های جدید');
-      return self.clients.claim();
-    })
+    Promise.all([
+      // حذف تمام کش‌های قدیمی
+      caches.keys().then(cacheNames => {
+        return Promise.all(
+          cacheNames
+            .filter(name => name.startsWith('english-app-') && !name.includes(CACHE_NAMES.static) && !name.includes(CACHE_NAMES.data))
+            .map(name => {
+              console.log(`🗑️ حذف کش قدیمی: ${name}`);
+              return caches.delete(name);
+            })
+        );
+      }),
+      
+      // کنترل تمام کلاینت‌ها را بگیر
+      self.clients.claim().then(() => {
+        console.log('🎯 کنترل تمام تب‌ها گرفته شد');
+      }),
+      
+      // به تمام کلاینت‌ها پیام رفرش بده
+      notifyClientsToRefresh()
+    ])
   );
 });
 
@@ -58,11 +69,12 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
   
+  // درخواست‌های غیر GET را رد کن
   if (request.method !== 'GET') return;
   
   // برای فایل‌های لوکال
   if (url.origin === location.origin) {
-    // استراتژی: Cache First
+    // استراتژی: Cache First (با پارامتر version)
     event.respondWith(
       handleFetch(request)
     );
@@ -106,11 +118,13 @@ async function cacheDynamicModules() {
   
   for (const module of coreModules) {
     try {
-      await cache.add(module);
+      // پارامتر version اضافه کن
+      const moduleWithVersion = `${module}?v=${APP_VERSION}`;
+      await cache.add(moduleWithVersion);
       successCount++;
       console.log(`✅ ${module}`);
     } catch (error) {
-      // نادیده بگیر
+      console.log(`⚠️ خطا در کش کردن ${module}:`, error.message);
     }
   }
   
@@ -171,10 +185,32 @@ async function handleLessonRequest(request) {
 
 // مدیریت فایل‌های استاتیک
 async function handleStaticRequest(request) {
+  const url = new URL(request.url);
+  
+  // اگر درخواست اصلی بدون پارامتر version است، آن را اضافه کن
+  if (!url.searchParams.has('v') && 
+      (url.pathname.endsWith('.js') || 
+       url.pathname.endsWith('.css') || 
+       url.pathname.endsWith('.html'))) {
+    url.searchParams.set('v', APP_VERSION);
+    const versionedRequest = new Request(url.toString());
+    
+    // اول از کش با نسخه چک کن
+    const cache = await caches.open(CACHE_NAMES.static);
+    const cached = await cache.match(versionedRequest);
+    
+    if (cached) {
+      console.log(`📦 بازگردانی با نسخه: ${url.pathname}`);
+      return cached;
+    }
+  }
+  
+  // جستجوی معمولی
   const cache = await caches.open(CACHE_NAMES.static);
   const cached = await cache.match(request);
   
   if (cached) {
+    console.log(`📦 بازگردانی: ${url.pathname}`);
     return cached;
   }
   
@@ -183,14 +219,22 @@ async function handleStaticRequest(request) {
     
     // اگر فایل مهمی بود، در کش ذخیره کن
     if (response.ok && isImportantFile(request.url)) {
-      cache.put(request, response.clone());
+      // با پارامتر version ذخیره کن
+      const cacheUrl = new URL(request.url);
+      if (!cacheUrl.searchParams.has('v')) {
+        cacheUrl.searchParams.set('v', APP_VERSION);
+      }
+      const cacheRequest = new Request(cacheUrl.toString());
+      cache.put(cacheRequest, response.clone());
     }
     
     return response;
   } catch (error) {
     // اگر صفحه اصلی بود، offline.html برگردان
     if (request.destination === 'document') {
-      const offline = await caches.match('./offline.html');
+      const offlineUrl = new URL('./offline.html', location.href);
+      offlineUrl.searchParams.set('v', APP_VERSION);
+      const offline = await caches.match(offlineUrl);
       if (offline) return offline;
     }
     
@@ -205,6 +249,7 @@ function isImportantFile(url) {
     /\.js$/,
     /\.woff2$/,
     /\.png$/,
+    /\.ico$/,
     /\/images\//,
     /\/fonts\//
   ];
@@ -221,28 +266,63 @@ function getLessonName(url) {
   return 'نامشخص';
 }
 
+// اطلاع‌رسانی به کلاینت‌ها برای رفرش
+async function notifyClientsToRefresh() {
+  const clients = await self.clients.matchAll();
+  clients.forEach(client => {
+    console.log(`📨 اطلاع‌رسانی به کلاینت: ${client.url}`);
+    client.postMessage({
+      type: 'NEW_VERSION_AVAILABLE',
+      version: APP_VERSION,
+      action: 'refresh'
+    });
+  });
+}
+
 // ==================== پیام‌های سیستم ====================
 self.addEventListener('message', event => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
+  const { data, source } = event;
   
-  if (event.data && event.data.type === 'CLEAR_CACHE') {
-    caches.delete(CACHE_NAMES.data).then(() => {
-      console.log('🧹 کش داده‌ها پاک شد');
-    });
-  }
-  
-  if (event.data && event.data.type === 'GET_STATUS') {
-    caches.keys().then(cacheNames => {
-      event.ports[0].postMessage({
-        type: 'STATUS',
-        version: APP_VERSION,
-        caches: cacheNames,
-        ready: true
+  switch (data?.type) {
+    case 'SKIP_WAITING':
+      console.log('⏩ پرش از مرحله انتظار درخواست شد');
+      self.skipWaiting();
+      break;
+      
+    case 'CLEAR_CACHE':
+      console.log('🧹 پاک کردن کش درخواست شد');
+      caches.delete(CACHE_NAMES.data).then(() => {
+        console.log('✅ کش داده‌ها پاک شد');
+        source?.postMessage({ type: 'CACHE_CLEARED' });
       });
-    });
+      break;
+      
+    case 'GET_STATUS':
+      caches.keys().then(cacheNames => {
+        source?.postMessage({
+          type: 'STATUS',
+          version: APP_VERSION,
+          caches: cacheNames,
+          ready: true,
+          timestamp: Date.now()
+        });
+      });
+      break;
+      
+    case 'FORCE_REFRESH':
+      console.log('🔄 رفرش اجباری درخواست شد');
+      notifyClientsToRefresh();
+      break;
   }
 });
 
-console.log('🚀 Service Worker برای English 12 App بارگذاری شد');
+// ==================== مدیریت خطاها ====================
+self.addEventListener('error', event => {
+  console.error('❌ خطا در Service Worker:', event.error);
+});
+
+self.addEventListener('unhandledrejection', event => {
+  console.error('❌ خطای Promise در Service Worker:', event.reason);
+});
+
+console.log('🚀 Service Worker برای English 12 App بارگذاری شد - نسخه ' + APP_VERSION);
