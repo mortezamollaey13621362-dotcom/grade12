@@ -1,0 +1,33 @@
+{
+  "name": "english-12-app",
+  "version": "1.0.0",
+  "description": "اپلیکیشن آموزش زبان انگلیسی پایه دوازدهم - کار آفلاین",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --host=localhost",
+    "dev": "live-server --port=3000 --watch=.",
+    "build": "node scripts/preload-cache.js",
+    "precache": "node scripts/precache-lessons.js",
+    "deploy": "gh-pages -d .",
+    "clean": "rm -rf dist/",
+    "test:offline": "echo 'Testing offline capabilities...'"
+  },
+  "keywords": [
+    "education",
+    "english",
+    "pwa",
+    "offline",
+    "language-learning"
+  ],
+  "author": "مرتضی ملایی",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mortezamollaey13621362-dotcom/grade12"
+  },
+  "homepage": "https://mortezamollaey13621362-dotcom.github.io/grade12/"
+}

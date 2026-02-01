@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>English 12 App - پایه دوازدهم</title>
-        <link rel="manifest" href="/manifest.json">
+    
+    <!-- ================= PWA Meta Tags ================= -->
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#667eea">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="English7">
-    <link rel="apple-touch-icon" href="/images/icon-192.png">
-    <!-- فونت‌ها و آیکون‌ها -->
-    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
-
-    <!-- استایل‌های پایه -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="apple-mobile-web-app-title" content="English12">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
     
-    <!-- استایل ماژول‌های اختصاصی -->
+    <!-- ================= Offline Meta Tags ================= -->
+    <meta name="description" content="اپلیکیشن آموزش زبان انگلیسی پایه دوازدهم - کار آفلاین">
+    <meta name="keywords" content="آموزش زبان, انگلیسی, پایه دوازدهم, آفلاین">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- ================= فونت‌ها و آیکون‌ها ================= -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    
+    <!-- ================= استایل‌های پایه ================= -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modern-ui.css">
+    
+    <!-- ================= استایل ماژول‌های اختصاصی ================= -->
     <link rel="stylesheet" href="css/flashcards.css">
     <link rel="stylesheet" href="css/grammar.css">
     <link rel="stylesheet" href="css/conversation.css">
@@ -24,13 +33,12 @@
     <link rel="stylesheet" href="css/speaking.css">
     <link rel="stylesheet" href="css/games.css">
     <link rel="stylesheet" href="css/review.css">
-    <!-- استایل آزمون -->
     <link rel="stylesheet" href="css/quiz.css">
-    <!-- 🆕 استایل واژگان - اضافه شد -->
     <link rel="stylesheet" href="css/vocabulary-styles.css">
-    <link rel="stylesheet" href="css/modern-ui.css">
+    
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
+    <!-- ================= استایل‌های سفارشی ================= -->
     <style>
         :root {
             --primary-color: #4a6bff;
@@ -234,7 +242,81 @@
             100% { transform: scale(1); }
         }
         
-        /* استایل‌های واکنش‌گرا */
+        /* ============ دکمه نصب PWA ============ */
+/* ============ دکمه نصب PWA ============ */
+.install-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.install-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.install-btn.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); }
+    50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(102, 126, 234, 0.7); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); }
+}
+        
+        .install-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        /* ============ حالت آفلاین ============ */
+        #offline-indicator {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: #ff6b6b;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+        }
+        
+        #offline-indicator.show {
+            display: flex;
+            animation: slideInDown 0.3s ease;
+        }
+        
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* ============ استایل‌های واکنش‌گرا ============ */
         @media (max-width: 768px) {
             .card-example-audio-bar {
                 flex-direction: row;
@@ -246,6 +328,11 @@
                 min-width: 80px;
                 padding: 5px 10px;
                 font-size: 0.75rem;
+            }
+            
+            .install-btn {
+                font-size: 12px;
+                padding: 8px 16px;
             }
         }
         
@@ -263,13 +350,16 @@
     </style>
 </head>
 <body>
+    <!-- ================= نمایش وضعیت آفلاین ================= -->
+    <div id="offline-indicator">
+        <i class="fas fa-wifi-slash"></i>
+        <span>حالت آفلاین</span>
+    </div>
 
-    <!-- کانتینر اصلی برنامه -->
+    <!-- ================= کانتینر اصلی برنامه ================= -->
     <main id="app-container">
         
-        <!-- =========================================
-             صفحه اصلی (Home Page)
-        ========================================= -->
+        <!-- ================= صفحه اصلی (Home Page) ================= -->
         <div id="home-page" class="page active">
             <div class="home-container">
                 <div class="header-section">
@@ -279,15 +369,16 @@
                     </h1>
                     <p class="app-subtitle">برنامه آموزشی تعاملی زبان انگلیسی پایه دوازدهم</p>
                     
+                    <!-- دکمه نصب PWA -->
+                    <button id="installBtn" class="install-btn" style="display: none;">
+                        <i class="fas fa-download"></i>
+                        📥 نصب اپلیکیشن
+                    </button>
+                    
                     <div class="user-stats">
                         <div class="stat-item">
                             <i class="fas fa-chart-line"></i>
                             <div>
-                               <!-- 👇 دکمه نصب PWA - اضافه کنید -->
-<button id="installBtn" class="install-btn" style="display: none;">
-    📥 نصب اپلیکیشن
-</button>
- 
                                 <span class="stat-value" id="overall-progress-text">0%</span>
                                 <span class="stat-label">پیشرفت کلی</span>
                             </div>
@@ -331,9 +422,7 @@
             </div>
         </div>
         
-        <!-- =========================================
-             صفحه درس (Lesson Page)
-        ========================================= -->
+        <!-- ================= صفحه درس (Lesson Page) ================= -->
         <div id="lesson-page" class="page">
             <div class="lesson-container">
                 <!-- نوار بالای درس -->
@@ -407,9 +496,7 @@
                     <!-- پیام پیش‌فرض -->
                     <div id="default-message" class="app-loader">یکی از بخش‌های بالا را انتخاب کنید...</div>
                     
-                    <!-- =========================================
-                         بخش HTML ماژول آزمون (Quiz)
-                    ========================================= -->
+                    <!-- ================= بخش HTML ماژول آزمون (Quiz) ================= -->
                     <div id="quiz-module" class="module-content" style="display: none;">
                         
                         <!-- ۱. کارت شروع (Intro) -->
@@ -502,7 +589,7 @@
         </div>
     </div>
 
-    <!-- ✅ ماژول‌های جاوااسکریپت - ترتیب بهینه شده -->
+    <!-- ================= ماژول‌های جاوااسکریپت ================= -->
     
     <!-- 1️⃣ ماژول‌های پایه (بدون وابستگی) -->
     <script type="module" src="js/utils/UI.js"></script>
@@ -536,203 +623,454 @@
     <!-- 8️⃣ فایل اصلی برنامه (آخرین اسکریپت) -->
     <script type="module" src="js/app.js"></script>
 
-    
-    <!-- اسکریپت‌های کمکی UI -->
-    <script>
-        // --- UI Utilities ---
-
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            const isDark = document.body.classList.contains('dark-mode');
-            localStorage.setItem('darkMode', isDark);
-            showNotification(isDark ? 'حالت شب فعال شد 🌙' : 'حالت روز فعال شد ☀️', 'info');
-        }
-        
-        function showNotification(message, type = 'info') {
-            const existing = document.querySelector('.notification');
-            if(existing) existing.remove();
-
-            const notification = document.createElement('div');
-            notification.className = `notification ${type}`;
-            notification.innerHTML = `
-                <div class="notification-content">
-                    <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-info-circle'}"></i>
-                    <span>${message}</span>
-                </div>
-            `;
-            document.body.appendChild(notification);
-            
-            requestAnimationFrame(() => notification.classList.add('show'));
-
-            setTimeout(() => {
-                notification.classList.remove('show');
-                notification.classList.add('fade-out');
-                setTimeout(() => notification.remove(), 300);
-            }, 3000);
-        }
-        
-        function showAbout() {
-            const aboutModal = document.createElement('div');
-            aboutModal.className = 'modal-overlay';
-            aboutModal.innerHTML = `
-                <div class="modal-content" style="max-width: 400px; animation: slideIn 0.3s;">
-                    <div class="modal-header">
-                        <h3><i class="fas fa-graduation-cap"></i> درباره برنامه</h3>
-                        <button class="close-modal-btn"><i class="fas fa-times"></i></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <div style="margin-bottom: 15px;">
-                            <i class="fas fa-book-reader fa-3x" style="color: var(--primary-color);"></i>
-                        </div>
-                        <h4>English 12 App</h4>
-                        <p class="text-muted">نسخه: 3.3.0 (Speaking Lab Edition)</p>
-                        <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
-                        <p>شامل ماژول‌های مکالمه، شنیدار، گرامر، مرور، آزمون و آزمایشگاه تلفظ حرفه‌ای</p>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(aboutModal);
-            
-            const close = () => aboutModal.remove();
-            aboutModal.querySelector('.close-modal-btn').onclick = close;
-            aboutModal.onclick = (e) => { if(e.target === aboutModal) close(); };
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const backBtn = document.getElementById('back-to-home');
-            if(backBtn) {
-                backBtn.addEventListener('click', () => {
-                    if(window.app && window.app.goToHome) {
-                        window.app.goToHome();
-                    } else {
-                        document.getElementById('lesson-page').classList.remove('active');
-                        document.getElementById('home-page').classList.add('active');
-                    }
-                });
-            }
-
-            if (localStorage.getItem('darkMode') === 'true') {
-                document.body.classList.add('dark-mode');
-            }
-            
-            const style = document.createElement('style');
-            style.textContent = `
-                .notification { 
-                    position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-20px); 
-                    background: white; padding: 12px 25px; border-radius: 50px; 
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.15); z-index: 10000; 
-                    opacity: 0; transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                    display: flex; align-items: center; gap: 10px; font-weight: 500;
-                }
-                .notification.show { transform: translateX(-50%) translateY(0); opacity: 1; }
-                .notification.success { border-left: 4px solid #00b894; color: #2d3436; }
-                .notification.info { border-left: 4px solid #0984e3; color: #2d3436; }
-                
-                body.dark-mode .notification {
-                    background: #2d3436;
-                    color: #dfe6e9;
-                }
-                
-                .notification-content {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                }
-                
-                .notification i {
-                    font-size: 18px;
-                }
-                
-                .notification.success i {
-                    color: #00b894;
-                }
-                
-                .notification.info i {
-                    color: #0984e3;
-                }
-                
-                .fade-out {
-                    opacity: 0 !important;
-                    transform: translateX(-50%) translateY(-20px) !important;
-                }
-            `;
-            document.head.appendChild(style); 
-        });
-    <!-- قبل از </body> -->
-
+  <!-- ================= اسکریپت‌های کمکی ================= -->
 <script>
-// ثبت Service Worker
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then((registration) => {
-        console.log('✅ Service Worker ثبت شد:', registration);
-      })
-      .catch((error) => {
-        console.log('❌ خطا در ثبت Service Worker:', error);
-      });
-  });
-}
-
-// 👇 کد جدید: مدیریت دکمه نصب PWA
-let deferredPrompt;
-const installBtn = document.getElementById('installBtn');
-
-// وقتی مرورگر آماده نصب است
-window.addEventListener('beforeinstallprompt', (e) => {
-  console.log('🎯 رویداد نصب فعال شد');
-  
-  // جلوگیری از نمایش خودکار
-  e.preventDefault();
-  
-  // ذخیره رویداد برای استفاده بعدی
-  deferredPrompt = e;
-  
-  // نمایش دکمه نصب
-  if (installBtn) {
-    installBtn.style.display = 'block';
-    console.log('✅ دکمه نصب نمایش داده شد');
-  }
-});
-
-// وقتی کاربر روی دکمه کلیک می‌کند
-if (installBtn) {
-  installBtn.addEventListener('click', async () => {
-    console.log('👆 کاربر روی دکمه نصب کلیک کرد');
-    
-    if (!deferredPrompt) {
-      console.log('❌ رویداد نصب موجود نیست');
-      return;
+    // --- UI Utilities ---
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDark);
+        showNotification(isDark ? 'حالت شب فعال شد 🌙' : 'حالت روز فعال شد ☀️', 'info');
     }
     
-    // نمایش دیالوگ نصب
-    deferredPrompt.prompt();
-    
-    // منتظر انتخاب کاربر
-    const { outcome } = await deferredPrompt.userChoice;
-    
-    console.log(`کاربر ${outcome === 'accepted' ? '✅ قبول' : '❌ رد'} کرد`);
-    
-    // پاک کردن prompt
-    deferredPrompt = null;
-    
-    // مخفی کردن دکمه
-    installBtn.style.display = 'none';
-  });
-}
+    function showNotification(message, type = 'info') {
+        const existing = document.querySelector('.notification');
+        if(existing) existing.remove();
 
-// وقتی اپ نصب شد
-window.addEventListener('appinstalled', () => {
-  console.log('🎉 اپلیکیشن با موفقیت نصب شد');
-  deferredPrompt = null;
-  
-  // نمایش پیام موفقیت
-  if (typeof showNotification === 'function') {
-    showNotification('✅ اپلیکیشن نصب شد!', 'success');
-  }
-});
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.innerHTML = `
+            <div class="notification-content">
+                <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-info-circle'}"></i>
+                <span>${message}</span>
+            </div>
+        `;
+        document.body.appendChild(notification);
+        
+        requestAnimationFrame(() => notification.classList.add('show'));
+
+        setTimeout(() => {
+            notification.classList.remove('show');
+            notification.classList.add('fade-out');
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
+    
+    function showAbout() {
+        const aboutModal = document.createElement('div');
+        aboutModal.className = 'modal-overlay';
+        aboutModal.innerHTML = `
+            <div class="modal-content" style="max-width: 400px; animation: slideIn 0.3s;">
+                <div class="modal-header">
+                    <h3><i class="fas fa-graduation-cap"></i> درباره برنامه</h3>
+                    <button class="close-modal-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div style="margin-bottom: 15px;">
+                        <i class="fas fa-book-reader fa-3x" style="color: var(--primary-color);"></i>
+                    </div>
+                    <h4>English 12 App</h4>
+                   <p class="text-muted">نسخه: 1.0.0 (۳ درس - PWA کامل)</p>
+                    <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+                    <p>شامل ماژول‌های مکالمه، شنیدار، گرامر، مرور، آزمون و آزمایشگاه تلفظ حرفه‌ای</p>
+                    <p class="text-muted mt-3"><small>⚡ حالت آفلاین فعال | 📱 PWA | 🎯 TTS آنلاین</small></p>
+                    <div class="pwa-status" id="pwa-status" style="margin-top: 15px; font-size: 12px; background: #f8f9fa; padding: 8px; border-radius: 8px;">
+                        <div>✅ PWA پشتیبانی می‌شود</div>
+                        <div id="cache-status">🔄 بررسی وضعیت کش...</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(aboutModal);
+        
+        const close = () => aboutModal.remove();
+        aboutModal.querySelector('.close-modal-btn').onclick = close;
+        aboutModal.onclick = (e) => { if(e.target === aboutModal) close(); };
+        
+        // بررسی وضعیت کش
+        checkCacheStatus();
+    }
+
+    // --- مدیریت رویدادهای PWA و آفلاین ---
+    document.addEventListener('DOMContentLoaded', () => {
+        // دکمه بازگشت به خانه
+        const backBtn = document.getElementById('back-to-home');
+        if(backBtn) {
+            backBtn.addEventListener('click', () => {
+                if(window.app && window.app.goToHome) {
+                    window.app.goToHome();
+                } else {
+                    document.getElementById('lesson-page').classList.remove('active');
+                    document.getElementById('home-page').classList.add('active');
+                }
+            });
+        }
+
+        // حالت تاریک
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+        
+        // مدیریت وضعیت آنلاین/آفلاین
+        updateOnlineStatus();
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+        
+        // PWA Installation Manager
+        let deferredPrompt;
+        const installBtn = document.getElementById('installBtn');
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            console.log('🎯 رویداد نصب PWA فعال شد');
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            if (installBtn) {
+                installBtn.style.display = 'flex';
+                installBtn.classList.add('pulse-animation');
+                console.log('✅ دکمه نصب PWA فعال شد');
+                
+                // پس از 10 ثانیه انیمیشن را متوقف کن
+                setTimeout(() => {
+                    installBtn.classList.remove('pulse-animation');
+                }, 10000);
+            }
+        });
+        
+        if (installBtn) {
+            installBtn.addEventListener('click', async () => {
+                if (!deferredPrompt) {
+                    console.log('❌ رویداد نصب موجود نیست');
+                    showNotification('سیستم نصب در دسترس نیست', 'info');
+                    return;
+                }
+                
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                
+                if (outcome === 'accepted') {
+                    showNotification('✅ اپلیکیشن در حال نصب...', 'success');
+                    installBtn.style.display = 'none';
+                    
+                    // ذخیره اینکه کاربر نصب کرده
+                    localStorage.setItem('pwa_installed', 'true');
+                } else {
+                    showNotification('نصب لغو شد. می‌توانید بعداً از دکمه نصب استفاده کنید.', 'info');
+                }
+                
+                deferredPrompt = null;
+            });
+        }
+        
+        window.addEventListener('appinstalled', () => {
+            console.log('🎉 اپلیکیشن نصب شد');
+            deferredPrompt = null;
+            
+            if (installBtn) {
+                installBtn.style.display = 'none';
+                installBtn.classList.remove('pulse-animation');
+            }
+            
+            showNotification('✅ اپلیکیشن با موفقیت نصب شد!', 'success');
+            
+            // نشانگر نصب شده
+            localStorage.setItem('pwa_installed', 'true');
+            
+            // اگر روی دسکتاپ نصب شده، پنجره را ببند
+            if (window.matchMedia('(display-mode: standalone)').matches) {
+                setTimeout(() => {
+                    if (window.history.length > 1) {
+                        window.close();
+                    }
+                }, 2000);
+            }
+        });
+        
+        // ثبت Service Worker با مدیریت بهتر
+        registerServiceWorker();
+        
+        // بررسی اگر قبلاً نصب شده
+        checkIfAlreadyInstalled();
+        
+        // استایل برای notification
+        const style = document.createElement('style');
+        style.textContent = `
+            .notification { 
+                position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-20px); 
+                background: white; padding: 12px 25px; border-radius: 50px; 
+                box-shadow: 0 10px 30px rgba(0,0,0,0.15); z-index: 10000; 
+                opacity: 0; transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                display: flex; align-items: center; gap: 10px; font-weight: 500;
+            }
+            .notification.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+            .notification.success { border-left: 4px solid #00b894; color: #2d3436; }
+            .notification.info { border-left: 4px solid #0984e3; color: #2d3436; }
+            .notification.warning { border-left: 4px solid #fdcb6e; color: #2d3436; }
+            
+            body.dark-mode .notification {
+                background: #2d3436;
+                color: #dfe6e9;
+            }
+            
+            .notification-content {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .notification i {
+                font-size: 18px;
+            }
+            
+            .notification.success i {
+                color: #00b894;
+            }
+            
+            .notification.info i {
+                color: #0984e3;
+            }
+            
+            .notification.warning i {
+                color: #fdcb6e;
+            }
+            
+            .fade-out {
+                opacity: 0 !important;
+                transform: translateX(-50%) translateY(-20px) !important;
+            }
+            
+            /* انیمیشن برای دکمه نصب */
+            .pulse-animation {
+                animation: pulse 2s infinite;
+            }
+            
+            /* وضعیت PWA در مودال درباره */
+            .pwa-status div {
+                margin: 3px 0;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            body.dark-mode .pwa-status {
+                background: #2d3436;
+                color: #dfe6e9;
+            }
+        `;
+        document.head.appendChild(style);
+    });
+    
+    // ==================== توابع کمکی PWA ====================
+    
+    // تابع تشخیص وضعیت آنلاین/آفلاین
+    function updateOnlineStatus() {
+        const offlineIndicator = document.getElementById('offline-indicator');
+        
+        if (!navigator.onLine) {
+            offlineIndicator.classList.add('show');
+            showNotification('📶 شما در حالت آفلاین هستید. اپلیکیشن همچنان کار می‌کند.', 'info');
+            
+            // بررسی اگر داده‌های ضروری کش شده‌اند
+            checkEssentialData();
+        } else {
+            offlineIndicator.classList.remove('show');
+            
+            // وقتی آنلاین شدیم، پیش‌بارگذاری کنیم
+            setTimeout(prefetchLessonData, 3000);
+        }
+    }
+    
+    // ثبت Service Worker
+    async function registerServiceWorker() {
+        if ('serviceWorker' in navigator) {
+            try {
+                const registration = await navigator.serviceWorker.register('sw.js', {
+                    scope: './',
+                    updateViaCache: 'none'
+                });
+                
+                console.log('✅ Service Worker ثبت شد:', registration.scope);
+                
+                // گوش دادن به آپدیت‌ها
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    console.log('🔄 Service Worker در حال آپدیت...');
+                    
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            showNotification('🔄 آپدیت جدید موجود است. صفحه را رفرش کنید.', 'info');
+                        }
+                    });
+                });
+                
+                // بررسی وضعیت کش
+                checkCacheStatus();
+                
+            } catch (error) {
+                console.error('❌ خطا در ثبت Service Worker:', error);
+                showNotification('⚠️ برخی قابلیت‌های آفلاین ممکن است کار نکند', 'warning');
+            }
+        } else {
+            console.warn('⚠️ Service Worker پشتیبانی نمی‌شود');
+            showNotification('⚠️ مرورگر شما قابلیت آفلاین کامل را پشتیبانی نمی‌کند', 'warning');
+        }
+    }
+    
+    // بررسی اگر اپ قبلاً نصب شده
+    function checkIfAlreadyInstalled() {
+        const installBtn = document.getElementById('installBtn');
+        
+        // روش‌های مختلف تشخیص نصب PWA
+        const isInstalled = 
+            window.matchMedia('(display-mode: standalone)').matches ||
+            window.matchMedia('(display-mode: fullscreen)').matches ||
+            window.matchMedia('(display-mode: minimal-ui)').matches ||
+            window.navigator.standalone ||
+            localStorage.getItem('pwa_installed') === 'true';
+        
+        if (isInstalled && installBtn) {
+            installBtn.style.display = 'none';
+            console.log('✅ اپ قبلاً نصب شده است');
+        }
+    }
+    
+    // بررسی وضعیت کش
+    async function checkCacheStatus() {
+        if (!('caches' in window)) return;
+        
+        try {
+            const cacheNames = await caches.keys();
+            const englishCaches = cacheNames.filter(name => name.includes('english-app'));
+            
+            if (englishCaches.length > 0) {
+                console.log('📊 کش‌های موجود:', englishCaches);
+                
+                // آپدیت وضعیت در مودال درباره
+                const statusElement = document.getElementById('cache-status');
+                if (statusElement) {
+                    statusElement.innerHTML = `✅ ${englishCaches.length} کش فعال`;
+                }
+                
+                return true;
+            } else {
+                console.log('📊 هیچ کشی یافت نشد');
+                return false;
+            }
+        } catch (error) {
+            console.error('❌ خطا در بررسی وضعیت کش:', error);
+            return false;
+        }
+    }
+    
+    // بررسی داده‌های ضروری
+    async function checkEssentialData() {
+        if (!('caches' in window)) return;
+        
+        try {
+            const cache = await caches.open('english-app-static-v4');
+            const essentialUrls = [
+                'index.html',
+                'lesson.html',
+                'js/app.js',
+                'css/style.css'
+            ];
+            
+            let missingCount = 0;
+            
+            for (const url of essentialUrls) {
+                const response = await cache.match(url);
+                if (!response) {
+                    missingCount++;
+                }
+            }
+            
+            if (missingCount > 0) {
+                console.warn(`⚠️ ${missingCount} فایل ضروری در کش موجود نیست`);
+                showNotification('برخی داده‌ها در حالت آفلاین ممکن است در دسترس نباشند', 'warning');
+            } else {
+                console.log('✅ همه فایل‌های ضروری در کش موجود هستند');
+            }
+            
+        } catch (error) {
+            console.error('❌ خطا در بررسی داده‌های ضروری:', error);
+        }
+    }
+    
+    // پیش‌بارگذاری داده‌های درس‌ها
+    async function prefetchLessonData() {
+        // فقط اگر کاربر آنلاین است و قبلاً انجام نشده
+        if (!navigator.onLine) return;
+        
+        const lastPrefetch = localStorage.getItem('last_prefetch');
+        const now = Date.now();
+        
+        // اگر کمتر از 6 ساعت گذشته، انجام نده
+        if (lastPrefetch && (now - parseInt(lastPrefetch)) < 6 * 60 * 60 * 1000) {
+            return;
+        }
+        
+        console.log('📥 شروع پیش‌بارگذاری داده‌های درس‌ها...');
+        showNotification('📚 در حال آماده‌سازی داده‌ها برای آفلاین...', 'info');
+        
+        try {
+            // پیش‌بارگذاری درس‌های 1 تا 8
+            const lessonsToPrefetch = [1, 2, 3, 4, 5, 6, 7, 8];
+            let successCount = 0;
+            
+            for (const lessonId of lessonsToPrefetch) {
+                try {
+                    // سعی کن داده‌ها را بگیر و در کش ذخیره کن
+                    const response = await fetch(`data/lesson${lessonId}/vocab.json`);
+                    if (response.ok) {
+                        const cache = await caches.open('english-app-data-v4');
+                        await cache.put(`data/lesson${lessonId}/vocab.json`, response.clone());
+                        successCount++;
+                        console.log(`✅ درس ${lessonId} پیش‌بارگذاری شد`);
+                    }
+                } catch (error) {
+                    console.warn(`⚠️ خطا در پیش‌بارگذاری درس ${lessonId}:`, error);
+                }
+                
+                // وقفه کوچک برای جلوگیری از overload
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
+            
+            localStorage.setItem('last_prefetch', now.toString());
+            
+            if (successCount > 0) {
+                console.log(`✅ ${successCount}/8 درس با موفقیت پیش‌بارگذاری شدند`);
+                showNotification(`✅ ${successCount} درس برای آفلاین آماده شدند`, 'success');
+            }
+            
+        } catch (error) {
+            console.error('❌ خطا در پیش‌بارگذاری:', error);
+        }
+    }
+    
+    // تابع کمکی برای مدیریت کش (می‌تواند از داخل اپ هم فراخوانی شود)
+    window.pwaUtils = {
+        checkCacheStatus,
+        prefetchLessonData,
+        checkEssentialData,
+        isPwaSupported: 'serviceWorker' in navigator && 'caches' in window,
+        getInstallStatus: function() {
+            return {
+                isInstalled: window.matchMedia('(display-mode: standalone)').matches || 
+                            window.navigator.standalone ||
+                            localStorage.getItem('pwa_installed') === 'true',
+                supportsPwa: 'serviceWorker' in navigator,
+                supportsCache: 'caches' in window,
+                isOnline: navigator.onLine
+            };
+        }
+    };
+    
+    // شروع پیش‌بارگذاری بعد از 5 ثانیه (اگر آنلاین هستیم)
+    if (navigator.onLine) {
+        setTimeout(() => {
+            prefetchLessonData().catch(console.error);
+        }, 5000);
+    }
 </script>
-
-
 </body>
 </html>

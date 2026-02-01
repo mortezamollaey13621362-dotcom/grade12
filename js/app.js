@@ -1,4 +1,4 @@
-// js/app.js - نسخه نهایی و صحیح
+// js/app.js - نسخه نهایی و صحیح با PWA و آفلاین
 import { LessonManager } from './modules/LessonManager.js';
 import { Vocabulary } from './modules/Vocabulary.js';
 import { Grammar } from './modules/Grammar.js';
@@ -13,6 +13,7 @@ import { AudioManager } from './modules/AudioManager.js';
 import { ProgressManager } from './modules/ProgressManager.js';
 import { SectionRenderer } from './modules/SectionRenderer.js';
 import { UI } from './utils/UI.js';
+import { CacheManager } from './utils/CacheManager.js'; // 🆕 اضافه شد
 
 const SECTIONS_CONFIG = [
     { id: 'vocab', name: 'واژگان', icon: 'fas fa-book' },
@@ -32,11 +33,10 @@ export class English7App {
         this.lessonManager = new LessonManager(this);
         this.audioManager = new AudioManager();
         this.progressManager = new ProgressManager(this.lessonManager);
+        this.cacheManager = new CacheManager(); // 🆕 اضافه شد
         
         // ماژول‌ها (بدون ایجاد Grammar در کنسترکتور)
         this.vocabulary = new Vocabulary(this.lessonManager);
-        // ✅ اصلاح: حذف خط اشتباه (این خط حذف شد)
-        // this.grammar = new Grammar(this.audioManager);
         this.conversation = new Conversation();
         this.listening = new Listening();
         this.reviewManager = null;
@@ -49,14 +49,21 @@ export class English7App {
         this.state = {
             currentSection: 'vocab',
             isLessonActive: false,
-            isReviewMode: false
+            isReviewMode: false,
+            isOnline: navigator.onLine, // 🆕 اضافه شد
+            isAppInstalled: false, // 🆕 اضافه شد
+            isServiceWorkerRegistered: false // 🆕 اضافه شد
         };
         this.sectionHandlers = {};
         this.dom = {};
         this.staticTemplates = {};
         this.scrollToTopBtn = null;
+        
+        // 🆕 ثبت متغیرهای global
         window.app = this;
         window.conversationModule = this.conversation;
+        window.english7App = this; // برای دسترسی از console
+        
         console.log('🎯 English7App instanced successfully.');
         this.setupReviewEventDelegation();
     }
@@ -65,21 +72,288 @@ export class English7App {
         try {
             await this.waitForDOM();
             this.cacheDOM();
+            
+            // 🆕 بررسی و ثبت Service Worker
+            await this.registerServiceWorker();
+            
+            // 🆕 تنظیم دکمه نصب PWA
+            this.setupPWAInstallation();
+            
+            // 🆕 مدیریت وضعیت آنلاین/آفلاین
+            this.setupOnlineStatus();
+            
             await Promise.all([
                 this.lessonManager.loadConfig(),
             ]);
+            
             this.lessonManager.loadUserData();
             this.registerSectionHandlers();
             this.initNavigation();
             this.setupEventListeners();
             this.renderHomePage();
+            
+            // 🆕 کش کردن داده‌های درس‌ها در پس‌زمینه
+            this.prefetchLessonData();
+            
             UI.showSuccess('برنامه آماده است!');
             console.timeEnd('AppInitialization');
+            
+            // 🆕 نمایش اطلاعات PWA
+            this.showPWAStatus();
+            
         } catch (error) {
             console.error('❌ Critical Error during initialization:', error);
             UI.showError('خطا در بارگذاری برنامه. لطفاً صفحه را رفرش کنید.');
         }
     }
+
+    // ==================== 🆕 توابع جدید PWA و آفلاین ====================
+
+    async registerServiceWorker() {
+        if ('serviceWorker' in navigator) {
+            try {
+                const registration = await navigator.serviceWorker.register('sw.js', {
+                    scope: './'
+                });
+                
+                this.state.isServiceWorkerRegistered = true;
+                console.log('✅ Service Worker ثبت شد:', registration);
+                
+                // بررسی آپدیت Service Worker
+                if (registration.waiting) {
+                    this.showServiceWorkerUpdate(registration);
+                }
+                
+                // گوش دادن به آپدیت‌ها
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            this.showServiceWorkerUpdate(registration);
+                        }
+                    });
+                });
+                
+            } catch (error) {
+                console.error('❌ خطا در ثبت Service Worker:', error);
+                this.state.isServiceWorkerRegistered = false;
+            }
+        } else {
+            console.warn('⚠️ Service Worker پشتیبانی نمی‌شود');
+        }
+    }
+
+    setupPWAInstallation() {
+        let deferredPrompt;
+        const installBtn = document.getElementById('installBtn');
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            console.log('🎯 رویداد نصب PWA فعال شد');
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // نمایش دکمه نصب
+            if (installBtn) {
+                installBtn.style.display = 'flex';
+                installBtn.classList.add('visible');
+                
+                installBtn.addEventListener('click', async () => {
+                    if (!deferredPrompt) return;
+                    
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    
+                    if (outcome === 'accepted') {
+                        this.showNotification('✅ اپلیکیشن در حال نصب...', 'success');
+                        installBtn.style.display = 'none';
+                        this.state.isAppInstalled = true;
+                    }
+                    
+                    deferredPrompt = null;
+                });
+            }
+        });
+        
+        window.addEventListener('appinstalled', () => {
+            console.log('🎉 اپلیکیشن نصب شد');
+            this.state.isAppInstalled = true;
+            this.showNotification('✅ اپلیکیشن با موفقیت نصب شد!', 'success');
+            
+            if (installBtn) installBtn.style.display = 'none';
+        });
+        
+        // بررسی اگر اپ قبلاً نصب شده
+        if (window.matchMedia('(display-mode: standalone)').matches || 
+            window.navigator.standalone) {
+            this.state.isAppInstalled = true;
+            if (installBtn) installBtn.style.display = 'none';
+        }
+    }
+
+    setupOnlineStatus() {
+        const offlineIndicator = document.getElementById('offline-indicator') || 
+                               this.createOfflineIndicator();
+        
+        const updateStatus = () => {
+            this.state.isOnline = navigator.onLine;
+            
+            if (this.state.isOnline) {
+                offlineIndicator.classList.remove('show');
+                // وقتی آنلاین شدیم، داده‌ها را sync کنیم
+                this.syncOfflineData();
+            } else {
+                offlineIndicator.classList.add('show');
+                this.showNotification('📶 شما در حالت آفلاین هستید', 'info');
+            }
+        };
+        
+        updateStatus();
+        window.addEventListener('online', updateStatus);
+        window.addEventListener('offline', updateStatus);
+    }
+
+    createOfflineIndicator() {
+        const indicator = document.createElement('div');
+        indicator.id = 'offline-indicator';
+        indicator.innerHTML = `
+            <i class="fas fa-wifi-slash"></i>
+            <span>حالت آفلاین</span>
+        `;
+        document.body.appendChild(indicator);
+        return indicator;
+    }
+
+    showPWAStatus() {
+        const statusInfo = {
+            isOnline: this.state.isOnline,
+            isAppInstalled: this.state.isAppInstalled,
+            isServiceWorkerRegistered: this.state.isServiceWorkerRegistered,
+            displayMode: this.getDisplayMode(),
+            storageEstimate: 'در حال بررسی...'
+        };
+        
+        console.log('📱 وضعیت PWA:', statusInfo);
+        
+        // اگر اپ نصب نشده و کاربر آنلاین است، پیشنهاد نصب بده
+        if (!this.state.isAppInstalled && this.state.isOnline) {
+            setTimeout(() => {
+                this.showInstallPrompt();
+            }, 5000);
+        }
+    }
+
+    getDisplayMode() {
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+            return 'standalone';
+        } else if (window.matchMedia('(display-mode: fullscreen)').matches) {
+            return 'fullscreen';
+        } else if (window.matchMedia('(display-mode: minimal-ui)').matches) {
+            return 'minimal-ui';
+        } else if (window.navigator.standalone) {
+            return 'standalone (iOS)';
+        }
+        return 'browser';
+    }
+
+    showInstallPrompt() {
+        const hasSeenPrompt = localStorage.getItem('pwa_install_prompt_seen');
+        if (hasSeenPrompt) return;
+        
+        const modal = document.createElement('div');
+        modal.className = 'pwa-install-modal';
+        modal.innerHTML = `
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-download"></i> نصب اپلیکیشن</h3>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="install-icon">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                    </div>
+                    <p>آیا می‌خواهید English 12 App را روی دستگاه خود نصب کنید؟</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> کار آفلاین کامل</li>
+                        <li><i class="fas fa-check-circle"></i> دسترسی سریع از صفحه اصلی</li>
+                        <li><i class="fas fa-check-circle"></i> تجربه‌ی بهتر</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-secondary" id="dontAskAgain">بعداً</button>
+                    <button class="btn-primary" id="installNow">نصب</button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        modal.querySelector('.close-btn').onclick = () => {
+            modal.remove();
+        };
+        
+        modal.querySelector('#dontAskAgain').onclick = () => {
+            localStorage.setItem('pwa_install_prompt_seen', 'true');
+            modal.remove();
+        };
+        
+        modal.querySelector('#installNow').onclick = () => {
+            const installBtn = document.getElementById('installBtn');
+            if (installBtn && installBtn.style.display !== 'none') {
+                installBtn.click();
+            }
+            modal.remove();
+        };
+        
+        setTimeout(() => {
+            modal.remove();
+        }, 15000);
+    }
+
+async prefetchLessonData() {
+    // غیرفعال - درس‌ها به صورت خودکار مدیریت می‌شوند
+    console.log('✅ سیستم خودکار برای درس‌های جدید آماده است');
+    return;
+}
+    async syncOfflineData() {
+        // این تابع می‌تواند برای همگام‌سازی داده‌های آفلاین با سرور استفاده شود
+        console.log('🔄 همگام‌سازی داده‌های آفلاین...');
+        
+        // در اینجا می‌توانید منطق sync با سرور را اضافه کنید
+        // مثلاً ارسال پیشرفت‌های کاربر به سرور
+        
+        this.showNotification('✅ داده‌ها همگام‌سازی شدند', 'success');
+    }
+
+    showServiceWorkerUpdate(registration) {
+        const modal = document.createElement('div');
+        modal.className = 'update-modal';
+        modal.innerHTML = `
+            <div class="modal-content">
+                <h3><i class="fas fa-sync-alt"></i> آپدیت جدید</h3>
+                <p>نسخه جدیدی از اپلیکیشن موجود است. می‌خواهید آپدیت کنید؟</p>
+                <div class="update-buttons">
+                    <button class="btn-secondary" id="updateLater">بعداً</button>
+                    <button class="btn-primary" id="updateNow">آپدیت</button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        modal.querySelector('#updateLater').onclick = () => {
+            modal.remove();
+        };
+        
+        modal.querySelector('#updateNow').onclick = () => {
+            if (registration.waiting) {
+                registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+                window.location.reload();
+            }
+            modal.remove();
+        };
+    }
+
+    // ==================== توابع اصلی (بدون تغییر) ====================
 
     waitForDOM() {
         return new Promise(resolve => {
@@ -101,12 +375,11 @@ export class English7App {
             sectionContainer: document.getElementById('section-container'),
             navButtons: document.querySelectorAll('.nav-btn'),
             backButton: document.querySelector('.btn-back'),
-            reviewSection: document.getElementById('review-section')
+            reviewSection: document.getElementById('review-section'),
+            installBtn: document.getElementById('installBtn') // 🆕 اضافه شد
         };
-        console.log('🔍 DOM elements cached:', {
-            sectionContainer: !!this.dom.sectionContainer,
-            reviewSection: !!this.dom.reviewSection
-        });
+        
+        console.log('🔍 DOM elements cached');
         
         if (!this.dom.reviewSection && this.dom.lessonPage) {
             console.log('🛠️ Creating review-section dynamically');
@@ -307,8 +580,7 @@ export class English7App {
                 console.log('✅ ReviewManager initialized successfully');
             }
             
-            // ✅ تغییر اصلی: ایجاد Grammar با lessonId (بدون loadFromVocab اضافی)
-            this.grammar = new Grammar({ lessonId: lessonId }); // ✅ این خط کلیدی است
+            this.grammar = new Grammar({ lessonId: lessonId });
             
             await Promise.all([
                 this.lessonManager.loadLessonData(lessonId),

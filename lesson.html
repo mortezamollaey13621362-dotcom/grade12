@@ -2,44 +2,784 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>درس - English7App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title id="page-title">در حال بارگذاری... - English 12 App</title>
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- ================= PWA Meta Tags ================= -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="English12">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+    
+    <!-- ================= فونت‌ها ================= -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    
+    <!-- ================= CSS Files ================= -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modern-ui.css">
+    <link rel="stylesheet" href="css/vocabulary-styles.css">
+    <link rel="stylesheet" href="css/grammar.css">
+    <link rel="stylesheet" href="css/conversation.css">
+    <link rel="stylesheet" href="css/listening.css">
+    <link rel="stylesheet" href="css/speaking.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/flashcards.css">
+    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/review.css">
+    
+    <!-- ================= استایل‌های اختصاصی ================= -->
+    <style>
+        :root {
+            --primary-color: #4a6bff;
+            --secondary-color: #667eea;
+            --success-color: #00b894;
+            --warning-color: #fdcb6e;
+            --danger-color: #d63031;
+            --bg-light: #f8f9fa;
+            --bg-dark: #2d3436;
+            --text-light: #2d3436;
+            --text-dark: #dfe6e9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+        
+        body.dark-mode {
+            background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+            color: var(--text-dark);
+        }
+        
+        /* ============ کانتینر اصلی ============ */
+        .lesson-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        body.dark-mode .lesson-container {
+            background: var(--bg-dark);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* ============ دکمه بازگشت ============ */
+        .back-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+        
+        .back-button span:first-child {
+            font-size: 24px;
+        }
+        
+        /* ============ هدر درس ============ */
+        .lesson-header {
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        body.dark-mode .lesson-header {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .lesson-header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            direction: rtl;
+            font-weight: 700;
+        }
+        
+        .lesson-header p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        body.dark-mode .lesson-header p {
+            color: #aaa;
+        }
+        
+        /* ============ نوار پیشرفت ============ */
+        .progress-bar-container {
+            width: 100%;
+            height: 12px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px auto 10px;
+            max-width: 600px;
+        }
+        
+        body.dark-mode .progress-bar-container {
+            background: #495057;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #00b894, #00cec9);
+            border-radius: 10px;
+            transition: width 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-image: linear-gradient(
+                -45deg,
+                rgba(255, 255, 255, 0.2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.2) 75%,
+                transparent 75%,
+                transparent
+            );
+            background-size: 40px 40px;
+            animation: progressShine 2s linear infinite;
+        }
+        
+        @keyframes progressShine {
+            0% { background-position: 0 0; }
+            100% { background-position: 40px 0; }
+        }
+        
+        .progress-text {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+        
+        body.dark-mode .progress-text {
+            color: #aaa;
+        }
+        
+        /* ============ گرید بخش‌ها ============ */
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+        
+        .section-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid #e9ecef;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        body.dark-mode .section-card {
+            background: #2d3436;
+            border-color: #495057;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        body.dark-mode .section-card:hover {
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+        
+        .section-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+        
+        body.dark-mode .section-title {
+            color: var(--text-dark);
+        }
+        
+        .section-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        body.dark-mode .section-description {
+            color: #aaa;
+        }
+        
+        .section-progress {
+            width: 100%;
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        
+        body.dark-mode .section-progress {
+            background: #495057;
+        }
+        
+        .section-progress-bar {
+            height: 100%;
+            background: var(--success-color);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+        
+        .section-status {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--success-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+        
+        .section-status.locked {
+            background: var(--danger-color);
+        }
+        
+        .section-status.completed {
+            background: var(--success-color);
+        }
+        
+        /* ============ نمایش وضعیت آفلاین ============ */
+        #offline-indicator {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #ff6b6b;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+        }
+        
+        #offline-indicator.show {
+            display: flex;
+            animation: slideInDown 0.3s ease;
+        }
+        
+        /* ============ بارگذاری ============ */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            gap: 20px;
+        }
+        
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(102, 126, 234, 0.2);
+            border-top-color: var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        body.dark-mode .loading-text {
+            color: #aaa;
+        }
+        
+        /* ============ رسپانسیو ============ */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .lesson-container {
+                border-radius: 15px;
+            }
+            
+            .lesson-header {
+                padding: 20px;
+            }
+            
+            .lesson-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .sections-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+                padding: 20px;
+            }
+            
+            .section-card {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .sections-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .back-button {
+                width: calc(100% - 40px);
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- کانتینر اصلی -->
+    <!-- ================= نمایش وضعیت آفلاین ================= -->
+    <div id="offline-indicator">
+        <i class="fas fa-wifi-slash"></i>
+        <span>حالت آفلاین</span>
+    </div>
+    
+    <!-- ================= کانتینر اصلی ================= -->
     <div class="lesson-container">
         
-        <!-- دکمه بازگشت -->
+        <!-- ================= دکمه بازگشت ================= -->
         <button class="back-button" onclick="goBack()">
             <span>←</span>
             <span>بازگشت به صفحه اصلی</span>
         </button>
         
-        <!-- هدر درس -->
+        <!-- ================= هدر درس ================= -->
         <div class="lesson-header">
             <h1 id="lessonTitle">در حال بارگذاری...</h1>
             <p id="lessonDescription">لطفاً صبر کنید</p>
             
-            <!-- نوار پیشرفت -->
+            <!-- ================= نوار پیشرفت ================= -->
             <div class="progress-bar-container">
                 <div class="progress-bar" id="lessonProgress" style="width: 0%"></div>
             </div>
             <p class="progress-text" id="progressText">0% تکمیل شده</p>
         </div>
         
-        <!-- گرید بخش‌ها -->
+        <!-- ================= گرید بخش‌ها ================= -->
         <div class="sections-grid" id="sectionsGrid">
-            <!-- بخش‌ها به صورت داینامیک اضافه می‌شوند -->
+            <!-- ================= حالت بارگذاری ================= -->
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">در حال بارگذاری محتوای درس...</p>
+            </div>
         </div>
         
     </div>
     
-    <!-- Scripts -->
-    <script src="js/app.js"></script>
-    <script src="js/lesson-ui.js"></script>
+    <!-- ================= Scripts ================= -->
+    
+    <!-- ماژول‌های پایه -->
+    <script type="module" src="js/utils/UI.js"></script>
+    <script type="module" src="js/utils/Storage.js"></script>
+    
+    <!-- ماژول‌های اصلی -->
+    <script type="module" src="js/modules/LessonManager.js"></script>
+    <script type="module" src="js/modules/ProgressManager.js"></script>
+    <script type="module" src="js/modules/SectionRenderer.js"></script>
+    
+    <!-- اسکریپت مدیریت صفحه درس -->
+    <script type="module" src="js/lesson-ui.js"></script>
+    
+    <!-- اسکریپت‌های کمکی -->
+    <script>
+        // ==================== توابع عمومی ====================
+        
+        // بازگشت به صفحه اصلی
+        function goBack() {
+            // تلاش برای استفاده از ماژول app
+            if (window.app && window.app.goToHome) {
+                window.app.goToHome();
+            } else {
+                // روش جایگزین
+                window.location.href = 'index.html';
+            }
+        }
+        
+        // ==================== مدیریت وضعیت آفلاین ====================
+        function updateOnlineStatus() {
+            const offlineIndicator = document.getElementById('offline-indicator');
+            
+            if (!navigator.onLine) {
+                offlineIndicator.classList.add('show');
+            } else {
+                offlineIndicator.classList.remove('show');
+            }
+        }
+        
+        // ==================== نمایش نوتیفیکیشن ====================
+        function showNotification(message, type = 'info') {
+            const existing = document.querySelector('.notification');
+            if(existing) existing.remove();
+
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-info-circle'}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            document.body.appendChild(notification);
+            
+            requestAnimationFrame(() => notification.classList.add('show'));
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+                notification.classList.add('fade-out');
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+        
+        // ==================== بارگذاری داده‌های درس ====================
+        async function loadLessonData(lessonId) {
+            try {
+                // ابتدا از کش بخوان
+                const cache = await caches.open('english-app-data');
+                const cachedResponse = await cache.match(`./data/lesson${lessonId}/data.json`);
+                
+                if (cachedResponse) {
+                    return await cachedResponse.json();
+                }
+                
+                // اگر در کش نبود، از شبکه بگیر
+                const response = await fetch(`./data/lesson${lessonId}/data.json`);
+                if (!response.ok) throw new Error('درس یافت نشد');
+                
+                const data = await response.json();
+                
+                // در کش ذخیره کن
+                cache.put(`./data/lesson${lessonId}/data.json`, response.clone());
+                
+                return data;
+            } catch (error) {
+                console.error('خطا در بارگذاری درس:', error);
+                showNotification('خطا در بارگذاری درس. لطفاً اتصال اینترنت را بررسی کنید.', 'error');
+                return null;
+            }
+        }
+        
+        // ==================== ساختاردهی بخش‌ها ====================
+        const sections = [
+            {
+                id: 'vocab',
+                title: 'واژگان',
+                description: 'یادگیری کلمات جدید و تمرین تلفظ',
+                icon: 'fas fa-book',
+                color: '#4a90e2'
+            },
+            {
+                id: 'grammar',
+                title: 'گرامر',
+                description: 'آموزش قواعد دستوری',
+                icon: 'fas fa-pen-nib',
+                color: '#00b894'
+            },
+            {
+                id: 'conversation',
+                title: 'مکالمه',
+                description: 'دیالوگ‌های کاربردی',
+                icon: 'fas fa-comments',
+                color: '#fd79a8'
+            },
+            {
+                id: 'speaking',
+                title: 'گفتار',
+                description: 'تمرین تلفظ و صحبت کردن',
+                icon: 'fas fa-microphone',
+                color: '#e17055'
+            },
+            {
+                id: 'listening',
+                title: 'شنیدار',
+                description: 'تقویت مهارت شنیداری',
+                icon: 'fas fa-headphones',
+                color: '#6c5ce7'
+            },
+            {
+                id: 'review',
+                title: 'مرور',
+                description: 'مرور با سیستم Leitner',
+                icon: 'fas fa-redo',
+                color: '#fdcb6e'
+            },
+            {
+                id: 'quiz',
+                title: 'آزمون',
+                description: 'آزمون پایان درس',
+                icon: 'fas fa-clipboard-list',
+                color: '#a29bfe'
+            },
+            {
+                id: 'games',
+                title: 'بازی',
+                description: 'یادگیری با بازی',
+                icon: 'fas fa-gamepad',
+                color: '#55efc4'
+            },
+            {
+                id: 'flashcard',
+                title: 'فلش‌کارت',
+                description: 'یادگیری با فلش‌کارت',
+                icon: 'fas fa-layer-group',
+                color: '#81ecec'
+            }
+        ];
+        
+        // ==================== رندر بخش‌ها ====================
+        function renderSections(lessonId) {
+            const sectionsGrid = document.getElementById('sectionsGrid');
+            
+            if (!sectionsGrid) return;
+            
+            sectionsGrid.innerHTML = '';
+            
+            sections.forEach(section => {
+                const progress = localStorage.getItem(`progress-${lessonId}-${section.id}`) || 0;
+                const status = progress >= 100 ? 'completed' : 'unlocked';
+                
+                const sectionCard = document.createElement('div');
+                sectionCard.className = 'section-card';
+                sectionCard.dataset.sectionId = section.id;
+                sectionCard.dataset.lessonId = lessonId;
+                
+                sectionCard.innerHTML = `
+                    ${status === 'completed' ? '<span class="section-status completed">✓ تکمیل شد</span>' : 
+                      status === 'locked' ? '<span class="section-status locked">قفل شده</span>' : 
+                      '<span class="section-status">آزاد</span>'}
+                    
+                    <div class="section-icon" style="color: ${section.color}">
+                        <i class="${section.icon}"></i>
+                    </div>
+                    
+                    <h3 class="section-title">${section.title}</h3>
+                    <p class="section-description">${section.description}</p>
+                    
+                    <div class="section-progress">
+                        <div class="section-progress-bar" style="width: ${progress}%"></div>
+                    </div>
+                    
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 5px;">
+                        ${progress}% تکمیل شده
+                    </p>
+                `;
+                
+                sectionCard.addEventListener('click', () => {
+                    if (status === 'locked') {
+                        showNotification('این بخش قفل شده است. ابتدا بخش‌های قبلی را تکمیل کنید.', 'info');
+                        return;
+                    }
+                    
+                    // باز کردن بخش مورد نظر
+                    openSection(lessonId, section.id);
+                });
+                
+                sectionsGrid.appendChild(sectionCard);
+            });
+        }
+        
+        // ==================== باز کردن بخش ====================
+        function openSection(lessonId, sectionId) {
+            showNotification(`در حال بارگذاری ${sectionId}...`, 'info');
+            
+            // ذخیره آخرین بخش باز شده
+            localStorage.setItem('last-section', JSON.stringify({
+                lessonId,
+                sectionId,
+                timestamp: Date.now()
+            }));
+            
+            // بازگشت به صفحه اصلی با پارامتر
+            setTimeout(() => {
+                window.location.href = `index.html?lesson=${lessonId}&section=${sectionId}`;
+            }, 500);
+        }
+        
+        // ==================== مقداردهی اولیه ====================
+        document.addEventListener('DOMContentLoaded', () => {
+            // مدیریت وضعیت آفلاین
+            updateOnlineStatus();
+            window.addEventListener('online', updateOnlineStatus);
+            window.addEventListener('offline', updateOnlineStatus);
+            
+            // خواندن پارامترهای URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const lessonId = urlParams.get('lesson') || '1';
+            
+            // بارگذاری درس
+            loadLesson(lessonId);
+            
+            // استایل نوتیفیکیشن
+            const style = document.createElement('style');
+            style.textContent = `
+                .notification {
+                    position: fixed;
+                    top: 20px;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-20px);
+                    background: white;
+                    padding: 12px 25px;
+                    border-radius: 50px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+                    z-index: 10000;
+                    opacity: 0;
+                    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-weight: 500;
+                }
+                
+                body.dark-mode .notification {
+                    background: #2d3436;
+                    color: #dfe6e9;
+                }
+                
+                .notification.show {
+                    transform: translateX(-50%) translateY(0);
+                    opacity: 1;
+                }
+                
+                .notification.success {
+                    border-left: 4px solid #00b894;
+                }
+                
+                .notification.info {
+                    border-left: 4px solid #0984e3;
+                }
+                
+                .notification.error {
+                    border-left: 4px solid #d63031;
+                }
+                
+                .notification-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                
+                .fade-out {
+                    opacity: 0 !important;
+                    transform: translateX(-50%) translateY(-20px) !important;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+        
+        // ==================== بارگذاری درس ====================
+        async function loadLesson(lessonId) {
+            try {
+                document.getElementById('lessonTitle').textContent = `درس ${lessonId}`;
+                document.getElementById('page-title').textContent = `درس ${lessonId} - English 12 App`;
+                
+                // بارگذاری داده‌های درس
+                const lessonData = await loadLessonData(lessonId);
+                
+                if (lessonData) {
+                    document.getElementById('lessonTitle').textContent = lessonData.title || `درس ${lessonId}`;
+                    document.getElementById('lessonDescription').textContent = lessonData.description || 'آموزش زبان انگلیسی';
+                    
+                    // محاسبه پیشرفت کلی درس
+                    const overallProgress = calculateOverallProgress(lessonId);
+                    document.getElementById('lessonProgress').style.width = `${overallProgress}%`;
+                    document.getElementById('progressText').textContent = `${overallProgress}% تکمیل شده`;
+                    
+                    // رندر بخش‌ها
+                    renderSections(lessonId);
+                }
+            } catch (error) {
+                console.error('خطا در بارگذاری درس:', error);
+                showNotification('خطا در بارگذاری درس. لطفاً دوباره تلاش کنید.', 'error');
+            }
+        }
+        
+        // ==================== محاسبه پیشرفت ====================
+        function calculateOverallProgress(lessonId) {
+            let totalProgress = 0;
+            let completedSections = 0;
+            
+            sections.forEach(section => {
+                const progress = parseInt(localStorage.getItem(`progress-${lessonId}-${section.id}`) || '0');
+                totalProgress += progress;
+                if (progress >= 100) completedSections++;
+            });
+            
+            return Math.round(totalProgress / sections.length);
+        }
+    </script>
 </body>
 </html>
