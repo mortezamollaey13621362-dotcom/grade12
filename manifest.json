@@ -1,106 +1,59 @@
 {
   "id": "/grade12/",
-  "name": "English 12 - Learning App",
-  "short_name": "English12",
-  "description": "Complete English learning application for Grade 12 students",
-  "lang": "en",
-  "dir": "ltr",
-  "start_url": "/grade12/",
+  "name": "English Grade 12",
+  "short_name": "Grade12",
+  "description": "English Grade 12 educational application",
+  "start_url": "/grade12/index.html",
   "scope": "/grade12/",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#ffffff",
+  "theme_color": "#2fa4a9",
   "orientation": "portrait",
-  "background_color": "#2196F3",
-  "theme_color": "#2196F3",
-  "categories": ["education", "books"],
+  "lang": "fa",
+  "dir": "rtl",
+
   "icons": [
     {
-      "src": "/grade12/images/icon-72.png",
+      "src": "images/icon-72.png",
       "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "/grade12/images/icon-96.png",
+      "src": "images/icon-96.png",
       "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "/grade12/images/icon-128.png",
+      "src": "images/icon-128.png",
       "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "/grade12/images/icon-144.png",
+      "src": "images/icon-144.png",
       "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "/grade12/images/icon-152.png",
+      "src": "images/icon-152.png",
       "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "/grade12/images/icon-192.png",
+      "src": "images/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "/grade12/images/icon-384.png",
+      "src": "images/icon-384.png",
       "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "/grade12/images/icon-512.png",
+      "src": "images/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ],
-  "screenshots": [
-    {
-      "src": "https://via.placeholder.com/1280x720/2196F3/FFFFFF?text=English+12+App+Home",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "label": "Home Screen"
-    },
-    {
-      "src": "https://via.placeholder.com/1280x720/4CAF50/FFFFFF?text=Vocabulary+Learning",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "label": "Vocabulary Section"
-    },
-    {
-      "src": "https://via.placeholder.com/1280x720/FF9800/FFFFFF?text=Grammar+Lessons",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "label": "Grammar Lessons"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Start Learning",
-      "short_name": "Learn",
-      "description": "Start a new lesson",
-      "url": "/grade12/#lessons"
-    },
-    {
-      "name": "Review Words",
-      "short_name": "Review",
-      "description": "Review vocabulary with Leitner system",
-      "url": "/grade12/#review"
-    },
-    {
-      "name": "Take Quiz",
-      "short_name": "Quiz",
-      "description": "Take a test",
-      "url": "/grade12/#quiz"
-    }
-  ]
+
+  "prefer_related_applications": false
 }
